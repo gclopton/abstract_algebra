@@ -1,6 +1,6 @@
 
 
-> [!definition] Open immersion.
+> [!definition|ec0b1e48-1091-5d7b-83dc-db5724d06c7d.local at=81180290-6fc9-51da-be5f-94305ca89aa7] Open immersion.
 > 
 > An open immersion $j: Y \rightarrow X$ (between schemes) is a morphism of schemes such that
 > (i) the map on the underlying topological spaces is a homeomorphism of $Y$ onto an open subset $U \subset X$; and
@@ -14,7 +14,7 @@
 
 
 
-> [!NOTE]
+> [!note|1307a921-6882-5020-b396-04cb3a0d2baa.local at=49b731bf-2f62-5fbd-b5e3-57b8bf638858]
 > Remark - Uniqueness of the induced structure on opens.
 > If $U \subset X$ is an open subspace of a scheme $X$, then there is a unique scheme structure on $U$ compatible with that on $X$, namely the locally ringed space $\left(U,\left.\mathcal{O}_X\right|_U\right)$. (HW exercise in the notes.)
 
@@ -43,7 +43,7 @@ $$
 We should regard $\operatorname{Spec}(A / J)$ and $\operatorname{Spec}\left(A / J^{\prime}\right)$ (when $J \neq J^{\prime}$ but $V(J)=V\left(J^{\prime}\right)$ ) as two distinct closed subschemes of $\operatorname{Spec}(\boldsymbol{A})$.
 
 
-> [!definition] Closed subscheme
+> [!definition|f76685a0-3474-5c12-af3d-5a85872ae2fd.local at=80c0251a-cabe-5a85-8073-843b104659a7] Closed subscheme
 > 
 > A closed subscheme of $X$ is a closed subset $i: Z \hookrightarrow X$ together with a sheaf $\mathcal{O}_Z$ on $Z$ such that ( $Z, \mathcal{O}_Z$ ) is a scheme and
 > 
@@ -54,7 +54,7 @@ We should regard $\operatorname{Spec}(A / J)$ and $\operatorname{Spec}\left(A / 
 > for a sheaf of ideals $\mathcal{J} \subset \mathcal{O}_X$.
 
 
-> [!definition] Closed immersion
+> [!definition|f0625ad8-710d-5b4e-b775-290c7dab531c.local at=b8e08d19-cc2e-59ce-8f35-e9a6f5d9f403] Closed immersion
 > 
 > A morphism $i: Z \rightarrow X$ is a closed immersion if the underlying map of topological spaces is a homeomorphism of $Z$ onto a closed subset of $X$ and the sheaf map
 > 
@@ -65,7 +65,7 @@ We should regard $\operatorname{Spec}(A / J)$ and $\operatorname{Spec}\left(A / 
 > is surjective.
 
 
-> [!example]
+> [!example|59c59006-d1b5-5c26-94fb-72db1bfae4a9.local at=1f98e7c8-2995-54cc-a96a-8dbc8ceb20c7]
 
 
 Let $X=\operatorname{Spec}(A)$ be affine and $I \subset A$ an ideal. Then
@@ -78,7 +78,7 @@ is a closed subscheme of $\left(\operatorname{Spec}(A), \mathcal{O}_{\operatorna
 (The notes remark: every closed subscheme of an affine scheme is of this form.)
 
 
-> [!Theorem] Theorem 13
+> [!theorem|70390004-d721-590b-8e34-cd85b4737d51.local at=91eddce1-c648-5a5c-b266-8f8f293d5251] Theorem 13
 > 
 > Let $X=\operatorname{Spec}(A)$ be an affine scheme. Then
 > 
