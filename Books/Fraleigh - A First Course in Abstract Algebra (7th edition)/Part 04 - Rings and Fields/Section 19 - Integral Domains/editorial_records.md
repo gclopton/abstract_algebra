@@ -278,3 +278,7 @@ panels:
     caption: ""
 ```
 ```
+
+## Native review
+
+Saved-file lint: zero errors, one image advisory. Native spot check passed: complete Figure19.10 including all six regions and caption, Theorem19.11 and its initial proof displays. Other passage-level rendering remains pending.

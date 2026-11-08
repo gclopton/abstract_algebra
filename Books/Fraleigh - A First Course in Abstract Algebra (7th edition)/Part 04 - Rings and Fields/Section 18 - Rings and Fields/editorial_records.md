@@ -742,3 +742,7 @@ After:
 ## Supplied theorem title
 
 Before: untitled Theorem18.8. After: “Multiplication by Zero and Sign Rules in Rings.” The title describes the three source statements; body unchanged.
+
+## Native review
+
+Native spot check passed: full ring definition and distributive laws, Example18.2 prompt/solution separation, Definition18.14, restored three-sum display and Example18.15. Other passage-level rendering remains pending.
