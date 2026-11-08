@@ -1,2 +1,0 @@
-
-If $a, b \in \mathbb{Z}$ with $a \neq 0$, we say $a$ divides $b$ if there is an element $c \in \mathbb{Z}$ such that $b=a c$. In this case we write $a \mid b$; if $a$ does not divide $b$ we write $a \nmid b$.
