@@ -582,7 +582,7 @@ In Exercises 1 through 6, determine whether the binary operation $*$ gives a gro
 > Give an example of an abelian group $G$ where $G$ has exactly 1000 elements.
 
 > [!exercise|08fe3605-2460-50fd-a73a-bb7dccb82817.local at=a68fed7a-a403-5884-acc9-7b23b7565b07] Exercise 4.8
-> We can also consider multiplication $\cdot_{n}$$ modulo $n$ in $\mathbb{Z}_{n}$. For example, $5 \cdot_{7}6=2$ in $\mathbb{Z}_{7}$ because $5 \cdot 6=30=4(7)+2$. The set $\{1,3,5,7\}$ with multiplication $\cdot_{8}$ modulo 8 is a group. Give the table for this group.
+> We can also consider multiplication $\cdot_{n}$ modulo $n$ in $\mathbb{Z}_{n}$. For example, $5 \cdot_{7}6=2$ in $\mathbb{Z}_{7}$ because $5 \cdot 6=30=4(7)+2$. The set $\{1,3,5,7\}$ with multiplication $\cdot_{8}$ modulo 8 is a group. Give the table for this group.
 
 > [!exercise|63b5d752-eaa7-5251-a6c8-0b06a4a9b63f.local at=e1cc281e-b0ee-5707-8683-67ad5b4c0372] Exercise 4.9
 > Show that the group $\langle U, \cdot\rangle$ is not isomorphic to either $\langle\mathbb{R},+\rangle$ or $\left\langle\mathbb{R}^{*}, \cdot\right\rangle$. (All three groups have cardinality $|\mathbb{R}|$.)

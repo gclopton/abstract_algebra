@@ -937,3 +937,7 @@ Source line 783: `*` → `$*$`. Context: `> a. Show that * gives an associative 
 Source line 813: `*` → `$*$`. Context: `> Prove that a nonempty set $G$, together with an associative binary operation * on $G$ such that`
 
 Source line 820: `*` → `$*$`. Context: `> Let $\langle G, \cdot\rangle$ be a group. Consider the binary operation * on the set $G$ defined by`
+
+## Exercise4.8 delimiter correction
+
+Before: `$\cdot_{n}$$ modulo`. After: `$\cdot_{n}$ modulo`. Removed one duplicated closing dollar sign after the operation symbol. Mathematical expression, wording and existing callout identity unchanged. Detected by the separate callout-boundary audit.
