@@ -1,6 +1,6 @@
 # Editorial records — Section17: Applications of G-Sets to Counting
 
-Status: source reviewed printed161–165; table component/lint/native review pending.
+Status: source reviewed printed161–165; table converted; saved-file lint zero diagnostics/errors. Native checks: theorem, corollary, proof displays2–5, example/solution separation and all five explanation-table rows render correctly. Remaining native review pending.
 
 ## Restore source title footnote, p.161.
 
