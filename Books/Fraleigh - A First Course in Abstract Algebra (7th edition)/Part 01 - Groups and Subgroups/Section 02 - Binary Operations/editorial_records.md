@@ -1027,3 +1027,75 @@ style: scientific
 ```
 
 ```
+
+## Mathematical operation stars — Markdown delimiter repair
+
+Bare operation symbols were parsed as Markdown emphasis, breaking surrounding math rendering. Added math delimiters only; prime suffixes remain part of the symbol. Existing mathematical formulas, author wording and callout identities are unchanged.
+
+Source line 11: `*` → `$*$`. Context: `> A binary operation * on a set $S$ is a function mapping $S \times S$ into $S$. For each $(a, b) \in S \ti`
+
+Source line 35: `*` → `$*$`. Context: `o have $a * b \in H$. In this case, the binary operation on $H$ given by restricting * to H is the induced operation of * on H.`
+
+Source line 35: `*` → `$*$`. Context: `the binary operation on $H$ given by restricting * to H is the induced operation of * on H.`
+
+Source line 39: `*` → `$*$`. Context: `By our very definition of a binary operation $*$ on $S$, the set $S$ is closed under *, but a subset may not be, as the following example shows.`
+
+Source line 78: `*` → `$*$`. Context: `The most important method of describing a particular binary operation * on a given set is to characterize the element $a * b$ assigned to each pair ( $a, b$`
+
+Source line 84: `*` → `$*$`. Context: `On $\mathbb{Z}^{+}$, we define a binary operation * by $a * b$ equals the smaller of $a$ and $b$, or the common value if $a=b$. Thus $2`
+
+Source line 98: `*` → `$*$`. Context: `ch one we want depends on the fact that at some time we learned the binary operation * of Example 2.8. It is a very important operation. Likewise, the binary operation *'`
+
+Source line 98: `*'` → `$*'$`. Context: `n * of Example 2.8. It is a very important operation. Likewise, the binary operation *' of Example 2.9 is defined using our ability to distinguish order. Think what a prob`
+
+Source line 110: `*` → `$*$`. Context: `uppose we wish to consider an expression of the form $a * b * c$. A binary operation * enables us to combine only two elements, and here we have three. The obvious attempt`
+
+Source line 110: `*` → `$*$`. Context: `n $2 * 5=2$. Hence $(2 * 5) * 9=2 *(5 * 9)$, and it is not hard to see that for this *,`
+
+Source line 170: `*` → `$*$`. Context: `Table 2.15 defines the binary operation * on $S=\{a, b, c\}$ by the following rule:`
+
+Source line 359: `*` → `$*$`. Context: `ome binary operation on it. Remember that in an attempt to define a binary operation * on a set S we must be sure that`
+
+Source line 364: `*` → `$*$`. Context: `to "most" ordered pairs, but for a few pairs, determines no element. In this event, * is not everywhere defined on $S$. It may also happen that for some pairs, the attemp`
+
+Source line 364: `*` → `$*$`. Context: `y of several elements of $S$, that is, there is ambiguity. In any case of ambiguity, * is not well defined. If Condition 2 is violated, then $S$ is not closed under *.`
+
+Source line 364: `*` → `$*$`. Context: `ity, * is not well defined. If Condition 2 is violated, then $S$ is not closed under *.`
+
+Source line 366: `*` → `$*$`. Context: `attempts to define binary operations on sets. Some of them are worthless. The symbol * is used for the attempted operation in all these examples.`
+
+Source line 373: `*` → `$*$`. Context: `On $\mathbb{Q}$, let $a * b=a / b$. Here * is not everywhere defined on $\mathbb{Q}$, for no rational number is assigned by thi`
+
+Source line 379: `*` → `$*$`. Context: `$\mathbb{Q}^{+}$, let $a * b=a / b$. Here both Conditions 1 and 2 are satisfied, and * is a binary operation on $\mathbb{Q}^{+}$. $\square$`
+
+Source line 391: `*` → `$*$`. Context: `eal-valued functions with domain $\mathbb{R}$ as in Example 2.7. Suppose we "define" * to give the usual quotient of $f$ by $g$, that is, $f * g=h$, where $h(x)=f(x) / g(x`
+
+Source line 637: `*` → `$*$`. Context: `> Is * commutative? Why?`
+
+Source line 643: `*` → `$*$`. Context: `> Table 2.28 can be completed to define an associative binary operation * on $S=\{a, b, c, d\}$. Assume this is possible and compute the missing entries.`
+
+Source line 683: `*` → `$*$`. Context: `> On $\mathbb{Z}^{+}$, define * by letting $a * b=a-b$.`
+
+Source line 692: `*` → `$*$`. Context: `> On $\mathbb{Z}^{+}$, define * by letting $a * b=c$, where $c$ is the smallest integer greater than both $a$ and $b`
+
+Source line 695: `*` → `$*$`. Context: `> On $\mathbb{Z}^{+}$, define * by letting $a * b=c$, where $c$ is at least 5 more than $a+b$.`
+
+Source line 698: `*` → `$*$`. Context: `> On $\mathbb{Z}^{+}$, define * by letting $a * b=c$, where $c$ is the largest integer less than the product of $a$`
+
+Source line 708: `*` → `$*$`. Context: `> \_\_\_\_ a. If * is any binary operation on any set $S$, then $a * a=a$ for all $a \in S$.`
+
+Source line 720: `*` → `$*$`. Context: `xamples of the text and not a set of numbers. Define two different binary operations * and *' on this set. Be sure that your set is well defined.`
+
+Source line 720: `*'` → `$*'$`. Context: `s of the text and not a set of numbers. Define two different binary operations * and *' on this set. Be sure that your set is well defined.`
+
+Source line 764: `*` → `$*$`. Context: `> If * and *' are any two binary operations on a set $S$, then`
+
+Source line 764: `*'` → `$*'$`. Context: `> If * and *' are any two binary operations on a set $S$, then`
+
+Source line 770: `*` → `$*$`. Context: `> Suppose that * is an associative binary operation on a set $S$. Let $H=\{a \in S \mid a * x=x * a$`
+
+Source line 770: `*` → `$*$`. Context: `et $H=\{a \in S \mid a * x=x * a$ for all $x \in S\}$. Show that $H$ is closed under *. (We think of $H$ as consisting of all elements of $S$ that commute with every eleme`
+
+Source line 773: `*` → `$*$`. Context: `inary operation on a set $S$. Show that $H=\{a \in S \mid a * a=a\}$ is closed under *. (The elements of $H$ are idempotents of the binary operation *.)`
+
+Source line 773: `*` → `$*$`. Context: `a\}$ is closed under *. (The elements of $H$ are idempotents of the binary operation *.)`

@@ -1,7 +1,7 @@
 
 # 3 Isomorphic Binary Structures
 
-Compare Table 3.1 for the binary operation * on the set $S=\{a, b, c\}$ with Table 3.2 for the binary operation $*^{\prime}$ on the set $T=\{\#, \$, \&\}$.
+Compare Table 3.1 for the binary operation $*$ on the set $S=\{a, b, c\}$ with Table 3.2 for the binary operation $*^{\prime}$ on the set $T=\{\#, \$, \&\}$.
 
 Notice that if, in Table 3.1, we replace all occurrences of $a$ by \#, every $b$ by \$, and every $c$ by \& using the one-to-one correspondence
 
@@ -306,7 +306,7 @@ $$
 Such a function showing that two algebraic systems are structurally alike is known as an isomorphism. We give a formal definition.
 Definition 3.7 — Equation (2)
 
-> [!definition] Isomorphism of Binary Algebraic Structures
+> [!definition|f274a14b-d311-5a9d-9dfc-c786c8638974.local at=3cfbbf80-804e-592f-ae50-e497eb22b6f1] Isomorphism of Binary Algebraic Structures
 > Let $\langle S, *\rangle$ and $\left\langle S^{\prime}, *^{\prime}\right\rangle$ be binary algebraic structures. An isomorphism of $S$ with $S^{\prime}$ is a one-to-one function $\phi$ mapping $S$ onto $S^{\prime}$ such that
 >
 > $$
@@ -335,7 +335,7 @@ Step 1 Define the function $\phi$ that gives the isomorphism of $S$ with $S^{\pr
 Step 2 Show that $\phi$ is a one-to-one function. That is, suppose that $\phi(x)=\phi(y)$ in $S^{\prime}$ and deduce from this that $x=y$ in $S$.
 Step 3 Show that $\phi$ is onto $S^{\prime}$. That is, suppose that $s^{\prime} \in S^{\prime}$ is given and show that there does exist $s \in S$ such that $\phi(s)=s^{\prime}$.
 Step 4 Show that $\phi(x * y)=\phi(x) *^{\prime} \phi(y)$ for all $x, y \in S$. This is just a question of computation. Compute both sides of the equation and see whether they are the same.
-> [!example] Example 3.8
+> [!example|d66a7498-2393-5b6f-8e31-7f2b66d0b40d.local at=05ad4c81-5ccc-55c0-b24e-32f66425a918] Example 3.8
 > Let us show that the binary structure $\langle\mathbb{R},+\rangle$ with operation the usual addition is isomorphic to the structure $\left\langle\mathbb{R}^{+}, \cdot\right\rangle$ where ⋅ is the usual multiplication.
 
 ##### solution
@@ -345,7 +345,7 @@ Step 2 If $\phi(x)=\phi(y)$, then $e^{x}=e^{y}$. Taking the natural logarithm, w
 
 Step 3 If $r \in \mathbb{R}^{+}$, then $\ln (r) \in \mathbb{R}$ and $\phi(\ln r)=e^{\ln r}=r$. Thus $\phi$ is onto $\mathbb{R}^{+}$.
 Step 4 For $x, y \in \mathbb{R}$, we have $\phi(x+y)=e^{x+y}=e^{x} \cdot e^{y}=\phi(x) \cdot \phi(y)$. Thus we see that $\phi$ is indeed an isomorphism. $\square$
-> [!example] Example 3.9
+> [!example|20072c19-30b6-516c-9a83-861c66103399.local at=6181e7c0-3597-5831-ac6b-aa5e1cbef954] Example 3.9
 > Let $2 \mathbb{Z}=\{2 n \mid n \in \mathbb{Z}\}$, so that $2 \mathbb{Z}$ is the set of all even integers, positive, negative, and zero. We claim that $\langle\mathbb{Z},+\rangle$ is isomorphic to $\langle 2 \mathbb{Z},+\rangle$, where + is the usual addition. This will give an example of a binary structure $\langle\mathbb{Z},+\rangle$ that is actually isomorphic to a structure consisting of a proper subset under the induced operation, in contrast to Example 3.8, where the operations were totally different.
 
 ##### solution
@@ -366,7 +366,7 @@ then shows that $\phi$ is an isomorphism. $\square$
 We now turn to the reverse question, namely:
 How do we demonstrate that two binary structures $\langle S, *\rangle$ and $\left\langle S^{\prime}, *^{\prime}\right\rangle$ are not isomorphic, if this is the case?
 This would mean that there is no one-to-one function $\phi$ from $S$ onto $S^{\prime}$ with the property $\phi(x * y)=\phi(x) *^{\prime} \phi(y)$ for all $x, y \in S$. In general, it is clearly not feasible to try every possible one-to-one function mapping $S$ onto $S^{\prime}$ and test whether it has this property, except in the case where there are no such functions. This is the case precisely when $S$ and $S^{\prime}$ do not have the same cardinality. (See Definition 0.13.)
-> [!example] Example 3.10
+> [!example|28ebea1d-ff04-5d4c-8d76-89afc3b935f3.local at=2a10abd7-b33d-5e21-b8a9-58c9186b1c5c] Example 3.10
 > Are $\langle\mathbb{Q},+\rangle$ and $\langle\mathbb{R},+\rangle$ isomorphic?
 
 ##### solution
@@ -375,11 +375,11 @@ The binary structures $\langle\mathbb{Q},+\rangle$ and $\langle\mathbb{R},+\rang
 
 A structural property of a binary structure is one that must be shared by any isomorphic structure. It is not concerned with names or some other nonstructural characteristics of the elements. For example, the binary structures defined by Tables 3.1 and 3.2 are isomorphic, although the elements are totally different. Also, a structural property is not concerned with what we consider to be the "name" of the binary operation. Example 3.8 showed that a binary structure whose operation is our usual addition can be isomorphic to one whose operation is our usual multiplication. The number of elements in the set $S$ is a structural property of $\langle\mathrm{S}, *\rangle$.
 
-> [!important] Distinguishing Nonisomorphic Binary Structures
+> [!important|ae8aa17c-4698-5e4d-a9bd-01e2191ca54d.local at=576c64f2-3fb9-513f-815e-e00c614561a2] Distinguishing Nonisomorphic Binary Structures
 > In the event that there are one-to-one mappings of $S$ onto $S^{\prime}$, we usually show that $\langle S, *\rangle$ is not isomorphic to $\left\langle\mathrm{S}^{\prime}, *^{\prime}\right\rangle$ (if this is the case) by showing that one has some structural property that the other does not possess.
 
 
-> [!example] Example 3.11
+> [!example|042b2f4e-ad33-5fa3-a4c2-eb544012425c.local at=e49c1079-fb86-5633-a7a1-3d92c2f6ccfe] Example 3.11
 > Are $\langle\mathbb{Z},\cdot\rangle$ and $\langle\mathbb{Z}^{+},\cdot\rangle$ isomorphic?
 
 ##### solution
@@ -424,13 +424,13 @@ style: scientific
 We introduced the algebraic notions of commutativity and associativity in Section 2. One other structural notion that will be of interest to us is illustrated by Table 3.3, where for the binary operation $*^{\prime \prime}$ on the set $\{x, y, z\}$, we have $x *^{\prime \prime} u=u *^{\prime \prime} x=u$ for all possible choices, $x, y$, and $z$ for $u$. Thus $x$ plays the same role as 0 in $\langle\mathbb{R},+\rangle$ where $0+u=u+0=u$ for all $u \in \mathbb{R}$, and the same role as 1 in $\langle\mathbb{R}, \cdot\rangle$ where $1 \cdot u=u \cdot 1=u$ for all $u \in \mathbb{R}$. Because Tables 3.1 and 3.2 give structures isomorphic to the one in Table 3.3, they must exhibit an element with a similar property. We see that $b * u=u * b=u$ for all elements $u$ appearing in Table 3.1 and that $\$ *^{\prime} u=u *^{\prime} \$=u$ for all elements $u$ in Table 3.2. We give a formal definition of this structural notion and prove a little theorem.
 Definition 3.12
 
-> [!definition] Identity Element of a Binary Structure
+> [!definition|22296212-868d-5f8b-865d-6ef1ab8ecb3c.local at=be9f163d-3f83-59ae-8ea1-b201e3e0b841] Identity Element of a Binary Structure
 > Let $\langle S, *\rangle$ be a binary structure. An element $e$ of $S$ is an identity element for $*$ if $e * s=s * e=s$ for all $s \in S$.
 
 
 Theorem 3.13
 
-> [!theorem] Uniqueness of Identity Element
+> [!theorem|e3ade1e9-589a-5872-9d6b-34d1993b90da.local at=1087b206-f44d-56a7-b6c8-4988d780b2aa] Uniqueness of Identity Element
 > A binary structure $\langle S, *\rangle$ has at most one identity element. That is, if there is an identity element, it is unique.
 
 ##### proof
@@ -440,7 +440,7 @@ Proceeding in the standard way to show uniqueness, suppose that both $e$ and $\b
 If you now have a good grasp of the notion of isomorphic binary structures, it should be evident that having an identity element for $*$ is indeed a structural property of a structure $\langle S, *\rangle$. However, we know from experience that many readers will be unable to see the forest because of all the trees that have appeared. For them, we now supply a careful proof, skipping along to touch those trees that are involved.
 Theorem 3.14
 
-> [!theorem] Isomorphisms Preserve Identity Elements
+> [!theorem|c18cb1cd-8660-5b50-8382-aad7a3efa46e.local at=c0a8304a-7777-56c3-acfb-e13066043d2d] Isomorphisms Preserve Identity Elements
 > Suppose $\langle S, *\rangle$ has an identity element $e$ for $*$. If $\phi: S \rightarrow S^{\prime}$ is an isomorphism of $\langle S, *\rangle$ with $\left\langle S^{\prime}, *^{\prime}\right\rangle$, then $\phi(e)$ is an identity element for the binary operation $*^{\prime}$ on $S^{\prime}$.
 
 ##### proof
@@ -460,19 +460,19 @@ $$
 Remembering that we chose $s \in S$ such that $\phi(s)=s^{\prime}$, we obtain the desired relation $\phi(e) *^{\prime} s^{\prime}=s^{\prime} *^{\prime} \phi(e)=s^{\prime}$. $\square$
 
 We conclude with three more examples showing via structural properties that certain binary structures are not isomorphic. In the exercises we ask you to show, as in Theorem 3.14, that the properties we use to distinguish the structures in these examples are indeed structural. That is, they must be shared by any isomorphic structure.
-> [!example] Example 3.15
+> [!example|73833659-59fd-52fc-ac09-3043c16964be.local at=a16684a0-6ae2-5ad9-8585-ff8a017c6b22] Example 3.15
 > Show that $\langle\mathbb{Q},+\rangle$ and $\langle\mathbb{Z},+\rangle$ are not isomorphic.
 
 ##### solution
 
 We show that the binary structures $\langle\mathbb{Q},+\rangle$ and $\langle\mathbb{Z},+\rangle$ under the usual addition are not isomorphic. (Both $\mathbb{Q}$ and $\mathbb{Z}$ have cardinality $\aleph_{0}$, so there are lots of one-to-one functions mapping $\mathbb{Q}$ onto $\mathbb{Z}$.) The equation $x+x=c$ has a solution $x$ for all $c \in \mathbb{Q}$, but this is not the case in $\mathbb{Z}$. For example, the equation $x+x=3$ has no solution in $\mathbb{Z}$. We have exhibited a structural property that distinguishes these two structures. $\square$
-> [!example] Example 3.16
+> [!example|7d8da34c-2dc9-542e-87fb-28768c3ae696.local at=407c3ee3-a554-5f05-b9bb-ef3d7d87171c] Example 3.16
 > Are $\langle\mathbb{C},\cdot\rangle$ and $\langle\mathbb{R},\cdot\rangle$ isomorphic?
 
 ##### solution
 
 The binary structures $\langle\mathbb{C}, \cdot\rangle$ and $\langle\mathbb{R}, \cdot\rangle$ under the usual multiplication are not isomorphic. (It can be shown that $\mathbb{C}$ and $\mathbb{R}$ have the same cardinality.) The equation $x \cdot x=c$ has a solution $x$ for all $c \in \mathbb{C}$, but $x \cdot x=-1$ has no solution in $\mathbb{R}$. $\square$
-> [!example] Example 3.17
+> [!example|75fdad1f-6e0a-55d4-b65a-1615607cd198.local at=a88ef6ea-11a3-5e56-8972-2c00a38aa4a0] Example 3.17
 > Is $\langle M_2(\mathbb{R}),\cdot\rangle$, with usual matrix multiplication, isomorphic to $\langle\mathbb{R},\cdot\rangle$, with usual number multiplication?
 
 ##### solution
@@ -484,74 +484,74 @@ The binary structure $\left\langle M_{2}(\mathbb{R}), \cdot\right\rangle$ of $2 
 In all the exercises, + is the usual addition on the set where it is specified, and ⋅ is the usual multiplication.
 Computations
 
-> [!exercise] Exercise 3.1
+> [!exercise|0b583a9c-2420-5f69-9eec-d0802b84bdd2.local at=3575cb59-ff9a-5dd0-a15b-c94e4dade5fe] Exercise 3.1
 > What three things must we check to determine whether a function $\phi: S \rightarrow S^{\prime}$ is an isomorphism of a binary structure $\langle S, *\rangle$ with $\left\langle S^{\prime}, *^{\prime}\right\rangle$ ?
 
 In Exercises 2 through 10, determine whether the given map $\phi$ is an isomorphism of the first binary structure with the second. (See Exercise 1.) If it is not an isomorphism, why not?
 
-> [!exercise] Exercise 3.2
+> [!exercise|bc0ff535-570a-5e42-9516-0f289d3af644.local at=ab24dd7d-5e30-5b01-8113-99d05d4526f1] Exercise 3.2
 > $\langle\mathbb{Z},+\rangle$ with $\langle\mathbb{Z},+\rangle$ where $\phi(n)=-n$ for $n \in \mathbb{Z}$
 
-> [!exercise] Exercise 3.3
+> [!exercise|b4176c4b-3b9e-5c1f-9a89-e60596097249.local at=82f28856-0a5c-55cf-b23d-d238f01da7f5] Exercise 3.3
 > $\langle\mathbb{Z},+\rangle$ with $\langle\mathbb{Z},+\rangle$ where $\phi(n)=2 n$ for $n \in \mathbb{Z}$
 
-> [!exercise] Exercise 3.4
+> [!exercise|e651754a-4cce-5e8e-bd04-f715b676ddbf.local at=2a8a494e-98f9-5dd2-8f9f-13bd09ff1da6] Exercise 3.4
 > $\langle\mathbb{Z},+\rangle$ with $\langle\mathbb{Z},+\rangle$ where $\phi(n)=n+1$ for $n \in \mathbb{Z}$
 
-> [!exercise] Exercise 3.5
+> [!exercise|6f84ad16-c479-52ed-9dcc-d2581186608b.local at=3008e016-1f20-59bd-8f1b-9e9d1f87e2fc] Exercise 3.5
 > $\langle\mathbb{Q},+\rangle$ with $\langle\mathbb{Q},+\rangle$ where $\phi(x)=x / 2$ for $x \in \mathbb{Q}$
 
-> [!exercise] Exercise 3.6
+> [!exercise|91ddca82-c8c1-5ccd-b0cc-fd20a437e02c.local at=9666aeec-f2af-5872-9da1-bb2bb00b1470] Exercise 3.6
 > $\langle\mathbb{Q}, \cdot\rangle$ with $\langle\mathbb{Q}, \cdot\rangle$ where $\phi(x)=x^{2}$ for $x \in \mathbb{Q}$
 
-> [!exercise] Exercise 3.7
+> [!exercise|a77d9a0a-b80e-541f-9139-d5a8c8a83780.local at=ab59ef10-2ea7-5763-8220-59f5cde58424] Exercise 3.7
 > $\langle\mathbb{R}, \cdot\rangle$ with $\langle\mathbb{R}, \cdot\rangle$ where $\phi(x)=x^{3}$ for $x \in \mathbb{R}$
 
-> [!exercise] Exercise 3.8
+> [!exercise|f46f5185-3fa5-55ae-86eb-05c9d61f7045.local at=2292ef0d-26f5-5179-930c-2966fa25d6bb] Exercise 3.8
 > $\left\langle M_{2}(\mathbb{R}), \cdot\right\rangle$ with $\langle\mathbb{R}, \cdot\rangle$ where $\phi(A)$ is the determinant of matrix $A$
 
-> [!exercise] Exercise 3.9
+> [!exercise|39f0b433-ef04-57bc-bbd0-253983045669.local at=67a31263-5f78-5455-b64c-07ec40743447] Exercise 3.9
 > $\left\langle M_{1}(\mathbb{R}), \cdot\right\rangle$ with $\langle\mathbb{R}, \cdot\rangle$ where $\phi(A)$ is the determinant of matrix $A$
 
-> [!exercise] Exercise 3.10
+> [!exercise|df013d2a-9c7b-5380-a5df-00f019928af0.local at=56051300-7d59-5506-877e-a84c391955b9] Exercise 3.10
 > $\langle\mathbb{R},+\rangle$ with $\left\langle\mathbb{R}^{+}, \cdot\right\rangle$ where $\phi(r)=0.5^{r}$ for $r \in \mathbb{R}$
 
 In Exercises 11 through 15, let $F$ be the set of all functions $f$ mapping $\mathbb{R}$ into $\mathbb{R}$ that have derivatives of all orders. Follow the instructions for Exercises 2 through 10.
 
-> [!exercise] Exercise 3.11
+> [!exercise|73b96953-150d-5fb3-b089-9d97208c6fa7.local at=0e65deff-4376-50e4-b507-3a3d50387d38] Exercise 3.11
 > $\langle F,+\rangle$ with $\langle F,+\rangle$ where $\phi(f)=f^{\prime}$, the derivative of $f$
 
-> [!exercise] Exercise 3.12
+> [!exercise|cc9011a6-4e76-5adc-9397-72d512a43cc2.local at=aa69b840-c8cc-5da8-bfa0-dfbbc0f99a20] Exercise 3.12
 > $\langle F,+\rangle$ with $\langle\mathbb{R},+\rangle$ where $\phi(f)=f^{\prime}(0)$
 
-> [!exercise] Exercise 3.13
+> [!exercise|44e0c3ac-3ac9-5a3d-8854-596f89357f7f.local at=e9cd8131-21ed-5fae-ba5e-e362a1f5e145] Exercise 3.13
 > $\langle F,+\rangle$ with $\langle F,+\rangle$ where $\phi(f)(x)=\int_{0}^{x} f(t) d t$
 
-> [!exercise] Exercise 3.14
+> [!exercise|4642a792-8ad7-5fae-8c26-4c184c83fdcc.local at=b917471d-829b-51e3-ad5d-185e16d1a931] Exercise 3.14
 > $\langle F,+\rangle$ with $\langle F,+\rangle$ where $\phi(f)(x)=\frac{d}{d x}\left[\int_{0}^{x} f(t) d t\right]$
 
-> [!exercise] Exercise 3.15
+> [!exercise|6f4204cd-fc6f-5b19-ab4c-7a2990310816.local at=ed84e712-ca75-59e6-b89a-14b6a70aa50b] Exercise 3.15
 > $\langle F, \cdot\rangle$ with $\langle F, \cdot\rangle$ where $\phi(f)(x)=x \cdot f(x)$
 
-> [!exercise] Exercise 3.16
+> [!exercise|54d7f159-0d6d-5af2-889d-958159641b45.local at=6346aeb8-5952-595c-aa21-6c785577471e] Exercise 3.16
 > The map $\phi: \mathbb{Z} \rightarrow \mathbb{Z}$ defined by $\phi(n)=n+1$ for $n \in \mathbb{Z}$ is one to one and onto $\mathbb{Z}$. Give the definition of a binary operation $*$ on $\mathbb{Z}$ such that $\phi$ is an isomorphism mapping
 > a. $\langle\mathbb{Z},+\rangle$ onto $\langle\mathbb{Z}, *\rangle$,
 > b. $\langle\mathbb{Z}, *\rangle$ onto $\langle\mathbb{Z},+\rangle$.
 > In each case, give the identity element for $*$ on $\mathbb{Z}$.
 
-> [!exercise] Exercise 3.17
-> The map $\phi: \mathbb{Z} \rightarrow \mathbb{Z}$ defined by $\phi(n)=n+1$ for $n \in \mathbb{Z}$ is one to one and onto $\mathbb{Z}$. Give the definition of a binary operation * on $\mathbb{Z}$ such that $\phi$ is an isomorphism mapping
+> [!exercise|05a6d58a-c623-55ef-96bc-958d6ee8da33.local at=5e0dae99-66ba-5cec-a1fc-5e7cbb37d6a7] Exercise 3.17
+> The map $\phi: \mathbb{Z} \rightarrow \mathbb{Z}$ defined by $\phi(n)=n+1$ for $n \in \mathbb{Z}$ is one to one and onto $\mathbb{Z}$. Give the definition of a binary operation $*$ on $\mathbb{Z}$ such that $\phi$ is an isomorphism mapping
 > a. $\langle\mathbb{Z}, \cdot\rangle$ onto $\langle\mathbb{Z}, *\rangle$,
 > b. $\langle\mathbb{Z}, *\rangle$ onto $\langle\mathbb{Z}, \cdot\rangle$.
 > In each case, give the identity element for $*$ on $\mathbb{Z}$.
 
-> [!exercise] Exercise 3.18
+> [!exercise|3e5829a7-6f5d-58c4-89ae-b9e0b3356274.local at=2ea2f865-bf84-5344-a9ab-e0238a6becb3] Exercise 3.18
 > The map $\phi: \mathbb{Q} \rightarrow \mathbb{Q}$ defined by $\phi(x)=3 x-1$ for $x \in \mathbb{Q}$ is one to one and onto $\mathbb{Q}$. Give the definition of a binary operation $*$ on $\mathbb{Q}$ such that $\phi$ is an isomorphism mapping
 > a. $\langle\mathbb{Q},+\rangle$ onto $\langle\mathbb{Q}, *\rangle$,
 > b. $\langle\mathbb{Q}, *\rangle$ onto $\langle\mathbb{Q},+\rangle$.
 > In each case, give the identity element for $*$ on $\mathbb{Q}$.
 
-> [!exercise] Exercise 3.19
+> [!exercise|1a9231bd-a1b7-5831-8f47-8b0daf30dd88.local at=b6d60139-92fe-52f1-b3ae-553567ce3058] Exercise 3.19
 > The map $\phi: \mathbb{Q} \rightarrow \mathbb{Q}$ defined by $\phi(x)=3 x-1$ for $x \in \mathbb{Q}$ is one to one and onto $\mathbb{Q}$. Give the definition of a binary operation $*$ on $\mathbb{Q}$ such that $\phi$ is an isomorphism mapping
 > a. $\langle\mathbb{Q}, \cdot\rangle$ onto $\langle\mathbb{Q}, *\rangle$,
 > b. $\langle\mathbb{Q}, *\rangle$ onto $\langle\mathbb{Q}, \cdot\rangle$.
@@ -559,15 +559,15 @@ In Exercises 11 through 15, let $F$ be the set of all functions $f$ mapping $\ma
 
 ## Concepts
 
-> [!exercise] Exercise 3.20
+> [!exercise|247700ba-b06e-5dbf-a74a-0745f91ce498.local at=6e0a8c39-ffb5-529d-9e57-fd89b61274ac] Exercise 3.20
 > The displayed homomorphism condition for an isomorphism $\phi$ in Definition 3.7 is sometimes summarized by saying, " $\phi$ must commute with the binary operation(s)." Explain how that condition can be viewed in this manner.
 
 In Exercises 21 and 22, correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
 
-> [!exercise] Exercise 3.21
+> [!exercise|427f91f2-f107-52db-9ba1-9c5dcadb5798.local at=49d994d3-3dc8-5c00-8386-6c72a4b9e881] Exercise 3.21
 > A function $\phi: S \rightarrow S^{\prime}$ is an isomorphism if and only if $\phi(a * b)=\phi(a) *^{\prime} \phi(b)$.
 
-> [!exercise] Exercise 3.22
+> [!exercise|a356ed1e-328d-5e64-87a9-399adfa328d9.local at=e8053bf9-420e-5087-9382-708774570f20] Exercise 3.22
 > Let $*$ be a binary operation on a set $S$. An element $e$ of $S$ with the property $s * e=s=e * s$ is an identity element for $*$ for all $s \in S$.
 
 ## Proof Synopsis
@@ -578,51 +578,51 @@ A good test of your understanding of a proof is your ability to give a one or tw
 
 That is the kind of explanation that one mathematician might give another if asked, "How does the proof go?" We did not make the computation or explain why we could represent an element of $S^{\prime}$ as $\phi(s)$. To supply every detail would result in a completely written proof. We just gave the guts of the argument in our synopsis.
 
-> [!exercise] Exercise 3.23
+> [!exercise|a3b819b4-41ef-5907-9e6d-30ef97c6827d.local at=f6c8681a-312b-5b41-8c3f-10f5df3a2c3a] Exercise 3.23
 > Give a proof synopsis of Theorem 3.13.
 
 ## Theory
 
-> [!exercise] Exercise 3.24
-> An identity element for a binary operation * as described by Definition 3.12 is sometimes referred to as "a two-sided identity element." Using complete sentences, give analogous definitions for
+> [!exercise|6f03f277-dece-5fb9-9d12-3cad62e33061.local at=15c293e0-93e5-5352-b8bc-526ebf7c545c] Exercise 3.24
+> An identity element for a binary operation $*$ as described by Definition 3.12 is sometimes referred to as "a two-sided identity element." Using complete sentences, give analogous definitions for
 > a. a left identity element $e_{L}$ for $*$, and
-> b. a right identity element $e_{R}$ for *.
-> Theorem 3.13 shows that if a two-sided identity element for * exists, it is unique. Is the same true for a one-sided identity element you just defined? If so, prove it. If not, give a counterexample $\langle S, *\rangle$ for a finite set $S$ and find the first place where the proof of Theorem 3.13 breaks down.
+> b. a right identity element $e_{R}$ for $*$.
+> Theorem 3.13 shows that if a two-sided identity element for $*$ exists, it is unique. Is the same true for a one-sided identity element you just defined? If so, prove it. If not, give a counterexample $\langle S, *\rangle$ for a finite set $S$ and find the first place where the proof of Theorem 3.13 breaks down.
 
-> [!exercise] Exercise 3.25
+> [!exercise|512f4b6e-eb88-531a-b9e5-1126db4c5f6e.local at=542ac057-3861-5968-8419-28a62c547521] Exercise 3.25
 > Continuing the ideas of Exercise 24 can a binary structure have a left identity element $e_{L}$ and a right identity element $e_{R}$ where $e_{L} \neq e_{R}$ ? If so, give an example, using an operation on a finite set $S$. If not, prove that it is impossible.
 
-> [!exercise] Exercise 3.26
+> [!exercise|46a1fb46-33e2-531d-9c9c-336af5db1371.local at=757d63b5-6112-5da6-b267-349118f2180c] Exercise 3.26
 > Recall that if $f: A \rightarrow B$ is a one-to-one function mapping $A$ onto $B$, then $f^{-1}(b)$ is the unique $a \in A$ such that $f(a)=b$. Prove that if $\phi: S \rightarrow S^{\prime}$ is an isomorphism of $\langle S, *\rangle$ with $\left\langle S^{\prime}, *^{\prime}\right\rangle$, then $\phi^{-1}$ is an isomorphism of $\left\langle S^{\prime}, *^{\prime}\right\rangle$ with $\langle S, *\rangle$.
 
-> [!exercise] Exercise 3.27
+> [!exercise|b917f0ad-6330-5273-a597-e5cfc4e1f627.local at=fd034b45-636e-5d12-a0ce-824e02e97767] Exercise 3.27
 > Prove that if $\phi: S \rightarrow S^{\prime}$ is an isomorphism of $\langle S, *\rangle$ with $\left\langle S^{\prime}, *^{\prime}\right\rangle$ and $\psi: S^{\prime} \rightarrow S^{\prime \prime}$ is an isomorphism of $\left\langle S^{\prime}, *^{\prime}\right\rangle$ with $\left\langle S^{\prime \prime}, *^{\prime \prime}\right\rangle$, then the composite function $\psi \circ \phi$ is an isomorphism of $\langle S, *\rangle$ with $\left\langle S^{\prime \prime}, *^{\prime \prime}\right\rangle$.
 
-> [!exercise] Exercise 3.28
+> [!exercise|e05506f5-77c3-5c16-96b8-7fbca1378940.local at=ac621417-8fb6-531d-8c72-f94c1401e010] Exercise 3.28
 > Prove that the relation $\simeq$ of being isomorphic, described in Definition 3.7, is an equivalence relation on any set of binary structures. You may simply quote the results you were asked to prove in the preceding two exercises at appropriate places in your proof.
 
 In Exercises 29 through 32, give a careful proof for a skeptic that the indicated property of a binary structure $\langle S, *\rangle$ is indeed a structural property. (In Theorem 3.14, we did this for the property, "There is an identity element for $*$.")
 
-> [!exercise] Exercise 3.29
+> [!exercise|85cdf20b-88bd-5527-8514-f1fdf8825693.local at=3925017c-faa6-53e8-8675-5145d35d7e3c] Exercise 3.29
 > The operation $*$ is commutative.
 
-> [!exercise] Exercise 3.30
+> [!exercise|3699e49c-85c7-5cec-9eea-e269680900f3.local at=4e05a5ed-a5b4-582e-b4ae-ce12eef613be] Exercise 3.30
 > The operation $*$ is associative.
 
-> [!exercise] Exercise 3.31
+> [!exercise|a0a1b1f8-2cc0-5611-befc-a711ff911122.local at=8705c56d-ab2e-5a06-80da-f769a776a5ef] Exercise 3.31
 > For each $c \in S$, the equation $x * x=c$ has a solution $x$ in $S$.
 
-> [!exercise] Exercise 3.32
+> [!exercise|c4259b05-8260-59af-bc33-1748530a588a.local at=563d2b6c-4127-577d-9d03-0c0dd1bc37b7] Exercise 3.32
 > There exists an element $b$ in $S$ such that $b * b=b$.
 
-> [!exercise] Exercise 3.33
+> [!exercise|14e89e16-9b32-5173-9230-70cebb1c70d4.local at=399fafbe-4a3e-5edf-b06c-48d5e7446480] Exercise 3.33
 > Let $H$ be the subset of $M_{2}(\mathbb{R})$ consisting of all matrices of the form $\left[\begin{array}{rr}a & -b \\ b & a\end{array}\right]$ for $a, b \in \mathbb{R}$. Exercise 23 of Section 2 shows that $H$ is closed under both matrix addition and matrix multiplication.
 > a. Show that $\langle\mathbb{C},+\rangle$ is isomorphic to $\langle H,+\rangle$.
 > b. Show that $\langle\mathbb{C}, \cdot\rangle$ is isomorphic to $\langle H, \cdot\rangle$.
 >
 > (We say that $H$ is a matrix representation of the complex numbers $\mathbb{C}$.)
 
-> [!exercise] Exercise 3.34
+> [!exercise|230acf60-c9fd-5463-886c-c59c3af66809.local at=8d493f40-40b7-52f9-89f8-cfdb8a71e8ba] Exercise 3.34
 > There are 16 possible binary structures on the set $\{a, b\}$ of two elements. How many nonisomorphic (that is, structurally different) structures are there among these 16? Phrased more precisely in terms of the isomorphism equivalence relation $\simeq$ on this set of 16 structures, how many equivalence classes are there? Write down one structure from each equivalence class. [Hint: Interchanging $a$ and $b$ everywhere in a table and then rewriting the table with elements listed in the original order does not always yield a table different from the one we started with.]
 
 

@@ -969,3 +969,17 @@ rowHeaders: false
 style: scientific
 ```
 ```
+
+## Mathematical operation stars — Markdown delimiter repair
+
+Bare operation symbols were parsed as Markdown emphasis, breaking surrounding math rendering. Added math delimiters only; prime suffixes remain part of the symbol. Existing mathematical formulas, author wording and callout identities are unchanged.
+
+Source line 4: `*` → `$*$`. Context: `Compare Table 3.1 for the binary operation * on the set $S=\{a, b, c\}$ with Table 3.2 for the binary operation $*^{\prime}$ on t`
+
+Source line 543: `*` → `$*$`. Context: `b{Z}$ is one to one and onto $\mathbb{Z}$. Give the definition of a binary operation * on $\mathbb{Z}$ such that $\phi$ is an isomorphism mapping`
+
+Source line 587: `*` → `$*$`. Context: `> An identity element for a binary operation * as described by Definition 3.12 is sometimes referred to as "a two-sided identity el`
+
+Source line 589: `*` → `$*$`. Context: `> b. a right identity element $e_{R}$ for *.`
+
+Source line 590: `*` → `$*$`. Context: `> Theorem 3.13 shows that if a two-sided identity element for * exists, it is unique. Is the same true for a one-sided identity element you just def`
