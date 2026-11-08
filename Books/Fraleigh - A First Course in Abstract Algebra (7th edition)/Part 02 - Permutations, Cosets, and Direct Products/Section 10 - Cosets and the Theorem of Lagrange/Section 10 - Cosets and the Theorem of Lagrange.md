@@ -12,7 +12,7 @@ from which the theorem follows immediately. The cells in the partition will be c
 Let $H$ be a subgroup of a group $G$, which may be of finite or infinite order. We exhibit two partitions of $G$ by defining two equivalence relations, $\sim_{L}$ and $\sim_{R}$ on $G$.
 Theorem 10.1
 
-> [!theorem] Equivalence Relations Defined by a Subgroup
+> [!theorem|1aaf284f-4c04-5d4e-94ad-60ff8037de97.local at=67d69714-7610-5094-bac8-ca8b261f2c69] Equivalence Relations Defined by a Subgroup
 > Let $H$ be a subgroup of $G$. Let the relation $\sim_{L}$ be defined on $G$ by
 >
 > $$
@@ -41,11 +41,11 @@ We show that $\sim_{L}$ is an equivalence relation, and leave the proof for $\si
 The equivalence relation $\sim_{L}$ in Theorem 10.1 defines a partition of $G$, as described in Theorem 0.22. Let's see what the cells in this partition look like. Suppose $a \in G$. The cell containing $a$ consists of all $x \in G$ such that $a \sim_{L} x$, which means all $x \in G$ such that $a^{-1} x \in H$. Now $a^{-1} x \in H$ if and only if $a^{-1} x=h$ for some $h \in H$, or equivalently, if and only if $x=a h$ for some $h \in H$. Therefore the cell containing $a$ is $\{a h \mid h \in H\}$, which we denote by $a H$. If we go through the same reasoning for the equivalence relation $\sim_{R}$ defined by $H$, we find the cell in this partition containing $a \in G$ is $H a=\{h a \mid h \in H\}$. Since $G$ need not be abelian, we have no reason to expect $a H$ and $H a$ to be the same subset of $G$. We give a formal definition.
 Definition 10.2
 
-> [!definition] Left and Right Cosets
+> [!definition|5595f479-f086-5515-b299-0bf40b1cc58f.local at=59c792a6-d0eb-5fd1-9fc9-6d3ff1ae6c9e] Left and Right Cosets
 > Let $H$ be a subgroup of a group $G$. Let $a\in G$. The subset $a H=\{a h \mid h \in H\}$ of $G$ is the left coset of $H$ containing $a$, while the subset $H a=\{h a \mid h \in H\}$ is the right coset of $H$ containing $a$.
 
 
-> [!example] Example 10.3
+> [!example|26fd7b8f-6bd7-5585-96f1-3165efbdea5b.local at=12bae235-bb4c-5540-8b9c-1e9cb810b3a0] Example 10.3
 > Exhibit the left cosets and the right cosets of the subgroup $3 \mathbb{Z}$ of $\mathbb{Z}$.
 
 ##### solution
@@ -74,13 +74,13 @@ Since $\mathbb{Z}$ is abelian, the left coset $m+3 \mathbb{Z}$ and the right cos
 
 We observe two things from Example 10.3.
 
-> [!property] Left and Right Cosets in an Abelian Group
+> [!property|f0f03121-5bbf-5e42-bd1d-5506e9732ef0.local at=3a3330ef-7baa-5d89-91fc-132166ad4dac] Left and Right Cosets in an Abelian Group
 > For a subgroup $H$ of an abelian group $G$, the partition of $G$ into left cosets of $H$ and the partition into right cosets are the same.
 
 
 
 Also, looking back at Examples 0.17 and 0.20, we see that the equivalence relation $\sim_{R}$ for the subgroup $n \mathbb{Z}$ of $\mathbb{Z}$ is the same as the relation of congruence modulo $n$. Recall that $h \equiv k(\bmod n)$ in $\mathbb{Z}$ if $h-k$ is divisible by $n$. This is the same as saying that $h+(-k)$ is in $n \mathbb{Z}$, which is relation $\sim_{R}$ of Theorem 10.1 in additive notation. Thus the partition of $\mathbb{Z}$ into cosets of $n \mathbb{Z}$ is the partition of $\mathbb{Z}$ into residue classes modulo $n$. For that reason, we often refer to the cells of this partition as cosets modulo $n \mathbb{Z}$. Note that we do not have to specify left or right cosets since they are the same for this abelian group $\mathbb{Z}$.
-> [!example] Example 10.4
+> [!example|774997c7-ffc6-5a22-9db7-a477a5008a6d.local at=776570a8-855a-5684-a8ac-3bcdf5fcf00c] Example 10.4
 > The group $\mathbb{Z}_{6}$ is abelian. Find the partition of $\mathbb{Z}_{6}$ into cosets of the subgroup $H=\{0,3\}$.
 
 ##### solution
@@ -312,7 +312,7 @@ style: scientific
 ```
 
 
-> [!example] Example 10.7
+> [!example|2497ee97-c16a-5735-98b4-01600aa1f191.local at=243deaa3-7bfb-5005-b7e2-ce9f5e6b3a84] Example 10.7
 > Table 10.8 again shows Table 8.8 for the symmetric group $S_{3}$ on three letters. Let $H$ be the subgroup $\left\langle\mu_{1}\right\rangle=\left\{\rho_{0}, \mu_{1}\right\}$ of $S_{3}$. Find the partitions of $S_{3}$ into left cosets of $H$, and the partition into right cosets of $H$.
 
 ##### solution
@@ -689,7 +689,7 @@ Our choice for a one-to-one map $\phi: H \rightarrow g H$ is the natural one. Le
 
 Of course, a similar one-to-one map of $H$ onto the right coset $H g$ can be constructed. (See Exercise 27.) We summarize as follows:
 
-> [!property] Cardinality of a Coset
+> [!property|3f668742-b6e5-547e-9aa0-369a28edfce2.local at=546a114b-b4d5-5844-a7c6-85f7e06b7071] Cardinality of a Coset
 > Every coset (left or right) of a subgroup $H$ of a group $G$ has the same number of elements as $H$.
 
 
@@ -697,7 +697,7 @@ Of course, a similar one-to-one map of $H$ onto the right coset $H g$ can be con
 We can now prove the theorem of Lagrange.
 Theorem 10.10
 
-> [!theorem] Theorem of Lagrange
+> [!theorem|3313a481-86fd-5d0c-9646-0bacb3d0a88c.local at=556785fc-d253-5b58-a079-661312f54005] Theorem of Lagrange
 > Let $H$ be a subgroup of a finite group $G$. Then the order of $H$ is a divisor of the order of $G$.
 
 
@@ -709,7 +709,7 @@ Let $n$ be the order of $G$, and let $H$ have order $m$. The preceding boxed sta
 Note that this elegant and important theorem comes from the simple counting of cosets and the number of elements in each coset. Never underestimate results that count something! We continue to derive consequences of Theorem 10.10, which should be regarded as a counting theorem.
 Corollary 10.11
 
-> [!corollary] Groups of Prime Order Are Cyclic
+> [!corollary|5b14dd72-6bb6-5879-89ca-b5b044bbb070.local at=e85fa480-fc19-5b9c-bdfc-6c0a0e402e80] Groups of Prime Order Are Cyclic
 > Every group of prime order is cyclic.
 
 
@@ -721,7 +721,7 @@ Let $G$ be of prime order $p$, and let $a$ be an element of $G$ different from t
 Since every cyclic group of order $p$ is isomorphic to $\mathbb{Z}_{p}$, we see that there is only one group structure, up to isomorphism, of a given prime order $p$. Now doesn't this elegant result follow easily from the theorem of Lagrange, a counting theorem? Never underestimate a theorem that counts something. Proving the preceding corollary is a favorite examination question.
 Theorem 10.12
 
-> [!theorem] Element Order Divides Group Order
+> [!theorem|4720f2a0-7b2f-5ac4-a455-3b8d925e1ef8.local at=99bb74dc-ccc5-51a1-a2d8-5be3a5de50e1] Element Order Divides Group Order
 > The order of an element of a finite group divides the order of the group.
 
 
@@ -731,7 +731,7 @@ Theorem 10.12
 Remembering that the order of an element is the same as the order of the cyclic subgroup generated by the element, we see that this theorem follows directly from Theorem 10.10. $\square$
 Definition 10.13
 
-> [!definition] Index of a Subgroup
+> [!definition|5fc43e06-d541-5328-94c9-64d6cd092efc.local at=ed6e993d-c2b4-5137-9b5e-5144cb42940a] Index of a Subgroup
 > Let $H$ be a subgroup of a group $G$. The number of left cosets of $H$ in $G$ is the index $(G: H)$ of $H$ in $G$.
 
 
@@ -739,7 +739,7 @@ Definition 10.13
 The index $(G: H)$ just defined may be finite or infinite. If $G$ is finite, then obviously $(G: H)$ is finite and $(G: H)=|G| /|H|$, since every coset of $H$ contains $|H|$ elements. Exercise 35 shows the index $(G: H)$ could be equally well defined as the number of right cosets of $H$ in $G$. We state a basic theorem concerning indices of subgroups, and leave the proof to the exercises (see Exercise 38).
 Theorem 10.14
 
-> [!theorem] Multiplicativity of Subgroup Index
+> [!theorem|1adb37cf-0a87-5798-b974-ae5c9b9b732f.local at=a06a0a75-857f-5665-a470-47e90fbcc516] Multiplicativity of Subgroup Index
 > Suppose $H$ and $K$ are subgroups of a group $G$ such that $K \leq H \leq G$, and suppose $(H: K)$ and $(G: H)$ are both finite. Then $(G: K)$ is finite, and $(G: K)=(G: H)(H: K)$.
 >
 > The number of left cosets of $H$ in $G$ is the index $(G:H)$ of $H$ in $G$.
@@ -752,64 +752,64 @@ Theorem 10.10 shows that if there is a subgroup $H$ of a finite group $G$, then 
 
 ### Computations
 
-> [!exercise] Exercise 10.1
+> [!exercise|a9fa81de-9c6c-5e41-9925-f4278523ffdd.local at=6eff4e23-c4a9-5b91-b2eb-fca4f139e673] Exercise 10.1
 > Find all cosets of the subgroup $4 \mathbb{Z}$ of $\mathbb{Z}$.
 
-> [!exercise] Exercise 10.2
+> [!exercise|4ed191a4-49d7-5b72-97a5-a372a756304a.local at=f7749080-9863-5296-9b9c-00132101b986] Exercise 10.2
 > Find all cosets of the subgroup $4 \mathbb{Z}$ of $2 \mathbb{Z}$.
 
-> [!exercise] Exercise 10.3
+> [!exercise|e05dc2dd-51fd-578b-a894-aa1fcdda2c72.local at=e5d8305b-c063-57a5-8eca-db49457a9ded] Exercise 10.3
 > Find all cosets of the subgroup $\langle 2\rangle$ of $\mathbb{Z}_{12}$.
 
-> [!exercise] Exercise 10.4
+> [!exercise|af0f4ec1-6777-599f-8a83-98cd4eebe35e.local at=7f13e1b1-ebb6-55cd-899b-c232562ac18b] Exercise 10.4
 > Find all cosets of the subgroup $\langle4\rangle$ of $\mathbb{Z}_{12}$.
 
-> [!exercise] Exercise 10.5
+> [!exercise|04a3c6a5-bd9b-598e-b1be-3a48a7f9f51c.local at=76c823fb-b293-54b8-8d09-a93e7d56bb83] Exercise 10.5
 > Find all cosets of the subgroup $\langle18\rangle$ of $\mathbb{Z}_{36}$.
 
-> [!exercise] Exercise 10.6
+> [!exercise|560ab16d-09ee-55d4-9a69-2fec228cd774.local at=6bfcfda8-cc77-5648-8baa-a1749812be80] Exercise 10.6
 > Find all left cosets of the subgroup $\left\{\rho_{0}, \mu_{2}\right\}$ of the group $D_{4}$ given by Table 8.12.
 
-> [!exercise] Exercise 10.7
+> [!exercise|fcfa5fdf-11ea-507d-a300-7fbddf616410.local at=5f224fa0-e130-5208-a4bc-89f6e6689db7] Exercise 10.7
 > Repeat the preceding exercise, but find the right cosets this time. Are they the same as the left cosets?
 
-> [!exercise] Exercise 10.8
+> [!exercise|f2c827e2-efc1-5021-8039-f1a3603f017e.local at=f83c8687-cdde-5f44-82fc-01fd46451e82] Exercise 10.8
 > Rewrite Table 8.12 in the order exhibited by the left cosets in Exercise 6. Do you seem to get a coset group of order 4? If so, is it isomorphic to $\mathbb{Z}_{4}$ or to the Klein 4-group $V$ ?
 
-> [!exercise] Exercise 10.9
+> [!exercise|b02f5dcd-f63e-5d7d-b29a-a0c97089417f.local at=78e9680e-991e-58e2-bfef-01d526d46069] Exercise 10.9
 > Repeat Exercise 6 for the subgroup $\left\{\rho_{0}, \rho_{2}\right\}$ of $D_{4}$.
 
-> [!exercise] Exercise 10.10
+> [!exercise|0849dc2b-feff-56de-9771-e672615ee013.local at=5bb60e32-2b89-5e4c-a0f1-46ca25ee6255] Exercise 10.10
 > Repeat the preceding exercise, but find the right cosets this time. Are they the same as the left coset?
 
-> [!exercise] Exercise 10.11
+> [!exercise|5267d219-89c1-5d1d-ae7b-60181297fe07.local at=c34b199c-31ba-564a-8aa0-7e15f136dbff] Exercise 10.11
 > Rewrite Table 8.12 in the order exhibited by the left cosets in Exercise 9. Do you seem to get a coset group of order 4? If so, is it isomorphic to $\mathbb{Z}_{4}$ or to the Klein 4-group $V$ ?
 
-> [!exercise] Exercise 10.12
+> [!exercise|2bcabdb7-4dd6-50fb-92c7-a5fe3011a95b.local at=42f9cc09-e664-5705-81c1-b67a792e41a4] Exercise 10.12
 > Find the index of $\langle3\rangle$ in the group $\mathbb{Z}_{24}$.
 
-> [!exercise] Exercise 10.13
+> [!exercise|78d0841e-28ad-5186-ab3f-7d9596b198d8.local at=e9dbaf45-63b8-5fc0-860d-2e68651eca59] Exercise 10.13
 > Find the index of $\left\langle\mu_{1}\right\rangle$ in the group $S_{3}$, using the notation of Example 10.7
 
-> [!exercise] Exercise 10.14
+> [!exercise|d861f4a6-6e1b-55d8-a12e-c70861763615.local at=e04ac7b1-e9e7-53ff-aa6d-3a943b4a5e45] Exercise 10.14
 > Find the index of $\left\langle\mu_{2}\right\rangle$ in the group $D_{4}$ given in Table 8.12
 
-> [!exercise] Exercise 10.15
+> [!exercise|26d1a05b-d557-574c-ab8d-182f38ced0d5.local at=3157a89f-0476-5a5e-873c-a845c8bfb594] Exercise 10.15
 > Let $\sigma=(1,2,5,4)(2,3)$ in $S_{5}$. Find the index of $\langle\sigma\rangle$ in $S_{5}$.
 
-> [!exercise] Exercise 10.16
+> [!exercise|5d4e1855-82d8-5293-b810-fe903f2bf2d5.local at=61b0f29f-8b5f-57cd-a53a-4d9ad3dcd467] Exercise 10.16
 > Let $\mu=(1,2,4,5)(3,6)$ in $S_{6}$. Find the index of $\langle\mu\rangle$ in $S_{6}$.
 
 ## Concepts
 In Exercises 17 and 18, correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
 
-> [!exercise] Exercise 10.17
+> [!exercise|54c06177-31c5-5de3-8be9-13b1f7efabf2.local at=289151b2-00c3-5262-9c04-19f09cf54ac5] Exercise 10.17
 > Let $G$ be a group and let $H \subseteq G$. The left coset of $H$ containing $a$ is $a H=\{a h \mid h \in H\}$.
 
-> [!exercise] Exercise 10.18
+> [!exercise|2a1b89c7-6d5b-5238-9c4c-9b34affce625.local at=9f1af7b4-5f82-5464-9105-f0ecec65fb85] Exercise 10.18
 > Let $G$ be a group and let $H \leq G$. The index of $H$ in $G$ is the number of right cosets of $H$ in $G$.
 
-> [!exercise] Exercise 10.19
+> [!exercise|a7227157-aa01-5400-912e-87411a96d5fc.local at=24aa1d0e-e56d-5deb-b48d-344871c0b321] Exercise 10.19
 > Mark each of the following true or false.
 >
 >
@@ -835,93 +835,93 @@ In Exercises 17 and 18, correct the definition of the italicized term without re
 
 In Exercises 20 through 24, give an example of the desired subgroup and group if possible. If impossible, say why it is impossible.
 
-> [!exercise] Exercise 10.20
+> [!exercise|f26913ca-c82b-5be3-add6-cc7d2d2f6a2a.local at=798cdee5-957a-5558-aa6f-82316726e00d] Exercise 10.20
 > A subgroup of an abelian group $G$ whose left cosets and right cosets give different partitions of $G$
 
-> [!exercise] Exercise 10.21
+> [!exercise|8eba0064-31a5-5413-9063-83d352619948.local at=5ed0c017-3d69-510a-9051-20390e268b2d] Exercise 10.21
 > A subgroup of a group $G$ whose left cosets give a partition of $G$ into just one cell
 
-> [!exercise] Exercise 10.22
+> [!exercise|56441939-9bf8-5df2-9f13-a7472f317bf3.local at=762be533-dc16-5b61-9cfa-ce0c0fdbc4b6] Exercise 10.22
 > A subgroup of a group of order 6 whose left cosets give a partition of the group into 6 cells
 
-> [!exercise] Exercise 10.23
+> [!exercise|acc0e203-89d9-5868-a03f-b0876669d735.local at=54c84a6e-c09e-5f82-ae6e-3f06c23ba9a3] Exercise 10.23
 > A subgroup of a group of order 6 whose left cosets give a partition of the group into 12 cells
 
-> [!exercise] Exercise 10.24
+> [!exercise|695c2073-55cb-560b-8e91-03d244456302.local at=b935ab97-4297-5cd8-88f2-c59063a8c298] Exercise 10.24
 > A subgroup of a group of order 6 whose left cosets give a partition of the group into 4 cells
 
 ## Proof Synopsis
 
-> [!exercise] Exercise 10.25
+> [!exercise|6337c4d7-5e82-57e1-a4f1-e8b5b16a0d4a.local at=ab7e5c35-ce6b-542e-b14e-b0b95c577891] Exercise 10.25
 > Give a one-sentence synopsis of the proof of Theorem 10.10.
 
 ## Theory
 
-> [!exercise] Exercise 10.26
+> [!exercise|2611b131-75c5-54f1-9480-49b1fc3afd2b.local at=bc1cf2ee-38a0-5cda-900e-cebf9fccb21c] Exercise 10.26
 > Prove that the relation $\sim_{R}$ of Theorem 10.1 is an equivalence relation.
 
-> [!exercise] Exercise 10.27
+> [!exercise|95550a8d-f5b2-52f3-83d9-2d8db73e7b5e.local at=99528c74-2511-55fd-9d12-5fed2bf9d379] Exercise 10.27
 > Let $H$ be a subgroup of a group $G$ and let $g \in G$. Define a one-to-one map of $H$ onto $H g$. Prove that your map is one to one and is onto $H g$.
 
-> [!exercise] Exercise 10.28
+> [!exercise|d8e33a07-2b5b-5f0f-9221-843085ed500d.local at=fcf84cda-2049-5ea8-adff-4d06d772efec] Exercise 10.28
 > Let $H$ be a subgroup of a group $G$ such that $g^{-1} h g \in H$ for all $g \in G$ and all $h \in H$. Show that every left coset $g H$ is the same as the right coset $H g$.
 
-> [!exercise] Exercise 10.29
+> [!exercise|31b1667b-5371-56f0-be61-e66af63612ee.local at=17482eed-9e24-5d7d-920c-ccba5c542d5c] Exercise 10.29
 > Let $H$ be a subgroup of a group $G$. Prove that if the partition of $G$ into left cosets of $H$ is the same as the partition into right cosets of $H$, then $g^{-1} h g \in H$ for all $g \in G$ and all $h \in H$. (Note that this is the converse of Exercise 28.)
 
 Let $H$ be a subgroup of a group $G$ and let $a, b \in G$. In Exercises 30 through 33 prove the statement or give a counterexample.
 
-> [!exercise] Exercise 10.30
+> [!exercise|43ffc5e6-a8c7-573b-8e46-c03666d2c798.local at=cad4a90f-9c6b-54c2-a680-39fefb05f168] Exercise 10.30
 > If $a H=b H$, then $H a=H b$.
 
-> [!exercise] Exercise 10.31
+> [!exercise|11fcfba3-f3c3-5dff-98f8-8faa3c5b9147.local at=e25396d0-bb18-5046-898a-13dcf1ddb342] Exercise 10.31
 > If $H a=H b$, then $b \in H a$.
 
-> [!exercise] Exercise 10.32
+> [!exercise|bcf90165-7171-544e-bfbf-187d340131b9.local at=872e959f-2e9d-5f2b-92bb-6b9c4368d8f1] Exercise 10.32
 > If $a H=b H$, then $H a^{-1}=H b^{-1}$.
 
-> [!exercise] Exercise 10.33
+> [!exercise|c9de4dbc-ffbb-5e61-bf2b-ae99b2f71b47.local at=cf8822a9-6bdf-538f-82e8-f4e889f6556e] Exercise 10.33
 > If $a H=b H$, then $a^{2} H=b^{2} H$.
 
-> [!exercise] Exercise 10.34
+> [!exercise|de0261b6-e172-5c9d-b9d2-ab3d9b1dad37.local at=61991887-8d73-515c-b268-cf1ca990e8e6] Exercise 10.34
 > Let $G$ be a group of order $p q$, where $p$ and $q$ are prime numbers. Show that every proper subgroup of $G$ is cyclic.
 
-> [!exercise] Exercise 10.35
+> [!exercise|c249724a-a63f-5b06-9b0d-0425a1198053.local at=e232f877-89e7-52d0-bb6e-330c4bb94664] Exercise 10.35
 > Show that there are the same number of left as right cosets of a subgroup $H$ of a group $G$; that is, exhibit a one-to-one map of the collection of left cosets onto the collection of right cosets. (Note that this result is obvious by counting for finite groups. Your proof must hold for any group.)
 
-> [!exercise] Exercise 10.36
+> [!exercise|87f6f0be-230a-5d8c-bc17-11177bfefc23.local at=514e86eb-af80-5714-a8a6-1673ff88920d] Exercise 10.36
 > Exercise 29 of Section 4 showed that every finite group of even order $2 n$ contains an element of order 2. Using the theorem of Lagrange, show that if $n$ is odd, then an abelian group of order $2 n$ contains precisely one element of order 2.
 
-> [!exercise] Exercise 10.37
+> [!exercise|de7b6840-4496-50e1-8c2f-9826275b00b0.local at=db7f0308-73a8-589f-b37d-5db5d7d2f0ff] Exercise 10.37
 > Show that a group with at least two elements but with no proper nontrivial subgroups must be finite and of prime order.
 
-> [!exercise] Exercise 10.38
+> [!exercise|598441cc-8832-538f-96a8-87b3674fcce9.local at=19f0464e-5c46-5e3d-a880-a55b891e905a] Exercise 10.38
 > Prove Theorem 10.14 [Hint: Let $\left\{a_{i} H \mid i=1, \cdots, r\right\}$ be the collection of distinct left cosets of $H$ in $G$ and $\left\{b_{j} K \mid j=1, \cdots, s\right\}$ be the collection of distinct left cosets of $K$ in $H$. Show that
 > $$
 > \left\{\left(a_{i} b_{j}\right) K \mid i=1, \cdots, r ; j=1, \cdots, s\right\}
 > $$
 > is the collection of distinct left cosets of $K$ in $G$.]
 
-> [!exercise] Exercise 10.39
+> [!exercise|4f3672d1-54d8-554d-a0da-d08656547f14.local at=0d9ce74e-6bfd-5bdd-98fe-1ad905abe3df] Exercise 10.39
 > Show that if $H$ is a subgroup of index 2 in a finite group $G$, then every left coset of $H$ is also a right coset of $H$.
 
-> [!exercise] Exercise 10.40
+> [!exercise|29e738a0-9ad3-5324-8d2e-98c84f590530.local at=2a1b73a9-a0b2-51c9-9028-f094c8bba672] Exercise 10.40
 > Show that if a group $G$ with identity $e$ has finite order $n$, then $a^{n}=e$ for all $a \in G$.
 
-> [!exercise] Exercise 10.41
+> [!exercise|4e7f957a-3ad5-526e-bb07-580b650dfd35.local at=39231c67-7b80-503e-86d7-d651b2c73879] Exercise 10.41
 > Show that every left coset of the subgroup $\mathbb{Z}$ of the additive group of real numbers contains exactly one element $x$ such that $0 \leq x<1$.
 
-> [!exercise] Exercise 10.42
+> [!exercise|7ef33d30-c9d6-585e-a660-4b815a56d676.local at=389f783b-b96f-5900-b014-0cff3b817a40] Exercise 10.42
 > Show that the function sine assigns the same value to each element of any fixed left coset of the subgroup $\langle 2 \pi\rangle$ of the additive group $\mathbb{R}$ of real numbers. (Thus sine induces a well-defined function on the set of cosets; the value of the function on a coset is obtained when we choose an element $x$ of the coset and compute $\sin x$.)
 
-> [!exercise] Exercise 10.43
+> [!exercise|39d3190c-bb0a-5b07-9c59-22142ae7956b.local at=96f7d38a-f379-50e5-ac46-1a7c0ec16ca4] Exercise 10.43
 > Let $H$ and $K$ be subgroups of a group $G$. Define $\sim$ on $G$ by $a \sim b$ if and only if $a=h b k$ for some $h \in H$ and some $k \in K$.
 >
 > a. Prove that $\sim$ is an equivalence relation on $G$.
 >
 > b. Describe the elements in the equivalence class containing $a \in G$. (These equivalence classes are called double cosets.)
 
-> [!exercise] Exercise 10.44
+> [!exercise|84d4b7f7-9a59-5573-907f-e86c9a6f72ab.local at=5a4d0063-0942-5eff-b5cf-677b12227c29] Exercise 10.44
 > Let $S_{A}$ be the group of all permutations of the set $A$, and let $c$ be one particular element of $A$.
 >
 > a. Show that $\left\{\sigma \in S_{A} \mid \sigma(c)=c\right\}$ is a subgroup $S_{c,c}$ of $S_{A}$.
@@ -930,15 +930,15 @@ Let $H$ be a subgroup of a group $G$ and let $a, b \in G$. In Exercises 30 throu
 >
 > c. Characterize the set $S_{c,d}$ of part (b) in terms of the subgroup $S_{c,c}$ of part (a).
 
-> [!exercise] Exercise 10.45
+> [!exercise|7aa24d47-3c1e-559c-bcb7-3264b7581c37.local at=ea42d4e1-d212-58a2-bfc1-c4ccf9b81131] Exercise 10.45
 > Show that a finite cyclic group of order $n$ has exactly one subgroup of each order $d$ dividing $n$, and that these are all the subgroups it has.
 
-> [!exercise] Exercise 10.46
+> [!exercise|fdfeff0c-167e-5c8f-9b84-a4a699160252.local at=4cc38da4-233c-5cae-8d6d-5001de9fb82c] Exercise 10.46
 > The Euler phi-function is defined for positive integers $n$ by $\varphi(n)=s$, where $s$ is the number of positive integers less than or equal to $n$ that are relatively prime to $n$. Use Exercise 45 to show that
 > $$
 > n=\sum_{d\mid n} \varphi(d),
 > $$
 > the sum being taken over all positive integer $d$ dividing $n$. [Hint: Note that the number of generators of $\mathbb{Z}_{d}$ is $\varphi(d)$ by Corollary 6.16.]
 
-> [!exercise] Exercise 10.47
+> [!exercise|115495f7-b10e-59e0-88e7-738ecc5a17df.local at=902d8640-2234-59dc-886b-0aa1ad7210ef] Exercise 10.47
 > Let $G$ be a finite group. Show that if for each positive integer $m$ the number of solutions $x$ of the equation $x^{m}=e$ in $G$ is at most $m$, then $G$ is cyclic. [Hint: Use Theorem 10.12 and Exercise 46 to show that $G$ must contain an element of order $n=|G|$.]
