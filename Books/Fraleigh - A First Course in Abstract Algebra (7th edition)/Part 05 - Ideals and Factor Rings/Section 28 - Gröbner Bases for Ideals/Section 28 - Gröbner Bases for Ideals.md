@@ -9,11 +9,11 @@ Let $F$ be a field. Recall that $F\left[x_{1}, x_{2}, \cdots, x_{n}\right]$ is t
 In this section we discuss the problem of finding common zeros in $F^{n}$ of a finite number of polynomials $f_{1}, f_{2}, \cdots, f_{r}$ in $F[\mathbf{x}]$. Finding and studying geometric properties of the set of all these common zeros is the subject of algebraic geometry.
 Definition 28.1
 
-> [!definition] Algebraic Variety
+> [!definition|1cc08073-e17b-58c1-8cc5-13c5853b6c88.library at=f4519608-2912-5d11-96dc-e234345387ac] Algebraic Variety
 > Let $F$ be a field and $F[\mathbf{x}]=F[x_1,x_2,\cdots,x_n]$. Let $S$ be a finite subset of $F[\mathbf{x}]$. The algebraic variety $V(S)$ in $F^{n}$ is the set of all common zeros in $F^{n}$ of the polynomials in $S$.
 
 In our illustrative examples, which usually involve at most three indeterminates, we use $x, y, z$ in place of $x_{1}, x_{2}$, and $x_{3}$.
-> [!example] Example 28.2
+> [!example|ce9119d2-c76d-5305-a938-9b820cc9a5a7.local at=a35f29b7-a493-56d2-9078-da635ee534a7] Example 28.2
 > Let $S=\{2x+y-2\}\subset\mathbb R[x,y]$. Describe the algebraic variety $V(S)$ in $\mathbb R^2$.
 
 ##### solution
@@ -28,13 +28,13 @@ $$
 is an ideal of $R$. We denote this ideal by $\left\langle f_{1}, f_{2}, \cdots, f_{r}\right\rangle$. We are interested in the case $R=F[\mathbf{x}]$ where all the $c_{i}$ and all the $f_{i}$ are polynomials in $F[\mathbf{x}]$. We regard the $c_{i}$ as "coefficient polynomials." By its construction, this ideal $I$ is the smallest ideal containing the polynomials $f_{1}, f_{2}, \cdots, f_{r}$; it can also be described as the intersection of all ideals containing these $r$ polynomials.
 Definition 28.3
 
-> [!definition] Basis for an Ideal
+> [!definition|dec80e58-c407-5255-874d-2988e00c73d2.library at=85fa5f0a-ddaf-548a-9fbe-f0924d2df189] Basis for an Ideal
 > Let $I$ be an ideal in a commutative ring $R$ with unity. A subset $\left\{b_{1}, b_{2}, \cdots, b_{r}\right\}$ of $I$ is a basis for $I$ if $I=\left\langle b_{1}, b_{2}, \cdots, b_{r}\right\rangle$.
 
 Unlike the situation in linear algebra, there is no requirement of independence for elements of a basis, or of unique representation of an ideal member in terms of a basis.
 Theorem 28.4
 
-> [!theorem] Common Zeros of Generators and Their Ideal
+> [!theorem|3638396e-d4f1-5e20-9a0d-278565adbaa8.library at=49f52a1a-9230-5ba2-8664-0f5373087b03] Common Zeros of Generators and Their Ideal
 > Let $F$ be a field and $F[\mathbf{x}]=F[x_1,x_2,\cdots,x_n]$. Let $f_{1}, f_{2}, \cdots, f_{r} \in F[\mathbf{x}]$. The set of common zeros in $F^{n}$ of the polynomials $f_{i}$ for $i=1,2, \cdots, r$ is the same as the set of common zeros in $F^{n}$ of all the polynomials in the entire ideal $I=\left\langle f_{1}, f_{2}, \cdots, f_{r}\right\rangle$.
 
 ##### proof
@@ -67,7 +67,7 @@ $$
 We state without proof the Hilbert Basis Theorem. (See Adams and Loustaunau [23].)
 Theorem 28.5
 
-> [!theorem] Hilbert Basis Theorem
+> [!theorem|055ce1c3-e7d7-59a0-8253-1e9bd34fb4ba.library at=4221dcbc-78b1-542f-b3ea-af503b984434] Hilbert Basis Theorem
 > Let $F$ be a field and $F[\mathbf{x}]=F[x_1,x_2,\cdots,x_n]$. Every ideal in $F\left[x_{1}, x_{2}, \cdots, x_{n}\right]$ has a finite basis.
 
 **Our objective:** Given a basis for an ideal $I$ in $F[\mathbf{x}]$, modify it if possible to become a basis that better exhibits the structure of $I$ and the geometry of the associated algebraic variety $V(I)$.
@@ -75,7 +75,7 @@ Theorem 28.5
 The theorem that follows provides a tool for this task. You should notice that the theorem gives information about the division algorithm that we did not mention in Theorem 23.1. We use the same notation here as in Theorem 23.1, but with $\mathbf{x}$ rather than $x$. If $f(\mathbf{x})=g(\mathbf{x}) h(\mathbf{x})$ in $F[\mathbf{x}]$, then $g(\mathbf{x})$ and $h(\mathbf{x})$ are called "divisors" or "factors" of $f(\mathbf{x})$.
 Theorem 28.6
 
-> [!theorem] Property of the Division Algorithm
+> [!theorem|1b585357-c03d-5f38-a354-f195305ca9f9.library at=14099728-83b8-5c6b-a5d7-cefcaab758ca] Property of the Division Algorithm
 > Let $F$ be a field and $F[\mathbf{x}]=F[x_1,x_2,\cdots,x_n]$. Let $f(\mathbf{x}), g(\mathbf{x}), q(\mathbf{x})$ and $r(\mathbf{x})$ be polynomials in $F[\mathbf{x}]$ such that $f(\mathbf{x})=g(\mathbf{x}) q(\mathbf{x})+r(\mathbf{x})$. The common zeros in $F^{n}$ of $f(\mathbf{x})$ and $g(\mathbf{x})$ are the same as the common zeros of $g(\mathbf{x})$ and $r(\mathbf{x})$. Also the common divisors in $F[\mathbf{x}]$ of $f(\mathbf{x})$ and $g(\mathbf{x})$ are the same as the common divisors of $g(\mathbf{x})$ and $r(\mathbf{x})$.
 >
 > If $f(\mathbf{x})$ and $g(\mathbf{x})$ are two members of a basis for an ideal $I$ of $F[\mathbf{x}]$, then replacement of $f(\mathbf{x})$ by $r(\mathbf{x})$ in the basis still yields a basis for $I$.
@@ -90,7 +90,7 @@ Finally, let $B$ be a basis for an ideal $I$, let $f(\mathbf{x}),g(\mathbf{x})\i
 ## A Familiar Linear Illustration
 
 A basic technique for problem solving in linear algebra is finding all common solutions of a finite number of linear equations. For the moment we abandon our practice of never writing " $f(\mathbf{x})=0$ " for a nonzero polynomial, and work a typical problem as we do in a linear algebra course.
-> [!example] Example 28.7 — Solution as in a Linear Algebra Course
+> [!example|ec1f6b98-a3f0-5565-b3b6-d98495d981f9.local at=5db2f417-371d-5e9d-8ff2-b6f026e1487a] Example 28.7 — Solution as in a Linear Algebra Course
 > Find all solutions in $\mathbb{R}^{3}$ of the linear system
 >
 > $$
@@ -141,7 +141,7 @@ Thus $2 x+y+z+5=(x+y-3 z-8)(2)+(-y+7 z+21)$, an expression of the form $f(x, y, 
 ## A Single Indeterminate Illustration
 
 Suppose now that we want to find the variety $V(I)$ in $\mathbb{R}$ associated with an ideal $I$ in $F[x]$, the ring of polynomials in the single indeterminate $x$. By Theorem 27.24, every ideal in $F[x]$ is principal, so there exists $f(x) \in F[x]$ such that $I=\langle f(x)\rangle$. Thus $V(I)$ consists of the zeros of a single polynomial, and $\{f(x)\}$ is probably as simple a basis for $I$ as we could desire. We give an example illustrating computation of such a single generator $f(x)$ for $I$ in a case where the given basis for $I$ contains more than one polynomial. Because a polynomial in $\mathbb{R}[x]$ has only a finite number of zeros in $\mathbb{R}$, we expect two or more randomly selected polynomials in $\mathbb{R}[x]$ to have no common zeros, but we constructed the basis in our example carefully!
-> [!example] Example 28.8
+> [!example|d7637da9-3707-5400-8ca1-62d7fec8dcef.local at=078cfc92-2ffb-5b93-baaa-c224049608cd] Example 28.8
 > Let us describe the algebraic variety $V$ in $\mathbb{R}$ consisting of common zeros of
 >
 > $$
@@ -192,7 +192,7 @@ We tackle the problem of finding a nice basis for an ideal $I$ in $F[\mathbf{x}]
 
 Our polynomials in $F[\mathbf{x}]$ have terms of the form $a x_{1}^{m_{1}} x_{2}^{m_{2}} \cdots x_{n}^{m_{n}}$ where $a \in F$.
 
-> [!property] Properties for an Ordering of Power Products
+> [!property|925961d0-ad1e-5ef2-bf15-c3d1fc3be18c.library at=e1713992-7804-548c-bdd9-c74f56d2051e] Properties for an Ordering of Power Products
 > Let $F$ be a field and $F[\mathbf{x}]=F[x_1,x_2,\cdots,x_n]$. Let us consider a power product in $F[\mathbf{x}]$ to be an expression $P=x_1^{m_1}x_2^{m_2}\cdots x_n^{m_n}$ where all the $m_i\geq0$ in $\mathbb Z$.
 >
 > 1. $1<P$ for all power products $P \neq 1$.
@@ -213,7 +213,7 @@ In $F[x]$ with $x$ the only indeterminate, there is only one power product order
 
 There are a number of possible orderings for power products in $F[\mathbf{x}]$ with $n$ indeterminates. We present just one, the lexicographical order (denoted by "lex"). Equation (2)
 
-> [!definition] Lexicographical Order of Power Products
+> [!definition|78b55bba-d27c-5b2c-931e-0012ac820e65.library at=78670a6a-99aa-5ed2-bf0f-dc77de186bc4] Lexicographical Order of Power Products
 > For power products in $F[x_1,x_2,\cdots,x_n]$, where $F$ is a field: In lex, we define
 >
 > $$
@@ -229,7 +229,7 @@ $$
 $$
 
 An ordering of power products $P$ induces an obvious ordering of terms $a P$ of a polynomial in $F[\mathbf{x}]$, which we will refer to as a term order. From now on, given an ordering of power products, we consider every polynomial $f$ in $F[\mathbf{x}]$ to be written in decreasing order of terms, so that the leading (first) term has the highest order. We denote by $\mathrm{lt}(f)$ the leading term of $f$ and by $\mathrm{lp}(f)$ the power product of the leading term. If $f$ and $g$ are polynomials in $F[\mathbf{x}]$ such that $\mathrm{lp}(g)$ divides $\mathrm{lp}(f)$, then we can execute a division of $f$ by $g$, as illustrated in the linear and one-indeterminate cases, to obtain $f(\mathbf{x})=g(\mathbf{x}) q(\mathbf{x})+r(\mathbf{x})$ where $\mathrm{lp}(r)<\mathrm{lp}(f)$. Note that we did not say that $\mathrm{lp}(r)<\mathrm{lp}(g)$. We illustrate with an example.
-> [!example] Example 28.9
+> [!example|8ece437b-3f3f-5012-91a1-58c03079a9be.local at=c8b06b82-cca0-55f4-b1d6-416ed0cf606c] Example 28.9
 > By division, reduce the basis $\left\{x y^{2}, y^{2}-y\right\}$ for the ideal $I=\left\langle x y^{2}, y^{2}-y\right\rangle$ in $\mathbb{R}[x, y]$ to one with smaller maximum term size, assuming the order lex with $y<x$.
 
 ##### solution
@@ -252,13 +252,13 @@ When dealing with more than one indeterminate, it is often easier to perform bas
 Referring again to Example 28.9, it will follow from what we state later that given any polynomial $f(x, y)=c_{1}(x, y)(x y)+c_{2}(x, y)\left(y^{2}-y\right)$ in $\left\langle x y, y^{2}-y\right\rangle$, either $x y$ or $y^{2}$ will divide $\mathrm{lp}(f)$. (See Exercises 31.) This illustrates the defining property of a Gröbner basis.
 Definition 28.10
 
-> [!definition] Gröbner Basis
+> [!definition|37764c03-4318-5b08-ac1a-8b30a5410fad.library at=4e29f6d8-ec4c-5ad2-bd21-1626381899df] Gröbner Basis
 > Let $F$ be a field and $F[\mathbf{x}]=F[x_1,x_2,\cdots,x_n]$. A set $\left\{g_{1}, g_{2}, \cdots, g_{r}\right\}$ of nonzero polynomials in $F\left[x_{1}, x_{2}, \cdots, x_{n}\right]$, with term ordering <, is a Gröbner basis for the ideal $I=\left\langle g_{1}, g_{2}, \cdots, g_{r}\right\rangle$ if and only if, for each nonzero $f \in I$, there exists some $i$ where $1 \leq i \leq r$ such that $\mathrm{lp}\left(g_{i}\right)$ divides $\mathrm{lp}(f)$. We denote by $\mathrm{lp}(f)$ the power product of the leading term of $f$.
 
 While we have illustrated the computation of a Gröbner basis from a given basis for an ideal in Examples 28.7, 28.8, and 28.9, we have not given a specific algorithm. We refer the reader to Adams and Loustaunau [23]. The method consists of multiplying some polynomial in the basis by any polynomial in $F[\mathbf{x}]$ and adding the result to another polynomial in the basis in a manner that reduces the size of power products. In our illustrations, we have treated the case involving division of $f(\mathbf{x})$ by $g(\mathbf{x})$ where $\mathrm{lp}(g)$ divides $\mathrm{lp}(f)$, but we can also use the process if $\mathrm{lp}(g)$ only divides some other power product in $f$. For example, if two elements in a basis are $x y-y^{3}$ and $y^{2}-1$, we can multiply $y^{2}-1$ by $y$ and add it to $x y-y^{3}$, reducing $x y-y^{3}$ to $x y-y$. Theorem 28.6 shows that this is a valid computation.
 
 You may wonder how any basis $\left\{g_{1}, g_{2}, \cdots, g_{r}\right\}$ can fail to be a Gröbner basis for $I=\left\langle g_{1}, g_{2}, \cdots, g_{r}\right\rangle$ because, when we form an element $c_{1} g_{1}+c_{2} g_{2}+\cdots+c_{r} g_{r}$ in $I$, we see that $\mathrm{lp}\left(g_{i}\right)$ is a divisor of $\mathrm{lp}\left(c_{i} g_{i}\right)$ for $i=1,2, \cdots, r$. However, cancellation of power products can occur in the addition. We illustrate with an example.
-> [!example] Example 28.11
+> [!example|cc0cdf0b-36f8-5d69-a0b7-5530ce7d25d4.local at=419dba9e-2c18-53eb-9101-5b87486abc06] Example 28.11
 > For $I=\langle x^2y-2,xy^2-y\rangle$ in $\mathbb R[x,y]$, determine whether $\{x^2y-2,xy^2-y\}$ is a Gröbner basis, using lex with $y<x$.
 
 ##### solution
@@ -268,7 +268,7 @@ Consider the ideal $I=\left\langle x^{2} y-2, x y^{2}-y\right\rangle$ in $\mathb
 When we run into a situation like that in Example 28.11, we realize that a Gröbner basis must contain some polynomial with a smaller leading power product than those in the given basis. Let $f$ and $g$ be polynomials in the given basis. Just as we did in Example 28.11, we can multiply $f$ and $g$ by as small power products as possible so that the resulting two leading power products will be the same, the least common multiple (lcm) of $\mathrm{lp}(f)$ and $\mathrm{lp}(g)$, and then subtract or add with suitable coefficients from $F$ so cancellation results. We denote a polynomial formed in this fashion by $S(f, g)$. We state without proof a theorem that can be used to test whether a basis is a Gröbner basis.
 Theorem 28.12
 
-> [!theorem] Gröbner Basis Criterion
+> [!theorem|3f361397-6ad6-566c-8381-518b997240f5.library at=412529f9-7aef-565e-94c5-52a5118812b1] Gröbner Basis Criterion
 > Let $F$ be a field and $F[\mathbf{x}]=F[x_1,x_2,\cdots,x_n]$. With a term ordering fixed, Let $f$ and $g$ be polynomials in the given basis. We can multiply $f$ and $g$ by as small power products as possible so that the resulting two leading power products will be the same, the least common multiple (lcm) of $\mathrm{lp}(f)$ and $\mathrm{lp}(g)$, and then subtract or add with suitable coefficients from $F$ so cancellation results. We denote a polynomial formed in this fashion by $S(f,g)$.
 >
 > A basis $G=\left\{g_{1}, g_{2}, \cdots, g_{r}\right\}$ is a Gröbner basis for the ideal $\left\langle g_{1}, g_{2}, \cdots, g_{r}\right\rangle$ if and only if, for all $i \neq j$, the polynomial $S\left(g_{i}, g_{j}\right)$ can be reduced to zero by repeatedly dividing remainders by elements of $G$, as in the division algorithm.
@@ -276,7 +276,7 @@ Theorem 28.12
 As we mentioned before, we may prefer to think of reducing $S\left(g_{i}, g_{j}\right)$ by a sequence of operations consisting of adding (or subtracting) multiples of polynomials in $G$, rather than writing out division.
 
 We can now indicate how we can obtain a Gröbner basis from a given basis. First, reduce the polynomials in the basis as far as possible among themselves. Then choose polynomials $g_{i}$ and $g_{j}$ in the basis, and form the polynomial $S\left(g_{i}, g_{j}\right)$. See if $S\left(g_{i}, g_{j}\right)$ can be reduced to zero as just described. If so, choose a different pair of polynomials, and repeat the procedure with them. If $S\left(g_{i}, g_{j}\right)$ cannot be reduced to zero as described above, augment the given basis with this $S\left(g_{i}, g_{j}\right)$, and start all over, reducing this basis as much as possible. By Theorem 28.12, when every polynomial $S\left(g_{i}, g_{j}\right)$ for all $i \neq j$ can be reduced to zero using polynomials from the latest basis, we have arrived at a Gröbner basis. We conclude with a continuation of Example 28.11.
-> [!example] Example 28.13
+> [!example|5c349a92-5765-5813-b66a-1f48df6f361e.local at=46298aba-286e-53b5-aba5-5541543b7e83] Example 28.13
 > Let $g_1=x^2y-2$, $g_2=xy^2-y$, and $I=\langle g_1,g_2\rangle$ in $\mathbb R[x,y]$. Find a Gröbner basis for $I$ and describe $V(I)$ in $\mathbb R^2$, using lex with $y<x$.
 
 ##### solution
@@ -305,30 +305,30 @@ The importance of Gröbner bases in applications is due to the fact that they ar
 
 In Exercises 1 through 4, write the polynomials in $\mathbb{R}[x, y, z]$ in decreasing term order, using the order lex for power products $x^{m} y^{n} z^{s}$ where $z<y<x$.
 
-> [!exercise] Exercise 28.1
+> [!exercise|e9b0c277-d780-5862-a195-ae778f5ea207.local at=b81455d3-fc3b-5641-9e54-db01b6372290] Exercise 28.1
 > $2 x y^{3} z^{5}-5 x^{2} y z^{3}+7 x^{2} y^{2} z-3 x^{3}$
 
-> [!exercise] Exercise 28.2
+> [!exercise|b62ca5fa-9018-50e0-a347-3797a5bb60ed.local at=a75b3b62-725e-51d8-9beb-4eed78380370] Exercise 28.2
 > $3 y^{2} z^{5}-4 x+5 y^{3} z^{3}-8 z^{7}$
 
-> [!exercise] Exercise 28.3
+> [!exercise|b0ca4a24-aa6c-5858-a707-2996b8f22920.local at=6517e657-ea10-5e40-aa63-2da80851e8d8] Exercise 28.3
 > $3 y-7 x+10 z^{3}-2 x y^{2} z^{2}+2 x^{2} y z^{2}$
 
-> [!exercise] Exercise 28.4
+> [!exercise|b85c4240-d936-5b23-bcd5-2346856d21c7.local at=bed2cd0e-bddd-56da-95fc-5e04d65c04a0] Exercise 28.4
 > $38-4 x z+2 y z-8 x y+3 y z^{3}$
 
 In Exercises 5 through 8, write the polynomials in $\mathbb{R}[x, y, z]$ in decreasing term order, using the order lex for power products $z^{m} y^{n} x^{s}$ where $x<y<z$.
 
-> [!exercise] Exercise 28.5
+> [!exercise|5b595db8-8b68-5e65-9348-e693c898c78c.local at=1ffbc2f5-7ef1-53ca-bd07-f2643becf06b] Exercise 28.5
 > The polynomial in Exercise 1.
 
-> [!exercise] Exercise 28.6
+> [!exercise|cfd17ea0-5cf3-5825-979b-02aa6cd3325e.local at=1e8c5503-c34d-5843-86e2-067034d1f96e] Exercise 28.6
 > The polynomial in Exercise 2.
 
-> [!exercise] Exercise 28.7
+> [!exercise|a602934f-2a20-5356-8d19-4dce2fdb8fe6.local at=67641c9d-ae26-5422-ad86-cd23bf09038d] Exercise 28.7
 > The polynomial in Exercise 3.
 
-> [!exercise] Exercise 28.8
+> [!exercise|6fc1b5d8-0543-53c3-9b1d-e2d03a70418b.local at=6712cbd2-975c-5cbf-a91c-6d60c5aa7b7f] Exercise 28.8
 > The polynomial in Exercise 4.
 
 Another ordering, deglex, for power products in $F[\mathbf{x}]$ is defined as follows:
@@ -339,73 +339,73 @@ $$
 
 if and only if either $\sum_{i=1}^{n} s_{i}<\sum_{i=1}^{n} t_{i}$, or these two sums are equal and $s_{i}<t_{i}$ for the smallest value of $i$ such that $s_{i} \neq t_{i}$. Exercises 9 through 13 are concerned with the order deglex.
 
-> [!exercise] Exercise 28.9
+> [!exercise|3e10d2a9-640b-5b6d-add9-e2eb7166bad6.local at=4e920c99-93d3-5ddd-a22f-0f76de97fed6] Exercise 28.9
 > List, in increasing order, the smallest 20 power products in $\mathbb{R}[x, y, z]$ for the order deglex with power products $x^{m} y^{n} z^{s}$ where $z<y<x$.
 
 In Exercises 10 through 13, write the polynomials in order of decreasing terms using the order deglex with power products $x^{m} y^{n} z^{s}$ where $z<y<x$.
 
-> [!exercise] Exercise 28.10
+> [!exercise|87102b92-d8fa-56d3-a3f2-12638c189232.local at=d50620b0-a3ce-5718-902c-d19da0fa9e7f] Exercise 28.10
 > The polynomial in Exercise 1.
 
-> [!exercise] Exercise 28.11
+> [!exercise|72b0e369-629e-5436-b18c-903980b8a71b.local at=7995afb1-2a53-5612-82db-ee6e44c24e32] Exercise 28.11
 > The polynomial in Exercise 2.
 
-> [!exercise] Exercise 28.12
+> [!exercise|b62da9d3-b2dd-5f7a-a690-6c713f0b42ab.local at=eb939c4d-a331-56b1-b532-2dedfa214e9f] Exercise 28.12
 > The polynomial in Exercise 3.
 
-> [!exercise] Exercise 28.13
+> [!exercise|0b6e3fab-08b3-5350-98b9-bb436b3e9f91.local at=1617835b-38e4-5322-97d6-9bfbd8dfbfb5] Exercise 28.13
 > The polynomial in Exercise 4.
 
 For Exercises 14 through 17, let power products in $\mathbb{R}[x, y, z]$ have order lex where $z<y<x$. If possible, perform a single-step division algorithm reduction that changes the given ideal basis to one having smaller maximum term order.
 
-> [!exercise] Exercise 28.14
+> [!exercise|17891b03-d384-5a9a-a827-36eadb8fbb47.local at=f2785ef8-0dcc-5d1c-a21f-fa0c541ff88e] Exercise 28.14
 > $\left\langle x y^{2}-2 x, x^{2} y+4 x y, x y-y^{2}\right\rangle$
 
-> [!exercise] Exercise 28.15
+> [!exercise|9220dbea-86aa-58fe-bc52-0623409940c4.local at=52c29c44-f0a4-5eb9-8b12-1088be554098] Exercise 28.15
 > $\left\langle x y+y^{3}, y^{3}+z, x-y^{4}\right\rangle$
 
-> [!exercise] Exercise 28.16
+> [!exercise|9227e9f7-0fe3-52d2-957f-4f71c4c3a6c0.local at=cd2127ca-bfc0-5e9e-a4f8-3805d7e5221f] Exercise 28.16
 > $\left\langle x y z-3 z^{2}, x^{3}+y^{2} z^{3}, x^{2} y z^{3}+4\right\rangle$
 
-> [!exercise] Exercise 28.17
+> [!exercise|9b86c201-119d-59c7-8066-97a183894d72.local at=9ac49995-23df-5695-ac76-71090a238683] Exercise 28.17
 > $\left\langle y^{2} z^{3}+3, y^{3} z^{2}-2 z, y^{2} z^{2}+3\right\rangle$
 
 In Exercises 18 and 19, let the order of power products in $\mathbb{R}[w, x, y, z]$ be lex with $z<y<x<w$. Find a Gröbner basis for the given ideal.
 
-> [!exercise] Exercise 28.18
+> [!exercise|b1f6be4d-9d7a-52ab-814d-1ad441e81c1f.local at=74d8d5af-596a-53b4-8a8c-94a8bbf22e2d] Exercise 28.18
 > $\langle w+x-y+4 z-3,2 w+x+y-2 z+4, w+3 x-3 y+z-5\rangle$
 
-> [!exercise] Exercise 28.19
+> [!exercise|803781d1-894b-506f-a4ec-29a0c1e2abef.local at=55ea09e3-f225-5887-8c4b-a10db31c4de7] Exercise 28.19
 > $\langle w-4 x+3 y-z+2,2 w-2 x+y-2 z+5, w-10 x+8 y-z-1\rangle$
 
 In Exercises 20 through 22, find a Gröbner basis for the indicated ideal in $\mathbb{R}[x]$.
 
-> [!exercise] Exercise 28.20
+> [!exercise|65be7256-7b94-586c-8951-3a8820e8a9cd.local at=382abbd6-2114-57ce-9d8f-168f68b14c96] Exercise 28.20
 > $\left\langle x^{4}+x^{3}-3 x^{2}-4 x-4, x^{3}+x^{2}-4 x-4\right\rangle$
 
-> [!exercise] Exercise 28.21
+> [!exercise|408c5213-23c7-5d4c-94fa-a348cdc73147.local at=f7cb7c23-5aa4-5fd4-a9d8-8122fe9f20d8] Exercise 28.21
 > $\left\langle x^{4}-4 x^{3}+5 x^{2}-2 x, x^{3}-x^{2}-4 x+4, x^{3}-3 x+2\right\rangle$
 
-> [!exercise] Exercise 28.22
+> [!exercise|4a6edd57-18be-5ad6-982d-6edf76cdec3d.local at=f7f4e0d8-1bad-5a82-aab8-1c28e0baaf15] Exercise 28.22
 > $\left\langle x^{5}+x^{2}+2 x-5, x^{3}-x^{2}+x-1\right\rangle$
 
 In Exercises 23 through 26, find a Gröbner basis for the given ideal in $\mathbb{R}[x, y]$. Consider the order of power products to be lex with $y<x$. If you can, describe the corresponding algebraic variety in $\mathbb{R}^{2}$.
 
-> [!exercise] Exercise 28.23
+> [!exercise|e3ce8049-1774-5c4e-b690-2f5249eb6ec2.local at=8046872d-3b5c-5d9a-90ba-841bba9ca21f] Exercise 28.23
 > $\left\langle x^{2} y-x-2, x y+2 y-9\right\rangle$
 
-> [!exercise] Exercise 28.24
+> [!exercise|d48a7631-4901-573b-a8fc-09748d65f87b.local at=03dec028-0885-5b32-88ea-6c934728d837] Exercise 28.24
 > $\left\langle x^{2} y+x, x y^{2}-y\right\rangle$
 
-> [!exercise] Exercise 28.25
+> [!exercise|84bbf709-1def-564c-ae16-bbaa18832622.local at=14eca89e-abac-5d67-9439-8182b7faf5f7] Exercise 28.25
 > $\left\langle x^{2} y+x+1, x y^{2}+y-1\right\rangle$
 
-> [!exercise] Exercise 28.26
+> [!exercise|db410ea8-df29-5866-8ddd-05a0ad1441fc.local at=9ba4edf6-17a4-569b-a31e-a14d6ed62d8f] Exercise 28.26
 > $\left\langle x^{2} y+x y^{2}, x y-x\right\rangle$
 
 ## Concepts
 
-> [!exercise] Exercise 28.27
+> [!exercise|d5630e43-b965-57eb-9d54-ea7f8c1c5993.local at=13f8fcf4-f216-5641-98ef-0669fb986c99] Exercise 28.27
 > Let $F$ be a field. Mark each of the following true or false.
 >
 >
@@ -429,37 +429,37 @@ In Exercises 23 through 26, find a Gröbner basis for the given ideal in $\mathb
 >
 > j. \_\_\_\_ The ideals $\langle x, y\rangle$ and $\left\langle x^{2}, y^{2}\right\rangle$ are equal because they both yield the same algebraic variety, namely $\{(0,0)\}$, in $\mathbb{R}^{2}$.
 
-> [!exercise] Exercise 28.28
+> [!exercise|bf300b46-d84e-5182-967c-7a67c8defb21.local at=c7dee0f4-3acd-5d9c-9e1c-d482d2a96b07] Exercise 28.28
 > Let $\mathbb{R}[x, y]$ be ordered by lex. Give an example to show that $P_{i}<P_{j}$ does not imply that $P_{i}$ divides $P_{j}$.
 >
 > Theory
 
-> [!exercise] Exercise 28.29
+> [!exercise|3baf0661-82e4-533f-8dad-f4d16bbb100e.local at=08e7d3f7-b1cb-508b-b8e4-be7a2c329b91] Exercise 28.29
 > Show that if $f_{1}, f_{2}, \cdots, f_{r}$ are elements of a commutative ring $R$ with unity, then $I=\left\{c_1f_1+c_2f_2+\cdots+c_rf_r\mid c_i\in R\text{ for }i=1,\cdots,r\right\}$ is an ideal of $R$.
 
-> [!exercise] Exercise 28.30
+> [!exercise|461cd77d-4e32-5e4d-a21b-30398e624ba0.local at=a96d7925-2cbe-502b-9499-77b18a753611] Exercise 28.30
 > Show that if $f(\mathbf{x})=g(\mathbf{x}) q(\mathbf{x})+r(\mathbf{x})$ in $F[\mathbf{x}]$, then the common divisors in $F[\mathbf{x}]$ of $f(\mathbf{x})$ and $g(\mathbf{x})$ are the same as the common divisors in $F[\mathbf{x}]$ of $g(\mathbf{x})$ and $r(\mathbf{x})$.
 
-> [!exercise] Exercise 28.31
+> [!exercise|aa3d58bb-c848-5d03-ac6f-8b0742ecf5d0.local at=6753d982-25ca-592c-9837-399c77fdd10c] Exercise 28.31
 > Show that $\left\{x y,y^{2}-y\right\}$ is a Gröbner basis for $\left\langle x y, y^{2}-y\right\rangle$, as asserted after Example 28.9.
 
-> [!exercise] Exercise 28.32
+> [!exercise|fa0b4a62-c829-535a-b479-0cfeec88b7ed.local at=eaa0ba0d-14dc-5d3c-a4d1-316041b9a38c] Exercise 28.32
 > Let $F$ be a field. Show that if $S$ is a nonempty subset of $F^{n}$, then
 > $$
 > I(S)=\{f(\mathbf{x}) \in F[\mathbf{x}] \mid f(\mathbf{s})=0 \text { for all } \mathbf{s} \in S\}
 > $$
 > is an ideal of $F[\mathbf{x}]$.
 
-> [!exercise] Exercise 28.33
+> [!exercise|2f69e2ad-9d9d-50d3-836d-49f4f74977eb.local at=1e32f6ec-aee3-54b5-8f18-2f450c12a2be] Exercise 28.33
 > Referring to Exercise 32, show that $S \subseteq V(I(S))$.
 
-> [!exercise] Exercise 28.34
+> [!exercise|04a24410-72f2-5dc7-9bfd-9631c4843dcf.local at=4a0170c6-d0ec-5dcb-a28f-d998b4dfb1fa] Exercise 28.34
 > Referring to Exercise 32, give an example of a subset $S$ of $\mathbb{R}^{2}$ such that $V(I(S)) \neq S$.
 
-> [!exercise] Exercise 28.35
+> [!exercise|07b91c2c-0c9a-5c83-b84e-e26782bbc88a.local at=5c5869ff-ed1c-5ad5-bf83-f6cedbbc166a] Exercise 28.35
 > Referring to Exercise 32, show that if $N$ is an ideal of $F[\mathbf{x}]$, then $N \subseteq I(V(N))$.
 
-> [!exercise] Exercise 28.36
+> [!exercise|88949d2d-6546-50e6-9530-172437d76031.local at=072a85ef-f0a4-5745-b88d-e9d5844d21f5] Exercise 28.36
 > Referring to Exercise 32, give an example of an ideal $N$ in $\mathbb{R}[x, y]$ such that $I(V(N)) \neq N$.
 
 [^28-section]: This section is not used in the remainder of the text.

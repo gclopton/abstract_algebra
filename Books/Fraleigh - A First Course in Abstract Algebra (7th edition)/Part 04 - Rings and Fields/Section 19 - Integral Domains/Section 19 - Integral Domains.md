@@ -38,13 +38,13 @@ We find, in fact, that our equation has not only 2 and 3 as solutions, but also 
 These ideas are of such importance that we formalize them in a definition.
 Definition 19.2
 
-> [!definition|ccc59bd3-8055-52c8-9f36-2a432ea576b0.local at=7cdc812d-f9cf-5b88-842e-1cf9c05199dd] Divisors of Zero in a Ring
+> [!definition|ccc59bd3-8055-52c8-9f36-2a432ea576b0.library at=7cdc812d-f9cf-5b88-842e-1cf9c05199dd] Divisors of Zero in a Ring
 > If $a$ and $b$ are two nonzero elements of a ring $R$ such that $a b=0$, then $a$ and $b$ are divisors of 0 (or 0 divisors).
 
 Example 19.1 shows that in $\mathbb{Z}_{12}$ the elements 2, 3, 4, 6, 8, 9, and 10 are divisors of 0. Note that these are exactly the numbers in $\mathbb{Z}_{12}$ that are not relatively prime to 12, that is, whose gcd with 12 is not 1. Our next theorem shows that this is an example of a general situation.
 Theorem 19.3
 
-> [!theorem|30d3e7ec-2bfd-5df4-a4fe-990182a190e1.local at=ccab7d19-b6c9-53aa-9747-1015bd386415] Zero Divisors in the Ring of Integers Modulo n
+> [!theorem|30d3e7ec-2bfd-5df4-a4fe-990182a190e1.library at=ccab7d19-b6c9-53aa-9747-1015bd386415] Zero Divisors in the Ring of Integers Modulo n
 > In the ring $\mathbb{Z}_{n}$, the divisors of 0 are precisely those nonzero elements that are not relatively prime to $n$.
 
 ##### proof
@@ -60,7 +60,7 @@ and $(m / d) n$ gives 0 as a multiple of $n$. Thus $m(n / d)=0$ in $\mathbb{Z}_{
 On the other hand, suppose $m \in \mathbb{Z}_{n}$ is relatively prime to $n$. If for $s \in \mathbb{Z}_{n}$ we have $m s=0$, then $n$ divides the product $m s$ of $m$ and $s$ as elements in the ring $\mathbb{Z}$. Since $n$ is relatively prime to $m$, boxed Property 1 following Example 6.9 shows that $n$ divides $s$, so $s=0$ in $\mathbb{Z}_{n}$. $\square$
 Corollary 19.4
 
-> [!corollary|6b110449-ae8c-561e-aca6-33e5ca1d0b6b.local at=160b1012-a037-5c9b-ac33-c55df184d351] No Zero Divisors Modulo a Prime
+> [!corollary|6b110449-ae8c-561e-aca6-33e5ca1d0b6b.library at=160b1012-a037-5c9b-ac33-c55df184d351] No Zero Divisors Modulo a Prime
 > If $p$ is a prime, then $\mathbb{Z}_{p}$ has no divisors of 0.
 
 ##### proof
@@ -69,13 +69,13 @@ This corollary is immediate from Theorem 19.3. $\square$
 
 Another indication of the importance of the concept of 0 divisors is shown in the following theorem. 
 
-> [!definition|5b1f8b4d-6cab-5fe5-89c8-572634e96454.local at=efbd4610-c2a2-5dd8-83a6-5ec342a185e3] Multiplicative Cancellation Laws in a Ring
+> [!definition|5b1f8b4d-6cab-5fe5-89c8-572634e96454.library at=efbd4610-c2a2-5dd8-83a6-5ec342a185e3] Multiplicative Cancellation Laws in a Ring
 > Let $R$ be a ring, and let $a, b, c \in R$. The cancellation laws hold in $R$ if $a b=a c$ with $a \neq 0$ implies $b=c$, and $b a=c a$ with $a \neq 0$ implies $b=c$. These are multiplicative cancellation laws.
 
 Of course, the additive cancellation laws hold in $R$, since $\langle R,+\rangle$ is a group.
 Theorem 19.5
 
-> [!theorem|2b37c4aa-b21f-5a66-83d0-3bae75ffd0fa.local at=b06487a7-99ff-5a47-9aa9-28ca445eb156] Multiplicative Cancellation and Zero Divisors in Rings
+> [!theorem|2b37c4aa-b21f-5a66-83d0-3bae75ffd0fa.library at=b06487a7-99ff-5a47-9aa9-28ca445eb156] Multiplicative Cancellation and Zero Divisors in Rings
 > The multiplicative cancellation laws hold in a ring $R$ if and only if $R$ has no divisors of 0.
 
 ##### proof
@@ -97,7 +97,7 @@ Suppose that $R$ is a ring with no divisors of 0. Then an equation $a x=b$, with
 The integers are really our most familiar number system. In terms of the algebraic properties we are discussing, $\mathbb{Z}$ is a commutative ring with unity and no divisors of 0. Surely this is responsible for the name that the next definition gives to such a structure.
 Definition 19.6
 
-> [!definition|949814c9-3947-5dfa-bb72-a2a15a74f338.local at=d93176a5-658d-52fb-8ebb-ee42dcaedef4] Integral Domain
+> [!definition|949814c9-3947-5dfa-bb72-a2a15a74f338.library at=d93176a5-658d-52fb-8ebb-ee42dcaedef4] Integral Domain
 > An integral domain $D$ is a commutative ring with unity $1 \neq 0$ and containing no divisors of 0.
 
 Thus, if the coefficients of a polynomial are from an integral domain, one can solve a polynomial equation in which the polynomial can be factored into linear factors in the usual fashion by setting each factor equal to 0.
@@ -136,7 +136,7 @@ $\square$
 Our next theorem shows that the structure of a field is still the most restrictive (that is, the richest) one we have defined.
 Theorem 19.9
 
-> [!theorem|885e4cf0-fe51-5144-b580-1d53a4ee88a5.local at=e6d0deb5-89c6-5c9c-a62f-6dcd023d3510] Every Field Is an Integral Domain
+> [!theorem|885e4cf0-fe51-5144-b580-1d53a4ee88a5.library at=e6d0deb5-89c6-5c9c-a62f-6dcd023d3510] Every Field Is an Integral Domain
 > Every field $F$ is an integral domain.
 
 ##### proof
@@ -174,7 +174,7 @@ panels:
 
 Theorem 19.11
 
-> [!theorem|cb891dc4-6430-59d6-a97f-7765ca75c913.local at=006d1066-fbd5-59f4-b207-860e5779ad29] Every Finite Integral Domain Is a Field
+> [!theorem|cb891dc4-6430-59d6-a97f-7765ca75c913.library at=006d1066-fbd5-59f4-b207-860e5779ad29] Every Finite Integral Domain Is a Field
 > Every finite integral domain is a field.
 
 ##### proof
@@ -194,7 +194,7 @@ $$
 We claim that all these elements of $D$ are distinct, for $a a_{i}=a a_{j}$ implies that $a_{i}=a_{j}$, by the cancellation laws that hold in an integral domain. Also, since $D$ has no 0 divisors, none of these elements is 0 . Hence by counting, we find that $a 1, a a_{1}, \cdots, a a_{n}$ are elements $1, a_{1}, \cdots, a_{n}$ in some order, so that either $a 1=1$, that is, $a=1$, or $a a_{i}=1$ for some $i$. Thus $a$ has a multiplicative inverse. $\square$
 Corollary 19.12
 
-> [!corollary|7eb859bf-4cb8-5c23-ab66-5fd12c5178ea.local at=311d83c6-b69e-5caf-9a7b-4f032b4fcef4] The Field of Integers Modulo a Prime
+> [!corollary|7eb859bf-4cb8-5c23-ab66-5fd12c5178ea.library at=311d83c6-b69e-5caf-9a7b-4f032b4fcef4] The Field of Integers Modulo a Prime
 > If $p$ is a prime, then $\mathbb{Z}_{p}$ is a field.
 
 ##### proof
@@ -214,7 +214,7 @@ indicates that there can be no very natural notion of magnitude in the field $\m
 Let $R$ be any ring. We might ask whether there is a positive integer $n$ such that $n \cdot a=0$ for all $a \in R$, where $n \cdot a$ means $a+a+\cdots+a$ for $n$ summands, as explained in Section 18. For example, the integer $m$ has this property for the ring $\mathbb{Z}_{m}$.
 Definition 19.13
 
-> [!definition|c6f0093a-9093-5e9f-857c-4fdefb4cdf0d.local at=3b6b01f1-6fce-5167-963a-940edfcd212a] Characteristic of a Ring
+> [!definition|c6f0093a-9093-5e9f-857c-4fdefb4cdf0d.library at=3b6b01f1-6fce-5167-963a-940edfcd212a] Characteristic of a Ring
 > If for a ring $R$ a positive integer $n$ exists such that $n \cdot a=0$ for all $a \in R$, where $n\cdot a$ means $a+a+\cdots+a$ for $n$ summands, then the least such positive integer is the characteristic of the ring $R$. If no such positive integer exists, then $R$ is of characteristic 0.
 
 We shall be using the concept of a characteristic chiefly for fields. Exercise 29 asks us to show that the characteristic of an integral domain is either 0 or a prime $p$.
@@ -229,7 +229,7 @@ The ring $\mathbb{Z}_{n}$ is of characteristic $n$, while $\mathbb{Z}, \mathbb{Q
 At first glance, determination of the characteristic of a ring seems to be a tough job, unless the ring is obviously of characteristic 0. Do we have to examine every element $a$ of the ring in accordance with Definition 19.13? Our final theorem of this section shows that if the ring has unity, it suffices to examine only $a=1$.
 Theorem 19.15
 
-> [!theorem|687787c2-4f9c-569f-8c92-c3e38495ff1c.local at=a12ef498-427e-572d-8ce6-4a3ef786fe9f] Characteristic of a Ring with Unity
+> [!theorem|687787c2-4f9c-569f-8c92-c3e38495ff1c.library at=a12ef498-427e-572d-8ce6-4a3ef786fe9f] Characteristic of a Ring with Unity
 > Let $R$ be a ring with unity. If $n \cdot 1 \neq 0$ for all $n \in \mathbb{Z}^{+}$, then $R$ has characteristic 0. If $n \cdot 1=0$ for some $n \in \mathbb{Z}^{+}$, then the smallest such integer $n$ is the characteristic of $R$.
 
 ##### proof

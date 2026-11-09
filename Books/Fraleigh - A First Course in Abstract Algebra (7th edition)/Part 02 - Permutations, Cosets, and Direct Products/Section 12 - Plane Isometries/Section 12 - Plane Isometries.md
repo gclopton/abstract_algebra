@@ -73,7 +73,7 @@ panels:
 The theorem that follows describes the possible structures of finite subgroups of the full isometry group.
 Theorem 12.5
 
-> [!theorem] Finite Groups of Plane Isometries
+> [!theorem|5c529e1d-4cae-5328-9f04-09434e83c6e2.library at=d5c55887-cfeb-55f9-b81b-c9e75dba6aba] Finite Groups of Plane Isometries
 > Every finite group $G$ of isometries of the plane is isomorphic to either $\mathbb{Z}_{n}$ or to a dihedral group $D_{n}$ for some positive integer $n$.
 
 ##### proof outline
@@ -191,7 +191,7 @@ M. C. Escher (1898-1973) was an artist whose work included plane-filling pattern
 
 ## EXERCISES 12
 
-> [!exercise] Exercise 12.1
+> [!exercise|f4d271a6-e7e3-516d-b283-5b23e4bdeb0d.local at=cb579b18-321e-5bd2-b0db-6bbf780422e8] Exercise 12.1
 > This exercise shows that the group of symmetries of a certain type of geometric figure may depend on the dimension of the space in which we consider the figure to lie.
 >
 > a. Describe all symmetries of a point in the real line $\mathbb{R}$; that is, describe all isometries of $\mathbb{R}$ that leave one point fixed.
@@ -204,7 +204,7 @@ M. C. Escher (1898-1973) was an artist whose work included plane-filling pattern
 >
 > e. Describe some symmetries of a line segment in $\mathbb{R}^{3}$.
 
-> [!exercise] Exercise 12.2
+> [!exercise|f7035ebe-47a0-5b9f-8e03-aad278cfda71.local at=3df2275b-0bd0-53d6-805f-72d4868b2493] Exercise 12.2
 > Let $P$ stand for an orientation preserving plane isometry and $R$ for an orientation reversing one. Fill in the table with $P$ or $R$ to denote the orientation preserving or reversing property of a product.
 > ```scientific-table
 > id: 8f9e5463-121b-47e9-9f62-c5d0e7d906ff
@@ -236,7 +236,7 @@ M. C. Escher (1898-1973) was an artist whose work included plane-filling pattern
 > style: grid
 > ```
 
-> [!exercise] Exercise 12.3
+> [!exercise|1bee09d9-f0b4-55d9-86f3-8a85781f3144.local at=93400614-8360-5577-bba3-84db6d15773a] Exercise 12.3
 > Fill in the table to give all possible types of plane isometries given by a product of two types. For example, a product of two rotations may be a rotation, or it may be another type. Fill in the box corresponding to $\rho \rho$ with both letters. Use your answer to Exercise 2 to eliminate some types. Eliminate the identity from consideration.
 > ```scientific-table
 > id: c1b63c6f-8195-4943-a956-7b3971dcfb72
@@ -300,64 +300,64 @@ M. C. Escher (1898-1973) was an artist whose work included plane-filling pattern
 > style: grid
 > ```
 
-> [!exercise] Exercise 12.4
+> [!exercise|c3a4ce59-3a84-5c91-a499-5dcf8ae10a3c.local at=2b1287d0-c703-5023-bc6c-79e82aa50e55] Exercise 12.4
 > Draw a plane figure that has a one-element group as its group of symmetries in $\mathbb{R}^{2}$.
 
-> [!exercise] Exercise 12.5
+> [!exercise|25af28e0-648c-5ac8-b9c1-b37120995baf.local at=c1ccac2f-49c4-58ee-9d69-9d8e2aba6738] Exercise 12.5
 > Draw a plane figure that has a two-element group as its group of symmetries in $\mathbb{R}^{2}$.
 
-> [!exercise] Exercise 12.6
+> [!exercise|6fcc454d-fbeb-5e13-a785-9f376d1d314a.local at=a1ac25fd-4a0f-5655-9e97-e1e4bdfc4d9f] Exercise 12.6
 > Draw a plane figure that has a three-element group as its group of symmetries in $\mathbb{R}^{2}$.
 
-> [!exercise] Exercise 12.7
+> [!exercise|fe449890-6582-507f-b361-6c3552e37fb9.local at=c56a76bb-5eaf-5bd8-baa0-7a32577db67a] Exercise 12.7
 > Draw a plane figure that has a four-element group isomorphic to $\mathbb{Z}_{4}$ as its group of symmetries in $\mathbb{R}^{2}$.
 
-> [!exercise] Exercise 12.8
+> [!exercise|9b5a5ae5-ebd9-5331-a606-652a0852c1e1.local at=914e24e5-f099-5606-b327-3ce1f1a98298] Exercise 12.8
 > Draw a plane figure that has a four-element group isomorphic to the Klein 4-group $V$ as its group of symmetries in $\mathbb{R}^{2}$.
 
-> [!exercise] Exercise 12.9
+> [!exercise|60af7e7b-0a50-5ab6-98e1-aff0d7da74d6.local at=3488dabd-06c8-5bbb-8a0d-928495591705] Exercise 12.9
 > For each of the four types of plane isometries (other than the identity), give the possibilities for the order of an isometry of that type in the group of plane isometries.
 
-> [!exercise] Exercise 12.10
+> [!exercise|c1a6e9d6-beee-5346-9d74-e6bbbdff4e25.local at=348f8815-5d1e-51f6-90b8-825325be1f62] Exercise 12.10
 > A plane isometry $\phi$ has a fixed point if there exists a point $P$ in the plane such that $\phi(P)=P$. Which of the four types of plane isometries (other than the identity) can have a fixed point?
 
-> [!exercise] Exercise 12.11
+> [!exercise|89f3c7c7-bb68-58e4-9f31-99ccb3fbf192.local at=9b046f9e-cbae-5799-a183-e207affb0d33] Exercise 12.11
 > Referring to Exercise 10, which types of plane isometries, if any, have exactly one fixed point?
 
-> [!exercise] Exercise 12.12
+> [!exercise|82695326-b25b-5164-8149-cd5a672f5e86.local at=82854012-46e9-5d08-a3f6-9e8add4fa117] Exercise 12.12
 > Referring to Exercise 10, which types of plane isometries, if any, have exactly two fixed points?
 
-> [!exercise] Exercise 12.13
+> [!exercise|d1f98f74-d5dd-543c-9bcd-7630f25294e6.local at=b4760827-d792-5b3a-814a-f44541cc54b9] Exercise 12.13
 > Referring to Exercise 10, which types of plane isometries, if any, have an infinite number of fixed points?
 
-> [!exercise] Exercise 12.14
+> [!exercise|155a3d67-560c-5880-a3e0-0934626baef8.local at=dc33def2-8d68-5c32-a3be-8d30fc7f6cd4] Exercise 12.14
 > Argue geometrically that a plane isometry that leaves three noncolinear points fixed must be the identity map.
 
-> [!exercise] Exercise 12.15
+> [!exercise|1bc1a210-2653-5c22-a4be-6d27e355160f.local at=9ae0c0aa-84ed-538d-be40-7d14e420cb71] Exercise 12.15
 > Using Exercise 14, show algebraically that if two plane isometries $\phi$ and $\psi$ agree on three noncolinear points, that is, if $\phi\left(P_{i}\right)=\psi\left(P_{i}\right)$ for noncolinear points $P_{1}, P_{2}$, and $P_{3}$, then $\phi$ and $\psi$ are the same map.
 
-> [!exercise] Exercise 12.16
+> [!exercise|348243ed-feb1-58ba-9e2f-ccfa80610f6d.local at=55481e1d-212d-59f3-acee-8fe046750cc3] Exercise 12.16
 > Do the rotations, together with the identity map, form a subgroup of the group of plane isometries? Why or why not?
 
-> [!exercise] Exercise 12.17
+> [!exercise|898ad148-9b89-55f5-a1c0-6bac5af31718.local at=b30c7c50-e5c7-5625-bbac-6bcf4d0c8d1f] Exercise 12.17
 > Do the translations, together with the identity map, form a subgroup of the group of plane isometries? Why or why not?
 
-> [!exercise] Exercise 12.18
+> [!exercise|fb6182a7-27ac-56a2-a6b3-6e1034fb519c.local at=645b163b-b702-561e-b3c2-26c0d044fd38] Exercise 12.18
 > Do the rotations about one particular point $P$, together with the identity map, form a subgroup of the group of plane isometries? Why or why not?
 
-> [!exercise] Exercise 12.19
+> [!exercise|abb2d64b-2b56-54b4-9b01-b3c5449b3ecb.local at=56f49180-ffe5-58ff-b043-37e0491699d3] Exercise 12.19
 > Does the reflection across one particular line $L$, together with the identity map, form a subgroup of the group of plane isometries? Why or why not?
 
-> [!exercise] Exercise 12.20
+> [!exercise|643ed6b1-c637-5a1e-86ca-8ba6b8837ca0.local at=bd66683d-e43d-53b6-a734-148836ef693b] Exercise 12.20
 > Do the glide reflections, together with the identity map, form a subgroup of the group of plane isometries? Why or why not?
 
-> [!exercise] Exercise 12.21
+> [!exercise|11db48b7-cb7d-59b0-a241-59ae279294bd.local at=7cea3ef5-b3d5-54c3-8629-cb8f2bef2341] Exercise 12.21
 > Which of the four types of plane isometries can be elements of a finite subgroup of the group of plane isometries?
 
-> [!exercise] Exercise 12.22
+> [!exercise|b3abb070-4c35-56ad-883f-06d9674716e9.local at=98e2c070-7b09-5c93-bf9a-851193a0a99f] Exercise 12.22
 > Completing a detail of the proof of Theorem 12.5, let $G$ be a finite group of plane isometries. Show that the rotations in $G$, together with the identity isometry, form a subgroup $H$ of $G$, and that either $H=G$ or $|G|=2|H|$. [Hint: Use the same method that we used to show that $\left|S_{n}\right|=2\left|A_{n}\right|$.]
 
-> [!exercise] Exercise 12.23
+> [!exercise|2e604058-d219-515c-aa6b-4f8920c0a4ae.local at=34a78aae-ac2f-57d6-8402-97ffd257442b] Exercise 12.23
 > Completing a detail in the proof of Theorem 12.5, let $G$ be a finite group consisting of the identity isometry and rotations about one point $P$ in the plane. Show that $G$ is cyclic, generated by the rotation in $G$ that turns the plane counterclockwise about $P$ through the smallest angle $\theta>0$. [Hint: Follow the idea of the proof that a subgroup of a cyclic group is cyclic.]
 
 Exercises 24 through 30 illustrate the seven different types of friezes when they are classified according to their symmetries. Imagine the figure shown to be continued infinitely to the right and left. The symmetry group of a frieze always contains translations. For each of these exercises answer these questions about the symmetry group of the frieze.
@@ -368,7 +368,7 @@ c. Does the group contain a reflection across a vertical line?
 d. Does the group contain a nontrivial glide reflection?
 e. To which of the possible groups $\mathbb{Z}, D_{\infty}, \mathbb{Z} \times \mathbb{Z}_{2}$, or $D_{\infty} \times \mathbb{Z}_{2}$ do you think the symmetry group of the frieze is isomorphic?
 
-> [!exercise] Exercise 12.24
+> [!exercise|226df1ce-141e-5c41-a192-6ad0d60f1a39.local at=5bc5c395-348e-5a37-998c-2da1ddd34a90] Exercise 12.24
 > ```scientific-figure
 > id: 6c4c488c-40d9-4368-8915-e6caee226c36
 > numbered: false
@@ -382,7 +382,7 @@ e. To which of the possible groups $\mathbb{Z}, D_{\infty}, \mathbb{Z} \times \m
 >     caption: ""
 > ```
 
-> [!exercise] Exercise 12.25
+> [!exercise|12647607-aa19-5727-a5ff-f898dad07261.local at=b60c4910-e3d2-5f5b-ab96-7b0e525f89eb] Exercise 12.25
 > ```scientific-figure
 > id: 0de336ac-4b7b-410e-a41f-6d7b069154db
 > numbered: false
@@ -396,7 +396,7 @@ e. To which of the possible groups $\mathbb{Z}, D_{\infty}, \mathbb{Z} \times \m
 >     caption: ""
 > ```
 
-> [!exercise] Exercise 12.26
+> [!exercise|7e70484e-cc9c-5793-bd4a-ddb79a5b6ab5.local at=ee0c7205-7e40-5ef6-a1e4-589f9e86b79d] Exercise 12.26
 > ```scientific-figure
 > id: 45656570-41ca-48c5-939f-97fd2081b7ef
 > numbered: false
@@ -410,7 +410,7 @@ e. To which of the possible groups $\mathbb{Z}, D_{\infty}, \mathbb{Z} \times \m
 >     caption: ""
 > ```
 
-> [!exercise] Exercise 12.27
+> [!exercise|cd8b278d-eab3-5af0-9024-9aff23c44293.local at=d11a9bdd-5eda-5602-9240-1bb5892b9954] Exercise 12.27
 > ```scientific-figure
 > id: 197b5fd4-8aea-41d9-8a0c-b8dd7a5ca7a5
 > numbered: false
@@ -424,7 +424,7 @@ e. To which of the possible groups $\mathbb{Z}, D_{\infty}, \mathbb{Z} \times \m
 >     caption: ""
 > ```
 
-> [!exercise] Exercise 12.28
+> [!exercise|3ed04845-7966-5f59-a3b0-444cb222a3b4.local at=4c289ecf-f1a1-5096-aacd-97e16ad5f8e3] Exercise 12.28
 > ```scientific-figure
 > id: c33f64f6-b9f4-4e3a-919f-96d0fcae2511
 > numbered: false
@@ -438,7 +438,7 @@ e. To which of the possible groups $\mathbb{Z}, D_{\infty}, \mathbb{Z} \times \m
 >     caption: ""
 > ```
 
-> [!exercise] Exercise 12.29
+> [!exercise|16e3fe16-1283-5c93-bfe4-93bc71c61af0.local at=27494a58-ced7-57b9-bbb5-3af6a9cb5f99] Exercise 12.29
 > ```scientific-figure
 > id: a10a2420-dd17-4255-af68-d3085802abf8
 > numbered: false
@@ -452,7 +452,7 @@ e. To which of the possible groups $\mathbb{Z}, D_{\infty}, \mathbb{Z} \times \m
 >     caption: ""
 > ```
 
-> [!exercise] Exercise 12.30
+> [!exercise|56ea7368-b9e3-53c5-8c8a-cf081af7e0ba.local at=dc22643c-457d-50a2-bda8-0a12db0b0e37] Exercise 12.30
 > ```scientific-figure
 > id: 02f1878e-e7c7-49ff-9256-f7c26a7baa2d
 > numbered: false
@@ -474,32 +474,32 @@ b. Does the symmetry group contain any reflections?
 
 c. Does the symmetry group contain any nontrivial glide reflections?
 
-> [!exercise] Exercise 12.31
+> [!exercise|3e60c5f8-89ca-53e8-88d0-d721308bf508.local at=f5d284e7-8341-5ea1-8555-74460ccd6063] Exercise 12.31
 > A square with horizontal and vertical edges using translation directions given by vectors $(1,0)$ and $(0,1)$.
 
-> [!exercise] Exercise 12.32
+> [!exercise|f25a5765-17c7-51af-905e-488291b6b0a3.local at=a278b701-0328-59b8-88ac-e944b1814831] Exercise 12.32
 > A square as in Exercise 31 using translation directions given by vectors $(1,1/2)$ and $(0,1)$.
 
-> [!exercise] Exercise 12.33
+> [!exercise|1708a9ce-29e8-5394-9cf2-2bae2fb83591.local at=4b266efd-5260-56d3-b768-b36b5d3a82cc] Exercise 12.33
 > A square as in Exercise 31 with the letter L at its center using translation directions given by vectors $(1,0)$ and $(0,1)$.
 
-> [!exercise] Exercise 12.34
+> [!exercise|dc4772b3-049b-58a7-8869-6d8a443b6fea.local at=cce3f6e8-d59b-5004-a952-f67145364bb4] Exercise 12.34
 > A square as in Exercise 31 with the letter E at its center using translation directions given by vectors $(1,0)$ and $(0,1)$.
 
-> [!exercise] Exercise 12.35
+> [!exercise|42ac40fa-6ca2-588c-9cdb-9adce91d9317.local at=c7b55d7a-5c2f-57b1-8c81-8ca0ad12900d] Exercise 12.35
 > A square as in Exercise 31 with the letter H at its center using translation directions given by vectors $(1,0)$ and $(0,1)$.
 
-> [!exercise] Exercise 12.36
+> [!exercise|b143d222-6f2c-5705-85c7-16bab4944faf.local at=03374b06-9a02-59b7-84d3-5fd954d2d3a5] Exercise 12.36
 > A regular hexagon with a vertex at the top using translation directions given by vectors $(1,0)$ and $(1, \sqrt{3})$.
 
-> [!exercise] Exercise 12.37
+> [!exercise|bfa8f9c0-7b1b-5146-afab-b164371f601e.local at=9aa9f55e-1eae-526d-8b60-4dfa75fa36cf] Exercise 12.37
 > A regular hexagon with a vertex at the top containing an equilateral triangle with vertex at the top and centroid at the center of the hexagon, using translation directions given by vectors $(1,0)$ and $(1, \sqrt{3})$.
 
 Exercises 38 through 41 are concerned with art works of M. C. Escher. Neglect the shading in the figures and assume the markings in each human figure, reptile, or horseman are the same, even though they may be invisible due to shading. Answer the same questions (a), (b), and (c) that were asked for Exercises 31 through 36, and also answer this part (d).
 
 d. Assuming horizontal and vertical coordinate axes with equal scales as usual, give vectors in the two nonparallel directions of vectors that generate the translation subgroup. Do not concern yourself with the length of these vectors.
 
-> [!exercise] Exercise 12.38
+> [!exercise|8f899a1f-30c8-5e4c-8888-4a4a790abdd0.local at=b66f51bb-ae22-547f-8a6f-a9316b2c820a] Exercise 12.38
 > The Study of Regular Division of the Plane with Horsemen in Fig. 12.8.
 >
 > ```scientific-figure
@@ -515,7 +515,7 @@ d. Assuming horizontal and vertical coordinate axes with equal scales as usual, 
 >     caption: ""
 > ```
 
-> [!exercise] Exercise 12.39
+> [!exercise|88dfcd2d-2e59-5b94-901e-97ecc05cd1ad.local at=54943fe3-d534-5e8b-b8bd-bfba9c5ca5b4] Exercise 12.39
 > The Study of Regular Division of the Plane with Imaginary Human Figures in Fig. 12.9.
 >
 > ```scientific-figure
@@ -531,7 +531,7 @@ d. Assuming horizontal and vertical coordinate axes with equal scales as usual, 
 >     caption: ""
 > ```
 
-> [!exercise] Exercise 12.40
+> [!exercise|ea8c6f89-29cc-5246-9a9a-9f5bdfe8f3bd.local at=7df85e5c-ad6e-5a20-a729-a8612b065a90] Exercise 12.40
 > The Study of Regular Division of the Plane with Reptiles in Fig. 12.10.
 >
 > ```scientific-figure
@@ -547,7 +547,7 @@ d. Assuming horizontal and vertical coordinate axes with equal scales as usual, 
 >     caption: ""
 > ```
 
-> [!exercise] Exercise 12.41
+> [!exercise|c815a856-c345-5daa-9f1f-e32a99afad88.local at=75af49ea-8256-52c1-90a2-a4e66edc943f] Exercise 12.41
 > The Study of Regular Division of the Plane with Human Figures in Fig. 12.11.
 >
 > ```scientific-figure
@@ -563,7 +563,7 @@ d. Assuming horizontal and vertical coordinate axes with equal scales as usual, 
 >     caption: ""
 > ```
 
-> [!exercise] Exercise 12.42
+> [!exercise|e970be55-b54f-50ca-9bdb-27b0c851f463.local at=f9af1902-8923-5af2-bda1-bf3c2f41c0c3] Exercise 12.42
 > Show that the rotations of a cube in space form a group isomorphic to $S_{4}$. [Hint: A rotation of the cube permutes the diagonals through the center of the cube.]
 
 [^2]: This section is not used in the remainder of the text.

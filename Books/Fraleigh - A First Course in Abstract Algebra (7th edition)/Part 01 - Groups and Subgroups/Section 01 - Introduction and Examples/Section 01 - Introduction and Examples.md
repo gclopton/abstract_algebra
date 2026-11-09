@@ -93,7 +93,7 @@ $$
 
 where $\theta$ is the angle measured counterclockwise from the $x$-axis to the vector from 0 to $z$, as shown in Fig. 1.3. A famous formula due to Leonard Euler states that
 
-> [!identity|95a6ecec-c35b-5408-af9a-6a8ad7760cda.local at=a857fb5a-e3b5-5bbd-8bcd-974d6746d69a] Euler's Formula
+> [!identity|95a6ecec-c35b-5408-af9a-6a8ad7760cda.library at=a857fb5a-e3b5-5bbd-8bcd-974d6746d69a] Euler's Formula
 > For $\theta\in\mathbb{R}$,
 >
 > $$

@@ -49,10 +49,10 @@ so we obtain the same coset. Computation of the product of two cosets is accompl
 
 Theorem 14.1
 
-> [!theorem] Factor Group by the Kernel of a Homomorphism
+> [!theorem|f51786f7-783c-5aa4-8258-993fef7fa6e7.library at=20bbab77-3c70-5b3c-af27-87557d3e12ae] Factor Group by the Kernel of a Homomorphism
 > Let $\phi: G \rightarrow G^{\prime}$ be a group homomorphism with kernel $H$. Then the cosets of $H$ form a factor group, $G / H$, where $(a H)(b H)=(a b) H$. Also, the map $\mu: G / H \rightarrow \phi[G]$ defined by $\mu(a H)=\phi(a)$ is an isomorphism. Both coset multiplication and $\mu$ are well defined, independent of the choices $a$ and $b$ from the cosets.
 
-> [!example] Example 14.2
+> [!example|2deb2d95-9cb7-5b02-b4aa-56250fd1a148.local at=0c352998-22b6-5f87-8c93-d00ca3a7c37e] Example 14.2
 > Let $\gamma:\mathbb{Z}\rightarrow\mathbb{Z}_n$ map each integer to its remainder modulo $n$. Use this homomorphism to identify $\mathbb{Z}/n\mathbb{Z}$. For $n=5$, list the cosets of $5\mathbb{Z}$ and describe the induced isomorphism.
 
 ##### solution
@@ -72,7 +72,7 @@ $$
 Note that the isomorphism $\mu: \mathbb{Z} / 5 \mathbb{Z} \rightarrow \mathbb{Z}_{5}$ of Theorem 14.1 assigns to each coset of $5 \mathbb{Z}$ its smallest nonnegative element. That is, $\mu(5 \mathbb{Z})=0, \mu(1+5 \mathbb{Z})=1$, etc. $\square$
 
 It is very important that we learn how to compute in a factor group. We can multiply (add) two cosets by choosing any two representative elements, multiplying (adding) them and finding the coset in which the resulting product (sum) lies.
-> [!example] Example 14.3
+> [!example|2563663e-33e1-5c5e-9863-f88696594c5a.local at=340b07fb-e08e-5693-8ce7-33ed83688409] Example 14.3
 > In $\mathbb{Z}/5\mathbb{Z}$, compute $(2+5\mathbb{Z})+(4+5\mathbb{Z})$ first using representatives 2 and 4, then using representatives 27 and $-16$.
 
 ##### solution
@@ -95,7 +95,7 @@ as in the statement of Theorem 14.1. Equation 4 attempts to define left coset mu
 
 Theorem 14.4
 
-> [!theorem] Well-Defined Coset Multiplication and Normal Subgroups
+> [!theorem|78070e8f-63d3-507e-b7eb-013c0d29c37d.library at=74b33d4c-7f29-5dbc-9a2b-ab1545b51271] Well-Defined Coset Multiplication and Normal Subgroups
 > Let $H$ be a subgroup of a group $G$. Then left coset multiplication is well defined by the equation
 >
 > $$
@@ -122,7 +122,7 @@ Theorem 14.4 shows that if left and right cosets of $H$ coincide, then Eq. 4 giv
 
 Corollary 14.5
 
-> [!corollary] Group Structure on Cosets of a Normal Subgroup
+> [!corollary|ae14b10a-a3ca-5097-9ef3-d1bc4e836cf3.library at=2326e361-0ec2-5b7e-b671-cf9b2b0ead0a] Group Structure on Cosets of a Normal Subgroup
 > Let $H$ be a normal subgroup of $G$. Then the cosets of $H$ form a group $G / H$ under the binary operation $(a H)(b H)=(a b) H$.
 
 ##### proof
@@ -131,16 +131,16 @@ Computing, $(a H)[(b H)(c H)]=(a H)[(b c) H]=[a(b c)] H$, and similarly, we have
 
 Definition 14.6
 
-> [!definition] Factor Group (Quotient Group)
+> [!definition|30d71ba3-780b-5f88-bb9f-434281a1e3e0.library at=73d1d32a-da77-5544-8c1d-a4133e2c502f] Factor Group (Quotient Group)
 > Let $H$ be a normal subgroup of a group $G$. The group $G / H$ under the binary operation $(aH)(bH)=(ab)H$ is the factor group (or quotient group) of $G$ by $H$.
 
-> [!example] Example 14.7
+> [!example|961753d9-ab9d-55c5-8c20-0113c610f6d6.local at=f847514f-7339-5241-9a77-e5a6059f4d69] Example 14.7
 > Use the normal subgroup $n\mathbb{Z}$ of the additive group $\mathbb{Z}$ to construct $\mathbb{Z}/n\mathbb{Z}$ without reference to a homomorphism, and identify the factor group.
 
 ##### solution
 
 Since $\mathbb{Z}$ is an abelian group, $n \mathbb{Z}$ is a normal subgroup. Corollary 14.5 allows us to construct the factor group $\mathbb{Z} / n \mathbb{Z}$ with no reference to a homomorphism. As we observed in Example 14.2, $\mathbb{Z} / n \mathbb{Z}$ is isomorphic to $\mathbb{Z}_{n}$. $\square$
-> [!example] Example 14.8
+> [!example|5e89b558-338d-5bb5-812a-52202a3d95e6.local at=6d429a22-3e69-5995-bb5c-59c386243b22] Example 14.8
 > Let $\mathbb{R}$ be additive and let $c>0$. Describe the cosets of $\langle c\rangle$ using representatives $x$ with $0\leq x<c$, and relate $\mathbb{R}/\langle c\rangle$ to $\mathbb{R}_c$ and the circle group $U$. For $c=5.37$, compute the sum of $4.65+\langle5.37\rangle$ and $3.42+\langle5.37\rangle$.
 
 ##### solution
@@ -159,7 +159,7 @@ We have seen that every homomorphism $\phi: G \rightarrow G^{\prime}$ gives rise
 
 Theorem 14.9
 
-> [!theorem] Natural Homomorphism onto a Factor Group
+> [!theorem|fc5bf3d6-f5c5-5379-aff0-77c2e1734f18.library at=65457ac8-3ebf-5f73-848b-e2eaf23a4938] Natural Homomorphism onto a Factor Group
 > Let $H$ be a normal subgroup of $G$. Then $\gamma: G \rightarrow G / H$ given by $\gamma(x)=x H$ is a homomorphism with kernel $H$.
 
 ##### proof
@@ -189,13 +189,13 @@ panels:
 
 Theorem 14.11
 
-> [!theorem] The Fundamental Homomorphism Theorem
+> [!theorem|1167b36c-6f15-553f-8674-00cdfa76d68f.library at=67490a4e-2340-53f9-9a20-b97fee7740bf] The Fundamental Homomorphism Theorem
 > Let $\phi: G \rightarrow G^{\prime}$ be a group homomorphism with kernel $H$. Then $\phi[G]$ is a group, and $\mu: G / H \rightarrow \phi[G]$ given by $\mu(g H)=\phi(g)$ is an isomorphism. If $\gamma: G \rightarrow G / H$ is the homomorphism given by $\gamma(g)=g H$, then $\phi(g)=\mu \gamma(g)$ for each $g \in G$.
 
 The isomorphism $\mu$ in Theorem 14.11 is referred to as a natural or canonical isomorphism, and the same adjectives are used to describe the homomorphism $\gamma$. There may be other isomorphisms and homomorphisms for these same groups, but the maps $\mu$ and $\gamma$ have a special status with $\phi$ and are uniquely determined by Theorem 14.11.
 
 In summary, every homomorphism with domain $G$ gives rise to a factor group $G / H$, and every factor group $G / H$ gives rise to a homomorphism mapping $G$ into $G / H$. Homomorphisms and factor groups are closely related. We give an example indicating how useful this relationship can be.
-> [!example] Example 14.12
+> [!example|cae590e4-1b81-5c58-a6e3-bda1e628859d.local at=c3919c83-c691-5318-b3c0-de09c61feb05] Example 14.12
 > Classify the group $\left(\mathbb{Z}_{4} \times \mathbb{Z}_{2}\right) /\left(\{0\} \times \mathbb{Z}_{2}\right)$ according to the fundamental theorem of finitely generated abelian groups (Theorem 11.12).
 
 ##### solution
@@ -214,7 +214,7 @@ We summarize our work as a theorem.
 
 Theorem 14.13
 
-> [!theorem] Equivalent Conditions for a Normal Subgroup
+> [!theorem|d282cc45-d0fb-54a6-9889-a11e70c2aded.library at=7933cd40-7dac-5b50-bda1-a67f59021049] Equivalent Conditions for a Normal Subgroup
 > The following are three equivalent conditions for a subgroup $H$ of a group $G$ to be a normal subgroup of $G$.
 >
 > 1. $g h g^{-1} \in H$ for all $g \in G$ and $h \in H$.
@@ -222,7 +222,7 @@ Theorem 14.13
 > 3. $g H=H g$ for all $g \in G$.
 
 Condition (2) of Theorem 14.13 is often taken as the definition of a normal subgroup $H$ of a group $G$.
-> [!example] Example 14.14
+> [!example|644989a0-ff06-5b99-a9b2-867121ee81a3.local at=854b1272-359c-573e-9e3c-c19361c237cf] Example 14.14
 > Show that every subgroup $H$ of an abelian group $G$ is normal.
 
 ##### solution
@@ -233,7 +233,7 @@ Exercise 29 of Section 13 shows that the map $i_{g}: G \rightarrow G$ defined by
 
 Definition 14.15
 
-> [!definition] Automorphisms, Inner Automorphisms, and Conjugation
+> [!definition|0eb963b0-552d-5a55-af9d-c47e5c6644f9.library at=93ae123d-e0fb-5d01-9e05-05c70f8e9a5e] Automorphisms, Inner Automorphisms, and Conjugation
 > An isomorphism $\phi: G \rightarrow G$ of a group $G$ with itself is an automorphism of $G$. Let $g\in G$. The automorphism $i_{g}: G \rightarrow G$, where $i_{g}(x)=g x g^{-1}$ for all $x \in G$, is the inner automorphism of $G$ by $g$. Performing $i_{g}$ on $x$ is called conjugation of $x$ by $g$.
 
 The equivalence of conditions (2) and (3) in Theorem 14.13 shows that $g H=H g$ for all $g \in G$ if and only if $i_{g}[H]=H$ for all $g \in G$, that is, if and only if $H$ is invariant under all inner automorphisms of $G$. It is important to realize that $i_{g}[H]=H$ is an equation in sets; we need not have $i_{g}(h)=h$ for all $h \in H$. That is $i_{g}$ may perform a nontrivial permutation of the set $H$. We see that the normal subgroups of a group $G$ are precisely those that are invariant under all inner automorphisms. A subgroup $K$ of $G$ is a conjugate subgroup of $H$ if $K=i_{g}[H]$ for some $g \in G$.
@@ -243,74 +243,74 @@ The equivalence of conditions (2) and (3) in Theorem 14.13 shows that $g H=H g$ 
 ### Computations
 In Exercises 1 through 8, find the order of the given factor group.
 
-> [!exercise] Exercise 14.1
+> [!exercise|2dc9858a-13f0-5c50-ae48-0e72a8d09c31.local at=ca24a61d-201f-5f57-aa9e-62589f94b5f1] Exercise 14.1
 > $\mathbb{Z}_{6} /\langle 3\rangle$
 
-> [!exercise] Exercise 14.2
+> [!exercise|6c6049c8-7aef-5d5e-89ef-61eb7343dba0.local at=296ad850-c539-55e0-8d75-42856a4d0905] Exercise 14.2
 > $\left(\mathbb{Z}_{4} \times \mathbb{Z}_{12}\right) /(\langle 2\rangle \times\langle 2\rangle)$
 
-> [!exercise] Exercise 14.3
+> [!exercise|551a7d6a-bb28-5738-9e96-f863fe965d35.local at=15c0e03f-6a9d-5265-9686-d314365aa4c7] Exercise 14.3
 > $\left(\mathbb{Z}_{4} \times \mathbb{Z}_{2}\right) /\langle(2,1)\rangle$
 
-> [!exercise] Exercise 14.4
+> [!exercise|c5fc2968-8b9a-53f5-a72b-360d00f47590.local at=5c5d9850-3518-5144-b1ea-651f55ab1fe1] Exercise 14.4
 > $\left(\mathbb{Z}_{3} \times \mathbb{Z}_{5}\right) /\left(\{0\} \times \mathbb{Z}_{5}\right)$
 
-> [!exercise] Exercise 14.5
+> [!exercise|60df3ac3-b712-54a0-ad01-988e172878d1.local at=e6376c75-4b2a-5701-a87e-a1cef30b439d] Exercise 14.5
 > $\left(\mathbb{Z}_{2} \times \mathbb{Z}_{4}\right) /\langle(1,1)\rangle$
 
-> [!exercise] Exercise 14.6
+> [!exercise|dee973a1-e137-5a86-9bf0-f021793122f1.local at=f8c83e47-ad8b-5d1e-bbe6-5e397e815e36] Exercise 14.6
 > $\left(\mathbb{Z}_{12} \times \mathbb{Z}_{18}\right) /\langle(4,3)\rangle$
 
-> [!exercise] Exercise 14.7
+> [!exercise|d61a1fdb-4643-5143-91bf-32878c06e192.local at=933eb548-b80e-5c77-a038-390cfe217122] Exercise 14.7
 > $\left(\mathbb{Z}_{2} \times S_{3}\right) /\left\langle\left(1, \rho_{1}\right)\right\rangle$
 
-> [!exercise] Exercise 14.8
+> [!exercise|b0fbbe4d-9422-5296-a35b-118ff25bd154.local at=387f28d0-7445-554a-86cc-4693722e5ae7] Exercise 14.8
 > $\left(\mathbb{Z}_{11} \times \mathbb{Z}_{15}\right) /\langle(1,1)\rangle$
 
 In Exercises 9 through 15, give the order of the element in the factor group.
 
-> [!exercise] Exercise 14.9
+> [!exercise|e3f5ee8f-28d3-50ec-817f-6afd13827619.local at=e446a0ef-fd76-5a7a-9153-62ea23ce5c9b] Exercise 14.9
 > $5+\langle 4\rangle$ in $\mathbb{Z}_{12} /\langle 4\rangle$
 
-> [!exercise] Exercise 14.10
+> [!exercise|0d365adc-fbd4-5997-a48d-51b67549f6f1.local at=8a52770d-8462-5b94-98e5-0bc85b448dbc] Exercise 14.10
 > $26+\langle12\rangle$ in $\mathbb{Z}_{60} /\langle 12\rangle$
 
-> [!exercise] Exercise 14.11
+> [!exercise|ccd5d43c-bb75-5c52-9b52-5ff48542173d.local at=76092343-70e5-5cfb-ba6c-510642b821fd] Exercise 14.11
 > $(2,1)+\langle(1,1)\rangle$ in $\left(\mathbb{Z}_{3} \times \mathbb{Z}_{6}\right) /\langle(1,1)\rangle$
 
-> [!exercise] Exercise 14.12
+> [!exercise|34418d39-eb50-5be9-8c56-168692205a8e.local at=a229cfe3-cb7b-554d-ac0b-4aeaa40a1a7d] Exercise 14.12
 > $(3,1)+\langle(1,1)\rangle$ in $\left(\mathbb{Z}_{4} \times \mathbb{Z}_{4}\right) /\langle(1,1)\rangle$
 
-> [!exercise] Exercise 14.13
+> [!exercise|767e364c-2f7d-5b0a-a9cd-1a132eed2c79.local at=dffc1120-0542-5828-bc47-53b3da15bbeb] Exercise 14.13
 > $(3,1)+\langle(0,2)\rangle$ in $\left(\mathbb{Z}_{4} \times \mathbb{Z}_{8}\right) /\langle(0,2)\rangle$
 
-> [!exercise] Exercise 14.14
+> [!exercise|7d908ed0-1452-53f2-ae4a-6e672bfd6bee.local at=56d05aa1-9510-5940-b2f1-5f18c7333bea] Exercise 14.14
 > $(3,3)+\langle(1,2)\rangle$ in $\left(\mathbb{Z}_{4} \times \mathbb{Z}_{8}\right) /\langle(1,2)\rangle$
 
-> [!exercise] Exercise 14.15
+> [!exercise|6a950282-71fd-5b3e-99aa-4423cb1d9183.local at=963ff68b-71b2-56e8-ac80-6b9e1edcfb26] Exercise 14.15
 > $(2,0)+\langle(4,4)\rangle$ in $\left(\mathbb{Z}_{6} \times \mathbb{Z}_{8}\right) /\langle(4,4)\rangle$
 
-> [!exercise] Exercise 14.16
+> [!exercise|6c0f5075-9af6-5e01-ae1a-76a27d934e47.local at=1d009bfc-5936-5eb9-bb37-b567116a66aa] Exercise 14.16
 > Compute $i_{\rho_{1}}[H]$ for the subgroup $H=\left\{\rho_{0}, \mu_{1}\right\}$ of the group $S_{3}$ of Example 8.7.
 
 ## Concepts
 In Exercises 17 through 19, correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
 
-> [!exercise] Exercise 14.17
+> [!exercise|b86cbb8f-b477-5634-bbe1-33be7bd4ff74.local at=887bd8fa-7b03-569e-9fc9-eedea5108549] Exercise 14.17
 > A normal subgroup $H$ of $G$ is one satisfying $h G=G h$ for all $h \in H$.
 
-> [!exercise] Exercise 14.18
+> [!exercise|10bde88e-a6cb-585f-8793-838d476a43a2.local at=7feaaf9e-6888-58bb-aae0-69c803920f99] Exercise 14.18
 > A normal subgroup $H$ of $G$ is one satisfying $g^{-1} h g \in H$ for all $h \in H$ and all $g \in G$.
 
-> [!exercise] Exercise 14.19
+> [!exercise|2cb30946-155e-5518-a51f-76465e5a61f0.local at=03a9f61c-480e-53f2-8696-56ed6f4ac309] Exercise 14.19
 > An automorphism of a group $G$ is a homomorphism mapping $G$ into $G$.
 
-> [!exercise] Exercise 14.20
+> [!exercise|e94d02b1-d50b-54a6-a3e5-afe26cfd6c17.local at=be6ab16e-a87d-5baf-b279-ba9fe190adb2] Exercise 14.20
 > What is the importance of a normal subgroup of a group $G$ ?
 
 Students often write nonsense when first proving theorems about factor groups. The next two exercises are designed to call attention to one basic type of error.
 
-> [!exercise] Exercise 14.21
+> [!exercise|4385a38d-5f3a-5200-9714-607528cc0de3.local at=d7e1f05d-5e26-54ec-9def-8f0532f5e7e8] Exercise 14.21
 > A student is asked to show that if $H$ is a normal subgroup of an abelian group $G$, then $G / H$ is abelian. The student's proof starts as follows:
 > We must show that $G / H$ is abelian. Let $a$ and $b$ be two elements of $G / H$.
 >
@@ -320,12 +320,12 @@ Students often write nonsense when first proving theorems about factor groups. T
 >
 > c. Complete the proof.
 
-> [!exercise] Exercise 14.22
+> [!exercise|c670e10e-1dd5-574c-87ca-f7713b7b3d91.local at=3536ecb4-c24d-5949-9650-10b8fb896475] Exercise 14.22
 > A torsion group is a group all of whose elements have finite order. A group is torsion free if the identity is the only element of finite order. A student is asked to prove that if $G$ is a torsion group, then so is $G / H$ for every normal subgroup $H$ of $G$. The student writes
 > We must show that each element of $G / H$ is of finite order. Let $x \in G / H$.
 > Answer the same questions as in Exercise 21.
 
-> [!exercise] Exercise 14.23
+> [!exercise|d1ea2327-a42a-5590-9c39-623f7e1ec409.local at=cf57d934-6db5-5107-b642-4aa9f91a01b4] Exercise 14.23
 > Mark each of the following true or false.
 >
 > \_\_\_\_ a. It makes sense to speak of the factor group $G / N$ if and only if $N$ is a normal subgroup of the group $G$.
@@ -351,64 +351,64 @@ Students often write nonsense when first proving theorems about factor groups. T
 
 ## Theory
 
-> [!exercise] Exercise 14.24
+> [!exercise|c74daacb-ac8b-52ed-a4c4-cd4e9800c2b0.local at=69322d45-7aa7-5ec0-8f14-54298dbd998f] Exercise 14.24
 > Show that $A_{n}$ is a normal subgroup of $S_{n}$ and compute $S_{n} / A_{n}$; that is, find a known group to which $S_{n} / A_{n}$ is isomorphic.
 
-> [!exercise] Exercise 14.25
+> [!exercise|07b1df62-a85e-5d14-9012-61e18fe0c397.local at=a740bdfd-938e-55bd-b138-39e90ae25eb4] Exercise 14.25
 > Complete the proof of Theorem 14.4 by showing that if $H$ is a subgroup of a group $G$ and if left coset multiplication $(a H)(b H)=(a b) H$ is well defined, then $H a \subseteq a H$.
 
-> [!exercise] Exercise 14.26
+> [!exercise|dbb124ce-4a49-53ec-a2f0-3b558eb5b9c1.local at=48330399-07b8-5523-a0af-b82d3d5bc651] Exercise 14.26
 > Prove that the torsion subgroup $T$ of an abelian group $G$ is a normal subgroup of $G$, and that $G / T$ is torsion free. (See Exercise 22.)
 
-> [!exercise] Exercise 14.27
+> [!exercise|ec55e036-b457-5082-9df7-02a65e6a8d46.local at=cf65ebe0-bd3d-5af0-b7c9-6fb2a4045aae] Exercise 14.27
 > A subgroup $H$ is conjugate to a subgroup $K$ of a group $G$ if there exists an inner automorphism $i_{g}$ of $G$ such that $i_{g}[H]=K$. Show that conjugacy is an equivalence relation on the collection of subgroups of $G$.
 
-> [!exercise] Exercise 14.28
+> [!exercise|50367d9d-00b3-511e-9063-0a8213d5804d.local at=25801196-1eae-53ea-93ea-722ed5317e02] Exercise 14.28
 > Characterize the normal subgroups of a group $G$ in terms of the cells where they appear in the partition given by the conjugacy relation in the preceding exercise.
 
-> [!exercise] Exercise 14.29
+> [!exercise|4166bdcd-13c4-527e-977d-475a48bed7e5.local at=568ac282-4942-5b9f-bef4-f339d6943392] Exercise 14.29
 > Referring to Exercise 27, find all subgroups of $S_{3}$ (Example 8.7) that are conjugate to $\left\{\rho_{0}, \mu_{2}\right\}$.
 
-> [!exercise] Exercise 14.30
+> [!exercise|f0d64fc2-d9af-5244-a494-fd97452c1753.local at=3c87f195-e5b3-547d-8cb1-1504665eaf05] Exercise 14.30
 > Let $H$ be a normal subgroup of a group $G$, and let $m=(G: H)$. Show that $a^{m} \in H$ for every $a \in G$.
 
-> [!exercise] Exercise 14.31
+> [!exercise|0ccacd94-2375-551f-b7df-3dae3fc96c25.local at=5800e53b-c8fa-51de-b917-74a5745d3aef] Exercise 14.31
 > Show that an intersection of normal subgroups of a group $G$ is again a normal subgroup of $G$.
 
-> [!exercise] Exercise 14.32
+> [!exercise|be1d289e-dc72-5676-bd05-d39f57d35cc9.local at=8348ac31-b64a-5a3d-8020-eaa7facae9fb] Exercise 14.32
 > Given any subset $S$ of a group $G$, show that it makes sense to speak of the smallest normal subgroup that contains $S$. [Hint: Use Exercise 31.]
 
-> [!exercise] Exercise 14.33
+> [!exercise|0ab00bea-2e74-58ac-889b-c96dfa94a26a.local at=ab4bbcda-3f65-52dd-87e5-283a664f4edb] Exercise 14.33
 > Let $G$ be a group. An element of $G$ that can be expressed in the form $a b a^{-1} b^{-1}$ for some $a, b \in G$ is a commutator in $G$. The preceding exercise shows that there is a smallest normal subgroup $C$ of a group $G$ containing all commutators in $G$; the subgroup $C$ is the commutator subgroup of $G$. Show that $G / C$ is an abelian group.
 
-> [!exercise] Exercise 14.34
+> [!exercise|9939bda0-9af5-5b15-b8f2-b85f3d4b8a53.local at=321760a2-6d6a-55ff-ad6a-996d13c2593a] Exercise 14.34
 > Show that if a finite group $G$ has exactly one subgroup $H$ of a given order, then $H$ is a normal subgroup of $G$.
 
-> [!exercise] Exercise 14.35
+> [!exercise|a72e33dc-24e4-5aaa-a3c5-cee4e0b10a7d.local at=13696dfc-3d1c-5104-b4c9-4c7167e29541] Exercise 14.35
 > Show that if $H$ and $N$ are subgroups of a group $G$, and $N$ is normal in $G$, then $H \cap N$ is normal in $H$. Show by an example that $H \cap N$ need not be normal in $G$.
 
-> [!exercise] Exercise 14.36
+> [!exercise|4f6d8bd0-5054-573f-90f7-66051843c343.local at=78bc0d25-76d2-5d78-a03c-074812a0ccf3] Exercise 14.36
 > Let $G$ be a group containing at least one subgroup of a fixed finite order $s$. Show that the intersection of all subgroups of $G$ of order $s$ is a normal subgroup of $G$. [Hint: Use the fact that if $H$ has order $s$, then so does $x^{-1} H x$ for all $x \in G$.]
 
-> [!exercise] Exercise 14.37
+> [!exercise|b05131bc-25e6-54f3-ab2b-643a8b1c1db1.local at=cf23bae9-90cc-5b76-8f82-9b2833315716] Exercise 14.37
 > a. Show that all automorphisms of a group $G$ form a group under function composition.
 >
 > b. Show that the inner automorphisms of a group $G$ form a normal subgroup of the group of all automorphisms of $G$ under function composition. [Warning: Be sure to show that the inner automorphisms do form a subgroup.]
 
-> [!exercise] Exercise 14.38
+> [!exercise|d293915c-8924-5afc-b49e-376bd5d48199.local at=495cf5b0-1208-5600-81d5-857b1536a069] Exercise 14.38
 > Show that the set of all $g \in G$ such that $i_{g}: G \rightarrow G$ is the identity inner automorphism $i_{e}$ is a normal subgroup of a group $G$.
 
-> [!exercise] Exercise 14.39
+> [!exercise|f335a155-d088-545a-a488-220ec71d8fbf.local at=91188278-998b-52a1-93b9-90f321e512f2] Exercise 14.39
 > Let $G$ and $G^{\prime}$ be groups, and let $H$ and $H^{\prime}$ be normal subgroups of $G$ and $G^{\prime}$, respectively. Let $\phi$ be a homomorphism of $G$ into $G^{\prime}$. Show that $\phi$ induces a natural homomorphism $\phi_{*}:(G / H) \rightarrow\left(G^{\prime} / H^{\prime}\right)$ if $\phi[H] \subseteq H^{\prime}$. (This fact is used constantly in algebraic topology.)
 
-> [!exercise] Exercise 14.40
+> [!exercise|50877c59-7704-58cd-81ff-d7aa4489c76b.local at=61ac791d-4008-5d59-b16c-9f554dfd044a] Exercise 14.40
 > Use the properties $\operatorname{det}(A B)=\operatorname{det}(A) \cdot \operatorname{det}(B)$ and $\operatorname{det}\left(I_{n}\right)=1$ for $n \times n$ matrices to show the following:
 >
 > a. The $n \times n$ matrices with determinant 1 form a normal subgroup of $G L(n, \mathbb{R})$.
 >
 > b. The $n \times n$ matrices with determinant $\pm1$ form a normal subgroup of $G L(n, \mathbb{R})$.
 
-> [!exercise] Exercise 14.41
+> [!exercise|b924e37d-b990-5187-8d08-58a483324061.local at=8d6c394f-ad29-5ae8-b096-8dc755276831] Exercise 14.41
 > Let $G$ be a group, and let $\mathscr{P}(G)$ be the set of all subsets of $G$. For any $A, B \in \mathscr{P}(G)$, let us define the product subset $A B=\{a b \mid a \in A, b \in B\}$.
 >
 > a. Show that this multiplication of subsets is associative and has an identity element, but that $\mathscr{P}(G)$ is not a group under this operation.

@@ -40,13 +40,13 @@ Do not feel that you have to memorize a definition word for word. The important 
 In this section, we do define some familiar concepts as sets, both for illustration and for review of the concepts. First we give a few definitions and some notation.
 Definition 0.1
 
-> [!definition|3ca0e9c6-ae31-5247-868e-c11d4ed372fa.local at=b8d44ea3-4b4b-5f38-8ef2-c74c3065096b] Subset
+> [!definition|3ca0e9c6-ae31-5247-868e-c11d4ed372fa.library at=b8d44ea3-4b4b-5f38-8ef2-c74c3065096b] Subset
 > A set $B$ is a subset of a set $A$, denoted by $B \subseteq A$ or $A \supseteq B$, if every element of $B$ is in $A$. The notations $B \subset A$ or $A \supset B$ will be used for $B \subseteq A$ but $B \neq A$.
 
 Note that according to this definition, for any set $A, A$ itself and $\varnothing$ are both subsets of $A$.
 Definition 0.2
 
-> [!definition|561c0fe1-a6b9-57e1-a0c9-27995da51b0d.local at=ff431a7b-ee00-52db-82f4-717ec8435455] Proper and Improper Subsets
+> [!definition|561c0fe1-a6b9-57e1-a0c9-27995da51b0d.library at=ff431a7b-ee00-52db-82f4-717ec8435455] Proper and Improper Subsets
 > If $A$ is any set, then $A$ is the improper subset of $A$. Any other subset of $A$ is a proper subset of $A$.
 
 > [!example|d690355e-9959-51ff-8d13-0239af988ffa.local at=fead9313-361e-58ec-bc59-b84b52d5e879] Example 0.3: Subsets of a Three-Element Set
@@ -57,7 +57,7 @@ Definition 0.2
 Let $S=\{1,2,3\}$. This set $S$ has a total of eight subsets, namely $\emptyset,\{1\},\{2\},\{3\}$, $\{1,2\},\{1,3\},\{2,3\}$, and $\{1,2,3\}$. $\square$
 Definition 0.4
 
-> [!definition|e0c34a2d-4744-54ec-998c-d230f1826741.local at=bb55ef51-7fcd-5314-b6b9-5f2519c92760] Cartesian Product
+> [!definition|e0c34a2d-4744-54ec-998c-d230f1826741.library at=bb55ef51-7fcd-5314-b6b9-5f2519c92760] Cartesian Product
 > Let $A$ and $B$ be sets. The set $A\times B=\{(a,b)\mid a\in A\text{ and }b\in B\}$ is the Cartesian product of $A$ and $B$.
 
 > [!example|95ed94da-122a-54a8-ae87-185ad89799ab.local at=77734e73-2c75-597c-a53b-18d5951ebad8] Example 0.5: Cartesian Product of Two Finite Sets
@@ -91,7 +91,7 @@ We introduce the notion of an element $a$ of set $A$ being related to an element
 
 Definition 0.7
 
-> [!definition|6c67564e-18d7-521f-bd53-5e7ddda52421.local at=a1547432-3528-52d1-a07d-80aab1f9f6c8] Relation Between Sets
+> [!definition|6c67564e-18d7-521f-bd53-5e7ddda52421.library at=a1547432-3528-52d1-a07d-80aab1f9f6c8] Relation Between Sets
 > A relation between sets $A$ and $B$ is a subset $\mathscr{R}$ of $A \times B$. We read $(a, b) \in \mathscr{R}$ as " $a$ is related to $b$ " and write $a \mathscr{R} b$.
 
 > [!example|d9d1708d-6a3f-55bb-8bfb-9fad36dd7193.local at=1fd6b114-5582-547a-8ec4-801cda73e581] Example 0.8: Equality Relation
@@ -115,7 +115,7 @@ The graph of the function $f$ where $f(x)=x^{3}$ for all $x \in \mathbb{R}$, is 
 The preceding example suggests that rather than define a "function" $y=f(x)$ to be a "rule" that assigns to each $x \in \mathbb{R}$ exactly one $y \in \mathbb{R}$, we can easily describe it as a certain type of subset of $\mathbb{R} \times \mathbb{R}$, that is, as a type of relation. We free ourselves from $\mathbb{R}$ and deal with any sets $X$ and $Y$.
 Definition 0.10
 
-> [!definition|12eb7b5d-d88b-533f-b2bb-01867084ebb5.local at=e9a3949a-fc34-52aa-815a-be05ab3f5ee1] Function, Domain, Codomain, and Range
+> [!definition|12eb7b5d-d88b-533f-b2bb-01867084ebb5.library at=e9a3949a-fc34-52aa-815a-be05ab3f5ee1] Function, Domain, Codomain, and Range
 > A function $\phi$ mapping $X$ into $Y$ is a relation between $X$ and $Y$ with the property that each $x \in X$ appears as the first member of exactly one ordered pair $(x, y)$ in $\phi$. Such a function is also called a map or mapping of $X$ into $Y$. We write $\phi: X \rightarrow Y$ and express $(x, y) \in \phi$ by $\phi(x)=y$. The domain of $\phi$ is the set $X$ and the set $Y$ is the codomain of $\phi$. The range of $\phi$ is $\phi[X]=\{\phi(x) \mid x \in X\}$.
 
 > [!example|6a26c3ea-1153-50ef-ab0a-68871bfbb483.local at=bd197f6e-74c7-5fb1-a5cc-1d4438f438ba] Example 0.11: Addition as a Function
@@ -217,7 +217,7 @@ style: scientific
 shows that the sets $\mathbb{Z}$ and $\mathbb{Z}^{+}$ have the same cardinality. Such a pairing, showing that sets $X$ and $Y$ have the same cardinality, is a special type of relation ↔ between $X$ and $Y$ called a one-to-one correspondence. Since each element $x$ of $X$ appears precisely once in this relation, we can regard this one-to-one correspondence as a function with domain $X$. The range of the function is $Y$ because each $y$ in $Y$ also appears in some pairing $x \leftrightarrow y$. We formalize this discussion in a definition.
 Definition 0.12
 
-> [!definition|2130c7e8-ad96-55bc-abf9-aa82433ed0ff.local at=d750baf6-484e-5423-87ba-09e8e906443b] One-to-One and Onto Functions
+> [!definition|2130c7e8-ad96-55bc-abf9-aa82433ed0ff.library at=d750baf6-484e-5423-87ba-09e8e906443b] One-to-One and Onto Functions
 > A function $\phi: X \rightarrow Y$ is one to one if $\phi\left(x_{1}\right)=\phi\left(x_{2}\right)$ only when $x_{1}=x_{2}$. The function $\phi$ is onto $Y$ if the range of $\phi$ is $Y$.
 
 See Exercise 37.[^0]
@@ -226,7 +226,7 @@ If a subset of $X \times Y$ is a one-to-one function $\phi$ mapping $X$ onto $Y$
 
 Definition 0.13
 
-> [!definition|56767db8-5b60-594a-9a71-826a3d426bb0.local at=1d20525f-06aa-5e8e-a010-2eae0a7c16fb] Sets of the Same Cardinality
+> [!definition|56767db8-5b60-594a-9a71-826a3d426bb0.library at=1d20525f-06aa-5e8e-a010-2eae0a7c16fb] Sets of the Same Cardinality
 > Two sets $X$ and $Y$ have the same cardinality if there exists a one-to-one function mapping $X$ onto $Y$, that is, if there exists a one-to-one correspondence between $X$ and $Y$.
 
 > [!example|f3341ca5-f672-5e8b-aeb2-f112cf2fb008.local at=d030d249-2664-5cca-9f2e-9c8c5f21f656] Example 0.14: One-to-One and Onto Power Functions
@@ -272,7 +272,7 @@ We now argue that any such array must omit some number in $S$. Surely $S$ contai
 Sets are disjoint if no two of them have any element in common. Later we will have occasion to break up a set having an algebraic structure (e.g., a notion of addition) into disjoint subsets that become elements in a related algebraic structure. We conclude this section with a study of such breakups, or partitions of sets.
 Definition 0.16
 
-> [!definition|17f6d0e5-8f45-5df3-8ee5-9ea610088452.local at=1788e3dc-35f2-5c73-88b5-f89ee032475a] Partition of a Set
+> [!definition|17f6d0e5-8f45-5df3-8ee5-9ea610088452.library at=1788e3dc-35f2-5c73-88b5-f89ee032475a] Partition of a Set
 > A partition of a set $S$ is a collection of nonempty subsets of $S$ such that every element of $S$ is in exactly one of the subsets. The subsets are the cells of the partition.
 
 When discussing a partition of a set $S$, we denote by $\bar{x}$ the cell containing the element $x$ of $S$.
@@ -294,7 +294,7 @@ Generalizing, for each positive integer $n$, we can partition $\mathbb{Z}^{+}$ i
 Each partition of a set $S$ yields a relation $\mathscr{R}$ on $S$ in a natural way: namely, for $x, y \in S$, let $x \mathscr{R} y$ if and only if $x$ and $y$ are in the same cell of the partition. In set notation, we would write $x \mathscr{R} y$ as $(x, y) \in \mathscr{R}$ (see Definition 0.7). A bit of thought shows that this relation $\mathscr{R}$ on $S$ satisfies the three properties of an equivalence relation in the following definition.
 Definition 0.18
 
-> [!definition|394a4b29-5970-5aa1-9a5c-00606e30c643.local at=986f7681-8573-53b7-be34-8efb79c910d2] Equivalence Relation
+> [!definition|394a4b29-5970-5aa1-9a5c-00606e30c643.library at=986f7681-8573-53b7-be34-8efb79c910d2] Equivalence Relation
 > An equivalence relation $\mathscr{R}$ on a set $S$ is one that satisfies these three properties for all $x, y, z \in S$.
 >
 > 1. (Reflexive) $x \mathscr{R} x$.
@@ -326,7 +326,7 @@ Transitive If $a \mathscr{R} b$ and $b \mathscr{R} c$, then $a b \geq 0$ and $b 
 We observed above that a partition yields a natural equivalence relation. We now show that an equivalence relation on a set yields a natural partition of the set. The theorem that follows states both results for reference.
 Theorem 0.22
 
-> [!theorem|3880376f-b57b-5e0e-bb1d-3022880122a2.local at=7391ad12-9b50-5fff-b8f9-2ad1c41e6e76] Equivalence Relations and Partitions
+> [!theorem|3880376f-b57b-5e0e-bb1d-3022880122a2.library at=7391ad12-9b50-5fff-b8f9-2ad1c41e6e76] Equivalence Relations and Partitions
 > Let $S$ be a nonempty set and let $\sim$ be an equivalence relation on $S$. Then $\sim$ yields a partition of $S$, where
 >
 > $$

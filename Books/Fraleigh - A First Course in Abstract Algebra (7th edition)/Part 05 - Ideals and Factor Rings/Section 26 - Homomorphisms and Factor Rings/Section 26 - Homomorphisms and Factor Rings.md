@@ -5,7 +5,7 @@
 We defined the concepts of homomorphism and isomorphism for rings in Section 18, since we wished to talk about evaluation homomorphisms for polynomials and about isomorphic rings. We repeat some definitions here for easy reference. Recall that a homomorphism is a structure-relating map. A homomorphism for rings must relate both their additive structure and their multiplicative structure.
 Definition 26.1
 
-> [!definition|807dc4c7-674b-55c1-9e39-12ba619eb612.local at=c33cc916-17f9-574d-9081-a1bde5d29547] Ring Homomorphism
+> [!definition|807dc4c7-674b-55c1-9e39-12ba619eb612.library at=c33cc916-17f9-574d-9081-a1bde5d29547] Ring Homomorphism
 > A map $\phi$ of a ring $R$ into a ring $R^{\prime}$ is a homomorphism if
 >
 > $$
@@ -33,7 +33,7 @@ Let $R_{1}, R_{2}, \cdots, R_{n}$ be rings. For each $i$, the map $\pi_{i}$ : $R
 We work our way through the exposition of Section 13 but for ring homomorphisms.
 Theorem 26.3 (Analogue of Theorem 13.12)
 
-> [!theorem|dc2948fc-9eda-5d12-a358-a3cb1780d478.local at=320407f5-e3dc-5ecb-b389-8b6f6da07021] Ring Homomorphisms Preserve Zero, Negatives, Subrings, and Unity
+> [!theorem|dc2948fc-9eda-5d12-a358-a3cb1780d478.library at=320407f5-e3dc-5ecb-b389-8b6f6da07021] Ring Homomorphisms Preserve Zero, Negatives, Subrings, and Unity
 > Let $\phi$ be a homomorphism of a ring $R$ into a ring $R^{\prime}$. If 0 is the additive identity in $R$, then $\phi(0)=0^{\prime}$ is the additive identity in $R^{\prime}$, and if $a \in R$, then $\phi(-a)=-\phi(a)$. If $S$ is a subring of $R$, then $\phi[S]$ is a subring of $R^{\prime}$. Going the other way, if $S^{\prime}$ is a subring of $R^{\prime}$, then $\phi^{-1}\left[S^{\prime}\right]$ is a subring of $R$. Finally, if $R$ has unity 1 , then $\phi(1)$ is unity for $\phi[R]$. Loosely speaking, subrings correspond to subrings, and rings with unity correspond to rings with unity under a ring homomorphism.
 ##### proof
 
@@ -66,7 +66,7 @@ so $\phi(1)$ is unity for $\phi[R]$. $\square$
 Note in Theorem 26.3 that $\phi(1)$ is unity for $\phi[R]$, but not necessarily for $R^{\prime}$ as we ask you to illustrate in Exercise 9.
 Definition 26.4
 
-> [!definition|48e9e825-763d-58d3-af8c-d9554faa8b89.local at=1915ac5a-1b0e-569b-b0be-e9272bf75c70] Kernel of a Ring Homomorphism
+> [!definition|48e9e825-763d-58d3-af8c-d9554faa8b89.library at=1915ac5a-1b0e-569b-b0be-e9272bf75c70] Kernel of a Ring Homomorphism
 > Let a map $\phi: R \rightarrow R^{\prime}$ be a homomorphism of rings. The subring
 >
 > $$
@@ -78,18 +78,18 @@ Definition 26.4
 Now this $\operatorname{Ker}(\phi)$ is the same as the kernel of the group homomorphism of $(R,+)$ into $\left(R^{\prime},+\right)$ given by $\phi$. Theorem 13.15 and Corollary 13.18 on group homomorphisms give us at once analogous results for ring homomorphisms.
 Theorem 26.5 (Analogue of Theorem 13.15)
 
-> [!theorem|65de99fc-b7a4-5da4-924c-09aec6c3e127.local at=7914533c-ba3a-5b92-8f04-d4647e5b82b8] Fibers of a Ring Homomorphism
+> [!theorem|65de99fc-b7a4-5da4-924c-09aec6c3e127.library at=7914533c-ba3a-5b92-8f04-d4647e5b82b8] Fibers of a Ring Homomorphism
 > Let $\phi: R \rightarrow R^{\prime}$ be a ring homomorphism, and let $H=\operatorname{Ker}(\phi)$. Let $a \in R$. Then $\phi^{-1}[\phi(a)]=a+H=H+a$, where $a+H=H+a$ is the coset containing $a$ of the commutative additive group $\langle R,+\rangle$.
 Corollary 26.6 (Analogue of Corollary 13.18)
 
-> [!corollary|f0d1db69-10c3-55b9-8ae6-785d09392a96.local at=e3bd20db-4341-5a51-8d41-479bfab6033f] Injective Ring Homomorphisms and Trivial Kernels
+> [!corollary|f0d1db69-10c3-55b9-8ae6-785d09392a96.library at=e3bd20db-4341-5a51-8d41-479bfab6033f] Injective Ring Homomorphisms and Trivial Kernels
 > A ring homomorphism $\phi: R \rightarrow R^{\prime}$ is a one-to-one map if and only if $\operatorname{Ker}(\phi)=\{0\}$.
 ## Factor (Quotient) Rings
 
 We are now ready to describe the analogue for rings of Section 14. We start with the analogue of Theorem 14.1.
 Theorem 26.7 (Analogue of Theorem 14.1)
 
-> [!theorem|4648f263-2a23-5ac7-8080-847abb0f0f73.local at=4e4b6668-8d21-58a6-b89b-af9b45373101] Quotient by the Kernel of a Ring Homomorphism
+> [!theorem|4648f263-2a23-5ac7-8080-847abb0f0f73.library at=4e4b6668-8d21-58a6-b89b-af9b45373101] Quotient by the Kernel of a Ring Homomorphism
 > Let $\phi: R \rightarrow R^{\prime}$ be a ring homomorphism with kernel $H$. Then the additive cosets of $H$ form a ring $R / H$ whose binary operations are defined by choosing representatives. That is, the sum of two cosets is defined by
 >
 > $$
@@ -149,7 +149,7 @@ Example 18.11 shows that the map $\phi: \mathbb{Z} \rightarrow \mathbb{Z}_{n}$ d
 It remains only to characterize those subrings $H$ of a ring $R$ such that multiplication of additive cosets of $H$ by choosing representatives is well defined. The coset multiplication in Theorem 26.7 was shown to be well defined in Eq. (1). The success of Eq. (1) is due to the fact that $\phi\left(a h_{2}\right)=\phi\left(h_{1} b\right)=\phi\left(h_{1} h_{2}\right)=0^{\prime}$. That is, if $h \in H$ where $H=\operatorname{Ker}(\phi)$, then for every $a, b \in R$ we have $a h \in H$ and $h b \in H$. This suggests Theorem 26.9 below, which is the analogue of Theorem 14.4.
 Theorem 26.9 (Analogue of Theorem 14.4)
 
-> [!theorem|76bf8fb6-7c95-5e9d-a245-66d9ec4d0cce.local at=a98cecdf-46cb-5fdb-bbae-3b51b59d529a] Well-Defined Multiplication of Additive Cosets
+> [!theorem|76bf8fb6-7c95-5e9d-a245-66d9ec4d0cce.library at=a98cecdf-46cb-5fdb-bbae-3b51b59d529a] Well-Defined Multiplication of Additive Cosets
 > Let $H$ be a subring of the ring $R$. Multiplication of additive cosets of $H$ is well defined by the equation
 >
 > $$
@@ -172,7 +172,7 @@ Conversely, suppose that multiplication of additive cosets by representatives is
 In group theory, normal subgroups are precisely the type of substructure of groups required to form a factor group with a well-defined operation on cosets given by operating with chosen representatives. Theorem 26.9 shows that in ring theory, the analogous substructure must be a subring $H$ of a ring $R$ such that $a H \subseteq H$ and $H b \subseteq H$ for all $a, b \in R$, where $a H=\{a h \mid h \in H\}$ and $H b=\{h b \mid h \in H\}$. From now on we will usually denote such a substructure by $N$ rather than $H$. Recall that we started using $N$ to mean a normal subgroup in Section 15.
 Definition 26.10
 
-> [!definition|d83c6e69-a6c0-5dbb-a4f7-f5de0749b015.local at=be0c8df7-e988-5a4c-babf-4c5e15dca8f7] Ideal of a Ring
+> [!definition|d83c6e69-a6c0-5dbb-a4f7-f5de0749b015.library at=be0c8df7-e988-5a4c-babf-4c5e15dca8f7] Ideal of a Ring
 > An additive subgroup $N$ of a ring $R$ satisfying the properties
 >
 > $$
@@ -209,7 +209,7 @@ Let $f \in N$ and let $g \in F$. Then $(f g)(2)=f(2) g(2)=0 g(2)=0$, so $f g \in
 Once we know that multiplication by choosing representatives is well defined on additive cosets of a subring $N$ of $R$, the associative law for multiplication and the distributive laws for these cosets follow at once from the same properties in $R$. We have at once this corollary of Theorem 26.9.
 Corollary 26.14 (Analogue of Corollary 14.5)
 
-> [!corollary|2dd87cd8-78c3-5335-a635-56d34be83c34.local at=3a2efee1-24c6-549b-acdf-f06cc41a3f72] Quotient Ring Operations
+> [!corollary|2dd87cd8-78c3-5335-a635-56d34be83c34.library at=3a2efee1-24c6-549b-acdf-f06cc41a3f72] Quotient Ring Operations
 > Let $N$ be an ideal of a ring $R$. Then the additive cosets of $N$ form a ring $R / N$ with the binary operations defined by
 >
 > $$
@@ -223,7 +223,7 @@ Corollary 26.14 (Analogue of Corollary 14.5)
 > $$
 Definition 26.15
 
-> [!definition|0b72dad7-1238-5035-8b38-58af88ae1a3b.local at=2803be7b-5012-58ea-8019-6904caa4df07] Factor Ring (Quotient Ring)
+> [!definition|0b72dad7-1238-5035-8b38-58af88ae1a3b.library at=2803be7b-5012-58ea-8019-6904caa4df07] Factor Ring (Quotient Ring)
 > Let $N$ be an ideal of a ring $R$. The additive cosets of $N$ form a ring $R/N$ with the binary operations defined by
 >
 > $$
@@ -245,7 +245,7 @@ If we use the term quotient ring, be sure not to confuse it with the notion of t
 To complete our analogy with Sections 13 and 14, we give the analogues of Theorems 14.9 and 14.11.
 Theorem 26.16 (Analogue of Theorem 14.9)
 
-> [!theorem|16999e15-1347-52c7-860b-f704dd8cf541.local at=1d8c1753-5a00-5096-8030-b39e2bdd4c71] Canonical Homomorphism to a Quotient Ring
+> [!theorem|16999e15-1347-52c7-860b-f704dd8cf541.library at=1d8c1753-5a00-5096-8030-b39e2bdd4c71] Canonical Homomorphism to a Quotient Ring
 > Let $N$ be an ideal of a ring $R$. Then $\gamma: R \rightarrow R / N$ given by $\gamma(x)=x+N$ is a ring homomorphism with kernel $N$.
 ##### proof
 
@@ -259,7 +259,7 @@ $\square$
 
 Theorem 26.17 (Fundamental Homomorphism Theorem; Analogue of Theorem 14.11)
 
-> [!theorem|785461b1-a3cf-5985-89ee-9086231ea5dd.local at=f402fadd-712a-5135-9d93-875e0dce5a38] Fundamental Homomorphism Theorem
+> [!theorem|785461b1-a3cf-5985-89ee-9086231ea5dd.library at=f402fadd-712a-5135-9d93-875e0dce5a38] Fundamental Homomorphism Theorem
 > Let $\phi:R\rightarrow R^{\prime}$ be a ring homomorphism with kernel $N$. Then $\phi[R]$ is a ring, and the map $\mu: R / N \rightarrow \phi[R]$ given by $\mu(x+N)=\phi(x)$ is an isomorphism. If $\gamma: R \rightarrow R / N$ is the homomorphism given by $\gamma(x)=x+N$, then for each $x \in R$, we have $\phi(x)=\mu \gamma(x)$.
 ##### proof
 
@@ -289,7 +289,7 @@ In summary, every ring homomorphism with domain $R$ gives rise to a factor ring 
 
 We should now add an addendum to Theorem 26.3 on properties of homomorphisms. 
 
-> [!property|2dcad33f-a880-5de2-b6e5-617f0a645d41.local at=e78a3495-bb0e-5724-be0e-63318c11abc0] Images and Inverse Images of Ideals under Ring Homomorphisms
+> [!property|2dcad33f-a880-5de2-b6e5-617f0a645d41.library at=e78a3495-bb0e-5724-be0e-63318c11abc0] Images and Inverse Images of Ideals under Ring Homomorphisms
 > Let $\phi: R \rightarrow R^{\prime}$ be a homomorphism, and let $N$ be an ideal of $R$. Then $\phi[N]$ is an ideal of $\phi[R]$, although it need not be an ideal of $R^{\prime}$. Also, if $N^{\prime}$ is an ideal of either $\phi[R]$ or of $R^{\prime}$, then $\phi^{-1}\left[N^{\prime}\right]$ is an ideal of $R$.
 
  We leave the proof of this to Exercise 22.

@@ -6,7 +6,7 @@ In the real numbers, $a<b$ if and only if $b-a$ is positive, so the order relati
 
 Definition 25.1
 
-> [!definition|66f7472e-208b-5231-b00c-c76274bd1a1e.local at=884b4ca0-7fda-5ce6-8095-622ff923f1a0] Ordered Ring
+> [!definition|66f7472e-208b-5231-b00c-c76274bd1a1e.library at=884b4ca0-7fda-5ce6-8095-622ff923f1a0] Ordered Ring
 > An ordered ring is a ring $R$ with nonzero unity $1$ together with a nonempty subset $P$ of $R$ satisfying these two properties.
 >
 > Closure For all $a, b \in P$, both $a+b$ and $a b$ are in $P$.
@@ -43,13 +43,13 @@ If $a$ and $b$ are nonzero elements of $R$ then either $-a$ or $a$ is in $P$ and
 We summarize these observations in a theorem and corollary.
 Theorem 25.3
 
-> [!theorem|223ff67b-b8ba-580f-9635-671750b98758.local at=efef99d1-b39c-5ede-a783-d1738be82d5e] Squares, Characteristic, and Zero Divisors in Ordered Rings
+> [!theorem|223ff67b-b8ba-580f-9635-671750b98758.library at=efef99d1-b39c-5ede-a783-d1738be82d5e] Squares, Characteristic, and Zero Divisors in Ordered Rings
 > The ordered rings have nonzero unity.
 >
 > Let $R$ be an ordered ring. All squares of nonzero elements of $R$ are positive, $R$ has characteristic 0, and there are no zero divisors.
 Corollary 25.4
 
-> [!corollary|5861b3fc-6990-5d93-b44b-560bc682fefe.local at=0cc0d52f-f4d7-53ac-afbc-4b99d3398fab] Orderings of the Integers and Real Numbers
+> [!corollary|5861b3fc-6990-5d93-b44b-560bc682fefe.library at=0cc0d52f-f4d7-53ac-afbc-4b99d3398fab] Orderings of the Integers and Real Numbers
 > The ordered rings have nonzero unity.
 >
 > We can consider $\mathbb{Z}$ to be embedded in any ordered ring $R$, and the induced ordering of $\mathbb{Z}$ from $R$ is the natural ordering of $\mathbb{Z}$. The only possible ordering of $\mathbb{R}$ is the natural ordering.
@@ -59,7 +59,7 @@ Theorem 25.3 shows that the field $\mathbb{C}$ of complex numbers cannot be orde
 The theorem that follows defines a relation $<$ in an ordered ring, and gives properties of $<$. The definition of $<$ is motivated by the observation that, in the real numbers, $a<b$ if and only if $b-a$ is positive. The theorem also shows that ordering could have been defined in terms of a relation $<$ having the listed properties.
 Theorem 25.5; displayed relation (1)
 
-> [!theorem|6a3f1f6a-d94e-5624-bd0a-af29f02638a0.local at=628f5cb1-e6be-55e1-97da-7ab4ae9e1337] Order Relation and Positive Cone of an Ordered Ring
+> [!theorem|6a3f1f6a-d94e-5624-bd0a-af29f02638a0.library at=628f5cb1-e6be-55e1-97da-7ab4ae9e1337] Order Relation and Positive Cone of an Ordered Ring
 > Let $R$ be an ordered ring with nonzero unity and set $P$ of positive elements. Let <, read "is less than," be the relation on $R$ defined by
 >
 > $$
@@ -137,7 +137,7 @@ We leave a similar discussion of < for the ordering of $R[x]$ given by $P_{\text
 The preceding example is of interest because it exhibits an ordering that is not Archimedian. We give a definition explaining this terminology. Remember that we can consider $\mathbb{Z}$ to be a subring of every ordered ring.
 Definition 25.7
 
-> [!definition|541d7208-5c88-5be3-90c1-c17fd692313f.local at=aea5444e-7569-531c-abc9-42c5ea481645] Archimedian Ordering
+> [!definition|541d7208-5c88-5be3-90c1-c17fd692313f.library at=aea5444e-7569-531c-abc9-42c5ea481645] Archimedian Ordering
 > An ordering of a ring $R$ with nonzero unity $1$ with this property:
 >
 > For each given positive $a$ and $b$ in $R$, there exists a positive integer $n$ such that $n a>b$.
@@ -178,7 +178,7 @@ If $F$ is an ordered field, we can use the obvious analog of $P_{\text {low }}$ 
 Let $R$ be an ordered ring and let $\phi: R \rightarrow R^{\prime}$ be a ring isomorphism. It is intuitively clear that by identification (renaming), the map $\phi$ can be used to carry over the ordering of $R$ to provide an ordering of $R^{\prime}$. We state as a theorem what would have to be proved for a skeptic, and leave the proof as Exercise 25.
 Theorem 25.10
 
-> [!theorem|8b2c4554-5bff-5679-a9cc-19a732c4e863.local at=69693eb5-81c9-5f1f-9de4-b404735e6a82] Transport of Ring Orderings by Isomorphisms
+> [!theorem|8b2c4554-5bff-5679-a9cc-19a732c4e863.library at=69693eb5-81c9-5f1f-9de4-b404735e6a82] Transport of Ring Orderings by Isomorphisms
 > The ordered rings have nonzero unity.
 >
 > Let $R$ be an ordered ring with set $P$ of positive elements and let $\phi: R \rightarrow R^{\prime}$ be a ring isomorphism. The subset $P^{\prime}=\phi[P]$ satisfies the requirements of closure under addition and multiplication and trichotomy for a set of positive elements of $R^{\prime}$. Furthermore, in the ordering of $R^{\prime}$ given by $P^{\prime}$, we have $\phi(a)<^{\prime} \phi(b)$ in $R^{\prime}$ if and only if $a<b$ in $R$.
@@ -198,7 +198,7 @@ $$
 is one to one. Thus it provides an isomorphism of $\mathbb{Q}[x]$ with $\phi[\mathbb{Q}[x]]$. We denote this
 image ring by $\mathbb{Q}[\pi]$. If we provide $\mathbb{Q}[x]$ with the ordering using the set $P_{\text {low }}$ of Examples 25.2 and 25.6, the ordering on $\mathbb{Q}[\pi]$ induced by $\phi_{\pi}$ is very different from that induced by the natural (and only) ordering of $\mathbb{R}$. In the $P_{\text {low }}$ ordering, $\pi$ is less than any positive element of $\mathbb{Q}$! $\square$
 
-> [!definition|899fc531-8f33-5d35-b49c-54bc9e62203b.local at=1645186c-8c7c-5a01-a007-940bce53fa19] Ring Automorphism
+> [!definition|899fc531-8f33-5d35-b49c-54bc9e62203b.library at=1645186c-8c7c-5a01-a007-940bce53fa19] Ring Automorphism
 > An isomorphism of a ring $R$ onto itself is called an automorphism of $R$.
 
 Theorem 25.10 can be used to exhibit different orderings of an ordered ring $R$ if there exist automorphisms of $R$ that do not carry the set $P$ of positive elements onto itself. We give an example.
@@ -213,7 +213,7 @@ Exercise 11 of Section 18 shows that $\{m+n \sqrt{2} \mid m, n \in \mathbb{Z}\}$
 In view of Examples 25.11 and 25.12, which exhibit orderings on subrings of $\mathbb{R}$ that are not the induced orderings, we wonder whether $\mathbb{Q}$ can have an ordering other than the natural one. Our final theorem shows that this is not possible.
 Theorem 25.13
 
-> [!theorem|0142b260-75ea-5cd1-82ae-02cdc99f856c.local at=7d88abf8-33d5-52d7-8ab1-5094945a75b5] Unique Extension of an Ordering to the Field of Quotients
+> [!theorem|0142b260-75ea-5cd1-82ae-02cdc99f856c.library at=7d88abf8-33d5-52d7-8ab1-5094945a75b5] Unique Extension of an Ordering to the Field of Quotients
 > Let $D$ be an ordered integral domain with nonzero unity and $P$ as set of positive elements, and let $F$ be a field of quotients of $D$. The set
 >
 > $$

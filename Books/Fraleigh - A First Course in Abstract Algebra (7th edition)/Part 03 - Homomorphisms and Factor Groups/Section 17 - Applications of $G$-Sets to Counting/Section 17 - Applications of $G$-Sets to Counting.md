@@ -9,7 +9,7 @@ There are 24 possible positions of a cube on a table, for any one of six faces c
 The following theorem gives a tool for determining the number of orbits in a $G$-set $X$ under $G$. Recall that for each $g \in G$ we let $X_{g}$ be the set of elements of $X$ left fixed by $g$, so that $X_{g}=\{x \in X \mid g x=x\}$. Recall also that for each $x \in X$, we let $G_{x}=\{g \in G \mid g x=x\}$, and $G x$ is the orbit of $x$ under $G$.
 Theorem 17.1
 
-> [!theorem|ec639ed7-10da-5296-ac60-af3cc5dc6dc2.local at=53a26305-e1a0-5c90-92e6-54f83eb21ed8] Burnside's Formula
+> [!theorem|ec639ed7-10da-5296-ac60-af3cc5dc6dc2.library at=53a26305-e1a0-5c90-92e6-54f83eb21ed8] Burnside's Formula
 > Let $G$ be a finite group and $X$ a finite $G$-set. Let $X_g=\{x\in X\mid gx=x\}$. If $r$ is the number of orbits in $X$ under $G$, then
 >
 > $$
@@ -61,7 +61,7 @@ $$
 Comparison of Eq. 2 and Eq. 5 gives Eq. 1. $\square$
 Corollary 17.2
 
-> [!corollary|612bd488-bec3-5570-83cf-93460e30895c.local at=10ce2513-a5e8-5828-9bba-318e4bdcb537] Orbit Count as the Average Number of Fixed Points
+> [!corollary|612bd488-bec3-5570-83cf-93460e30895c.library at=10ce2513-a5e8-5828-9bba-318e4bdcb537] Orbit Count as the Average Number of Fixed Points
 > If $G$ is a finite group and $X$ is a finite $G$-set, let $X_g=\{x\in X\mid gx=x\}$. Then
 >
 > $$

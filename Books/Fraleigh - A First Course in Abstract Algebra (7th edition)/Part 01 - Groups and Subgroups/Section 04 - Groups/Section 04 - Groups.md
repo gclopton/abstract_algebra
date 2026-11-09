@@ -36,7 +36,7 @@ We can now see what properties a set $S$ and a binary operation $*$ on $S$ would
 Rather than describe a group using terms defined in Sections 2 and 3 as we did at the end of the preceding paragraph, we give a self-contained definition. This enables a person who picks up this text to discover what a group is without having to look up more terms.
 Definition 4.1 — $\mathscr{G}_1$: associativity; $\mathscr{G}_2$: identity; $\mathscr{G}_3$: inverse
 
-> [!definition|6fa6b862-a172-533e-af78-ed10d5d0d7dc.local at=a71c8dc6-40d3-583f-b537-cdf892063a47] Group
+> [!definition|6fa6b862-a172-533e-af78-ed10d5d0d7dc.library at=a71c8dc6-40d3-583f-b537-cdf892063a47] Group
 > A group $\langle G, *\rangle$ is a set $G$, closed under a binary operation $*$, such that the following axioms are satisfied:
 > 1. For all $a, b, c \in G$, we have
 >
@@ -85,7 +85,7 @@ We point out now that we will sometimes be sloppy in notation. Rather than use t
 
 Definition 4.3
 
-> [!definition|bd428a03-caa6-549c-9fde-75743fdbe73d.local at=776c9704-6186-5b27-9492-acd204fbc490] Abelian Group
+> [!definition|bd428a03-caa6-549c-9fde-75743fdbe73d.library at=776c9704-6186-5b27-9492-acd204fbc490] Abelian Group
 > A group $G$ is abelian if its binary operation is commutative.
 
 
@@ -195,7 +195,7 @@ As we proceed to prove our first theorem about groups, we must use Definition 4.
 Our first theorem will establish cancellation laws. In real arithmetic, we know that $2 a=2 b$ implies that $a=b$. We need only divide both sides of the equation $2 a=2 b$ by 2 , or equivalently, multiply both sides by $\frac{1}{2}$, which is the multiplicative inverse of 2. We parrot this proof to establish cancellation laws for any group. Note that we will also use the associative law.
 Theorem 4.15
 
-> [!theorem|d122e243-c71e-5060-871d-791141df14b9.local at=3e0f38d3-5a33-53d5-92df-d1298ad838ad] Cancellation Laws in a Group
+> [!theorem|d122e243-c71e-5060-871d-791141df14b9.library at=3e0f38d3-5a33-53d5-92df-d1298ad838ad] Cancellation Laws in a Group
 > If $G$ is a group with binary operation $*$, then the left and right cancellation laws hold in $G$, that is, $a * b=a * c$ implies $b=c$, and $b * a=c * a$ implies $b=c$ for all $a, b, c \in G$.
 
 ##### proof
@@ -229,7 +229,7 @@ Similarly, from $b * a=c * a$ one can deduce that $b=c$ upon multiplication on t
 Our next proof can make use of Theorem 4.15. We show that a "linear equation" in a group has a unique solution. Recall that we chose our group properties to allow us to find solutions of such equations.
 Theorem 4.16
 
-> [!theorem|5048aee6-1789-5dfc-a546-a16e30d69329.local at=7527ed5c-f47a-59ae-932a-b8d6884a7e29] Unique Solutions of Linear Equations in a Group
+> [!theorem|5048aee6-1789-5dfc-a546-a16e30d69329.library at=7527ed5c-f47a-59ae-932a-b8d6884a7e29] Unique Solutions of Linear Equations in a Group
 > If $G$ is a group with binary operation $*$, and if $a$ and $b$ are any elements of $G$, then the linear equations $a * x=b$ and $y * a=b$ have unique solutions $x$ and $y$ in $G$.
 
 ##### proof
@@ -253,7 +253,7 @@ Of course, to prove the uniqueness in the last theorem, we could have followed t
 Because a group is a special type of binary structure, we know from Theorem 3.13 that the identity $e$ in a group is unique. We state this again as part of the next theorem for easy reference.
 Theorem 4.17
 
-> [!theorem|17a3c9d9-e72a-5c85-b5cf-e3a45c612a80.local at=74ff2d35-4c39-5704-8d7c-839a61eea00a] Uniqueness of Identity and Inverses in a Group
+> [!theorem|17a3c9d9-e72a-5c85-b5cf-e3a45c612a80.library at=74ff2d35-4c39-5704-8d7c-839a61eea00a] Uniqueness of Identity and Inverses in a Group
 > In a group $G$ with binary operation $*$, there is only one element $e$ in $G$ such that
 >
 > $$
@@ -295,7 +295,7 @@ $$
 This equation and Theorem 4.17 show that $b^{\prime} * a^{\prime}$ is the unique inverse of $a * b$. That is, $(a * b)^{\prime}=b^{\prime} * a^{\prime}$. We state this as a corollary.
 Corollary 4.18
 
-> [!corollary|12ff7d2e-6470-5824-9075-c01c7f3b362a.local at=c5e58075-a7ea-5501-a331-6012061f7837] Inverse of a Product in a Group
+> [!corollary|12ff7d2e-6470-5824-9075-c01c7f3b362a.library at=c5e58075-a7ea-5501-a331-6012061f7837] Inverse of a Product in a Group
 > Let $G$ be a group. For all $a, b \in G$, we have $(a * b)^{\prime}=b^{\prime} * a^{\prime}$. Here $*$ is the group operation and $x^{\prime}$ denotes the inverse of $x$.
 
 

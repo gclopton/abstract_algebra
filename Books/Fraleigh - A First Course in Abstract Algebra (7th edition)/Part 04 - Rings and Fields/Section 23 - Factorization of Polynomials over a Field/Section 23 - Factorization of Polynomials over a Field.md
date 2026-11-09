@@ -14,7 +14,7 @@ The following theorem is the basic tool for our work in this section. Note the s
 
 Theorem 23.1
 
-> [!theorem|54945bbb-0433-53e9-a315-11e1d9b4adcc.local at=9c2c9b5d-04c1-54ab-b0d6-34fa4715fc79] Division Algorithm for $F[x]$
+> [!theorem|54945bbb-0433-53e9-a315-11e1d9b4adcc.library at=9c2c9b5d-04c1-54ab-b0d6-34fa4715fc79] Division Algorithm for $F[x]$
 > Let $F$ be a field. Let
 >
 > $$
@@ -124,7 +124,7 @@ We give three important corollaries of Theorem 23.1. The first one appears in hi
 
 Corollary 23.3
 
-> [!corollary|0f1040d0-05c5-54ef-9b6f-4e50d8b6e3f4.local at=4f61a036-7280-590f-8cd6-9ff9af4f3b51] Factor Theorem
+> [!corollary|0f1040d0-05c5-54ef-9b6f-4e50d8b6e3f4.library at=4f61a036-7280-590f-8cd6-9ff9af4f3b51] Factor Theorem
 > Let $F$ be a field. An element $a \in F$ is a zero of $f(x) \in F[x]$ if and only if $x-a$ is a factor of $f(x)$ in $F[x]$.
 
 ##### proof
@@ -208,7 +208,7 @@ The next corollary should also look familiar.
 
 Corollary 23.5
 
-> [!corollary|2333e8b1-d6e0-5c78-a08c-fba9bf37909b.local at=cd35b1e4-3728-5418-9fdd-dd1e167b7b10] Number of Zeros of a Polynomial over a Field
+> [!corollary|2333e8b1-d6e0-5c78-a08c-fba9bf37909b.library at=cd35b1e4-3728-5418-9fdd-dd1e167b7b10] Number of Zeros of a Polynomial over a Field
 > A nonzero polynomial $f(x) \in F[x]$ of degree $n$ can have at most $n$ zeros in a field $F$.
 
 ##### proof
@@ -243,7 +243,7 @@ Our final corollary is concerned with the structure of the multiplicative group 
 
 Corollary 23.6
 
-> [!corollary|9b1424e9-f109-53f9-bf9a-b4095969a9a8.local at=4f9efc98-2ef0-54e5-9ada-3ab793651871] Finite Multiplicative Subgroups of Fields Are Cyclic
+> [!corollary|9b1424e9-f109-53f9-bf9a-b4095969a9a8.library at=4f9efc98-2ef0-54e5-9ada-3ab793651871] Finite Multiplicative Subgroups of Fields Are Cyclic
 > If $G$ is a finite subgroup of the multiplicative group $\left\langle F^{*}, \cdot\right\rangle$ of a field $F$, then $G$ is cyclic. In particular, the multiplicative group of all nonzero elements of a finite field is cyclic.
 
 ##### proof
@@ -258,7 +258,7 @@ Our next definition singles out a type of polynomial in $F[x]$ that will be of u
 
 Definition 23.7
 
-> [!definition|48e85327-6def-5c78-8d89-1a1d03f076c1.local at=1e1dd0a0-e579-50ba-8828-fc9d6b20616b] Reducible and Irreducible Polynomials over a Field
+> [!definition|48e85327-6def-5c78-8d89-1a1d03f076c1.library at=1e1dd0a0-e579-50ba-8828-fc9d6b20616b] Reducible and Irreducible Polynomials over a Field
 > Let $F$ be a field. A nonconstant polynomial $f(x) \in F[x]$ is irreducible over $F$ or is an irreducible polynomial in $F[x]$ if $f(x)$ cannot be expressed as a product $g(x) h(x)$ of two polynomials $g(x)$ and $h(x)$ in $F[x]$ both of lower degree than the degree of $f(x)$. If $f(x) \in F[x]$ is a nonconstant polynomial that is not irreducible over $F$, then $f(x)$ is reducible over $F$.
 
 Note that the preceding definition concerns the concept irreducible over $F$ and not just the concept irreducible. A polynomial $f(x)$ may be irreducible over $F$, but may not be irreducible if viewed over a larger field $E$ containing $F$. We illustrate this.
@@ -283,7 +283,7 @@ Irreducible polynomials will play a very important role in our work from now on.
 
 Theorem 23.10
 
-> [!theorem|e33d4814-406e-52dc-8053-f77b72ada7bb.local at=94d370ea-6e04-5af1-8cda-5b073d456183] Zeros and Reducibility of Quadratic and Cubic Polynomials
+> [!theorem|e33d4814-406e-52dc-8053-f77b72ada7bb.library at=94d370ea-6e04-5af1-8cda-5b073d456183] Zeros and Reducibility of Quadratic and Cubic Polynomials
 > Let $F$ be a field. Let $f(x) \in F[x]$, and let $f(x)$ be of degree 2 or 3. Then $f(x)$ is reducible over $F$ if and only if it has a zero in $F$.
 
 ##### proof
@@ -296,7 +296,7 @@ We turn to some conditions for irreducibility over $\mathbb{Q}$ of polynomials i
 
 Theorem 23.11
 
-> [!theorem|555ff126-5124-55c2-a6f1-6945cb4f03ad.local at=9acc0d84-f26b-55b6-9e75-e40a9073fe4a] Gauss’s Lemma for Polynomial Factorization
+> [!theorem|555ff126-5124-55c2-a6f1-6945cb4f03ad.library at=9acc0d84-f26b-55b6-9e75-e40a9073fe4a] Gauss’s Lemma for Polynomial Factorization
 > If $f(x) \in \mathbb{Z}[x]$, then $f(x)$ factors into a product of two polynomials of lower degrees $r$ and $s$ in $\mathbb{Q}[x]$ if and only if it has such a factorization with polynomials of the same degrees $r$ and $s$ in $\mathbb{Z}[x]$.
 
 ##### proof
@@ -305,7 +305,7 @@ The proof is omitted here. $\square$
 
 Corollary 23.12
 
-> [!corollary|5c33bfd3-826a-5dbc-926b-a60acc5d9994.local at=f7334ce0-2252-538b-89ab-bd5a1e185734] Rational Zeros of Monic Integer Polynomials
+> [!corollary|5c33bfd3-826a-5dbc-926b-a60acc5d9994.library at=f7334ce0-2252-538b-89ab-bd5a1e185734] Rational Zeros of Monic Integer Polynomials
 > If $f(x)=x^{n}+a_{n-1} x^{n-1}+\cdots+a_{0}$ is in $\mathbb{Z}[x]$ with $a_{0} \neq 0$, and if $f(x)$ has a zero in $\mathbb{Q}$, then it has a zero $m$ in $\mathbb{Z}$, and $m$ must divide $a_{0}$.
 
 ##### proof
@@ -356,7 +356,7 @@ We conclude our irreducibility criteria with the famous Eisenstein criterion for
 
 Theorem 23.15
 
-> [!theorem|d03dfae2-306d-5fa4-ae35-9b5fe0076a0b.local at=3c0bb01e-ee51-5466-93d5-c09ce45d1049] Eisenstein Criterion
+> [!theorem|d03dfae2-306d-5fa4-ae35-9b5fe0076a0b.library at=3c0bb01e-ee51-5466-93d5-c09ce45d1049] Eisenstein Criterion
 > Let $p \in \mathbb{Z}$ be a prime. Suppose that $f(x)=a_{n} x^{n}+\cdots+a_{0}$ is in $\mathbb{Z}[x]$ with $n\geq1$, and $a_{n} \not \equiv 0(\bmod p)$, but $a_i\equiv0\pmod p$ for all $i<n$, with $a_{0} \not \equiv 0\left(\bmod p^{2}\right)$. Then $f(x)$ is irreducible over $\mathbb{Q}$.
 
 ##### proof
@@ -395,7 +395,7 @@ is irreducible over $\mathbb{Q}$. $\square$
 
 Corollary 23.17
 
-> [!corollary|c7c27dd3-5d7b-540f-a4c7-ccd1a492ca93.local at=9bf52334-1395-5424-a7d5-612d6120aab7] Irreducibility of Prime Cyclotomic Polynomials
+> [!corollary|c7c27dd3-5d7b-540f-a4c7-ccd1a492ca93.library at=9bf52334-1395-5424-a7d5-612d6120aab7] Irreducibility of Prime Cyclotomic Polynomials
 > The polynomial
 >
 > $$
@@ -426,21 +426,21 @@ $$
 
 would give a nontrivial factorization of $g(x)$ in $\mathbb{Z}[x]$. Thus $\Phi_{p}(x)$ must also be irreducible over $\mathbb{Q}$. $\square$
 
-> [!definition|3ba1657e-1ffc-5b9b-a609-bb9e7115ddf6.local at=c97171ee-9938-51a6-879f-895cecc93d23] Prime-Index Cyclotomic Polynomial
+> [!definition|3ba1657e-1ffc-5b9b-a609-bb9e7115ddf6.library at=c97171ee-9938-51a6-879f-895cecc93d23] Prime-Index Cyclotomic Polynomial
 > The polynomial $\Phi_p(x)=(x^p-1)/(x-1)=x^{p-1}+x^{p-2}+\cdots+x+1$ for a prime $p$ is the $p^{\text{th}}$ cyclotomic polynomial.
 
 ## Uniqueness of Factorization in $F[x]$
 
 Polynomials in $F[x]$ can be factored into a product of irreducible polynomials in $F[x]$ in an essentially unique way. 
 
-> [!definition|71c52949-23fc-5978-94b3-52f4938fc16c.local at=c769bb21-f074-5bdd-a366-7c80f863720a] Divisibility of Polynomials over a Field
+> [!definition|71c52949-23fc-5978-94b3-52f4938fc16c.library at=c769bb21-f074-5bdd-a366-7c80f863720a] Divisibility of Polynomials over a Field
 > Let $F$ be a field. For $f(x), g(x) \in F[x]$ we say that $g(x)$ divides $f(x)$ in $F[x]$ if there exists $q(x) \in F[x]$ such that $f(x)=g(x) q(x)$.
 
 Note the similarity of the theorem that follows with boxed Property (1) for $\mathbb{Z}$ following Example 6.9.
 
 Theorem 23.18
 
-> [!theorem|d56e4f0b-917c-5e30-b3a7-15d589ee2a41.local at=d613c838-0fc5-5462-9226-f45176e16afe] Irreducible Polynomial Divisors of a Product
+> [!theorem|d56e4f0b-917c-5e30-b3a7-15d589ee2a41.library at=d613c838-0fc5-5462-9226-f45176e16afe] Irreducible Polynomial Divisors of a Product
 > Let $F$ be a field. Let $p(x)$ be an irreducible polynomial in $F[x]$. If $p(x)$ divides $r(x) s(x)$ for $r(x),s(x)\in F[x]$, then either $p(x)$ divides $r(x)$ or $p(x)$ divides $s(x)$.
 
 ##### proof
@@ -449,7 +449,7 @@ We delay the proof of this theorem to Section 27. (See Theorem 27.27.) $\square$
 
 Corollary 23.19
 
-> [!corollary|3809c8c2-570d-5790-a819-5ff5f4e4cfae.local at=e433df19-bdbf-52cd-9672-2f6d6428b389] Irreducible Polynomial Divisors of a Finite Product
+> [!corollary|3809c8c2-570d-5790-a819-5ff5f4e4cfae.library at=e433df19-bdbf-52cd-9672-2f6d6428b389] Irreducible Polynomial Divisors of a Finite Product
 > Let $F$ be a field. If $p(x)$ is irreducible in $F[x]$ and $p(x)$ divides the product $r_{1}(x) \cdots r_{n}(x)$ for $r_{i}(x) \in F[x]$, then $p(x)$ divides $r_{i}(x)$ for at least one $i$.
 
 ##### proof
@@ -458,7 +458,7 @@ Using mathematical induction, we find that this is immediate from Theorem 23.18.
 
 Theorem 23.20
 
-> [!theorem|2be581ce-2fa8-5a3b-97d7-95f18dda1f3a.local at=18c04595-71df-5c66-9b62-3ae803e10179] Unique Factorization of Polynomials over a Field
+> [!theorem|2be581ce-2fa8-5a3b-97d7-95f18dda1f3a.library at=18c04595-71df-5c66-9b62-3ae803e10179] Unique Factorization of Polynomials over a Field
 > If $F$ is a field, then every nonconstant polynomial $f(x) \in F[x]$ can be factored in $F[x]$ into a product of irreducible polynomials, the irreducible polynomials being unique except for order and for unit (that is, nonzero constant) factors in $F$.
 
 ##### proof

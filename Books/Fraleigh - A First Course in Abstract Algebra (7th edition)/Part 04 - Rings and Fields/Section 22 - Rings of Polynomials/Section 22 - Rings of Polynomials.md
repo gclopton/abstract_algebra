@@ -29,7 +29,7 @@ where $a_{i}=0$ for all but a finite number of values of $i$. Now there is no pr
 
 Definition 22.1[^1]
 
-> [!definition|c0c45060-9a0d-5e23-94e5-b7a95a93f1b1.local at=0cb4d66b-c231-5a06-98c2-7db99fc97e6a] Polynomials, Coefficients, and Degree over a Ring
+> [!definition|c0c45060-9a0d-5e23-94e5-b7a95a93f1b1.library at=0cb4d66b-c231-5a06-98c2-7db99fc97e6a] Polynomials, Coefficients, and Degree over a Ring
 > Let $R$ be a ring. A polynomial $f(x)$ with coefficients in $R$ is an infinite formal sum
 >
 > $$
@@ -40,10 +40,10 @@ Definition 22.1[^1]
 
 To simplify working with polynomials, let us agree that if $f(x)=a_{0}+a_{1}x+\cdots+a_nx^n+\cdots$ has $a_{i}=0$ for $i>n$, then we may denote $f(x)$ by $a_{0}+a_{1} x+\cdots+a_{n} x^{n}$. Also, if $R$ has unity $1 \neq 0$, we will write a term $1 x^{k}$ in such a sum as $x^{k}$. For example, in $\mathbb{Z}[x]$, we will write the polynomial $2+1 x$ as $2+x$. Finally, we shall agree that we may omit altogether from the formal sum any term $0 x^{i}$, or $a_{0}$ if $a_{0}=0$ but not all $a_{i}=0$. Thus $0,2, x$, and $2+x^{2}$ are polynomials with coefficients in $\mathbb{Z}$. 
 
-> [!definition|3b7d7feb-0d45-5f58-800c-a258700790c9.local at=7609b18f-1e46-5ac8-85d3-abe90b470ab4] Constant Polynomial
+> [!definition|3b7d7feb-0d45-5f58-800c-a258700790c9.library at=7609b18f-1e46-5ac8-85d3-abe90b470ab4] Constant Polynomial
 > Let $R$ be a ring. An element of $R$ is a constant polynomial.
 
-> [!definition|e4e124c7-1043-5663-b664-11511784824f.local at=b5f77fe4-c03d-56b4-860a-5a66f1fac39e] Polynomial Addition and Multiplication
+> [!definition|e4e124c7-1043-5663-b664-11511784824f.library at=b5f77fe4-c03d-56b4-860a-5a66f1fac39e] Polynomial Addition and Multiplication
 > Addition and multiplication of polynomials with coefficients in a ring $R$ are defined in a way familiar to us. If
 >
 > $$
@@ -71,7 +71,7 @@ Observe that both $c_{i}$ and $d_{i}$ are 0 for all but a finite number of value
 
 Theorem 22.2
 
-> [!theorem|2b96d4e8-959b-5532-97fb-d54b6884c947.local at=9f21f264-6045-5565-be67-68508aab6622] Polynomial Ring over a Ring
+> [!theorem|2b96d4e8-959b-5532-97fb-d54b6884c947.library at=9f21f264-6045-5565-be67-68508aab6622] Polynomial Ring over a Ring
 > The set $R[x]$ of all polynomials in an indeterminate $x$ with coefficients in a ring $R$ is a ring under polynomial addition and multiplication. If $R$ is commutative, then so is $R[x]$, and if $R$ has unity $1 \neq 0$, then 1 is also unity for $R[x]$.
 
 ##### proof
@@ -118,12 +118,12 @@ $$
 
 $\square$
 
-> [!definition|2250a8f6-1dad-5af4-a0ff-b72e876c59a2.local at=49d4ec92-a12d-5f9c-bf8a-2aa67dcc8372] Polynomial Rings in Several Indeterminates
+> [!definition|2250a8f6-1dad-5af4-a0ff-b72e876c59a2.library at=49d4ec92-a12d-5f9c-bf8a-2aa67dcc8372] Polynomial Rings in Several Indeterminates
 > If $R$ is a ring and $x$ and $y$ are two indeterminates, then we can form the ring $(R[x])[y]$, that is, the ring of polynomials in $y$ with coefficients that are polynomials in $x$. Every polynomial in $y$ with coefficients that are polynomials in $x$ can be rewritten in a natural way as a polynomial in $x$ with coefficients that are polynomials in $y$. This indicates that $(R[x])[y]$ is naturally isomorphic to $(R[y])[x]$, although a careful proof is tedious. We shall identify these rings by means of this natural isomorphism, and shall consider this ring $R[x, y]$ the ring of polynomials in two indeterminates $x$ and $y$ with coefficients in $R$. The ring $R\left[x_{1}, \cdots, x_{n}\right]$ of polynomials in the $n$ indeterminates $x_{i}$ with coefficients in $R$ is similarly defined.
 
 We leave as Exercise 24 the proof that if $D$ is an integral domain then so is $D[x]$. 
 
-> [!definition|35215c81-5e25-5655-9a0e-dd410aa6a168.local at=88c59cb5-9053-5022-a8aa-a57e3333a0c6] Field of Rational Functions in Several Indeterminates
+> [!definition|35215c81-5e25-5655-9a0e-dd410aa6a168.library at=88c59cb5-9053-5022-a8aa-a57e3333a0c6] Field of Rational Functions in Several Indeterminates
 > If $F$ is a field, then $F[x]$ is an integral domain. Note that $F[x]$ is not a field, for $x$ is not a unit in $F[x]$. That is, there is no polynomial $f(x) \in F[x]$ such that $x f(x)=1$. One can construct the field of quotients $F(x)$ of $F[x]$. Any element in $F(x)$ can be represented as a quotient $f(x) / g(x)$ of two polynomials in $F[x]$ with $g(x) \neq 0$. We similarly define $F\left(x_{1}, \cdots, x_{n}\right)$ to be the field of quotients of $F\left[x_{1}, \cdots, x_{n}\right]$. This field $F\left(x_{1}, \cdots, x_{n}\right)$ is the field of rational functions in $n$ indeterminates over $F$.
 
 These fields play a very important role in algebraic geometry.
@@ -134,7 +134,7 @@ We are now ready to proceed to show how homomorphisms can be used to study what 
 
 Theorem 22.4
 
-> [!theorem|038802c1-c158-518a-b114-0e8c04918d80.local at=4bcf7692-7d0e-5b3f-90c6-c27dfeb4ae4c] The Evaluation Homomorphisms for Field Theory
+> [!theorem|038802c1-c158-518a-b114-0e8c04918d80.library at=4bcf7692-7d0e-5b3f-90c6-c27dfeb4ae4c] The Evaluation Homomorphisms for Field Theory
 > Let $F$ be a subfield of a field $E$, let $\alpha$ be any element of $E$, and let $x$ be an indeterminate. The map $\phi_{\alpha}: F[x] \rightarrow E$ defined by
 >
 > $$
@@ -293,7 +293,7 @@ We now complete the connection between our new ideas and the classical concept o
 
 Definition 22.10
 
-> [!definition|04df6b84-95d5-550d-ada9-51e5ee005556.local at=ec125b12-9228-5527-9666-b24409c2e954] Zero of a Polynomial in a Field Extension
+> [!definition|04df6b84-95d5-550d-ada9-51e5ee005556.library at=ec125b12-9228-5527-9666-b24409c2e954] Zero of a Polynomial in a Field Extension
 > Let $F$ be a subfield of a field $E$, and let $\alpha$ be an element of $E$. Let $f(x)=a_0+a_1x+\cdots+a_nx^n$ be in $F[x]$, and let $\phi_{\alpha}: F[x] \rightarrow E$ be the evaluation homomorphism. Let $f(\alpha)$ denote
 >
 > $$
@@ -332,7 +332,7 @@ They also had to grant the existence of a hypotenuse of a right triangle having 
 
 Theorem 22.11
 
-> [!theorem|e9f25b5d-53a5-5a0a-822d-cc4f2da67b64.local at=af91c139-1d2f-5897-8df2-1f37b4e88ec6] Irrationality of the Square Root of Two
+> [!theorem|e9f25b5d-53a5-5a0a-822d-cc4f2da67b64.library at=af91c139-1d2f-5897-8df2-1f37b4e88ec6] Irrationality of the Square Root of Two
 > The polynomial $x^{2}-2$ has no zeros in the rational numbers. Thus $\sqrt{2}$ is not a rational number.
 
 ##### proof

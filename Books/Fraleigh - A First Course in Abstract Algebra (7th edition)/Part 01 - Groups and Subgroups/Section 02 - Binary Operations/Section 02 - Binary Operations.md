@@ -7,7 +7,7 @@ In our attempt to analyze addition and multiplication of numbers, we are thus le
 As mathematicians, let us attempt to collect the core of these basic ideas in a useful definition, generalizing the notions of addition and multiplication of numbers. As we remarked in Section 0, we do not attempt to define a set. However, we can attempt to be somewhat mathematically precise, and we describe our generalizations as functions (see Definition 0.10 and Example 0.11) rather than as rules. Recall from Definition 0.4 that for any set $S$, the set $S \times S$ consists of all ordered pairs $(a, b)$ for elements $a$ and $b$ of $S$.
 Definition 2.1
 
-> [!definition|e30ca592-e5d7-5dcc-a15c-5336f22b4d96.local at=d653ebff-8a1c-5c55-b5f3-dedb917dd0cd] Binary Operation
+> [!definition|e30ca592-e5d7-5dcc-a15c-5336f22b4d96.library at=d653ebff-8a1c-5c55-b5f3-dedb917dd0cd] Binary Operation
 > A binary operation $*$ on a set $S$ is a function mapping $S \times S$ into $S$. For each $(a, b) \in S \times S$, we will denote the element $*((a, b))$ of $S$ by $a * b$.
 
 
@@ -31,7 +31,7 @@ Let $M(\mathbb{R})$ be the set of all matrices[^0] with real entries. The usual 
 Sometimes a binary operation on $S$ provides a binary operation on a subset $H$ of $S$ also. We make a formal definition.
 Definition 2.4
 
-> [!definition|b2d8d61c-dc9d-5ad9-ba96-72573cbadc9b.local at=837deab0-2994-50fc-aea2-30bebd17c045] Closure and Induced Binary Operation
+> [!definition|b2d8d61c-dc9d-5ad9-ba96-72573cbadc9b.library at=837deab0-2994-50fc-aea2-30bebd17c045] Closure and Induced Binary Operation
 > Let $*$ be a binary operation on $S$ and let $H$ be a subset of $S$. The subset $H$ is closed under $*$ if for all $a, b \in H$ we also have $a * b \in H$. In this case, the binary operation on $H$ given by restricting $*$ to H is the induced operation of $*$ on H.
 
 
@@ -100,7 +100,7 @@ It may seem that these examples are of no importance, but consider for a moment.
 Examples 2.8 and 2.9 were chosen to demonstrate that a binary operation may or may not depend on the order of the given pair. Thus in Example 2.8, $a * b=b * a$ for all $a, b \in \mathbb{Z}^{+}$, and in Example 2.9 this is not the case, for $5 *^{\prime} 7=5$ but $7 *^{\prime} 5=7$.
 Definition 2.11
 
-> [!definition|24966a9e-f55a-5fb1-a2bc-680a5bdf556a.local at=9fa36b64-4771-5c88-803d-6b55e36dab35] Commutative Binary Operation
+> [!definition|24966a9e-f55a-5fb1-a2bc-680a5bdf556a.library at=9fa36b64-4771-5c88-803d-6b55e36dab35] Commutative Binary Operation
 > A binary operation $*$ on a set $S$ is commutative if (and only if) $a * b=b * a$ for all $a, b \in S$.
 
 
@@ -128,7 +128,7 @@ $$
 Thus $\left(a *^{\prime \prime} b\right) *^{\prime \prime} c$ need not equal $a *^{\prime \prime}\left(b *^{\prime \prime} c\right)$, and an expression $a *^{\prime \prime} b *^{\prime \prime} c$ may be ambiguous.
 Definition 2.12
 
-> [!definition|0f1c410c-6a93-5b11-83cc-42f6cb537aac.local at=45a2740d-7247-5045-9769-cf4e86c80d08] Associative Binary Operation
+> [!definition|0f1c410c-6a93-5b11-83cc-42f6cb537aac.library at=45a2740d-7247-5045-9769-cf4e86c80d08] Associative Binary Operation
 > A binary operation $*$ on a set $S$ is associative if $(a * b) * c=a *(b * c)$ for all $a, b, c \in S$.
 
 
@@ -138,7 +138,7 @@ It can be shown that if $*$ is associative, then longer expressions such as $a *
 Composition of functions mapping $\mathbb{R}$ into $\mathbb{R}$ was reviewed in Example 2.7. For any set $S$ and any functions $f$ and $g$ mapping $S$ into $S$, we similarly define the composition $f \circ g$ of $g$ followed by $f$ as the function mapping $S$ into $S$ such that $(f \circ g)(x)=f(g(x))$ for all $x \in S$. Some of the most important binary operations we consider are defined using composition of functions. It is important to know that this composition is always associative whenever it is defined.
 Theorem 2.13
 
-> [!theorem|8002e206-22f5-5a59-b7b8-ca76d4e7c334.local at=56fbe4ac-60cb-5bf9-9c28-567bd1639e4f] Associativity of Composition
+> [!theorem|8002e206-22f5-5a59-b7b8-ca76d4e7c334.library at=56fbe4ac-60cb-5bf9-9c28-567bd1639e4f] Associativity of Composition
 > Let $S$ be a set and let $f, g$, and $h$ be functions mapping $S$ into $S$. Then $f \circ(g \circ h)=(f \circ g) \circ h$.
 
 ##### proof

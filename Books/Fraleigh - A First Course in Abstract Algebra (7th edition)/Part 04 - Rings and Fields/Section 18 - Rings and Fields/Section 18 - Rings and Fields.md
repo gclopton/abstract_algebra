@@ -10,7 +10,7 @@ Definition 18.1
 
 $\mathscr{R}_1$: condition 1; $\mathscr{R}_2$: condition 2; $\mathscr{R}_3$: condition 3.
 
-> [!definition|28f323ea-eb99-5e6b-a1ab-4a688534a244.local at=f0c9784a-d2d8-5b6d-9235-cad06d5e7e22] Ring
+> [!definition|28f323ea-eb99-5e6b-a1ab-4a688534a244.library at=f0c9784a-d2d8-5b6d-9235-cad06d5e7e22] Ring
 > A ring $\langle R,+, \cdot\rangle$ is a set $R$ together with two binary operations $+$ and $\cdot$, which we call addition and multiplication, defined on $R$ such that the following axioms are satisfied:
 > 1. $\langle R,+\rangle$ is an abelian group.
 > 2. Multiplication is associative.
@@ -102,7 +102,7 @@ $$
 for $0 \in \mathbb{Z}$ on the left side of the equations and $0 \in R$ on the right side. Actually, the equation $0 a=0$ holds also for $0 \in R$ on both sides. The following theorem proves this and various other elementary but important facts. Note the strong use of the distributive laws in the proof of this theorem. Axiom $\mathscr{R}_{1}$ for a ring concerns only addition, and axiom $\mathscr{R}_{2}$ concerns only multiplication. This shows that in order to prove anything that gives a relationship between these two operations, we are going to have to use axiom $\mathscr{R}_{3}$. For example, the first thing that we will show in Theorem 18.8 is that $0 a=0$ for any element $a$ in a ring $R$. Now this relation involves both addition and multiplication. The multiplication $0 a$ stares us in the face, and 0 is an additive concept. Thus we will have to come up with an argument that uses a distributive law to prove this.
 Theorem 18.8
 
-> [!theorem|4b18f891-f1b3-5a4b-97bc-7b29092bca82.local at=f358dae8-d072-536a-a246-5e83a3f96b48] Multiplication by Zero and Sign Rules in Rings
+> [!theorem|4b18f891-f1b3-5a4b-97bc-7b29092bca82.library at=f358dae8-d072-536a-a246-5e83a3f96b48] Multiplication by Zero and Sign Rules in Rings
 > If $R$ is a ring with additive identity 0 , then for any $a, b \in R$ we have
 > 1. $0 a=a 0=0$,
 > 2. $a(-b)=(-a) b=-(a b)$,
@@ -143,7 +143,7 @@ It is important that you understand the preceding proof. The theorem allows us t
 From our work in group theory, it is quite clear how a structure-relating map of a ring $R$ into a ring $R^{\prime}$ should be defined.
 Definition 18.9
 
-> [!definition|d3983d52-c83f-5a33-9365-4f726b0f7c61.local at=640bde56-73da-53bd-ab68-b9e78388ebe1] Ring Homomorphism
+> [!definition|d3983d52-c83f-5a33-9365-4f726b0f7c61.library at=640bde56-73da-53bd-ab68-b9e78388ebe1] Ring Homomorphism
 > For rings $R$ and $R^{\prime}$, a map $\phi: R \rightarrow R^{\prime}$ is a homomorphism if the following two conditions are satisfied for all $a, b \in R$ :
 >
 > 1. $\phi(a+b)=\phi(a)+\phi(b)$,
@@ -170,7 +170,7 @@ We realize that in the study of any sort of mathematical structure, an idea of b
 The concept of two things being just alike except for names of elements leads us, just as it did for groups, to the following definition.
 Definition 18.12
 
-> [!definition|b0c8b5e1-091a-5215-9d7d-ac1f2c082a9b.local at=8a9edd65-d699-5831-9ebb-c80e3918c26a] Ring Isomorphism
+> [!definition|b0c8b5e1-091a-5215-9d7d-ac1f2c082a9b.library at=8a9edd65-d699-5831-9ebb-c80e3918c26a] Ring Isomorphism
 > An isomorphism $\phi: R \rightarrow R^{\prime}$ from a ring $R$ to a ring $R^{\prime}$ is a homomorphism that is one to one and onto $R^{\prime}$. The rings $R$ and $R^{\prime}$ are then isomorphic.
 
 From our work in group theory, we expect that isomorphism gives an equivalence relation on any collection of rings. We need to check that the multiplicative property of an isomorphism is satisfied for the inverse map $\phi^{-1}: R^{\prime} \rightarrow R$ (to complete the symmetry argument). Similarly, we check that if $\mu: R^{\prime} \rightarrow R^{\prime \prime}$ is also a ring isomorphism, then the multiplicative requirement holds for the composite map $\mu \phi: R \rightarrow R^{\prime \prime}$ (to complete the transitivity argument). We ask you to do this in Exercise 36.
@@ -186,14 +186,14 @@ As abelian groups, $\langle\mathbb{Z},+\rangle$ and $\langle 2 \mathbb{Z},+\rang
 
 Many of the rings we have mentioned, such as $\mathbb{Z}, \mathbb{Q}$, and $\mathbb{R}$, have a multiplicative identity element 1. However, $2 \mathbb{Z}$ does not have an identity element for multiplication. Note also that multiplication is not commutative in the matrix rings described in Example 18.3.
 
-> [!definition|82d86e51-5888-5e7e-a0b5-2cdc458d1fc8.local at=461e0b66-40f5-548b-a2ee-631db8e89f2a] Zero Ring
+> [!definition|82d86e51-5888-5e7e-a0b5-2cdc458d1fc8.library at=461e0b66-40f5-548b-a2ee-631db8e89f2a] Zero Ring
 > It is evident that $\{0\}$, with $0+0=0$ and $(0)(0)=0$, gives a ring, the zero ring.
 
 Here 0 acts as multiplicative as well as additive identity element. By Theorem 18.8, this is the only case in which 0 could act as a multiplicative identity element, for from $0 a=0$, we can then deduce that $a=0$. Theorem 3.13 shows that if a ring has a multiplicative identity element, it is unique. We denote a multiplicative identity element in a ring by 1.
 
 Definition 18.14
 
-> [!definition|526d60ac-04d2-5d2e-9588-dc8029262053.local at=4806565b-ee00-56ab-af20-05c8ab92a397] Commutative Rings and Rings with Unity
+> [!definition|526d60ac-04d2-5d2e-9588-dc8029262053.library at=4806565b-ee00-56ab-af20-05c8ab92a397] Commutative Rings and Rings with Unity
 > A ring in which the multiplication is commutative is a commutative ring. A ring with a multiplicative identity element is a ring with unity; the multiplicative identity element 1 is called "unity."
 
 In a ring with unity 1 the distributive laws show that
@@ -219,13 +219,13 @@ Note that a direct product $R_{1} \times R_{2} \times \cdots \times R_{n}$ of ri
 
 In a ring $R$ with unity $1 \neq 0$, the set $R^{*}$ of nonzero elements, if closed under the ring multiplication, will be a multiplicative group if multiplicative inverses exist. 
 
-> [!definition|0ebd8780-b190-538b-9488-06721c67ea86.local at=38662413-9d80-5ee1-a253-cceb17e2def9] Multiplicative Inverse in a Ring
+> [!definition|0ebd8780-b190-538b-9488-06721c67ea86.library at=38662413-9d80-5ee1-a253-cceb17e2def9] Multiplicative Inverse in a Ring
 > A multiplicative inverse of an element $a$ in a ring $R$ with unity $1 \neq 0$ is an element $a^{-1} \in R$ such that $a a^{-1}=a^{-1} a=1$.
 
 Precisely as for groups, a multiplicative inverse for an element $a$ in $R$ is unique, if it exists at all (see Exercise 43). Theorem 18.8 shows that it would be hopeless to have a multiplicative inverse for 0 except for the ring $\{0\}$, where $0+0=0$ and $(0)(0)=0$, with 0 as both additive and multiplicative identity element. We are thus led to discuss the existence of multiplicative inverses for nonzero elements in a ring with nonzero unity. There is unavoidably a lot of terminology to be defined in this introductory section on rings. We are almost done.
 Definition 18.16
 
-> [!definition|168bd22b-a684-5e2f-a194-427539f0ffff.local at=5306e268-3b47-5a2b-b5ea-7ad548c5e09a] Units, Division Rings, and Fields
+> [!definition|168bd22b-a684-5e2f-a194-427539f0ffff.library at=5306e268-3b47-5a2b-b5ea-7ad548c5e09a] Units, Division Rings, and Fields
 > Let $R$ be a ring with unity $1 \neq 0$. An element $u$ in $R$ is a unit of $R$ if it has a multiplicative inverse in $R$. If every nonzero element of $R$ is a unit, then $R$ is a division ring (or skew field). A field is a commutative division ring. A noncommutative division ring is called a "strictly skew field."
 
 > [!example|81c085c8-5c93-5722-b7cb-beaebecb51e8.local at=28b0b014-2bcb-5fc6-baa9-7a06aed27536] Example 18.17
@@ -244,10 +244,10 @@ $\mathbb{Z}$ is not a field, because 2, for example, has no multiplicative inver
 
 We have the natural concepts of a subring of a ring and subfield of a field. 
 
-> [!definition|994b470b-8950-5b86-8b03-bca975962132.local at=4cf43e94-52e7-583b-9064-dea238074843] Subrings and Subfields
+> [!definition|994b470b-8950-5b86-8b03-bca975962132.library at=4cf43e94-52e7-583b-9064-dea238074843] Subrings and Subfields
 > A subring of a ring is a subset of the ring that is a ring under induced operations from the whole ring; a subfield is defined similarly for a subset of a field.
 
-> [!definition|94c8b47a-cbcf-5dad-b7c2-ad5024150385.local at=093fcffa-f909-5bff-a951-15cccb34d807] Algebraic Substructures
+> [!definition|94c8b47a-cbcf-5dad-b7c2-ad5024150385.library at=093fcffa-f909-5bff-a951-15cccb34d807] Algebraic Substructures
 > If we have a set, together with a certain specified type of algebraic structure (group, ring, field, integral domain, vector space, and so on), then any subset of this set, together with a natural induced algebraic structure that yields an algebraic structure of the same type, is a substructure. If $K$ and $L$ are both structures, we shall let $K \leq L$ denote that $K$ is a substructure of $L$ and $K<L$ denote that $K \leq L$ but $K \neq L$.
 
 Exercise 48 gives criteria for a subset $S$ of a ring $R$ to form a subring of $R$.

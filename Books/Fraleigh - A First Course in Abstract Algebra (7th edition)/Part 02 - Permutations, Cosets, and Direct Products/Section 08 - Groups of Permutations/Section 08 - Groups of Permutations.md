@@ -32,7 +32,7 @@ panels:
 
 Definition 8.3
 
-> [!definition|e8864b78-6372-5a97-b342-e6b253fde72b.local at=4d18840a-e40a-5d6b-9f18-1fad9057388e] Permutation of a Set
+> [!definition|e8864b78-6372-5a97-b342-e6b253fde72b.library at=4d18840a-e40a-5d6b-9f18-1fad9057388e] Permutation of a Set
 > A permutation of a set $A$ is a function $\phi: A \rightarrow A$ that is both one to one and onto.
 
 
@@ -124,7 +124,7 @@ $\square$
 We now show that the collection of all permutations of a nonempty set $A$ forms a group under this permutation multiplication.
 Theorem 8.5
 
-> [!theorem|1388fc18-d561-532f-8ede-1bbf9abfb352.local at=07f794ed-2536-50f5-a211-89200b80cf9c] Group of All Permutations of a Set
+> [!theorem|1388fc18-d561-532f-8ede-1bbf9abfb352.library at=07f794ed-2536-50f5-a211-89200b80cf9c] Group of All Permutations of a Set
 > Let $A$ be a nonempty set, and let $S_{A}$ be the collection of all permutations of $A$. Then $S_{A}$ is a group under permutation multiplication.
 >
 > Permutation multiplication is function composition: $(\sigma\tau)(a)=\sigma(\tau(a))$.
@@ -174,7 +174,7 @@ $$
 We simply rename the elements of $A$ in our two-row notation by elements in $B$ using the renaming function $f$, thus renaming elements of $S_{A}$ to be those of $S_{B}$. We can take $\{1,2,3,\ldots,n\}$ to be a prototype for a finite set $A$ of $n$ elements.
 Definition 8.6
 
-> [!definition|0a80ddfc-6684-5917-947d-e067a7396d65.local at=e354445b-2505-58d0-8f66-0554af81fd43] Symmetric Group
+> [!definition|0a80ddfc-6684-5917-947d-e067a7396d65.library at=e354445b-2505-58d0-8f66-0554af81fd43] Symmetric Group
 > Let $A$ be the finite set $\{1,2, \cdots, n\}$. The group of all permutations of $A$ is the symmetric group on $n$ letters, and is denoted by $S_{n}$.
 
 
@@ -608,13 +608,13 @@ We now proceed to the proof of Cayley's theorem, starting with a definition and 
 
 Definition 8.14
 
-> [!definition|968d027a-9d7d-53d2-866e-401de0d6a0b0.local at=4653ee8b-0477-533d-a931-11cbd270e21b] Image of a Subset
+> [!definition|968d027a-9d7d-53d2-866e-401de0d6a0b0.library at=4653ee8b-0477-533d-a931-11cbd270e21b] Image of a Subset
 > Let $f: A \rightarrow B$ be a function and let $H$ be a subset of $A$. The image of $H$ under $f$ is $\{f(h) \mid h \in H\}$ and is denoted by $f[H]$.
 
 
 Lemma 8.15
 
-> [!lemma|0dd1514c-90e9-5e12-8786-8609f6392037.local at=6961f45b-e340-5063-a11a-1b10ebcf44fb] Injective Group Homomorphism onto Its Image
+> [!lemma|0dd1514c-90e9-5e12-8786-8609f6392037.library at=6961f45b-e340-5063-a11a-1b10ebcf44fb] Injective Group Homomorphism onto Its Image
 > Let $G$ and $G^{\prime}$ be groups and let $\phi: G \rightarrow G^{\prime}$ be a one-to-one function such that $\phi(x y)=\phi(x) \phi(y)$ for all $x, y \in G$. Then $\phi[G]$ is a subgroup of $G^{\prime}$ and $\phi$ provides an isomorphism of $G$ with $\phi[G]$.
 
 ##### proof
@@ -639,7 +639,7 @@ which shows that $x^{\prime-1}=\phi\left(x^{-1}\right) \in \phi[G]$. This comple
 That $\phi$ provides an isomorphism of $G$ with $\phi[G]$ now follows at once because $\phi$ provides a one-to-one map of $G$ onto $\phi[G]$ such that $\phi(x y)=\phi(x) \phi(y)$ for all $x, y \in G$. $\square$
 Theorem 8.16
 
-> [!theorem|8bd9be6a-5e36-5433-b299-0bd4fd000a42.local at=0df26dee-bb30-537f-866f-e5c0b6bc7d26] Cayley's Theorem
+> [!theorem|8bd9be6a-5e36-5433-b299-0bd4fd000a42.library at=0df26dee-bb30-537f-866f-e5c0b6bc7d26] Cayley's Theorem
 > Every group is isomorphic to a group of permutations.
 
 ##### proof
@@ -660,7 +660,7 @@ $$
 $$
 Definition 8.17
 
-> [!definition|d5d6139e-2d24-5b82-ab64-55692230d6e0.local at=fdcca068-b71f-5150-9209-4ab0bbd8c923] Left and Right Regular Representations
+> [!definition|d5d6139e-2d24-5b82-ab64-55692230d6e0.library at=fdcca068-b71f-5150-9209-4ab0bbd8c923] Left and Right Regular Representations
 > Let $G$ be a group and let $S_G$ be the group of all permutations of $G$ under function composition. For $x,g\in G$, let $\lambda_x(g)=xg$ and $\rho_x(g)=gx$, and define $\phi,\mu:G\to S_G$ by $\phi(x)=\lambda_x$ and $\mu(x)=\rho_{x^{-1}}$.
 >
 > The map $\phi$ is the left regular representation of $G$, and the map $\mu$ is the right regular representation of $G$.

@@ -12,7 +12,7 @@ from which the theorem follows immediately. The cells in the partition will be c
 Let $H$ be a subgroup of a group $G$, which may be of finite or infinite order. We exhibit two partitions of $G$ by defining two equivalence relations, $\sim_{L}$ and $\sim_{R}$ on $G$.
 Theorem 10.1
 
-> [!theorem|1aaf284f-4c04-5d4e-94ad-60ff8037de97.local at=67d69714-7610-5094-bac8-ca8b261f2c69] Equivalence Relations Defined by a Subgroup
+> [!theorem|1aaf284f-4c04-5d4e-94ad-60ff8037de97.library at=67d69714-7610-5094-bac8-ca8b261f2c69] Equivalence Relations Defined by a Subgroup
 > Let $H$ be a subgroup of $G$. Let the relation $\sim_{L}$ be defined on $G$ by
 >
 > $$
@@ -41,7 +41,7 @@ We show that $\sim_{L}$ is an equivalence relation, and leave the proof for $\si
 The equivalence relation $\sim_{L}$ in Theorem 10.1 defines a partition of $G$, as described in Theorem 0.22. Let's see what the cells in this partition look like. Suppose $a \in G$. The cell containing $a$ consists of all $x \in G$ such that $a \sim_{L} x$, which means all $x \in G$ such that $a^{-1} x \in H$. Now $a^{-1} x \in H$ if and only if $a^{-1} x=h$ for some $h \in H$, or equivalently, if and only if $x=a h$ for some $h \in H$. Therefore the cell containing $a$ is $\{a h \mid h \in H\}$, which we denote by $a H$. If we go through the same reasoning for the equivalence relation $\sim_{R}$ defined by $H$, we find the cell in this partition containing $a \in G$ is $H a=\{h a \mid h \in H\}$. Since $G$ need not be abelian, we have no reason to expect $a H$ and $H a$ to be the same subset of $G$. We give a formal definition.
 Definition 10.2
 
-> [!definition|5595f479-f086-5515-b299-0bf40b1cc58f.local at=59c792a6-d0eb-5fd1-9fc9-6d3ff1ae6c9e] Left and Right Cosets
+> [!definition|5595f479-f086-5515-b299-0bf40b1cc58f.library at=59c792a6-d0eb-5fd1-9fc9-6d3ff1ae6c9e] Left and Right Cosets
 > Let $H$ be a subgroup of a group $G$. Let $a\in G$. The subset $a H=\{a h \mid h \in H\}$ of $G$ is the left coset of $H$ containing $a$, while the subset $H a=\{h a \mid h \in H\}$ is the right coset of $H$ containing $a$.
 
 
@@ -74,7 +74,7 @@ Since $\mathbb{Z}$ is abelian, the left coset $m+3 \mathbb{Z}$ and the right cos
 
 We observe two things from Example 10.3.
 
-> [!property|f0f03121-5bbf-5e42-bd1d-5506e9732ef0.local at=3a3330ef-7baa-5d89-91fc-132166ad4dac] Left and Right Cosets in an Abelian Group
+> [!property|f0f03121-5bbf-5e42-bd1d-5506e9732ef0.library at=3a3330ef-7baa-5d89-91fc-132166ad4dac] Left and Right Cosets in an Abelian Group
 > For a subgroup $H$ of an abelian group $G$, the partition of $G$ into left cosets of $H$ and the partition into right cosets are the same.
 
 
@@ -689,7 +689,7 @@ Our choice for a one-to-one map $\phi: H \rightarrow g H$ is the natural one. Le
 
 Of course, a similar one-to-one map of $H$ onto the right coset $H g$ can be constructed. (See Exercise 27.) We summarize as follows:
 
-> [!property|3f668742-b6e5-547e-9aa0-369a28edfce2.local at=546a114b-b4d5-5844-a7c6-85f7e06b7071] Cardinality of a Coset
+> [!property|3f668742-b6e5-547e-9aa0-369a28edfce2.library at=546a114b-b4d5-5844-a7c6-85f7e06b7071] Cardinality of a Coset
 > Every coset (left or right) of a subgroup $H$ of a group $G$ has the same number of elements as $H$.
 
 
@@ -697,7 +697,7 @@ Of course, a similar one-to-one map of $H$ onto the right coset $H g$ can be con
 We can now prove the theorem of Lagrange.
 Theorem 10.10
 
-> [!theorem|3313a481-86fd-5d0c-9646-0bacb3d0a88c.local at=556785fc-d253-5b58-a079-661312f54005] Theorem of Lagrange
+> [!theorem|3313a481-86fd-5d0c-9646-0bacb3d0a88c.library at=556785fc-d253-5b58-a079-661312f54005] Theorem of Lagrange
 > Let $H$ be a subgroup of a finite group $G$. Then the order of $H$ is a divisor of the order of $G$.
 
 
@@ -709,7 +709,7 @@ Let $n$ be the order of $G$, and let $H$ have order $m$. The preceding boxed sta
 Note that this elegant and important theorem comes from the simple counting of cosets and the number of elements in each coset. Never underestimate results that count something! We continue to derive consequences of Theorem 10.10, which should be regarded as a counting theorem.
 Corollary 10.11
 
-> [!corollary|5b14dd72-6bb6-5879-89ca-b5b044bbb070.local at=e85fa480-fc19-5b9c-bdfc-6c0a0e402e80] Groups of Prime Order Are Cyclic
+> [!corollary|5b14dd72-6bb6-5879-89ca-b5b044bbb070.library at=e85fa480-fc19-5b9c-bdfc-6c0a0e402e80] Groups of Prime Order Are Cyclic
 > Every group of prime order is cyclic.
 
 
@@ -721,7 +721,7 @@ Let $G$ be of prime order $p$, and let $a$ be an element of $G$ different from t
 Since every cyclic group of order $p$ is isomorphic to $\mathbb{Z}_{p}$, we see that there is only one group structure, up to isomorphism, of a given prime order $p$. Now doesn't this elegant result follow easily from the theorem of Lagrange, a counting theorem? Never underestimate a theorem that counts something. Proving the preceding corollary is a favorite examination question.
 Theorem 10.12
 
-> [!theorem|4720f2a0-7b2f-5ac4-a455-3b8d925e1ef8.local at=99bb74dc-ccc5-51a1-a2d8-5be3a5de50e1] Element Order Divides Group Order
+> [!theorem|4720f2a0-7b2f-5ac4-a455-3b8d925e1ef8.library at=99bb74dc-ccc5-51a1-a2d8-5be3a5de50e1] Element Order Divides Group Order
 > The order of an element of a finite group divides the order of the group.
 
 
@@ -731,7 +731,7 @@ Theorem 10.12
 Remembering that the order of an element is the same as the order of the cyclic subgroup generated by the element, we see that this theorem follows directly from Theorem 10.10. $\square$
 Definition 10.13
 
-> [!definition|5fc43e06-d541-5328-94c9-64d6cd092efc.local at=ed6e993d-c2b4-5137-9b5e-5144cb42940a] Index of a Subgroup
+> [!definition|5fc43e06-d541-5328-94c9-64d6cd092efc.library at=ed6e993d-c2b4-5137-9b5e-5144cb42940a] Index of a Subgroup
 > Let $H$ be a subgroup of a group $G$. The number of left cosets of $H$ in $G$ is the index $(G: H)$ of $H$ in $G$.
 
 
@@ -739,7 +739,7 @@ Definition 10.13
 The index $(G: H)$ just defined may be finite or infinite. If $G$ is finite, then obviously $(G: H)$ is finite and $(G: H)=|G| /|H|$, since every coset of $H$ contains $|H|$ elements. Exercise 35 shows the index $(G: H)$ could be equally well defined as the number of right cosets of $H$ in $G$. We state a basic theorem concerning indices of subgroups, and leave the proof to the exercises (see Exercise 38).
 Theorem 10.14
 
-> [!theorem|1adb37cf-0a87-5798-b974-ae5c9b9b732f.local at=a06a0a75-857f-5665-a470-47e90fbcc516] Multiplicativity of Subgroup Index
+> [!theorem|1adb37cf-0a87-5798-b974-ae5c9b9b732f.library at=a06a0a75-857f-5665-a470-47e90fbcc516] Multiplicativity of Subgroup Index
 > Suppose $H$ and $K$ are subgroups of a group $G$ such that $K \leq H \leq G$, and suppose $(H: K)$ and $(G: H)$ are both finite. Then $(G: K)$ is finite, and $(G: K)=(G: H)(H: K)$.
 >
 > The number of left cosets of $H$ in $G$ is the index $(G:H)$ of $H$ in $G$.

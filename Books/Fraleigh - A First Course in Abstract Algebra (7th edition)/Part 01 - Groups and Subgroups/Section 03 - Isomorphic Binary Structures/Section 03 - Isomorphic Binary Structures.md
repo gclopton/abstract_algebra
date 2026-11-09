@@ -306,7 +306,7 @@ $$
 Such a function showing that two algebraic systems are structurally alike is known as an isomorphism. We give a formal definition.
 Definition 3.7 — Equation (2)
 
-> [!definition|f274a14b-d311-5a9d-9dfc-c786c8638974.local at=3cfbbf80-804e-592f-ae50-e497eb22b6f1] Isomorphism of Binary Algebraic Structures
+> [!definition|f274a14b-d311-5a9d-9dfc-c786c8638974.library at=3cfbbf80-804e-592f-ae50-e497eb22b6f1] Isomorphism of Binary Algebraic Structures
 > Let $\langle S, *\rangle$ and $\left\langle S^{\prime}, *^{\prime}\right\rangle$ be binary algebraic structures. An isomorphism of $S$ with $S^{\prime}$ is a one-to-one function $\phi$ mapping $S$ onto $S^{\prime}$ such that
 >
 > $$
@@ -424,13 +424,13 @@ style: scientific
 We introduced the algebraic notions of commutativity and associativity in Section 2. One other structural notion that will be of interest to us is illustrated by Table 3.3, where for the binary operation $*^{\prime \prime}$ on the set $\{x, y, z\}$, we have $x *^{\prime \prime} u=u *^{\prime \prime} x=u$ for all possible choices, $x, y$, and $z$ for $u$. Thus $x$ plays the same role as 0 in $\langle\mathbb{R},+\rangle$ where $0+u=u+0=u$ for all $u \in \mathbb{R}$, and the same role as 1 in $\langle\mathbb{R}, \cdot\rangle$ where $1 \cdot u=u \cdot 1=u$ for all $u \in \mathbb{R}$. Because Tables 3.1 and 3.2 give structures isomorphic to the one in Table 3.3, they must exhibit an element with a similar property. We see that $b * u=u * b=u$ for all elements $u$ appearing in Table 3.1 and that $\$ *^{\prime} u=u *^{\prime} \$=u$ for all elements $u$ in Table 3.2. We give a formal definition of this structural notion and prove a little theorem.
 Definition 3.12
 
-> [!definition|22296212-868d-5f8b-865d-6ef1ab8ecb3c.local at=be9f163d-3f83-59ae-8ea1-b201e3e0b841] Identity Element of a Binary Structure
+> [!definition|22296212-868d-5f8b-865d-6ef1ab8ecb3c.library at=be9f163d-3f83-59ae-8ea1-b201e3e0b841] Identity Element of a Binary Structure
 > Let $\langle S, *\rangle$ be a binary structure. An element $e$ of $S$ is an identity element for $*$ if $e * s=s * e=s$ for all $s \in S$.
 
 
 Theorem 3.13
 
-> [!theorem|e3ade1e9-589a-5872-9d6b-34d1993b90da.local at=1087b206-f44d-56a7-b6c8-4988d780b2aa] Uniqueness of Identity Element
+> [!theorem|e3ade1e9-589a-5872-9d6b-34d1993b90da.library at=1087b206-f44d-56a7-b6c8-4988d780b2aa] Uniqueness of Identity Element
 > A binary structure $\langle S, *\rangle$ has at most one identity element. That is, if there is an identity element, it is unique.
 
 ##### proof
@@ -440,7 +440,7 @@ Proceeding in the standard way to show uniqueness, suppose that both $e$ and $\b
 If you now have a good grasp of the notion of isomorphic binary structures, it should be evident that having an identity element for $*$ is indeed a structural property of a structure $\langle S, *\rangle$. However, we know from experience that many readers will be unable to see the forest because of all the trees that have appeared. For them, we now supply a careful proof, skipping along to touch those trees that are involved.
 Theorem 3.14
 
-> [!theorem|c18cb1cd-8660-5b50-8382-aad7a3efa46e.local at=c0a8304a-7777-56c3-acfb-e13066043d2d] Isomorphisms Preserve Identity Elements
+> [!theorem|c18cb1cd-8660-5b50-8382-aad7a3efa46e.library at=c0a8304a-7777-56c3-acfb-e13066043d2d] Isomorphisms Preserve Identity Elements
 > Suppose $\langle S, *\rangle$ has an identity element $e$ for $*$. If $\phi: S \rightarrow S^{\prime}$ is an isomorphism of $\langle S, *\rangle$ with $\left\langle S^{\prime}, *^{\prime}\right\rangle$, then $\phi(e)$ is an identity element for the binary operation $*^{\prime}$ on $S^{\prime}$.
 
 ##### proof

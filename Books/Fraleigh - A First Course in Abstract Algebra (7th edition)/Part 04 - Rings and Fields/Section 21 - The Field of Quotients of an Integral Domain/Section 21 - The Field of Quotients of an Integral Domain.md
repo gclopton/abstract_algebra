@@ -31,14 +31,14 @@ Now $S$ is still not going to be our field as is indicated by the fact that, wit
 
 Definition 21.1
 
-> [!definition] Equivalence of Formal Quotients over an Integral Domain
+> [!definition|62592931-1f7a-5357-804f-02ed7e9449a0.library at=79890eb7-e538-5477-8aa5-b3a6db2dee33] Equivalence of Formal Quotients over an Integral Domain
 > Let $D$ be an integral domain, and let $S=\{(a,b)\mid a,b\in D,\ b\neq0\}$. Two elements $(a, b)$ and $(c, d)$ in $S$ are equivalent, denoted by $(a, b) \sim(c, d)$, if and only if $a d=b c$.
 
 Observe that this definition is reasonable, since the criterion for $(a, b) \sim(c, d)$ is an equation $a d=b c$ involving elements in $D$ and concerning the known multiplication in $D$. Note also that for $D=\mathbb{Z}$, the criterion gives us our usual definition of equality of $\frac{a}{b}$ with $\frac{c}{d}$, for example, $\frac{2}{3}=\frac{4}{6}$ since $(2)(6)=(3)(4)$. The rational number that we usually denote by $\frac{2}{3}$ can be thought of as the collection of all quotients of integers that reduce to, or are equivalent to, $\frac{2}{3}$.
 
 Lemma 21.2
 
-> [!lemma] Equivalence Relation for Formal Quotients over an Integral Domain
+> [!lemma|192b4a43-db17-5d6a-8a7b-b0627d859732.library at=351546d3-f9c9-5bb1-8d13-7ce96e6d69e6] Equivalence Relation for Formal Quotients over an Integral Domain
 > Let $D$ be an integral domain, and let $S=\{(a,b)\mid a,b\in D,\ b\neq0\}$. Define $(a,b)\sim(c,d)$ if and only if $ad=bc$.
 >
 > The relation $\sim$ between elements of the set $S$ is an equivalence relation.
@@ -66,7 +66,7 @@ We now know, in view of Theorem 0.22, that $\sim$ gives a partition of $S$ into 
 The next lemma serves to define addition and multiplication in $F$. Observe that if $D=\mathbb{Z}$ and $[(a, b)]$ is viewed as $(a / b) \in \mathbb{Q}$, these definitions applied to $\mathbb{Q}$ give the usual operations.
 Lemma 21.3
 
-> [!lemma] Addition and Multiplication on a Field of Quotients
+> [!lemma|8c4b258b-43d3-5bfa-874a-4e14d203d0cc.library at=4526e791-97e4-51d6-a404-47daf6d2203d] Addition and Multiplication on a Field of Quotients
 > Let $D$ be an integral domain, and let $S=\{(a,b)\mid a,b\in D,\ b\neq0\}$. Define $(a,b)\sim(c,d)$ if and only if $ad=bc$. Let $F$ be the set of all equivalence classes $[(a,b)]$ for $(a,b)\in S$ under this relation.
 >
 > For $[(a, b)]$ and $[(c, d)]$ in $F$, the equations
@@ -193,7 +193,7 @@ This completes Step 3.
 It remains for us to show that $F$ can be regarded as containing $D$. To do this, we show that there is an isomorphism $i$ of $D$ with a subdomain of $F$. Then if we rename the image of $D$ under $i$ using the names of the elements of $D$, we will be done. The next lemma gives us this isomorphism. We use the letter $i$ for this isomorphism to suggest injection (see the footnote on page 4); we will inject $D$ into $F$.
 Lemma 21.4
 
-> [!lemma] Embedding an Integral Domain in Its Field of Quotients
+> [!lemma|a21476b0-c282-514a-9af0-453f92bd6d8b.library at=46c21a04-5552-53a7-bc4f-337aa1270039] Embedding an Integral Domain in Its Field of Quotients
 > Let $D$ be an integral domain, and let $S=\{(a,b)\mid a,b\in D,\ b\neq0\}$. Define $(a,b)\sim(c,d)$ if and only if $ad=bc$. Let $F$ be the set of all equivalence classes $[(a,b)]$ for $(a,b)\in S$ under this relation.
 >
 > The operations on $F$ are given by
@@ -254,14 +254,14 @@ Thus $i$ is an isomorphism of $D$ with $i[D]$, and, of course, $i[D]$ is then a 
 Since $[(a, b)]=[(a, 1)][(1, b)]=[(a, 1)] /[(b, 1)]=i(a) / i(b)$ clearly holds in $F$, we have now proved the following theorem.
 Theorem 21.5
 
-> [!theorem] Existence of a Field of Quotients
+> [!theorem|259bf4f3-35e4-5b44-8530-697198c1da63.library at=e84704d4-af54-5858-aa51-6461aaf0b9f4] Existence of a Field of Quotients
 > Any integral domain $D$ can be enlarged to (or embedded in) a field $F$ such that every element of $F$ can be expressed as a quotient of two elements of $D$. (Such a field $F$ is a field of quotients of $D$.)
 
 ## Uniqueness
 We said in the beginning that $F$ could be regarded in some sense as a minimal field containing $D$. This is intuitively evident, since every field containing $D$ must contain all elements $a / b$ for every $a, b \in D$ with $b \neq 0$. The next theorem will show that every field containing $D$ contains a subfield which is a field of quotients of $D$, and that any two fields of quotients of $D$ are isomorphic.
 Theorem 21.6
 
-> [!theorem] Embedding Fields of Quotients
+> [!theorem|1de3a2ba-5ee8-5682-800e-17e850a60c33.library at=2ee3e182-d746-5a31-ae8a-9a48214b2dd8] Embedding Fields of Quotients
 > Let $F$ be a field of quotients of an integral domain $D$ and let $L$ be any field containing $D$. Then there exists a map $\psi: F \rightarrow L$ that gives an isomorphism of $F$ with a subfield of $L$ such that $\psi(a)=a$ for $a \in D$.
 
 ##### proof
@@ -337,7 +337,7 @@ Since $\psi$ is the identity on $D$, we then deduce that $a d=b c$, so $a /_{F} 
 By definition, $\psi(a)=a$ for $a \in D$. $\square$
 Corollary 21.8
 
-> [!corollary] Field of Quotients inside a Field Containing the Integral Domain
+> [!corollary|19be2058-679b-5716-8b13-b7b25568fff3.library at=707c1b6a-e070-5738-b17c-5bcb841efebe] Field of Quotients inside a Field Containing the Integral Domain
 > Every field $L$ containing an integral domain $D$ contains a field of quotients of $D$.
 
 ##### proof
@@ -345,7 +345,7 @@ Corollary 21.8
 In the proof of Theorem 21.6 every element of the subfield $\psi[F]$ of $L$ is a quotient in $L$ of elements of $D$. $\square$
 Corollary 21.9
 
-> [!corollary] Uniqueness of the Field of Quotients up to Isomorphism
+> [!corollary|6275501d-040f-5e1f-a911-8d6332706225.library at=2af7ba0d-fbf8-5a94-b7dd-9cb725062b1a] Uniqueness of the Field of Quotients up to Isomorphism
 > Any two fields of quotients of an integral domain $D$ are isomorphic.
 
 ##### proof
@@ -356,23 +356,23 @@ Suppose in Theorem 21.6 that $L$ is a field of quotients of $D$, so that every e
 
 ### Computations
 
-> [!exercise] Exercise 21.1
+> [!exercise|b395ba2b-39ab-5175-b6aa-3c33bbd0424d.local at=0752f07f-6449-535f-a31f-8096910576fb] Exercise 21.1
 > Describe the field $F$ of quotients of the integral subdomain
 > $$
 > D=\{n+m i \mid n, m \in \mathbb{Z}\}
 > $$
 > of $\mathbb{C}$. "Describe" means give the elements of $\mathbb{C}$ that make up the field of quotients of $D$ in $\mathbb{C}$. (The elements of $D$ are the Gaussian integers.)
 
-> [!exercise] Exercise 21.2
+> [!exercise|2514b702-9379-533e-affd-a62962d3917f.local at=b1dd9285-20dc-5dcf-b38a-54f0c92dda62] Exercise 21.2
 > Describe (in the sense of Exercise 1) the field $F$ of quotients of the integral subdomain $D=\{n+m \sqrt{2} \mid n, m \in \mathbb{Z}\}$ of $\mathbb{R}$.
 
 ## Concepts
 
-> [!exercise] Exercise 21.3
+> [!exercise|37f54e45-0756-5d3a-b9bf-d241a3c17dbd.local at=042a14f3-89cb-5e5b-a53e-077422152485] Exercise 21.3
 > Correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
 > A *field of quotients* of an integral domain $D$ is a field $F$ in which $D$ can be embedded so that every nonzero element of $D$ is a unit in $F$.
 
-> [!exercise] Exercise 21.4
+> [!exercise|40a60275-08bb-581d-b0b7-2563d920cd4a.local at=bc88f0b8-b3bb-59e3-9a07-2be2c6859a56] Exercise 21.4
 > Mark each of the following true or false.
 >
 > a. \_\_\_\_ $\mathbb{Q}$ is a field of quotients of $\mathbb{Z}$.
@@ -395,47 +395,47 @@ Suppose in Theorem 21.6 that $L$ is a field of quotients of $D$, so that every e
 >
 > j. \_\_\_\_ Every field of quotients of $\mathbb{Z}$ is isomorphic to $\mathbb{Q}$.
 
-> [!exercise] Exercise 21.5
+> [!exercise|89850e0e-f6b3-5934-8298-c2aef809e8e6.local at=b9678af7-49db-50a1-a7f3-2660c3c2b19d] Exercise 21.5
 > Show by an example that a field $F^{\prime}$ of quotients of a proper subdomain $D^{\prime}$ of an integral domain $D$ may also be a field of quotients for $D$.
 
 ## Theory
 
-> [!exercise] Exercise 21.6
+> [!exercise|188fcfae-1a92-52b2-9842-cfc39113be7e.local at=7139c685-0920-55b8-8c36-db3b6addb611] Exercise 21.6
 > Prove Part 2 of Step 3. You may assume any preceding part of Step 3.
 
-> [!exercise] Exercise 21.7
+> [!exercise|b969e593-0f14-53fd-9b1b-a3cc5554f200.local at=da2c006c-edc1-5ca2-802c-40b66b2fe3e2] Exercise 21.7
 > Prove Part 3 of Step 3. You may assume any preceding part of Step 3.
 
-> [!exercise] Exercise 21.8
+> [!exercise|1ffae59d-363b-56c4-94fb-1056a42fe1be.local at=2b2854d6-88ec-51ad-8868-0a3d4503f1b0] Exercise 21.8
 > Prove Part 4 of Step 3. You may assume any preceding part of Step 3.
 
-> [!exercise] Exercise 21.9
+> [!exercise|c2d4f5f7-4c1c-5acd-9e6a-0d0b66b31040.local at=e62b4f7e-9557-5d17-902a-7c690c83cdb2] Exercise 21.9
 > Prove Part 5 of Step 3. You may assume any preceding part of Step 3.
 
-> [!exercise] Exercise 21.10
+> [!exercise|72fe98db-698d-5d5c-a5a7-e24c69b5532a.local at=3347689c-7e29-5ef1-b000-4d9133b416b8] Exercise 21.10
 > Prove Part 6 of Step 3. You may assume any preceding part of Step 3.
 
-> [!exercise] Exercise 21.11
+> [!exercise|20ce5a30-c7a3-5942-872c-c333fbcca5e4.local at=8a2dc238-919b-548e-ac06-20d538f625ba] Exercise 21.11
 > Prove Part 7 of Step 3. You may assume any preceding part of Step 3.
 
-> [!exercise] Exercise 21.12
+> [!exercise|a8ed2f9b-0bce-5015-8ae7-e2b74820f0e5.local at=6d711132-e036-55d4-b175-b98f67e5fb89] Exercise 21.12
 > Let $R$ be a nonzero commutative ring, and let $T$ be a nonempty subset of $R$ closed under multiplication and containing neither 0 nor divisors of 0. Starting with $R \times T$ and otherwise exactly following the construction in this section, we can show that the ring $R$ can be enlarged to a partial ring of quotients $Q(R, T)$. Think about this for 15 minutes or so; look back over the construction and see why things still work. In particular, show the following:
 >
 > a. $Q(R, T)$ has unity even if $R$ does not.
 >
 > b. In $Q(R, T)$, every nonzero element of $T$ is a unit.
 
-> [!exercise] Exercise 21.13
+> [!exercise|db85de15-2bee-5c42-9562-ede4da3b555e.local at=db0a31db-11d5-547c-acc3-cdc8fce13623] Exercise 21.13
 > Prove from Exercise 12 that every nonzero commutative ring containing an element $a$ that is not a divisor of 0 can be enlarged to a commutative ring with unity. Compare with Exercise 30 of Section 19.
 
-> [!exercise] Exercise 21.14
+> [!exercise|12058415-4b01-5b46-a904-fb072fb6bdb9.local at=b02bcd6b-06b9-599d-9e5c-efb3d9347ea3] Exercise 21.14
 > With reference to Exercise 12, how many elements are there in the ring $Q\left(\mathbb{Z}_{4},\{1,3\}\right)$ ?
 
-> [!exercise] Exercise 21.15
+> [!exercise|20827ec6-d0aa-5635-abb3-2ad0dfe20307.local at=4a81b438-7cea-5ef1-a677-aeef05eddae7] Exercise 21.15
 > With reference to Exercise 12, describe the ring $Q\left(\mathbb{Z},\left\{2^{n} \mid n \in \mathbb{Z}^{+}\right\}\right)$, by describing a subring of $\mathbb{R}$ to which it is isomorphic.
 
-> [!exercise] Exercise 21.16
+> [!exercise|e1304ac9-e13c-54e7-bbb5-5efc6fa49168.local at=dfa1a5eb-501d-58f9-a0a3-2738245c0c0f] Exercise 21.16
 > With reference to Exercise 12, describe the ring $Q\left(3 \mathbb{Z},\left\{6^{n} \mid n \in \mathbb{Z}^{+}\right\}\right)$ by describing a subring of $\mathbb{R}$ to which it is isomorphic.
 
-> [!exercise] Exercise 21.17
+> [!exercise|4c97dedb-d855-572f-9f7d-a822f78c7030.local at=9c3f1f48-422c-59b7-b744-149c555894bf] Exercise 21.17
 > With reference to Exercise 12, suppose we drop the condition that $T$ have no divisors of zero and just require that nonempty $T$ not containing 0 be closed under multiplication. The attempt to enlarge $R$ to a commutative ring with unity in which every nonzero element of $T$ is a unit must fail if $T$ contains an element $a$ that is a divisor of 0, for a divisor of 0 cannot also be a unit. Try to discover where a construction parallel to that in the text but starting with $R \times T$ first runs into trouble. In particular, for $R=\mathbb{Z}_{6}$ and $T=\{1,2,4\}$, illustrate the first difficulty encountered. [Hint: It is in Step 1.]
