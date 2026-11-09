@@ -7,13 +7,13 @@ Remember that we are now always assuming that all algebraic extensions of a fiel
 Our next aim is to determine, for a finite extension $E$ of $F$, under what conditions $\{E: F\}=[E: F]$. The key to answering this question is to consider the multiplicity of zeros of polynomials.
 Definition 51.1
 
-> [!definition|f2604206-417c-550c-81be-7ecff572821e.local at=84da8f7f-51a9-5c0f-896c-343228e3791d] Multiplicity of a Polynomial Zero
+> [!definition|f2604206-417c-550c-81be-7ecff572821e.library at=84da8f7f-51a9-5c0f-896c-343228e3791d] Multiplicity of a Polynomial Zero
 > Let $F$ be a field with algebraic closure $\bar F$. Let $f(x) \in F[x]$. An element $\alpha$ of $\bar{F}$ such that $f(\alpha)=0$ is a zero of $f(x)$ of multiplicity $\nu$ if $\nu$ is the greatest integer such that $(x-\alpha)^{\nu}$ is a factor of $f(x)$ in $\bar{F}[x]$. $\square$
 
 The next theorem shows that the multiplicities of the zeros of one given irreducible polynomial over a field are all the same. The ease with which we can prove this theorem is a further indication of the power of our conjugation isomorphisms and of our whole approach to the study of zeros of polynomials by means of mappings.
 Theorem 51.2
 
-> [!theorem|3da94a45-3329-56c7-a9ed-02555818c0da.local at=13aba54a-166f-50be-abaf-9c703aa134db] Equal Multiplicities of Zeros of an Irreducible Polynomial
+> [!theorem|3da94a45-3329-56c7-a9ed-02555818c0da.library at=13aba54a-166f-50be-abaf-9c703aa134db] Equal Multiplicities of Zeros of an Irreducible Polynomial
 > Let $F$ be a field with algebraic closure $\bar F$. Let $f(x)$ be irreducible in $F[x]$. Then all zeros of $f(x)$ in $\bar{F}$ have the same multiplicity.
 
 ##### proof
@@ -27,7 +27,7 @@ $$
 which shows that the multiplicity of $\beta$ in $f(x)$ is greater than or equal to the multiplicity of $\alpha$. A symmetric argument gives the reverse inequality, so the multiplicity of $\alpha$ equals that of $\beta$. $\square$
 Corollary 51.3
 
-> [!corollary|4380916b-df89-5c49-b54a-34b17cd9520f.local at=19d78ab4-3a1c-510c-8c5a-ad2f2d94a75d] Factorization of an Irreducible Polynomial over an Algebraic Closure
+> [!corollary|4380916b-df89-5c49-b54a-34b17cd9520f.library at=19d78ab4-3a1c-510c-8c5a-ad2f2d94a75d] Factorization of an Irreducible Polynomial over an Algebraic Closure
 > Let $F$ be a field with algebraic closure $\bar F$. If $f(x)$ is irreducible in $F[x]$, then $f(x)$ has a factorization in $\bar F[x]$ of the form
 >
 > $$
@@ -72,7 +72,7 @@ From here on we rely heavily on Theorem 49.7 and its corollary. Theorem 48.3 and
 In view of our work with the theorem of Lagrange and Theorem 31.4, we should recognize the potential of a theorem like this next one.
 Theorem 51.6
 
-> [!theorem|93ae1976-9ceb-5bd2-9945-335cd2b44c9d.local at=830e226f-9301-5d03-ab99-98b8d06a90fa] Index Divides the Degree of a Finite Field Extension
+> [!theorem|93ae1976-9ceb-5bd2-9945-335cd2b44c9d.library at=830e226f-9301-5d03-ab99-98b8d06a90fa] Index Divides the Degree of a Finite Field Extension
 > If $E$ is a finite extension of $F$, then $\{E: F\}$ divides $[E: F]$. Here $\{E:F\}$ is the number of isomorphisms of $E$ onto a subfield of an algebraic closure of $F$ leaving $F$ fixed, and $[E:F]$ is the degree of the extension.
 
 ##### proof
@@ -101,7 +101,7 @@ Therefore, $\{E: F\}$ divides $[E: F]$. $\square$
 
 Definition 51.7
 
-> [!definition|82642efd-e81b-5bc1-bd52-a5c6a03d0b25.local at=fb56aa21-cbe7-5742-b10e-a3723c80b4cd] Separable Field Extension, Element, and Irreducible Polynomial
+> [!definition|82642efd-e81b-5bc1-bd52-a5c6a03d0b25.library at=fb56aa21-cbe7-5742-b10e-a3723c80b4cd] Separable Field Extension, Element, and Irreducible Polynomial
 > Let $F$ be a field with algebraic closure $\bar F$. A finite extension $E$ of $F$ is a separable extension of $F$ if $\{E: F\}=[E: F]$. An element $\alpha$ of $\bar{F}$ is separable over $F$ if $F(\alpha)$ is a separable extension of $F$. An irreducible polynomial $f(x) \in F[x]$ is separable over $F$ if every zero of $f(x)$ in $\bar{F}$ is separable over $F$. $\square$ Here $\{E:F\}$ is the number of isomorphisms of $E$ onto a subfield of $\bar F$ leaving $F$ fixed, and $[E:F]$ is the degree of the extension.
 
 > [!example|7f02b295-0bee-5b3c-ba82-3034c7e982ec.local at=64ced68e-6c97-56b8-817c-f8e64d85788f] Example 51.8
@@ -115,7 +115,7 @@ To make things a little easier, we have restricted our definition of a separable
 We know that $\{F(\alpha): F\}$ is the number of distinct zeros of $\operatorname{irr}(\alpha, F)$. Also, the multiplicity of $\alpha$ in $\operatorname{irr}(\alpha, F)$ is the same as the multiplicity of each conjugate of $\alpha$ over $F$, by Theorem 51.2. Thus $\alpha$ is separable over $F$ if and only if $\operatorname{irr}(\alpha, F)$ has all zeros of multiplicity 1. This tells us at once that an irreducible polynomial $f(x) \in F[x]$ is separable over $F$ if and only if $f(x)$ has all zeros of multiplicity 1.
 Theorem 51.9
 
-> [!theorem|a632570e-819b-5cd7-9249-88d3111502d7.local at=fd166181-c2b6-5e94-89ca-97c2524962ab] Separability in a Tower of Finite Field Extensions
+> [!theorem|a632570e-819b-5cd7-9249-88d3111502d7.library at=fd166181-c2b6-5e94-89ca-97c2524962ab] Separability in a Tower of Finite Field Extensions
 > If $K$ is a finite extension of $E$ and $E$ is a finite extension of $F$, that is, $F \leq E \leq K$, then $K$ is separable over $F$ if and only if $K$ is separable over $E$ and $E$ is separable over $F$.
 
 ##### proof
@@ -145,7 +145,7 @@ $\square$
 Theorem 51.9 can be extended in the obvious way, by induction, to any finite tower of finite extensions. The top field is a separable extension of the bottom one if and only if each field is a separable extension of the one immediately under it.
 Corollary 51.10
 
-> [!corollary|a4e59e30-fbcb-5923-ae2a-867ff5f37b9c.local at=ba5a67c1-6e52-5032-ada7-72c9a9168f79] Separability of a Finite Extension and Its Elements
+> [!corollary|a4e59e30-fbcb-5923-ae2a-867ff5f37b9c.library at=ba5a67c1-6e52-5032-ada7-72c9a9168f79] Separability of a Finite Extension and Its Elements
 > If $E$ is a finite extension of $F$, then $E$ is separable over $F$ if and only if each $\alpha$ in $E$ is separable over $F$.
 
 ##### proof
@@ -176,7 +176,7 @@ divides $\operatorname{irr}\left(\alpha_{i}, F\right)$, so that $\alpha_{i}$ is 
 We now turn to the task of proving that $\alpha$ can fail to be separable over $F$ only if $F$ is an infinite field of characteristic $p \neq 0$. One method is to introduce formal derivatives of polynomials. While this is an elegant technique, and also a useful one, we shall, for the sake of brevity, use the following lemma instead. Formal derivatives are developed in Exercises 15 through 22.
 Lemma 51.11
 
-> [!lemma|0ce8d8ff-afe4-52af-ba9c-d28de026e912.local at=7defff80-6e19-5243-87c4-c6396876e93a] Monic Polynomial Whose Power Has Coefficients in a Subfield
+> [!lemma|0ce8d8ff-afe4-52af-ba9c-d28de026e912.library at=7defff80-6e19-5243-87c4-c6396876e93a] Monic Polynomial Whose Power Has Coefficients in a Subfield
 > Let $\bar{F}$ be an algebraic closure of $F$, and let
 >
 > $$
@@ -211,12 +211,12 @@ where $g_{k+1}\left(a_{n-1}, a_{n-2}, \cdots, a_{n-k}\right)$ is a formal polyno
 We are now in a position to handle fields $F$ of characteristic zero and to show that for a finite extension $E$ of $F$, we have $\{E: F\}=[E: F]$. By definition, this amounts to proving that every finite extension of a field of characteristic zero is a separable extension. First, we give a definition.
 Definition 51.12
 
-> [!definition|a7df90fe-a06f-5365-b382-8313a823cdb0.local at=e650c199-e5e1-5794-a391-16d022ec4766] Perfect Field
+> [!definition|a7df90fe-a06f-5365-b382-8313a823cdb0.library at=e650c199-e5e1-5794-a391-16d022ec4766] Perfect Field
 > A field is perfect if every finite extension is a separable extension. $\square$
 
 Theorem 51.13
 
-> [!theorem|f7460485-041d-532d-aacc-d90199d6e4b8.local at=bda0bd34-3e82-5b32-a7fd-976c5690b4ce] Fields of Characteristic Zero Are Perfect
+> [!theorem|f7460485-041d-532d-aacc-d90199d6e4b8.library at=bda0bd34-3e82-5b32-a7fd-976c5690b4ce] Fields of Characteristic Zero Are Perfect
 > Every field of characteristic zero is perfect.
 
 ##### proof
@@ -238,7 +238,7 @@ by Lemma 51.11. Since $f(x)$ is irreducible and of minimal degree in $F[x]$ havi
 Lemma 51.11 will also get us through for the case of a finite field, although the proof is a bit harder.
 Theorem 51.14
 
-> [!theorem|f89b2e9e-2eca-5f45-90a5-934a0751178d.local at=b6f6b4be-de63-52a3-9b40-cf0e9d9ff123] Finite Fields Are Perfect
+> [!theorem|f89b2e9e-2eca-5f45-90a5-934a0751178d.library at=b6f6b4be-de63-52a3-9b40-cf0e9d9ff123] Finite Fields Are Perfect
 > Every finite field is perfect.
 
 ##### proof
@@ -281,7 +281,7 @@ We have completed our aim, which was to show that fields of characteristic 0 and
 The following theorem is a classic of field theory.
 Theorem 51.15
 
-> [!theorem|dcbce817-1bb2-5040-86c9-69a25eef2cac.local at=3cf7f8e3-cfb7-5ed7-8ddd-6eeaf76ecd3a] Primitive Element Theorem
+> [!theorem|dcbce817-1bb2-5040-86c9-69a25eef2cac.library at=3cf7f8e3-cfb7-5ed7-8ddd-6eeaf76ecd3a] Primitive Element Theorem
 > Let $E$ be a finite separable extension of a field $F$. Then there exists $\alpha \in E$ such that $E=F(\alpha)$. (Such an element $\alpha$ is a primitive element.) That is, a finite separable extension of a field is a simple extension.
 
 ##### proof
@@ -309,7 +309,7 @@ $$
 Now $h(\gamma)=f(\beta)=0$. However, $h\left(\gamma_{j}\right) \neq 0$ for $j \neq 1$ by construction, since the $\beta_{i}$ were the only zeros of $f(x)$. Hence $h(x)$ and $g(x)=\operatorname{irr}(\gamma, F)$ have a common factor in $(F(\alpha))[x]$, namely $\operatorname{irr}(\gamma, F(\alpha))$, which must be linear, since $\gamma$ is the only common zero of $g(x)$ and $h(x)$. Thus $\gamma \in F(\alpha)$, and therefore $\beta=\alpha-a \gamma$ is in $F(\alpha)$. Hence $F(\beta, \gamma)=F(\alpha)$. $\square$
 Corollary 51.16
 
-> [!corollary|7078252a-9936-5d0f-a204-4c5d43a6358b.local at=5b704e43-ed1b-5e0e-813c-6685bd067b97] Finite Extensions in Characteristic Zero Are Simple
+> [!corollary|7078252a-9936-5d0f-a204-4c5d43a6358b.library at=5b704e43-ed1b-5e0e-813c-6685bd067b97] Finite Extensions in Characteristic Zero Are Simple
 > A finite extension of a field of characteristic zero is a simple extension.
 
 ##### proof

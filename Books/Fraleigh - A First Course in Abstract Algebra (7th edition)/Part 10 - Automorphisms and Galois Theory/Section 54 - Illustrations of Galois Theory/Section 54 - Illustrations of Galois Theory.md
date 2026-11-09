@@ -11,7 +11,7 @@ $$
 for $f\left(y_{1}, \cdots, y_{n}\right), g\left(y_{1}, \cdots, y_{n}\right) \in F\left[y_{1}, \cdots, y_{n}\right]$, with $g\left(y_{1}, \cdots, y_{n}\right) \neq 0$. It is immediate that $\bar{\sigma}$ is an automorphism of $F\left(y_{1}, \cdots, y_{n}\right)$ leaving $F$ fixed. The elements of $F\left(y_{1}, \cdots, y_{n}\right)$ left fixed by all $\bar{\sigma}$, for all $\sigma \in S_{n}$, are those rational functions that are symmetric in the indeterminates $y_{1}, \cdots, y_{n}$.
 Definition 54.1
 
-> [!definition] Symmetric Function
+> [!definition|3dcca4f7-ddcc-5cfb-baa2-8700969b8f95.library at=b7dad1b7-1868-5c57-8217-a7e1b998747a] Symmetric Function
 > Let $F$ be a field and $y_1,\ldots,y_n$ indeterminates. An element of the field $F\left(y_{1}, \cdots, y_{n}\right)$ is a symmetric function in $y_{1}, \cdots, y_{n}$ over $F$, if it is left fixed by all permutations of $y_{1}, \cdots, y_{n}$. $\square$
 
 Let $\overline{S_{n}}$ be the group of all the automorphisms $\bar{\sigma}$ for $\sigma \in S_{n}$. Observe that $\overline{S_{n}}$ is naturally isomorphic to $S_{n}$. Let $K$ be the subfield of $F\left(y_{1}, \cdots, y_{n}\right)$ which is the fixed field of $\overline{S_{n}}$. Consider the polynomial
@@ -80,7 +80,7 @@ $$
 The full Galois group of $F\left(y_{1}, \cdots, y_{n}\right)$ over $E$ is therefore $\overline{S_{n}}$. The fact that $K=E$ shows that every symmetric function can be expressed as a rational function of the elementary symmetric functions $s_{1}, \cdots, s_{n}$. We summarize these results in a theorem.
 Theorem 54.2
 
-> [!theorem] Symmetric Functions and Their Galois Group
+> [!theorem|b44a78f5-e2fd-57c9-8e88-5bffccdd142c.library at=04327878-84ac-5e28-a05f-451aff935a75] Symmetric Functions and Their Galois Group
 > Let $F$ be a field. Let $s_{1}, \cdots, s_{n}$ be the elementary symmetric functions in the indeterminates $y_{1}, \cdots, y_{n}$. Then every symmetric function of $y_{1}, \cdots, y_{n}$ over $F$ is a rational function of the elementary symmetric functions. Also, $F\left(y_{1}, \cdots, y_{n}\right)$ is a finite normal extension of degree $n!$ of $F\left(s_{1}, \cdots, s_{n}\right)$, and the Galois group of this extension is naturally isomorphic to $S_{n}$.
 
 In view of Cayley's Theorem 8.16, it can be deduced from Theorem 54.2 that any finite group can occur as a Galois group (up to isomorphism). (See Exercise 11.)
@@ -88,7 +88,7 @@ In view of Cayley's Theorem 8.16, it can be deduced from Theorem 54.2 that any f
 ## Examples
 
 Let us give our promised example of a finite normal extension having a Galois group whose subgroup diagram does not look like its own inversion.
-> [!example] Example 54.3
+> [!example|92a2ca35-242a-509c-8caf-ccb4e02368f1.local at=9f1767ac-4707-5f14-8f7b-255e7a8b3220] Example 54.3
 > Find the splitting field in $\mathbb C$ of $x^4-2$ over $\mathbb Q$, its Galois group, and the correspondence between subgroups and intermediate fields. Find $\operatorname{irr}(\sqrt[4]2+i\sqrt[4]2,\mathbb Q)$.
 
 ##### solution
@@ -241,7 +241,7 @@ $$
 $\square$
 
 We have seen examples in which the splitting field of a quartic (4th degree) polynomial over a field $F$ is an extension of $F$ of degree 8 (Example 54.3) and of degree 24 (Theorem 54.2, with $n=4$ ). The degree of an extension of a field $F$ that is a splitting field of a quartic over $F$ must always divide $4!=24$. The splitting field of $(x-2)^{4}$ over $\mathbb{Q}$ is $\mathbb{Q}$, an extension of degree 1 , and the splitting field of $\left(x^{2}-2\right)^{2}$ over $\mathbb{Q}$ is $\mathbb{Q}(\sqrt{2})$, an extension of degree 2. Our last example will give an extension of degree 4 for the splitting field of a quartic.
-> [!example] Example 54.7
+> [!example|d8b8f9d3-8c08-5a12-8f4a-154fc5eda8e8.local at=54fc4a8e-c8ce-510f-ae28-d487045daeb6] Example 54.7
 > Find the splitting field of $x^4+1$ over $\mathbb Q$, its Galois group, and the corresponding group and field diagrams.
 
 ##### solution
@@ -343,16 +343,16 @@ panels:
 
 ### Computations (requiring more than the usual amount of theory)
 
-> [!exercise] Exercise 54.1
+> [!exercise|8fe59e90-5d1f-5bf6-86ee-7f36020a877b.local at=e25817a6-90e9-59fe-8d55-ef0cb3351495] Exercise 54.1
 > Show that $x^{4}+1$ is irreducible in $\mathbb{Q}[x]$, as we asserted in Example 54.7.
 
-> [!exercise] Exercise 54.2
+> [!exercise|7051bf76-250c-5a05-99d8-96c949213ace.local at=c7682523-a188-57a8-902a-a6c201eb279a] Exercise 54.2
 > Verify that the intermediate fields given in the field diagram in Fig. 54.6 are correct (Some are verified in the text. Verify the rest.)
 
-> [!exercise] Exercise 54.3
+> [!exercise|76e592bc-b78a-5dee-a6c7-b476effd771c.local at=69dd1b78-a831-5124-a110-b3d0defdd8b4] Exercise 54.3
 > For each field in the field diagram in Fig. 54.6, find a primitive element generating the field over $\mathbb{Q}$ (see Theorem 51.15) and give its irreducible polynomial over $\mathbb{Q}$.
 
-> [!exercise] Exercise 54.4
+> [!exercise|8788d520-796d-5cfd-8450-1dee1f433204.local at=c5af17ec-5428-5baf-ad38-1314cad9c163] Exercise 54.4
 > Let $\zeta$ be a primitive 5th root of unity in $\mathbb{C}$.
 >
 > a. Show that $\mathbb{Q}(\zeta)$ is the splitting field of $x^{5}-1$ over $\mathbb{Q}$.
@@ -363,30 +363,30 @@ panels:
 >
 > d. Give the group and field diagrams for $\mathbb{Q}(\zeta)$ over $\mathbb{Q}$, computing the intermediate fields as we did in Examples 54.3 and 54.7.
 
-> [!exercise] Exercise 54.5
+> [!exercise|861a813e-14b4-51e4-908a-3ffbe930211f.local at=cc7b6645-8954-59d3-a9a3-71ed38bf92a8] Exercise 54.5
 > Describe the group of the polynomial $\left(x^{5}-2\right) \in(\mathbb{Q}(\zeta))[x]$ over $\mathbb{Q}(\zeta)$, where $\zeta$ is a primitive 5th root of unity.
 
-> [!exercise] Exercise 54.6
+> [!exercise|f9c4a8a9-3ee2-5ad0-b155-858180119319.local at=7b433db4-25b9-545a-89cf-598f31dd2175] Exercise 54.6
 > Repeat Exercise 4 for $\zeta$ a primitive 7th root of unity in $\mathbb{C}$.
 
-> [!exercise] Exercise 54.7
+> [!exercise|d6daf004-487e-53a2-a0a4-10bb3958cea2.local at=7328be3c-efb2-5d78-96df-ee3f0573acde] Exercise 54.7
 > In the easiest way possible, describe the group of the polynomial
 > $$
 > \left(x^{8}-1\right) \in \mathbb{Q}[x]
 > $$
 > over $\mathbb{Q}$.
 
-> [!exercise] Exercise 54.8
+> [!exercise|15b947a7-42a9-527d-a56a-60a8aa09cd60.local at=ba881847-5386-5c80-a5a8-8c2f3e7c2dae] Exercise 54.8
 > Find the splitting field $K$ in $\mathbb{C}$ of the polynomial $\left(x^{4}-4 x^{2}-1\right) \in \mathbb{Q}[x]$. Compute the group of the polynomial over $\mathbb{Q}$ and exhibit the correspondence between the subgroups of $G(K / \mathbb{Q})$ and the intermediate fields. In other words, do the complete job.
 
-> [!exercise] Exercise 54.9
+> [!exercise|5a2fade7-d2bd-5c66-b067-8623f746c66d.local at=7d488372-52d4-5cf2-b7b3-43da92c5c99c] Exercise 54.9
 > Express each of the following symmetric functions in $y_{1}, y_{2}, y_{3}$ over $\mathbb{Q}$ as a rational function of the elementary symmetric functions $s_{1}, s_{2}, s_{3}$.
 >
 > a. $y_{1}{ }^{2}+y_{2}{ }^{2}+y_{3}{ }^{2}$
 >
 > b. $\frac{y_{1}}{y_{2}}+\frac{y_{2}}{y_{1}}+\frac{y_{1}}{y_{3}}+\frac{y_{3}}{y_{1}}+\frac{y_{2}}{y_{3}}+\frac{y_{3}}{y_{2}}$
 
-> [!exercise] Exercise 54.10
+> [!exercise|360f0a49-3325-59d7-a348-4b9e1adf3436.local at=d02b7333-0a7c-5aef-a519-439a2e90b45e] Exercise 54.10
 > Let $\alpha_{1}, \alpha_{2}, \alpha_{3}$ be the zeros in $\mathbb{C}$ of the polynomial
 > $$
 > \left(x^{3}-4 x^{2}+6 x-2\right) \in \mathbb{Q}[x] .
@@ -399,10 +399,10 @@ panels:
 
 ### Theory
 
-> [!exercise] Exercise 54.11
+> [!exercise|73fdb93d-4cc3-5eb2-bb80-c673fefb0b4a.local at=8884ce6a-6b4c-5c3e-947e-8a98fca7378e] Exercise 54.11
 > Show that every finite group is isomorphic to some Galois group $G(K / F)$ for some finite normal extension $K$ of some field $F$.
 
-> [!exercise] Exercise 54.12
+> [!exercise|6c6c689d-1291-5cee-a8e2-2b8db6cfeed9.local at=ee1d2046-4741-5aa2-bfa9-f1e50ab7660d] Exercise 54.12
 > Let $f(x) \in F[x]$ be a monic polynomial of degree $n$ having all its irreducible factors separable over $F$. Let $K \leq \bar{F}$ be the splitting field of $f(x)$ over $F$, and suppose that $f(x)$ factors in $K[x]$ into
 > $$
 > \prod_{i=1}^{n}\left(x-\alpha_{i}\right) .
@@ -419,6 +419,6 @@ panels:
 >
 > c. Assume in this part that $f(x)$ has distinct zeros and that $\operatorname{char}F\ne2$. $G(K / F)$ may be viewed as a subgroup of $\overline{S_{n}}$, where $\overline{S_{n}}$ is the group of all permutations of $\left\{\alpha_{i} \mid i=1, \cdots, n\right\}$. Show that $G(K / F)$, when viewed in this fashion, is a subgroup of $\overline{A_{n}}$, the group formed by all even permutations of $\left\{\alpha_{i} \mid i=1, \cdots, n\right\}$, if and only if $\Delta(f) \in F$.
 
-> [!exercise] Exercise 54.13
+> [!exercise|5b4e924a-bbc9-5845-99f6-a7ed80eb1b9c.local at=4eebd8a8-6db4-5f32-a32e-984d877d54ad] Exercise 54.13
 > An element of $\mathbb{C}$ is an algebraic integer if it is a zero of some monic polynomial in $\mathbb{Z}[x]$. Show that the set of all algebraic integers forms a subring of $\mathbb{C}$.
 

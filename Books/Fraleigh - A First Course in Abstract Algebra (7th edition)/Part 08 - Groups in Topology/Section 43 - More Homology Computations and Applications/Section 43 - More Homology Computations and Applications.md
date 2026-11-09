@@ -109,7 +109,7 @@ panels:
 
 Let us turn from the computation of homology groups to a few interesting facts and applications. 
 
-> [!definition|499e6038-f133-5898-86b5-dc096e15c428.local at=30fb1341-a350-5a80-93f2-c5361a2a8aab] Euler Characteristic
+> [!definition|499e6038-f133-5898-86b5-dc096e15c428.library at=30fb1341-a350-5a80-93f2-c5361a2a8aab] Euler Characteristic
 > Let $X$ be a finite simplicial complex (or triangulated space) consisting of simplexes of dimension 3 and less. Let $n_{0}$ be the total number of vertices in the triangulation, $n_{1}$ the number of edges, $n_{2}$ the number of 2-simplexes, and $n_{3}$ the number of 3-simplexes. The number
 >
 > $$
@@ -121,7 +121,7 @@ Let us turn from the computation of homology groups to a few interesting facts a
 We just state the following fascinating theorem.
 Theorem 43.7
 
-> [!theorem|ab275e05-533f-59aa-8262-490e8834dcd1.local at=94b50f01-4870-5428-84fc-19d7f6b9875d] Euler Characteristic and Betti Numbers
+> [!theorem|ab275e05-533f-59aa-8262-490e8834dcd1.library at=94b50f01-4870-5428-84fc-19d7f6b9875d] Euler Characteristic and Betti Numbers
 > Let $X$ be a finite simplicial complex (or triangulated space) of dimension $\leq 3$. Let $\chi(X)$ be the Euler characteristic of the space $X$, and let $\beta_{j}$ be the Betti number of $H_{j}(X)$. Then
 >
 > $$
@@ -174,7 +174,7 @@ $\square$
 
 ## Mappings of Spaces
 
-> [!property|b8c6cdc0-5f49-5d62-9786-ada6276682a1.local at=f11cc1b6-37cd-5e6c-a4c3-2490fb184ac8] Homology Homomorphisms Induced by Continuous Maps
+> [!property|b8c6cdc0-5f49-5d62-9786-ada6276682a1.library at=f11cc1b6-37cd-5e6c-a4c3-2490fb184ac8] Homology Homomorphisms Induced by Continuous Maps
 > A continuous function $f$ mapping a space $X$ into a space $Y$ gives rise to a homomorphism $f_{* n}$ mapping $H_{n}(X)$ into $H_{n}(Y)$ for $n \geq 0$.
 
 The demonstration of the existence of this homomorphism takes more machinery than we wish to develop here, but let us attempt to describe how these homomorphisms can be computed in certain cases. The following is true:
@@ -261,7 +261,7 @@ panels:
 The proof we outline is good for any $n>1$. For $n=1$, looking at the graph of a function $f: E^{1} \rightarrow E^{1}$, we find that the theorem simply states that any continuous path joining the left and right sides of a square must cross the diagonal somewhere, as indicated in Fig. 43.11. The student should visualize the construction of our proof with $E^{3}$ having boundary $S^{2}$ and $E^{2}$ having boundary $S^{1}$. The proof contains a figure illustrating the construction for the case of $E^{2}$.
 Theorem 43.12
 
-> [!theorem|3ff5aeec-4e99-5e85-947d-a574e4b50c99.local at=3ef6675e-6fc8-5791-a72e-5d8cf0fe8dd4] Brouwer Fixed-Point Theorem
+> [!theorem|3ff5aeec-4e99-5e85-947d-a574e4b50c99.library at=3ef6675e-6fc8-5791-a72e-5d8cf0fe8dd4] Brouwer Fixed-Point Theorem
 > A continuous map $f$ of $E^{n}$ into itself has a fixed point for $n \geq 1$. Here $E^n=\{x\in\mathbb R^n:\|x\|\leq1\}$, and a fixed point is an $x$ with $f(x)=x$.
 
 ##### proof
@@ -396,7 +396,7 @@ panels:
     caption: ""
 ```
 
-> [!definition|a0616aef-9f75-5439-82c6-9491be32f14f.local at=25c95d29-51aa-5da5-8534-21d3e185bdd0] Genus of a Closed Surface
+> [!definition|a0616aef-9f75-5439-82c6-9491be32f14f.library at=25c95d29-51aa-5da5-8534-21d3e185bdd0] Genus of a Closed Surface
 > It can be shown that every sufficiently nice closed surface, namely a closed 2-manifold, is homeomorphic to a 2-sphere with some number $h \geq 0$ of handles if the surface is two sided, and is homeomorphic to a 2-sphere with $q>0$ cross caps if it is one sided. The number $h$ or $q$, as the case may be, is the genus of the surface.
 
 > [!exercise|dfc3925c-58cc-5cfb-81bc-e23ef2768069.local at=94909166-b018-5db5-b79c-da3c34049bff] Exercise 43.10

@@ -6,19 +6,19 @@ We are familiar with the fact that a quadratic polynomial $f(x)=a x^{2}+b x+c, a
 ## Extensions by Radicals
 Definition 56.1
 
-> [!definition] Extension by Radicals and Solvability by Radicals
+> [!definition|b89624f6-7c33-5c0c-9235-b59235f68c00.library at=78d5f4db-5bd3-5ec2-97c5-3f185a23c038] Extension by Radicals and Solvability by Radicals
 > An extension $K$ of a field $F$ is an extension of $F$ by radicals if there are elements $\alpha_{1}, \cdots, \alpha_{r} \in K$ and positive integers $n_{1}, \cdots, n_{r}$ such that $K=F\left(\alpha_{1}, \cdots, \alpha_{r}\right), \alpha_{1}^{n_{1}} \in F$ and $\alpha_{i}^{n_{i}} \in F\left(\alpha_{1}, \cdots, \alpha_{i-1}\right)$ for $1<i \leq r$. A polynomial $f(x) \in F[x]$ is solvable by radicals over $F$ if the splitting field $E$ of $f(x)$ over $F$ is contained in an extension of $F$ by radicals. $\square$
 
 A polynomial $f(x)\in F[x]$ is thus solvable by radicals over $F$ if we can obtain every zero of $f(x)$ by using a finite sequence of the operations of addition, subtraction, multiplication, division, and taking $n_{i}$ th roots, starting with elements of $F$. Now to say that the quintic is not solvable in the classic case, that is, characteristic 0, is not to say that no quintic is solvable, as the following example shows.
 
-> [!note] Historical Note
+> [!note|ac2827a9-d66b-55ed-bdd3-aabe4b43e59c.local at=5f5b419a-3efb-537f-911d-184e040b08c9] Historical Note
 > The first publication of a formula for solving cubic equations in terms of radicals was in 1545 in the Ars Magna of Girolamo Cardano, although the initial discovery of the method is in part also due to Scipione del Ferro and Niccolo Tartaglia. Cardano's student, Lodovico Ferrari, discovered a method for solving quartic equations by radicals, which also appeared in Cardano's work.
 >
 > After many mathematicians had attempted to solve quintics by similar methods, it was Joseph-Louis Lagrange who in 1770 first attempted a detailed analysis of the general principles underlying the solutions for polynomials of degree 3 and 4, and showed why these methods fail for those of higher degree. His basic insight was that in the former cases there were rational functions of the roots that took on two and three values, respectively, under all possible permutations of the roots, hence these rational functions could be written as roots of equations of degree less than that of the original. No such functions were evident in equations of higher degree.
 >
 > The first mathematician to claim to have a proof of the insolvability of the quintic equation was Paolo Ruffini (1765-1822) in his algebra text of 1799. His proof was along the lines suggested by Lagrange, in that he in effect determined all of the subgroups of $S_{5}$ and showed how these subgroups acted on rational functions of the roots of the equation. Unfortunately, there were several gaps in his various published versions of the proof. It was Niels Henrik Abel who, in 1824 and 1826, published a complete proof, closing all of Ruffini's gaps and finally settling this centuries-old question.
 
-> [!example] Example 56.2
+> [!example|80e11348-5c28-5b86-959a-1e7f968bed50.local at=22c887f2-b52d-5a40-9bc8-a3385984d7dc] Example 56.2
 > Determine whether $x^5-1$ and $x^5-2$ are solvable by radicals over $\mathbb Q$.
 
 ##### solution
@@ -35,7 +35,7 @@ The outline of the argument is as follows, and it is worthwhile to try to rememb
 The following lemma does most of our work for Step 1.
 Lemma 56.3
 
-> [!lemma] Solvable Galois Group of a Radical Polynomial
+> [!lemma|80be52c3-5c80-5446-9db6-291ba33cd297.library at=6801eab1-8679-5a41-9389-9d05d112ba31] Solvable Galois Group of a Radical Polynomial
 > Let $F$ be a field of characteristic 0 , let $n$ be a positive integer, and let $a \in F$. If $K$ is the splitting field of $x^{n}-a$ over $F$, then $G(K / F)$ is a solvable group. Here $G(K/F)$ is the Galois group of $K$ over $F$.
 
 ##### proof
@@ -88,7 +88,7 @@ is a normal series and hence a subnormal series of groups. The first part of the
 The following theorem will complete Part 1 of our program.
 Theorem 56.4
 
-> [!theorem] Solvable Galois Group of a Normal Extension Contained in a Radical Extension
+> [!theorem|65fa3ccb-b2b0-5c7c-80de-e5ec1f2c5e18.library at=50849d32-6980-5235-99a9-bb6b818e70b3] Solvable Galois Group of a Normal Extension Contained in a Radical Extension
 > Let $F$ be a field of characteristic zero, and let $F \leq E \leq K \leq \bar{F}$, an algebraic closure of $F$, where $E$ is a normal extension of $F$ and $K$ is an extension of $F$ by radicals. Then $G(E / F)$ is a solvable group. Here $G(E/F)$ is the Galois group of $E$ over $F$.
 
 ##### proof
@@ -166,7 +166,7 @@ Thus $|G(E / F)|=5!$, and the automorphisms $\bar{\sigma}$ make up the full Galo
 
 Theorem 56.6
 
-> [!theorem] Insolvability of the General Quintic
+> [!theorem|2e911594-eae2-5498-9a7a-a9707de3df00.library at=03e2d427-abba-5b4a-b75d-0536ef6dcdc4] Insolvability of the General Quintic
 > Let $y_{1}, \cdots, y_{5}$ be independent transcendental real numbers over $\mathbb{Q}$. The polynomial
 > $$
 > f(x)=\prod_{i=1}^{5}\left(x-y_{i}\right)
@@ -180,13 +180,13 @@ In conclusion, we comment that there exist polynomials of degree 5 in $\mathbb{Q
 
 ### Concepts
 
-> [!exercise] Exercise 56.1
+> [!exercise|abffa043-1fef-5ac1-a8aa-614425d8a28a.local at=62e25e1d-5e0e-5252-9033-e4b672051451] Exercise 56.1
 > Can the splitting field $K$ of $x^{2}+x+1$ over $\mathbb{Z}_{2}$ be obtained by adjoining a square root to $\mathbb{Z}_{2}$ of an element in $\mathbb{Z}_{2}$ ? Is $K$ an extension of $\mathbb{Z}_{2}$ by radicals?
 
-> [!exercise] Exercise 56.2
+> [!exercise|0ad4826a-4373-501a-adf7-a4371f8cf212.local at=f5fcd3cb-4806-5668-8086-4f50cb72459a] Exercise 56.2
 > Is every polynomial in $F[x]$ of the form $a x^{8}+b x^{6}+c x^{4}+d x^{2}+e$, where $a \neq 0$, solvable by radicals over $F$, if $F$ is of characteristic 0 ? Why or why not?
 
-> [!exercise] Exercise 56.3
+> [!exercise|90f412ea-c77b-5ce6-8ab2-374c17ac4495.local at=ba03cf37-186f-55c5-b2a2-86c86b5dec07] Exercise 56.3
 > Mark each of the following true or false.
 >
 > a. Let $F$ be a field of characteristic 0. A polynomial in $F[x]$ is solvable by radicals if and only if its splitting field in $\bar{F}$ is contained in an extension of $F$ by radicals.
@@ -211,23 +211,23 @@ In conclusion, we comment that there exist polynomials of degree 5 in $\mathbb{Q
 
 ### Theory
 
-> [!exercise] Exercise 56.4
+> [!exercise|9141406e-a3ce-503b-ab8a-8de3a2f2d58e.local at=dba3d6f5-420a-5872-b971-c64af7f644bc] Exercise 56.4
 > Let $F$ be a field, and let $f(x)=a x^{2}+b x+c$ be in $F[x]$, where $a \neq 0$. Show that if the characteristic of $F$ is not 2, the splitting field of $f(x)$ over $F$ is $F\left(\sqrt{b^{2}-4 a c}\right)$. [Hint: Complete the square, just as in your high school work, to derive the "quadratic formula."]
 
-> [!exercise] Exercise 56.5
+> [!exercise|0b14819b-e291-5cc4-a912-c0f74aa7f13e.local at=a2fca612-4ff7-561d-b303-437851565aba] Exercise 56.5
 > Show that if $F$ is a field of characteristic different from 2 and
 > $$
 > f(x)=a x^{4}+b x^{2}+c,
 > $$
 > where $a \neq 0$, then $f(x)$ is solvable by radicals over $F$.
 
-> [!exercise] Exercise 56.6
+> [!exercise|1d414203-8eef-56ba-9401-119cbd19b670.local at=9536f160-16f7-5746-ba78-83a535e22ba9] Exercise 56.6
 > Show that for a finite group, every refinement of a subnormal series with abelian quotients also has abelian quotients, thus completing the proof of Lemma 56.3. [Hint: Use Theorem 34.7.]
 
-> [!exercise] Exercise 56.7
+> [!exercise|91b3fef6-5b02-5818-ab45-e51ec041766a.local at=24da55a0-6b02-5fcb-a7ad-8b3cf8827a02] Exercise 56.7
 > Show that for a finite group, a subnormal series with solvable quotient groups can be refined to a composition series with abelian quotients, thus completing the proof of Theorem 56.4. [Hint: Use Theorem 34.7.]
 
-> [!exercise] Exercise 56.8
+> [!exercise|7268beb1-fa7e-57b3-aa45-e0aaf4e77517.local at=df20567f-de3a-5447-88aa-88ec7999803e] Exercise 56.8
 > This exercise exhibits a polynomial of degree 5 in $\mathbb{Q}[x]$ that is not solvable by radicals over $\mathbb{Q}$.
 >
 > a. Show that if a subgroup $H$ of $S_{5}$ contains a cycle of length 5 and a transposition $\tau$, then $H=S_{5}$. [Hint: Show that $H$ contains every transposition of $S_{5}$ and apply Corollary 9.12. See Exercise 39, Section 9.]

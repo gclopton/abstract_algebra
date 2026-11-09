@@ -9,12 +9,12 @@ We develop our theory of totally inseparable extensions in a fashion parallel to
 
 Definition 52.1
 
-> [!definition] Totally Inseparable Field Extension and Element
+> [!definition|b695f2fa-aa12-5d6c-b955-395822aaffbd.library at=c6dbd61f-3c25-5fa4-aeb4-adfc47e99b46] Totally Inseparable Field Extension and Element
 > A finite extension $E$ of a field $F$ is a totally inseparable extension of $F$ if $\{E:F\}=1<[E:F]$. An element $\alpha$ of $\bar{F}$ is totally inseparable over $F$ if $F(\alpha)$ is totally inseparable over $F$. $\square$ Here $\bar F$ is an algebraic closure of $F$, $\{E:F\}$ is the number of isomorphisms of $E$ onto a subfield of $\bar F$ leaving $F$ fixed, and $[E:F]$ is the degree of the extension.
 
 We know that $\{F(\alpha): F\}$ is the number of distinct zeros of $\operatorname{irr}(\alpha, F)$. Thus $\alpha$ is totally inseparable over $F$ if and only if $\operatorname{irr}(\alpha, F)$ has only one zero that is of multiplicity $>1$.
 
-> [!example] Example 52.2
+> [!example|533b2d27-4f04-5d65-bd7f-0edd849f6b76.local at=cd6d47a4-a764-571a-8819-bfdde6abf2d3] Example 52.2
 > Let $p$ be prime and $y$ an indeterminate. Show that $\mathbb Z_p(y)$ is totally inseparable over $\mathbb Z_p(y^p)$.
 
 ##### solution
@@ -22,7 +22,7 @@ We know that $\{F(\alpha): F\}$ is the number of distinct zeros of $\operatornam
 Referring to Example 51.4, we see that $\mathbb{Z}_{p}(y)$ is totally inseparable over $\mathbb{Z}_{p}\left(y^{p}\right)$, where $y$ is an indeterminate. $\square$
 Theorem 52.3
 
-> [!theorem] Total Inseparability in a Tower of Finite Field Extensions
+> [!theorem|e22404ed-d96d-5544-b085-426cd1cf9100.library at=2f3ad47f-f2dc-5b3d-9cda-c353f6a352c6] Total Inseparability in a Tower of Finite Field Extensions
 > If $K$ is a finite extension of $E, E$ is a finite extension of $F$, and $F<E<K$, then $K$ is totally inseparable over $F$ if and only if $K$ is totally inseparable over $E$ and $E$ is totally inseparable over $F$.
 
 ##### proof
@@ -51,7 +51,7 @@ and $[K: F]>1$. Thus $K$ is totally inseparable over $F$. $\square$
 Theorem 52.3 can be extended by induction, to any finite proper tower of finite extensions. The top field is a totally inseparable extension of the bottom one if and only if each field is a totally inseparable extension of the one immediately under it.
 Corollary 52.4
 
-> [!corollary] Total Inseparability of a Finite Extension and Its Elements
+> [!corollary|f9eb565c-c0f4-582b-b33b-905c6e178891.library at=e45b5b95-2b19-5e81-8769-2ba714541abf] Total Inseparability of a Finite Extension and Its Elements
 > If $E$ is a proper finite extension of $F$, then $E$ is totally inseparable over $F$ if and only if each $\alpha$ in $E, \alpha\notin F$, is totally inseparable over $F$.
 
 ##### proof
@@ -79,7 +79,7 @@ Thus far we have so closely paralleled our work in Section 51 that we could have
 We now come to our main reason for including this material.
 Theorem 52.5
 
-> [!theorem] Totally Inseparable Elements and Separable Closure of a Finite Extension
+> [!theorem|11a8c3de-7108-5894-bbc0-695090eb432a.library at=016ef630-2253-5a84-a87b-0138c867f953] Totally Inseparable Elements and Separable Closure of a Finite Extension
 > Let $F$ have characteristic $p \neq 0$, and let $E$ be a finite extension of $F$. Then $\alpha \in E, \alpha \notin F$, is totally inseparable over $F$ if and only if there is some integer $t \geq 1$ such that $\alpha^{p^{t}} \in F$.
 >
 > Furthermore, there is a unique extension $K$ of $F$, with $F \leq K \leq E$, such that $K$ is separable over $F$, and either $E=K$ or $E$ is totally inseparable over $K$.
@@ -124,7 +124,7 @@ is separable over $F$, by the proof of Corollary 51.10. If all $p^{t_{i}}=1$, th
 It follows from Corollaries 51.10 and 52.4 that the field $K$ consists of all elements $\alpha$ in $E$ that are separable over $F$. Thus $K$ is unique. $\square$
 Definition 52.6
 
-> [!definition] Separable Closure in a Field Extension
+> [!definition|ea12bfb7-72d5-5f9e-b32f-6756a8c18d2a.library at=f015023b-faaf-5b44-acb8-365712e677be] Separable Closure in a Field Extension
 > Let $E$ be a finite extension of a field $F$ of characteristic $p\ne0$. The field $K$ consisting of all elements of $E$ that are separable over $F$ is the separable closure of $F$ in $E$. $\square$
 
 The preceding theorem shows the precise structure of totally inseparable extensions of a field of characteristic $p$. Such an extension can be obtained by repeatedly adjoining $p$ th roots of elements that are not already $p$ th powers.
@@ -135,19 +135,19 @@ We remark that Theorem 52.5 is true for infinite algebraic extensions $E$ of $F$
 
 ### Concepts
 
-> [!exercise] Exercise 52.1
+> [!exercise|210b503f-15f1-520b-8ee4-22dfad4bb516.local at=17b601db-391a-5ddf-98eb-3d32d3b000f5] Exercise 52.1
 > Let $y$ and $z$ be indeterminates, and let $u=y^{12}$ and $v=z^{18}$. Describe the separable closure of $\mathbb{Z}_{3}(u, v)$ in $\mathbb{Z}_{3}(y, z)$.
 
-> [!exercise] Exercise 52.2
+> [!exercise|ce052df3-c066-5d48-a6be-b077bd17549a.local at=410d65c4-4efc-5572-bf9f-59a22c57dc91] Exercise 52.2
 > Let $y$ and $z$ be indeterminates, and let $u=y^{12}$ and $v=y^{2} z^{18}$. Describe the separable closure of $\mathbb{Z}_{3}(u, v)$ in $\mathbb{Z}_{3}(y, z)$.
 
-> [!exercise] Exercise 52.3
+> [!exercise|28b876b8-43b7-5264-80a6-ccb368453cf6.local at=359d2806-e5e5-53f4-b69e-aae41ecadfca] Exercise 52.3
 > Referring to Exercise 1, describe the totally inseparable closure (see Exercise 6) of $\mathbb Z_3(u,v)$ in $\mathbb{Z}_{3}(y, z)$.
 
-> [!exercise] Exercise 52.4
+> [!exercise|64168341-a5a8-538c-a109-b91ef8ace400.local at=0519bb7e-4ded-5b01-82a7-c341b2a3c463] Exercise 52.4
 > Referring to Exercise 2, describe the totally inseparable closure of $\mathbb Z_3(u,v)$ in $\mathbb{Z}_{3}(y, z)$. (See Exercise 6.)
 
-> [!exercise] Exercise 52.5
+> [!exercise|356959da-17a3-5ed6-95ed-f5aca8fe25b0.local at=95756bee-fe9c-5c3a-99ba-bd361fdf2f21] Exercise 52.5
 > Mark each of the following true or false.
 >
 > a. No proper algebraic extension of an infinite field of characteristic $p \neq 0$ is ever a separable extension.
@@ -172,13 +172,13 @@ We remark that Theorem 52.5 is true for infinite algebraic extensions $E$ of $F$
 
 ### Theory
 
-> [!exercise] Exercise 52.6
+> [!exercise|b7c1e0f4-e69e-583b-bbd1-3fa0ec0d41f9.local at=01992977-2939-5822-a04c-2540700c5f51] Exercise 52.6
 > Show that if $E$ is an algebraic extension of a field $F$, then the union of $F$ with the set of all elements of $E$ totally inseparable over $F$ forms a subfield of $E$, the totally inseparable closure of $F$ in $E$.
 
-> [!exercise] Exercise 52.7
+> [!exercise|d281c336-5bba-5250-aea6-a47dab367fa8.local at=83550c33-5ed3-5d01-b205-371c42813b2f] Exercise 52.7
 > Show that a field $F$ of characteristic $p \neq 0$ is perfect if and only if $F^{p}=F$, that is, every element of $F$ is a $p$ th power of some element of $F$.
 
-> [!exercise] Exercise 52.8
+> [!exercise|2d81e669-25cb-53c1-9864-bc35ae627901.local at=4d7139f2-4a26-5c6f-90f4-c85173cde63b] Exercise 52.8
 > Let $E$ be a finite extension of a field $F$ of characteristic $p$. In the notation of Exercise 7, show that $E^{p}=E$ if and only if $F^{p}=F$. [Hint: The map $\sigma_{p}: E \rightarrow E$ defined by $\sigma_{p}(\alpha)=\alpha^{p}$ for $\alpha \in E$ is an isomorphism onto a subfield of $E$. Consider the diagram in Fig. 52.7, and make degree arguments.]
 
 ```scientific-figure

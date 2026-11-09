@@ -11,7 +11,7 @@ $$
 with $\partial_{k-1} \partial_{k}=0$. You then abstract the purely algebraic portion of this situation and consider any sequence of abelian groups $A_{k}$ and homomorphisms $\partial_{k}: A_{k} \rightarrow A_{k-1}$ such that $\partial_{k-1} \partial_{k}=0$ for $k \geq 1$. So that you do not always have to require $k \geq 1$ in $\partial_{k-1} \partial_{k}=0$, it is convenient to consider "doubly infinite" sequences of groups $A_{k}$ for all $k \in \mathbb{Z}$. Often, $A_{k}=0$ for $k<0$ and $k>n$ in applications. The study of such sequences and maps of such sequences is a topic of homological algebra.
 Definition 44.1
 
-> [!definition] Chain Complex
+> [!definition|b88c2d66-7b6f-5696-a396-edb457b230eb.library at=17c378db-a3b5-5c64-8558-5ec4400e46f6] Chain Complex
 > A chain complex $\langle A, \partial\rangle$ is a doubly infinite sequence
 >
 > $$
@@ -23,7 +23,7 @@ Definition 44.1
 As a convenience similar to our notation in group theory, we shall be sloppy and let " $A$ " denote the chain complex $\langle A, \partial\rangle$. We can now imitate in a completely algebraic setting our constructions and definitions of Section 41.
 Theorem 44.2
 
-> [!theorem] Boundaries Lie in the Kernel of the Next Boundary Map
+> [!theorem|8c0a05e5-ac8b-5d42-8639-15b80263cbc9.library at=ac8585b5-cf58-5312-bf81-3230ace8e929] Boundaries Lie in the Kernel of the Next Boundary Map
 > If $\langle A,\partial\rangle$ is a chain complex, then the image under $\partial_{k}$ is a subgroup of the kernel of $\partial_{k-1}$.
 
 ##### proof
@@ -38,7 +38,7 @@ Now $\partial_{k-1} \partial_{k}=0$, since $A$ is a chain complex. That is, $\pa
 $\square$
 Definition 44.3
 
-> [!definition] Cycles, Boundaries, and Homology of a Chain Complex
+> [!definition|20b95d9e-8a50-5e0b-99bc-2c55873aafc4.library at=5cd9b0ae-65c4-557f-9acb-c884e0227b13] Cycles, Boundaries, and Homology of a Chain Complex
 > If $\langle A,\partial\rangle$ is a chain complex, then the kernel $Z_{k}(A)$ of $\partial_{k}$ is the group of $\boldsymbol{k}$-cycles, and the image $B_{k}(A)=\partial_{k+1}\left[A_{k+1}\right]$ is the group of $\boldsymbol{k}$-boundaries. The factor group $H_k(A)=Z_k(A)/B_k(A)$ is the $\boldsymbol{k}$ th homology group of $A$. $\square$
 
 We stated in the last section that for simplicial complexes $X$ and $Y$, a continuous mapping $f$ from $X$ into $Y$ induces a homomorphism of $H_{k}(X)$ into $H_{k}(Y)$. This mapping of the homology groups arises in the following way. For suitable triangulations of $X$ and $Y$, the mapping $f$ gives rise to a homomorphism $f_{k}$ of $C_{k}(X)$ into $C_{k}(Y)$, which has the important property that it commutes with $\partial_{k}$, that is,
@@ -50,7 +50,7 @@ $$
 Let us turn to the purely algebraic situation and see how this induces a map of the homology groups.
 Theorem 44.4
 
-> [!theorem] Fundamental Lemma of Homological Algebra
+> [!theorem|925a32cb-0420-5d5c-8e6c-58eacc83775a.library at=dcab5b12-8ac7-5d6e-a427-4ae74839febd] Fundamental Lemma of Homological Algebra
 > Let $A$ and $A^{\prime}$ with collections $\partial$ and $\partial^{\prime}$ of homomorphisms be chain complexes, and suppose that there is a collection $f$ of homomorphisms $f_{k}$ : $A_{k} \rightarrow A_{k}^{\prime}$ as indicated in the diagram
 >
 > $$
@@ -106,10 +106,10 @@ If the collections of maps $f, \partial$, and $\partial^{\prime}$ have the prope
 After another definition, we shall give a seemingly trivial but very important illustration of Theorem 44.4.
 Definition 44.5
 
-> [!definition] Subcomplex of a Chain Complex
+> [!definition|1a2c2f10-0b46-579b-8b42-0c05a1c50832.library at=430ef6fd-57b8-5aaf-a8fc-93a009cadc55] Subcomplex of a Chain Complex
 > A chain complex $\left\langle A^{\prime}, \partial^{\prime}\right\rangle$ is a subcomplex of a chain complex $\langle A, \partial\rangle$, if, for all $k, A_{k}^{\prime}$ is a subgroup of $A_{k}$ and $\partial_{k}^{\prime}(c)=\partial_{k}(c)$ for every $c \in A_{k}^{\prime}$, that is, $\partial_{k}^{\prime}$ and $\partial_{k}$ have the same effect on elements of the subgroup $A_{k}^{\prime}$ of $A_{k}$. $\square$
 
-> [!example] Example 44.6
+> [!example|0979d331-9b86-584b-8f66-b0589e9cc72c.local at=88c5de76-508e-5fa0-b833-d3e22001a25c] Example 44.6
 > For a subcomplex $A^{\prime}$ of a chain complex $A$, determine whether the homology map induced by inclusion must be injective.
 
 ##### solution
@@ -179,7 +179,7 @@ The preceding arguments are typical routine computations to the homological alge
 
 Theorem 44.7
 
-> [!theorem] Quotient Chain Complex
+> [!theorem|b2899314-f6d4-5c9b-81d2-8a8e41cfe414.library at=7a28bce5-ff80-5343-a642-8d7098e7b539] Quotient Chain Complex
 > If $A^{\prime}$ is a subcomplex of the chain complex $A$, then the collection $A / A^{\prime}$ of factor groups $A_{k} / A_{k}^{\prime}$, together with the collection $\bar{\partial}$ of homomorphisms $\bar{\partial}_{k}$ defined by
 > $$
 > \bar{\partial}_{k}\left(c+A_{k}^{\prime}\right)=\partial_{k}(c)+A_{k-1}^{\prime}
@@ -189,12 +189,12 @@ Theorem 44.7
 Since $A / A^{\prime}$ is a chain complex, we can then form the homology groups $H_{k}\left(A / A^{\prime}\right)$.
 Definition 44.8
 
-> [!definition] Relative Homology Group
+> [!definition|d7c03e01-1482-5b26-a79f-9af42b1bb44c.library at=c4712d38-2926-5e58-937c-6af168efc2bf] Relative Homology Group
 > Let $A^{\prime}$ be a subcomplex of a chain complex $A$, and let $A/A^{\prime}$ be the quotient chain complex. The homology group $H_{k}\left(A / A^{\prime}\right)$ is the $\boldsymbol{k}$ th relative homology group of $\boldsymbol{A}$ modulo $\boldsymbol{A}^{\prime}$. $\square$
 
 In our topological situation where $Y$ is a subcomplex of a simplicial complex $X$, we shall conform to the usual notation of topologists and denote the $k$ th relative homology group arising from the subcomplex $C(Y)$ of the chain complex $C(X)$ by " $H_{k}(X, Y)$." All the chains of $Y$ are thus "set equal to 0." Geometrically, this corresponds to shrinking $Y$ to a point.
 
-> [!example] Example 44.9
+> [!example|9eab310e-36cb-5464-9296-d65c734a030f.local at=b5d1e87e-99be-57af-989a-cf9d3cbe2c10] Example 44.9
 > Compute $H_1(X,Y)$ and $H_0(X,Y)$ for the boundary $X$ of the triangle in Fig. 44.10 and its edge subcomplex $Y=P_2P_3$.
 
 ##### solution
@@ -251,7 +251,7 @@ panels:
     caption: ""
 ```
 
-> [!example] Example 44.12
+> [!example|958115b4-8185-52f3-beae-a7405ec53836.local at=3935295d-016d-5a12-bdfb-6e896aad3d8b] Example 44.12
 > Compute $H_2(E^2,S^1)$, where $S^1$ is the boundary of the disk $E^2$.
 
 ##### solution
@@ -309,7 +309,7 @@ as we expected. $\square$
 We now describe the exact homology sequence of a pair and give an application. We shall not carry out all the details of the computations. The computations are routine and straightforward. We shall give all the necessary definitions, and shall let the student supply the details in the exercises.
 Lemma 44.14
 
-> [!lemma] Quotient Projection Commutes with Boundary Maps
+> [!lemma|c8332f1b-03db-54da-9265-dc6cd1771bc5.library at=c8aa3374-e928-53b5-bc92-765034bc57e1] Quotient Projection Commutes with Boundary Maps
 > Let $A^{\prime}$ be a subcomplex of a chain complex $A$. Let $j$ be the collection of natural homomorphisms $j_{k}: A_{k} \rightarrow\left(A_{k} / A_{k}^{\prime}\right)$. Then
 >
 > $$
@@ -323,7 +323,7 @@ Lemma 44.14
 We leave this easy computation to the exercises (see Exercise 12). $\square$
 Theorem 44.15
 
-> [!theorem] Homology Map Induced by a Quotient Projection
+> [!theorem|eb8856ba-2eb1-551d-8c15-bfe5af342bbc.library at=8ba22f03-205c-5efe-bdab-0cb1b32d7d0d] Homology Map Induced by a Quotient Projection
 > If $A^{\prime}$ is a subcomplex of a chain complex $A$, the natural quotient map $j_k:A_k\to A_k/A_k^{\prime}$ induces a natural homomorphism
 >
 > $$
@@ -334,7 +334,7 @@ Theorem 44.15
 
 This is immediate from Lemma 44.14 and Theorem 44.4 $\square$
 
-> [!definition] Connecting Homomorphism in Relative Homology
+> [!definition|671dfcd4-2e8e-5e88-861f-6434eb00e552.library at=65e22fc9-b5db-537c-9f3d-710e77f84f1a] Connecting Homomorphism in Relative Homology
 > Let $A^{\prime}$ be a subcomplex of the chain complex $A$. Let $h \in H_{k}\left(A / A^{\prime}\right)$. Then $h=z+B_k\left(A/A^{\prime}\right)$ for $z \in Z_{k}\left(A / A^{\prime}\right)$, and in turn $z=c+A_{k}^{\prime}$ for some $c \in A_{k}$. (Note that we arrive at $c$ from $h$ by two successive choices of representatives.) Now $\bar{\partial}_{k}(z)=0$, which implies that $\partial_{k}(c) \in A_{k-1}^{\prime}$. This, together with $\partial_{k-1} \partial_{k}=0$, gives us $\partial_{k}(c) \in Z_{k-1}\left(A^{\prime}\right)$. Define
 >
 > $$
@@ -350,7 +350,7 @@ This is immediate from Lemma 44.14 and Theorem 44.4 $\square$
 This definition of $\partial_{* k}$ looks very complicated. Think of it as follows. Start with an element of $H_{k}\left(A / A^{\prime}\right)$. Now such an element is represented by a relative $k$-cycle modulo $A^{\prime}$. To say it is a relative $k$-cycle modulo $A^{\prime}$ is to say that its boundary is in $A_{k-1}^{\prime}$. Since its boundary is in $A_{k-1}^{\prime}$ and is a boundary of something in $A_{k}$, this boundary must be a ( $k-1$ )-cycle in $A_{k-1}^{\prime}$. Thus starting with $h \in H_{k}\left(A / A^{\prime}\right)$, we have arrived at a $(k-1)$-cycle representing a homology class in $H_{k-1}\left(A^{\prime}\right)$.
 Lemma 44.16
 
-> [!lemma] The Connecting Map Is a Well-Defined Homomorphism
+> [!lemma|2d02f985-8376-5df0-bcb5-242f5ac78609.library at=1604d260-d305-5b3d-b804-0e0eca8e754e] The Connecting Map Is a Well-Defined Homomorphism
 > Let $A^{\prime}$ be a subcomplex of a chain complex $A$, with $c+A_k^{\prime}\in Z_k(A/A^{\prime})$. The map $\partial_{* k}: H_{k}\left(A / A^{\prime}\right) \rightarrow H_{k-1}\left(A^{\prime}\right)$, defined by
 >
 > $$\partial_{*k}\bigl((c+A_k^{\prime})+B_k(A/A^{\prime})\bigr)=\partial_k(c)+B_{k-1}(A^{\prime}),$$
@@ -372,7 +372,7 @@ $$
 
 Lemma 44.17
 
-> [!lemma] The Homology Sequence of a Pair Is a Chain Complex
+> [!lemma|fa096fe4-61b5-55fa-bcbf-bd60ebff9c10.library at=1b24d796-7977-580d-adf7-4b9d49876191] The Homology Sequence of a Pair Is a Chain Complex
 > Let $A^{\prime}$ be a subcomplex of a chain complex $A$. The maps $i_{*k}$ and $j_{*k}$ are induced by the inclusion $A^{\prime}\hookrightarrow A$ and the quotient projection $A\to A/A^{\prime}$, respectively. The connecting map is defined by
 >
 > $$
@@ -397,13 +397,13 @@ You need only check that a sequence of two consecutive maps always gives 0. We l
 Since diagram (1) gives a chain complex, we could (horrors!) ask for the homology groups of this chain complex. We have been aiming at this question, the answer to which is actually quite easy. All the homology groups of this chain complex are 0. You may think that such a chain complex is uninteresting. Far from it. Such a chain complex even has a special name.
 Definition 44.18
 
-> [!definition] Exact Sequence of Abelian Groups
+> [!definition|27ff0c43-97ae-5499-ba59-8309b2f84453.library at=c33648b0-d5ff-5735-9787-5b3eb93598fc] Exact Sequence of Abelian Groups
 > A sequence of groups $A_{k}$ and homomorphisms $\partial_{k}$ forming a chain complex is an exact sequence if all the homology groups of the chain complex are 0 , that is, if for all $k$ we have that the image under $\partial_{k}$ is equal to the kernel of $\partial_{k-1}$.
 
 Exact sequences are of great importance in topology. We shall give some elementary properties of them in the exercises. $\square$
 Theorem 44.19
 
-> [!theorem] Exactness of the Homology Sequence of a Pair
+> [!theorem|041bf8bd-5347-534b-b3bd-1bd48fb4e5eb.library at=9357a87c-5641-57bd-a227-0618c37949b9] Exactness of the Homology Sequence of a Pair
 > Let $A^{\prime}$ be a subcomplex of a chain complex $A$. The maps $i_{*k}$ and $j_{*k}$ are induced by the inclusion $A^{\prime}\hookrightarrow A$ and the quotient projection $A\to A/A^{\prime}$, respectively. The connecting map is defined by
 >
 > $$
@@ -426,7 +426,7 @@ Theorem 44.19
 We leave this proof to the exercises (see Exercise 15). $\square$
 Definition 44.20
 
-> [!definition] Exact Homology Sequence of a Pair
+> [!definition|a95488f6-7f72-5996-b7c9-921cb4948b23.library at=6449c0e2-34c0-5f92-a96d-390593bf4ce3] Exact Homology Sequence of a Pair
 > Let $A^{\prime}$ be a subcomplex of a chain complex $A$. The maps $i_{*k}$ and $j_{*k}$ are induced by the inclusion $A^{\prime}\hookrightarrow A$ and the quotient projection $A\to A/A^{\prime}$, respectively. The connecting map is defined by
 >
 > $$
@@ -444,7 +444,7 @@ Definition 44.20
 > \end{aligned}
 > $$
 
-> [!example] Example 44.21
+> [!example|ff84c76b-235b-500d-bcf6-ea82b338f301.local at=eeabf257-59bf-5d37-9432-0a8a8750de7a] Example 44.21
 > Use the exact homology sequence of $(E^{n+1},S^n)$ to derive the homology groups of $S^n$ for $n\geq1$, assuming the homology groups of $E^{n+1}$ are known.
 
 ##### solution
@@ -495,14 +495,14 @@ $\square$
 
 ### Suggested Exercises
 
-> [!exercise] Exercise 44.1
+> [!exercise|705e4b6b-0eb3-5c7b-b1be-ffd05f0931de.local at=090a7331-9738-5e5e-8f83-0fcb4eccc22f] Exercise 44.1
 > Let $A$ and $B$ be additive groups, and suppose that the sequence
 > $$
 > 0 \rightarrow A \xrightarrow{f} B \rightarrow 0
 > $$
 > is exact. Show that $A \simeq B$.
 
-> [!exercise] Exercise 44.2
+> [!exercise|497c2c6a-460c-55b3-b587-a8d9255cc786.local at=0a4e268e-fa58-5f50-8844-a6b49a66d144] Exercise 44.2
 > Let $A, B$, and $C$ be additive groups and suppose that the sequence
 > $$
 > 0 \rightarrow A \xrightarrow{i} B \xrightarrow{j} C \rightarrow 0
@@ -515,7 +515,7 @@ $\square$
 >
 > c. $C$ is isomorphic to $B / i[A]$
 
-> [!exercise] Exercise 44.3
+> [!exercise|80833284-f352-5833-8507-424dda28a05b.local at=309ed25f-db03-5ef2-898a-370510d7a15f] Exercise 44.3
 > Let $A, B, C$, and $D$ be additive groups and let
 > $$
 > A \xrightarrow{i} B \xrightarrow{j} C \xrightarrow{k} D
@@ -528,7 +528,7 @@ $\square$
 >
 > c. $k$ is a one-to-one map
 
-> [!exercise] Exercise 44.4
+> [!exercise|667e40b4-b03f-5d62-b86c-d373bc2bce86.local at=04b2ad9c-86e5-5b88-8f78-f3ce812680e7] Exercise 44.4
 > Show that if
 > $$
 > A \xrightarrow{g} B \xrightarrow{h} C \xrightarrow{i} D \xrightarrow{j} E \xrightarrow{k} F
@@ -543,37 +543,37 @@ $\square$
 
 ### More Exercises
 
-> [!exercise] Exercise 44.5
+> [!exercise|991b0f18-c07d-5ef7-9183-e8198ee106ca.local at=d8113ddd-53b7-535c-96ce-baa246b29b8b] Exercise 44.5
 > Theorem 44.4 and Theorem 44.7 are closely connected with Exercise 39 of Section 14. Show the connection.
 
-> [!exercise] Exercise 44.6
+> [!exercise|49fd03a9-6c20-521d-8dae-5f102f74f4bc.local at=5e16c4d1-5aba-5417-b260-38d4aa7ce4af] Exercise 44.6
 > In a computation analogous to Examples 44.9 and 44.12 of the text, find the relative homology groups $H_{n}(X, a)$ for the torus $X$ with subcomplex $a$, as shown in Figs. 42.13 and Fig. 42.14. (Since we can regard these relative homology groups as the homology groups of the space obtained from $X$ by shrinking $a$ to a point, these should be the homology groups of the pinched torus.)
 
-> [!exercise] Exercise 44.7
+> [!exercise|c50256e8-aea9-5ccf-bb1a-cb17cc525faf.local at=646f80a2-4620-55ca-83e9-196dcdd3629b] Exercise 44.7
 > For the simplicial complex $X$ and subcomplex $a$ of Exercise 6, form the exact homology sequence of the pair $(X, a)$ and verify by direct computation that this sequence is exact.
 
-> [!exercise] Exercise 44.8
+> [!exercise|6cfb7b8b-7e25-5562-a56a-6739d06b6cb3.local at=f5822e4a-561c-50ce-8371-15557a10e860] Exercise 44.8
 > Repeat Exercise 6 with $X$ the Klein bottle of Fig. 43.2 and Fig. 43.4. (This should give the homology groups of the pinched Klein bottle.)
 
-> [!exercise] Exercise 44.9
+> [!exercise|ff6e13be-a96c-5232-ac7d-aa62b7a9c3dc.local at=7e49ba53-38dd-5f86-a2b9-5c8df47267e8] Exercise 44.9
 > For the simplicial complex $X$ and subcomplex $a$ of Exercise 8, form the exact homology sequence of the pair $(X, a)$ and verify by direct computation that this sequence is exact.
 
-> [!exercise] Exercise 44.10
+> [!exercise|0c797b35-4754-557d-9eee-7c8958189ef6.local at=ac4e0b3c-e670-5f6e-87dd-1ab8ee71bb84] Exercise 44.10
 > Find the relative homology groups $H_{n}(X, Y)$, where $X$ is the annular region of Fig. 42.11 and $Y$ is the subcomplex consisting of the two boundary circles.
 
-> [!exercise] Exercise 44.11
+> [!exercise|a41069da-f912-5efb-a22d-0dd3bc618d24.local at=46368653-2170-5469-a726-9cb5d5c19219] Exercise 44.11
 > For the simplicial complex $X$ and subcomplex $Y$ of Exercise 10, form the exact homology sequence of the pair $(X, Y)$ and verify by direct computation that this sequence is exact.
 
-> [!exercise] Exercise 44.12
+> [!exercise|5d282d99-d7cc-505d-ba4c-37af56b881a2.local at=5bd4c307-33d7-5023-841e-1f2da8ca47b7] Exercise 44.12
 > Prove Lemma 44.14
 
-> [!exercise] Exercise 44.13
+> [!exercise|210d234b-9b09-5a7e-aed7-a5afb1f39fb2.local at=42b87bb4-e052-52ec-b163-c016e9009bea] Exercise 44.13
 > Prove Lemma 44.16
 
-> [!exercise] Exercise 44.14
+> [!exercise|800b1dcf-3799-55f7-a1d7-6b97a4ef16cd.local at=30e02b27-4b58-5bb4-9abf-b5cdaf67a85d] Exercise 44.14
 > Prove Lemma 44.17
 
-> [!exercise] Exercise 44.15
+> [!exercise|48bce131-89fe-53fe-a35c-7a6d2ad271b6.local at=0524b99c-2251-5668-ba48-dbcf84ab2b3c] Exercise 44.15
 > Prove Theorem 44.19 by means of the following steps.
 >
 > a. Show $\bigl(\operatorname{image}i_{*k}\bigr)\subseteq\bigl(\operatorname{kernel}j_{*k}\bigr)$.
@@ -588,7 +588,7 @@ $\square$
 >
 > f. Show $\bigl(\operatorname{kernel}i_{*k-1}\bigr)\subseteq\bigl(\operatorname{image}\partial_{*k}\bigr)$.
 
-> [!exercise] Exercise 44.16
+> [!exercise|ee186918-bab4-5226-b272-124cb5e15845.local at=946ef560-fd3d-5230-a784-2594afa0e095] Exercise 44.16
 > Let $\langle A, \partial\rangle$ and $\left\langle A^{\prime}, \partial^{\prime}\right\rangle$ be chain complexes, and let $f$ and $g$ be collections of homomorphisms $f_{k}: A_{k} \rightarrow A_{k}^{\prime}$ and $g_{k}: A_{k} \rightarrow A_{k}^{\prime}$ such that both $f$ and $g$ commute with $\partial$. An algebraic homotopy between $f$ and $g$ is a collection $D$ of homomorphisms $D_{k}: A_{k} \rightarrow A_{k+1}^{\prime}$ such that for all $c \in A_{k}$, we have
 > $$
 > f_{k}(c)-g_{k}(c)=\partial_{k+1}^{\prime}\left(D_{k}(c)\right)+D_{k-1}\left(\partial_{k}(c)\right) .

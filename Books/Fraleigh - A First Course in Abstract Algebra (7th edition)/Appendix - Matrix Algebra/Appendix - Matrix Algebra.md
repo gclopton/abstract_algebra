@@ -135,7 +135,7 @@ is not defined, since the number of entries in a row of the first matrix is not 
 
 For square matrices of the same size, both addition and multiplication are always defined. Exercise 10 asks us to illustrate the following fact.
 
-> [!property|7e66a548-3b57-595c-a618-5d0871e1f741.local at=27013105-7c2a-5e03-843f-048a5bf1251a] Noncommutativity of Matrix Multiplication
+> [!property|7e66a548-3b57-595c-a618-5d0871e1f741.library at=27013105-7c2a-5e03-843f-048a5bf1251a] Noncommutativity of Matrix Multiplication
 > Matrix multiplication is not commutative.
 
 That is, $A B$ need not equal $B A$ even when both products are defined, as for $A,B\in M_2(\mathbb Z)$. It can be shown that $A(B C)=(A B) C$ and $A(B+C)=A B+A C$ whenever all these expressions are defined.

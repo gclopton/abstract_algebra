@@ -5,18 +5,18 @@
 This section deals with extension fields of a field $F$ obtained by adjoining to $F$ some roots of unity. The case of a finite field $F$ was covered in Section 33, so we shall be primarily concerned with the case where $F$ is infinite.
 Definition 55.1
 
-> [!definition] Cyclotomic Extension
+> [!definition|a31385c0-3769-501e-9129-b5ca8325387c.library at=2cbe9cd7-e715-5816-98db-c378fe2da948] Cyclotomic Extension
 > Let $F$ be a field and $n$ a positive integer. The splitting field of $x^{n}-1$ over $F$ is the $\boldsymbol{n}$ th cyclotomic extension of $F$. $\square$
 
 Suppose that $F$ is any field, and consider $\left(x^{n}-1\right) \in F[x]$. By long division, as in the proof of Lemma 33.8, we see that if $\alpha$ is a zero of $x^{n}-1$ and $g(x)=\left(x^{n}-1\right) /(x-\alpha)$, then $g(\alpha)=(n \cdot 1)(1 / \alpha) \neq 0$, provided that the characteristic of $F$ does not divide $n$. Therefore, under this condition, the splitting field of $x^{n}-1$ is a separable and thus a normal extension of $F$.
 
-> [!note] Historical Note
+> [!note|f1966411-2bb4-514c-9a79-2aff33c59f5d.local at=b22497ae-e32e-5da0-9e0a-2ace36d9812e] Historical Note
 > Carl Gauss considered cyclotomic polynomials in the final chapter of his Disquisitiones Arithmeticae of 1801. In that chapter, he gave a constructive procedure for actually determining the roots of $\Phi_{p}(x)$ in the case where $p$ is prime. Gauss's method, which became an important example for Galois in the development of the general theory, was to solve a series of auxiliary equations, each of degree a prime factor of $p-1$, with the coefficients of each in turn being determined by the roots of the previous equation. Gauss, of course, knew that the roots of $\Phi_{p}(x)$ were all powers of one of them, say $\zeta$. He determined the auxiliary equations by taking certain sets of sums of the roots $\zeta^{j}$, which were the desired roots of these equations. For example, in the case where $p=19$ (and $p-1=18=3 \times 3 \times 2$ ), Gauss needed to find two equations of degree 3 and one of degree 2 as his auxiliaries. It turned out that the first one had the three roots, $\alpha_{1}=\zeta+\zeta^{8}+\zeta^{7}+\zeta^{18}+\zeta^{11}+\zeta^{12}, \alpha_{2}=\zeta^{2}+\zeta^{16}+\zeta^{14}+\zeta^{17}+\zeta^{3}+\zeta^{5}$, and $\alpha_{3}=\zeta^{4}+\zeta^{13}+\zeta^{9}+\zeta^{15}+\zeta^{6}+\zeta^{10}$. In fact, these three values are the roots of the cubic equation $x^{3}+x^{2}-6 x-7$. Gauss then found a second cubic equation, with coefficients involving the $\alpha$ 's, whose roots were sums of two of the powers of $\zeta$, and finally a quadratic equation, whose coefficients involved the roots of the previous equation, which had $\zeta$ as one of its roots. Gauss then asserted (without a complete proof) that each auxiliary equation can in turn be reduced to an equation of the form $x^{m}-A$, which clearly can be solved by radicals. That is, he showed that the solvability of the Galois group in this case, the cyclic group of order $p-1$, implied that the cyclotomic equation was solvable in terms of radicals. (See Section 56.)
 
 Assume from now on that this is the case, and let $K$ be the splitting field of $x^{n}-1$ over $F$. Then $x^{n}-1$ has $n$ distinct zeros in $K$, and by Corollary 23.6, these form a cyclic group of order $n$ under the field multiplication. We saw in Corollary 6.16 that a cyclic group of order $n$ has $\varphi(n)$ generators, where $\varphi$ is the Euler phi-function introduced prior to Theorem 20.8. For our situation here, these $\varphi(n)$ generators are exactly the primitive $n$th roots of unity.
 Definition 55.2
 
-> [!definition] Cyclotomic Polynomial
+> [!definition|1fb09e1d-a5d6-59b7-9ecc-7c4dc4e6ffdc.library at=d666e3f3-6ba4-52f0-8f8d-e4ed1c046933] Cyclotomic Polynomial
 > Let $F$ be a field whose characteristic does not divide the positive integer $n$, let $\bar F$ be an algebraic closure of $F$, and let $\varphi$ be Euler's phi-function. The polynomial
 >
 > $$
@@ -39,7 +39,7 @@ $$
 \Phi_{n}(x) \in \mathbb{Q}[x] .
 $$
 
-> [!example] Example 55.3
+> [!example|53608686-1f59-5f58-b017-f71742fc5708.local at=30008a96-5cf1-54c9-b7a6-7d1c62648bcf] Example 55.3
 > Find all primitive eighth roots of unity in $\mathbb C$ and the eighth cyclotomic polynomial over $\mathbb Q$.
 
 ##### solution
@@ -79,10 +79,10 @@ This shows that the Galois group $G(K / \mathbb{Q})$ is isomorphic to the group 
 Special cases of this material have appeared several times in the text and exercises. For example, $\alpha$ of Example 54.7 is a primitive 8th root of unity, and we made arguments in that example identical to those given here. We summarize these results in a theorem.
 Theorem 55.4
 
-> [!theorem] Galois Group of a Cyclotomic Extension
+> [!theorem|56bee678-4783-5588-b201-a07408392477.library at=ee0e0bcc-8619-5601-8bfe-37637094535c] Galois Group of a Cyclotomic Extension
 > Let $n>1$ be an integer and $\varphi$ Euler's phi-function. The Galois group of the $n$th cyclotomic extension of $\mathbb{Q}$ has $\varphi(n)$ elements and is isomorphic to the group consisting of the positive integers less than $n$ and relatively prime to $n$ under multiplication modulo $n$.
 
-> [!example] Example 55.5
+> [!example|45bcf822-ad6d-58d5-ad58-a6e80b2794c7.local at=c31f703e-116e-52c1-8310-77bd9a22a6ae] Example 55.5
 > Compare the splitting fields of $x^4+1$ and $x^8-1$ over $\mathbb Q$.
 
 ##### solution
@@ -90,7 +90,7 @@ Theorem 55.4
 Example 54.7 illustrates this theorem, for it is easy to see that the splitting field of $x^{4}+1$ is the same as the splitting field of $x^{8}-1$ over $\mathbb{Q}$. This follows from the fact that $\Phi_{8}(x)=x^{4}+1$ (see Example 55.3 and Exercise 1). $\square$
 Corollary 55.6
 
-> [!corollary] Galois Group of a Prime Cyclotomic Extension
+> [!corollary|8f42dc22-2ce2-53b2-96a0-77e49a432767.library at=1f93d88b-9e04-575a-8708-970acd541f14] Galois Group of a Prime Cyclotomic Extension
 > The Galois group of the $p$ th cyclotomic extension of $\mathbb{Q}$ for a prime $p$ is cyclic of order $p-1$.
 
 ##### proof
@@ -172,7 +172,7 @@ $$
 a Fermat prime. Fermat conjectured that these numbers $2^{\left(2^{k}\right)}+1$ were prime for all nonnegative integers $k$. Euler showed that while $k=0,1,2,3$, and 4 give the primes 3, 5, 17, 257, and 65537, for $k=5$, the integer $2^{\left(2^{5}\right)}+1$ is divisible by 641. It has been shown that for $5 \leq k \leq 19$, all the numbers $2^{\left(2^{k}\right)}+1$ are composite. The case $k=20$ is still unsolved as far as we know. For at least 60 values of $k$ greater than 20, including $k=9448$, it has been shown that $2^{2^{k}}+1$ is composite. It is unknown whether the number of Fermat primes is finite or infinite.
 
 We have thus shown that the only regular $n$-gons that might be constructible are those where the odd primes dividing $n$ are Fermat primes whose squares do not divide $n$. In particular, the only regular $p$-gons that might be constructible for $p$ a prime greater than 2 are those where $p$ is a Fermat prime.
-> [!example] Example 55.7
+> [!example|30056bf1-fc01-576d-a498-13b72481134e.local at=9bbcc759-e646-5118-abae-672eb139557f] Example 55.7
 > Determine whether the regular 7-gon and regular 18-gon are constructible with a compass and a straightedge.
 
 ##### solution
@@ -213,10 +213,10 @@ Since we saw in Section 32 that construction of square roots of positive constru
 We summarize our work under this heading in a theorem.
 Theorem 55.8
 
-> [!theorem] Constructible Regular Polygons
+> [!theorem|81328992-b5b3-5559-86a7-1ea9f0e7ca77.library at=9458bc7c-e07f-5ccb-9d89-8199361c423c] Constructible Regular Polygons
 > Let $n\ge3$ be an integer. The regular $n$-gon is constructible with a compass and a straightedge if and only if all the odd primes dividing $n$ are Fermat primes whose squares do not divide $n$. A Fermat prime is a prime of the form $2^{2^k}+1$ for a nonnegative integer $k$.
 
-> [!example] Example 55.9
+> [!example|a27fa693-4b20-583d-ac62-9dd01a59e4ee.local at=46f902a7-321e-5982-a6be-a2913d68fdc6] Example 55.9
 > Determine whether the regular 60-gon is constructible with a compass and a straightedge.
 
 ##### solution
@@ -227,13 +227,13 @@ The regular 60-gon is constructible, since $60=\left(2^{2}\right)(3)(5)$ and 3 a
 
 ### Computations
 
-> [!exercise] Exercise 55.1
+> [!exercise|046a43d1-ca08-531e-b960-41dd9d14b8aa.local at=493eaf2b-3415-54da-8a6e-1bc58f6d5a88] Exercise 55.1
 > Referring to Example 55.3, complete the indicated computation, showing that $\Phi_{8}(x)=x^{4}+1$. [Suggestion: Compute the product in terms of $\zeta$, and then use the fact that $\zeta^{8}=1$ and $\zeta^{4}=-1$ to simplify the coefficients.]
 
-> [!exercise] Exercise 55.2
+> [!exercise|3455df6a-b2f2-539a-ba18-642f09a30ce3.local at=7312468e-52a6-5a84-859b-5eff7cd45c03] Exercise 55.2
 > Classify the group of the polynomial $\left(x^{20}-1\right) \in \mathbb{Q}[x]$ over $\mathbb{Q}$ according to the Fundamental Theorem of finitely generated abelian groups. [Hint: Use Theorem 55.4.]
 
-> [!exercise] Exercise 55.3
+> [!exercise|2923df4b-6a89-5b75-93f6-ad35ef1d8e76.local at=5650fa0c-7b59-5fcc-851f-805f75640622] Exercise 55.3
 > Using the formula for $\varphi(n)$ in terms of the factorization of $n$, as given in Eq. (1), compute the indicated value:
 >
 > a. $\varphi(60)$
@@ -242,28 +242,28 @@ The regular 60-gon is constructible, since $60=\left(2^{2}\right)(3)(5)$ and 3 a
 >
 > c. $\varphi(8100)$
 
-> [!exercise] Exercise 55.4
+> [!exercise|2de74bc0-4a6a-5d15-8033-cd531a69ee8a.local at=3dac6866-913b-51b9-9850-7eb331a3dcd0] Exercise 55.4
 > Give the first 30 values of $n \geq 3$ for which the regular $n$-gon is constructible with a straightedge and a compass.
 
-> [!exercise] Exercise 55.5
+> [!exercise|b45d7289-1862-51ab-bfe8-0c85ac3024f5.local at=4764e285-0764-56d0-852b-6dff2c888c77] Exercise 55.5
 > Find the smallest angle of integral degree, that is, $1^{\circ}, 2^{\circ}, 3^{\circ}$, and so on, constructible with a straightedge and a compass. [Hint: Constructing a 1° angle amounts to constructing the regular 360-gon, and so on.]
 
-> [!exercise] Exercise 55.6
+> [!exercise|55076853-8844-5f0d-aa60-bcdf86110c7f.local at=3a09b736-e3e1-52ea-bff3-fbc67a5f1bb9] Exercise 55.6
 > Let $K$ be the splitting field of $x^{12}-1$ over $\mathbb{Q}$.
 >
 > a. Find $[K: \mathbb{Q}]$.
 >
 > b. Show that for $\sigma \in G(K / \mathbb{Q}), \sigma^{2}$ is the identity automorphism. Classify $G(K / \mathbb{Q})$ according to the Fundamental Theorem 11.12 of finitely generated abelian groups.
 
-> [!exercise] Exercise 55.7
+> [!exercise|6c778b88-89e4-51df-9f09-d96e08caa0eb.local at=633607ff-1ad3-5f55-a7c5-2a1374b4672e] Exercise 55.7
 > Find $\Phi_{3}(x)$ over $\mathbb{Z}_{2}$. Find $\Phi_{8}(x)$ over $\mathbb{Z}_{3}$.
 
-> [!exercise] Exercise 55.8
+> [!exercise|a88382bb-c467-5685-81f1-314137de30e3.local at=0be6432b-66a7-53ca-99d2-847e18f41efc] Exercise 55.8
 > How many elements are there in the splitting field of $x^{6}-1$ over $\mathbb{Z}_{3}$ ?
 
 ### Concepts
 
-> [!exercise] Exercise 55.9
+> [!exercise|2985a9c1-8b16-5763-8db7-1375b42287bc.local at=03019a2a-c308-5f95-b927-eef7aeeb7a13] Exercise 55.9
 > Mark each of the following true or false.
 >
 > a. $\Phi_{n}(x)$ is irreducible over every field of characteristic 0.
@@ -288,25 +288,25 @@ The regular 60-gon is constructible, since $60=\left(2^{2}\right)(3)(5)$ and 3 a
 
 ### Theory
 
-> [!exercise] Exercise 55.10
+> [!exercise|6e6879f9-1b24-5cf7-8b0b-43535d580e21.local at=3d5a9a4a-69e9-5ff0-8c52-5e4806ff29a6] Exercise 55.10
 > Show that if $F$ is a field of characteristic not dividing $n$, then
 > $$
 > x^{n}-1=\prod_{d \mid n} \Phi_{d}(x)
 > $$
 > in $F[x]$, where the product is over all divisors $d$ of $n$.
 
-> [!exercise] Exercise 55.11
+> [!exercise|bb7d94e9-1817-573e-ae6e-267c0ca1bffc.local at=902008b3-c1e7-5b73-8901-1c0bfbe6572e] Exercise 55.11
 > Find the cyclotomic polynomial $\Phi_{n}(x)$ over $\mathbb{Q}$ for $n=1,2,3,4,5$, and 6. [Hint: Use Exercise 10.]
 
-> [!exercise] Exercise 55.12
+> [!exercise|4c495ae9-5b87-5ba6-84b5-224b24ff56a1.local at=3802e3ea-a89e-5321-b091-0fda1d41d1c4] Exercise 55.12
 > Find $\Phi_{12}(x)$ in $\mathbb{Q}[x]$. [Hint: Use Exercises 10 and 11.]
 
-> [!exercise] Exercise 55.13
+> [!exercise|4e7d1c91-d7d9-582b-85a8-0ae1c5ed47ba.local at=1e02e153-ed70-52a8-8173-402484f93ece] Exercise 55.13
 > Show that in $\mathbb{Q}[x], \Phi_{2 n}(x)=\Phi_{n}(-x)$ for odd integers $n>1$. [Hint: If $\zeta$ is a primitive $n$th root of unity for $n$ odd, what is the order of $-\zeta$ ?]
 
-> [!exercise] Exercise 55.14
+> [!exercise|dba67900-3cfc-5cb6-bce6-0ac99357a8d6.local at=b5b2efd3-3c23-52f1-83e8-87ce98189e7d] Exercise 55.14
 > Let $n, m \in \mathbb{Z}^{+}$ be relatively prime. Show that the splitting field in $\mathbb{C}$ of $x^{n m}-1$ over $\mathbb{Q}$ is the same as the splitting field in $\mathbb{C}$ of $\left(x^{n}-1\right)\left(x^{m}-1\right)$ over $\mathbb{Q}$.
 
-> [!exercise] Exercise 55.15
+> [!exercise|ec1c2c44-a9ed-5d33-8296-7d1e66b2cb06.local at=d3eef787-e1ec-5e7c-bf54-c93077995d33] Exercise 55.15
 > Let $n, m \in \mathbb{Z}^{+}$ be relatively prime. Show that the group of $\left(x^{n m}-1\right) \in \mathbb{Q}[x]$ over $\mathbb{Q}$ is isomorphic to the direct product of the groups of $\left(x^{n}-1\right) \in \mathbb{Q}[x]$ and of $\left(x^{m}-1\right) \in \mathbb{Q}[x]$ over $\mathbb{Q}$. [Hint: Using Galois theory, show that the groups of $x^{m}-1$ and $x^{n}-1$ can both be regarded as subgroups of the group of $x^{n m}-1$. Then use Exercises 50 and 51 of Section 11.]
 

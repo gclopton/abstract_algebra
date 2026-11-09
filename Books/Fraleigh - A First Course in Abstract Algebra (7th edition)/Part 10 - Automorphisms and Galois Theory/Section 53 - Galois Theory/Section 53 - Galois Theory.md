@@ -22,13 +22,13 @@ $$
 In view of results 4 and 5, these are the finite extensions of $F$ that are separable splitting fields over $F$.
 Definition 53.1
 
-> [!definition] Finite Normal Extension
+> [!definition|7e33a5b1-409e-55f0-94f1-8e8fb60ecba7.library at=c0dd26b0-80f8-5e6f-8729-e13b128b3700] Finite Normal Extension
 > A finite extension $K$ of $F$ is a finite normal extension of $F$ if $K$ is a separable splitting field over $F$. $\square$
 
 Suppose that $K$ is a finite normal extension of $F$, where $K \leq \bar{F}$, as usual. Then by result 4, every automorphism of $\bar{F}$ leaving $F$ fixed induces an automorphism of $K$. As before, we let $G(K / F)$ be the group of all automorphisms of $K$ leaving $F$ fixed. After one more result, we shall be ready to illustrate the main theorem.
 Theorem 53.2
 
-> [!theorem] Automorphisms over an Intermediate Field and Their Cosets
+> [!theorem|c1f7ff7d-defa-5dc9-8d5c-77c6ca0b95b5.library at=d012c3a6-b720-5f4c-91e0-8eba01e5fedf] Automorphisms over an Intermediate Field and Their Cosets
 > Let $K$ be a finite normal extension of $F$, and let $E$ be an extension of $F$, where $F\leq E\leq K\leq\bar F$. Then $K$ is a finite normal extension of $E$, and $G(K / E)$ is precisely the subgroup of $G(K / F)$ consisting of all those automorphisms that leave $E$ fixed. Moreover, two automorphisms $\sigma$ and $\tau$ in $G(K / F)$ induce the same isomorphism of $E$ onto a subfield of $\bar{F}$ if and only if they are in the same left coset of $G(K / E)$ in $G(K / F)$. Here $\bar F$ is an algebraic closure of $F$, and $G(K/L)$ is the group of all automorphisms of $K$ leaving $L$ fixed.
 
 ##### proof
@@ -56,7 +56,7 @@ The preceding theorem shows that there is a one-to-one correspondence between le
 ## The Main Theorem
 
 The Main Theorem of Galois Theory states that for a finite normal extension $K$ of a field $F$, there is a one-to-one correspondence between the subgroups of $G(K / F)$ and the intermediate fields $E$, where $F \leq E \leq K$. This correspondence associates with each intermediate field $E$ the subgroup $G(K / E)$. We can also go the other way and start with a subgroup $H$ of $G(K / F)$ and associate with $H$ its fixed field $K_{H}$. We shall illustrate this with an example, then state the theorem and discuss its proof.
-> [!example] Example 53.3
+> [!example|5f285742-b4bc-5bc5-b63f-d7af193f6122.local at=d7ebdf4c-178d-5875-b16a-6263542cae2b] Example 53.3
 > For $K=\mathbb Q(\sqrt2,\sqrt3)$, describe the automorphisms leaving $\mathbb Q$ fixed, the subgroups of $G(K/\mathbb Q)$, and their corresponding fixed fields.
 
 ##### solution
@@ -101,14 +101,14 @@ All subgroups of the abelian group $\left\{\iota, \sigma_{1}, \sigma_{2}, \sigma
 Note that if one subgroup is contained in another, then the larger of the two subgroups corresponds to the smaller of the two corresponding fixed fields. The larger the subgroup, that is, the more automorphisms, the smaller the fixed field, that is, the fewer elements left fixed. In Fig. 53.4 we give the corresponding diagrams for the subgroups and intermediate fields. Note again that the groups near the top correspond to the fields near the bottom. That is, one diagram looks like the other inverted or turned upside down. Since here each diagram actually looks like itself turned upside down, this is not a good example for us to use to illustrate this inversion principle. Turn ahead to Fig. 54.6 to see diagrams that do not look like their own inversions. $\square$
 Definition 53.5
 
-> [!definition] Galois Group of a Finite Normal Extension
+> [!definition|e891d1ed-86e7-5cd8-89de-a12b7f760dec.library at=375040ff-44c1-5f8d-869c-a6e5bcf51ce1] Galois Group of a Finite Normal Extension
 > If $K$ is a finite normal extension of a field $F$, then the group $G(K/F)$ of all automorphisms of $K$ leaving $F$ fixed is the Galois group of $K$ over $F$. $\square$
 
 We shall now state the main theorem, then give another example, and finally, complete the proof of the main theorem.
 
 Theorem 53.6
 
-> [!theorem] Main Theorem of Galois Theory
+> [!theorem|f58b9611-6361-5ea4-ab4a-1b2f11e08a47.library at=7573f34f-d147-5f98-aede-14a5710830e3] Main Theorem of Galois Theory
 > Let $K$ be a finite normal extension of a field $F$, with Galois group $G(K / F)$. For a field $E$, where $F \leq E \leq K$, let $\lambda(E)$ be the subgroup of $G(K / F)$ leaving $E$ fixed. Then $\lambda$ is a one-to-one map of the set of all such intermediate fields $E$ onto the set of all subgroups of $G(K / F)$. For a subgroup $H$, let $K_H=\{a\in K\mid\sigma(a)=a\text{ for every }\sigma\in H\}$ be its fixed field. The following properties hold for $\lambda$ :
 >
 > 1. $\lambda(E)=G(K / E)$.
@@ -167,11 +167,11 @@ Let $K$ be a finite extension of a finite field $F$. We have seen that $K$ is a 
 Now one automorphism of $K$ that leaves $F$ fixed is $\sigma_{p^{r}}$, where for $\alpha \in K, \sigma_{p^r}(\alpha)=\alpha^{p^r}$. Note that $\left(\sigma_{p^{r}}\right)^{i}(\alpha)=\alpha^{p^{r i}}$. Since a polynomial of degree $p^{r i}$ can have at most $p^{r i}$ zeros in a field, we see that the smallest power of $\sigma_{p^{r}}$ that could possibly leave all $p^{r n}$ elements of $K$ fixed is the $n$th power. That is, the order of the element $\sigma_{p^{r}}$ in $G(K / F)$ is at least $n$. Therefore, since $|G(K / F)|=[K: F]=n$, it must be that $G(K / F)$ is cyclic and generated by $\sigma_{p^{r}}$. We summarize these arguments in a theorem.
 Theorem 53.7
 
-> [!theorem] Galois Group of a Finite Field Extension
+> [!theorem|918e9309-b8b2-5175-bba6-5ce23085d41d.library at=75e61c79-8ee0-5376-be44-3f3c885c9d35] Galois Group of a Finite Field Extension
 > Let $K$ be a finite extension of degree $n$ of a finite field $F$ of $p^{r}$ elements. Then $G(K / F)$ is cyclic of order $n$, and is generated by $\sigma_{p^{r}}$, where for $\alpha \in K, \sigma_{p^{r}}(\alpha)=\alpha^{p^r}$. Here $G(K/F)$ is the group of all automorphisms of $K$ leaving $F$ fixed.
 
 We use this theorem to give another illustration of the Main Theorem of Galois Theory.
-> [!example] Example 53.8
+> [!example|98124b25-09e3-54bb-b34f-7544b8864da3.local at=286a1258-c3dc-57f2-9116-96eadad185ab] Example 53.8
 > Let $F=\mathbb Z_p$ and $K=\mathrm{GF}(p^{12})$. Describe $G(K/F)$ and the correspondence between its subgroups and the intermediate fields.
 
 ##### solution
@@ -272,37 +272,37 @@ for $\sigma \in G(K / F)$ is a homomorphism. By the Isomorphism Extension Theore
 ### Computations
 The field $K=\mathbb{Q}(\sqrt{2}, \sqrt{3}, \sqrt{5})$ is a finite normal extension of $\mathbb{Q}$. It can be shown that $[K: \mathbb{Q}]=8$. In Exercises 1 through 8, compute the indicated numerical quantity. The notation is that of Theorem 53.6.
 
-> [!exercise] Exercise 53.1
+> [!exercise|756c0946-a71b-5321-94b9-8776c5adc768.local at=c2a64530-2fdc-525b-bf7a-85bde310f1e1] Exercise 53.1
 > $\{K: \mathbb{Q}\}$
 
-> [!exercise] Exercise 53.2
+> [!exercise|37e4cec0-f2d2-5162-9fe9-98c5073edee3.local at=6312eb33-5123-58a3-9ede-8977d1a702a1] Exercise 53.2
 > $|G(K / \mathbb{Q})|$
 
-> [!exercise] Exercise 53.3
+> [!exercise|a4ee23bc-90d0-5633-b344-3abdf65dc597.local at=22d06b73-f87c-560e-8dc3-111ccfffa3b6] Exercise 53.3
 > $|\lambda(\mathbb{Q})|$
 
-> [!exercise] Exercise 53.4
+> [!exercise|b0849f18-e57a-520e-87b4-75cd1d7dd300.local at=d6a4ca3d-382e-5395-b690-5fe2c5272834] Exercise 53.4
 > $|\lambda(\mathbb{Q}(\sqrt{2}, \sqrt{3}))|$
 
-> [!exercise] Exercise 53.5
+> [!exercise|f7dc70a2-9cd0-5962-b966-39c816b943ef.local at=d86e4bcf-495a-5594-b194-f809b1dec27e] Exercise 53.5
 > $|\lambda(\mathbb{Q}(\sqrt{6}))|$
 
-> [!exercise] Exercise 53.6
+> [!exercise|c169d686-6191-5cbe-b96c-dd157ed78bb8.local at=75f28a5d-9381-5295-aa17-6a6e5e0c8c29] Exercise 53.6
 > $|\lambda(\mathbb{Q}(\sqrt{30}))|$
 
-> [!exercise] Exercise 53.7
+> [!exercise|35570d39-47b1-5bd7-8a6c-93da1a3239e9.local at=ddb5604b-a7cf-5478-942c-36f050e1fffe] Exercise 53.7
 > $|\lambda(\mathbb{Q}(\sqrt{2}+\sqrt{6}))|$
 
-> [!exercise] Exercise 53.8
+> [!exercise|701da760-f79d-50d1-a243-1461756f3c4b.local at=cb01f081-fe28-52c2-bbd5-4b25b1999ef9] Exercise 53.8
 > $|\lambda(K)|$
 
-> [!exercise] Exercise 53.9
+> [!exercise|b6ba1b07-be9a-50cd-805d-75fbaff2f9ed.local at=6f97b12d-a8f3-52e6-bdb1-611ffa8664cb] Exercise 53.9
 > Describe the group of the polynomial $\left(x^{4}-1\right) \in \mathbb{Q}[x]$ over $\mathbb{Q}$.
 
-> [!exercise] Exercise 53.10
+> [!exercise|02f3b96b-3dc8-5e4d-a6f9-f701b4325345.local at=b0e3ac20-3374-5d0c-a06b-d8a59fefe47b] Exercise 53.10
 > Give the order and describe a generator of the group $G(\mathrm{GF}(729) / \mathrm{GF}(9))$.
 
-> [!exercise] Exercise 53.11
+> [!exercise|ba430b79-d5f4-5e0c-8e1e-30d90ee6e42b.local at=5ebfdb02-8897-537b-9f35-919c9c35a595] Exercise 53.11
 > Let $K$ be the splitting field of $x^{3}-2$ over $\mathbb{Q}$. (Refer to Example 50.9.)
 >
 > a. Describe the six elements of $G(K / \mathbb{Q})$ by giving their values on $\sqrt[3]{2}$ and $i \sqrt{3}$. (By Example 50.9, $K=\mathbb Q(\sqrt[3]2,i\sqrt3)$.)
@@ -311,18 +311,18 @@ The field $K=\mathbb{Q}(\sqrt{2}, \sqrt{3}, \sqrt{5})$ is a finite normal extens
 >
 > c. Using the notation given in the answer to part (a) in the back of the text, give the diagrams for the subfields of $K$ and for the subgroups of $G(K / \mathbb{Q})$, indicating corresponding intermediate fields and subgroups, as we did in Fig. 53.4.
 
-> [!exercise] Exercise 53.12
+> [!exercise|f121eb2b-0530-5d52-836c-c465c897825e.local at=0ee29b89-51c2-51b9-8445-6232b140a034] Exercise 53.12
 > Describe the group of the polynomial $\left(x^{4}-5 x^{2}+6\right) \in \mathbb{Q}[x]$ over $\mathbb{Q}$.
 
-> [!exercise] Exercise 53.13
+> [!exercise|055e010e-4097-57a5-9f9d-4dc6ff85931e.local at=228abcae-15f8-5f47-bd8c-91675d4afe42] Exercise 53.13
 > Describe the group of the polynomial $\left(x^{3}-1\right) \in \mathbb{Q}[x]$ over $\mathbb{Q}$.
 
 ### Concepts
 
-> [!exercise] Exercise 53.14
+> [!exercise|dc3111c8-ac5b-55f2-858b-981faa6a94c3.local at=07cbaf3f-c5a8-5db8-ba1f-a642bc175372] Exercise 53.14
 > Give an example of two finite normal extensions $K_{1}$ and $K_{2}$ of the same field $F$ such that $K_{1}$ and $K_{2}$ are not isomorphic fields but $G\left(K_{1} / F\right) \simeq G\left(K_{2} / F\right)$.
 
-> [!exercise] Exercise 53.15
+> [!exercise|abc071b3-910a-5c81-94fb-20fe9254ea2c.local at=078f19ed-6ffa-5318-a1e6-c894c3d8298a] Exercise 53.15
 > Mark each of the following true or false.
 >
 > a. Two different subgroups of a Galois group may have the same fixed field.
@@ -347,10 +347,10 @@ The field $K=\mathbb{Q}(\sqrt{2}, \sqrt{3}, \sqrt{5})$ is a finite normal extens
 
 ### Theory
 
-> [!exercise] Exercise 53.16
+> [!exercise|f07043e2-2518-5c6d-832f-7c856ad22557.local at=d070a8f0-c735-5df7-bb9a-6f488dd4f47e] Exercise 53.16
 > A finite normal extension $K$ of a field $F$ is abelian over $F$ if $G(K / F)$ is an abelian group. Show that if $K$ is abelian over $F$ and $E$ is a normal extension of $F$, where $F \leq E \leq K$, then $K$ is abelian over $E$ and $E$ is abelian over $F$.
 
-> [!exercise] Exercise 53.17
+> [!exercise|e1b98888-a376-58f2-8020-812fa981c72c.local at=67ab6c39-f86d-5a25-8133-6ebd4e036ebd] Exercise 53.17
 > Let $K$ be a finite normal extension of a field $F$. Prove that for every $\alpha \in K$, the norm of $\alpha$ over $F$, given by
 > $$
 > N_{K / F}(\alpha)=\prod_{\sigma \in G(K / F)} \sigma(\alpha),
@@ -361,7 +361,7 @@ The field $K=\mathbb{Q}(\sqrt{2}, \sqrt{3}, \sqrt{5})$ is a finite normal extens
 > $$
 > are elements of $F$.
 
-> [!exercise] Exercise 53.18
+> [!exercise|80d8cf01-e029-5c9b-8c9d-aee7494d3156.local at=7dd2d227-bcc0-54c4-8dca-ae5c3e8d4541] Exercise 53.18
 > Consider $K=\mathbb{Q}(\sqrt{2}, \sqrt{3})$. Referring to Exercise 17, compute each of the following (see Example 53.3).
 >
 > a. $N_{K / \mathbb{Q}}(\sqrt{2})$
@@ -380,7 +380,7 @@ The field $K=\mathbb{Q}(\sqrt{2}, \sqrt{3}, \sqrt{5})$ is a finite normal extens
 >
 > h. $\operatorname{Tr}_{K/\mathbb Q}(2)$
 
-> [!exercise] Exercise 53.19
+> [!exercise|79a84bd3-b75d-5d65-a098-eb68a88ed436.local at=9e9c0739-46b7-5597-a453-1fa03b2cd695] Exercise 53.19
 > Let $K$ be a normal extension of $F$, and let $K=F(\alpha)$. Let
 > $$
 > \operatorname{irr}(\alpha, F)=x^{n}+a_{n-1} x^{n-1}+\cdots+a_{1} x+a_{0} .
@@ -391,27 +391,27 @@ The field $K=\mathbb{Q}(\sqrt{2}, \sqrt{3}, \sqrt{5})$ is a finite normal extens
 >
 > b. $\operatorname{Tr}_{K / F}(\alpha)=-a_{n-1}$.
 
-> [!exercise] Exercise 53.20
+> [!exercise|a460afc7-1e62-591a-84a2-c6d691299b4d.local at=122fc28b-34b0-5224-8ce5-df386f5e5480] Exercise 53.20
 > Let $f(x) \in F[x]$ be a polynomial of degree $n$ such that each irreducible factor is separable over $F$. Show that the order of the group of $f(x)$ over $F$ divides $n!$.
 
-> [!exercise] Exercise 53.21
+> [!exercise|cbfe2cc6-519c-579c-bdfb-34b547a6fa63.local at=45e25c43-e373-5324-a728-3d17b47ee179] Exercise 53.21
 > Let $f(x) \in F[x]$ be a polynomial such that every irreducible factor of $f(x)$ is a separable polynomial over $F$. Show that the group of $f(x)$ over $F$ can be viewed in a natural way as a group of permutations of the zeros of $f(x)$ in $\bar{F}$.
 
-> [!exercise] Exercise 53.22
+> [!exercise|65e915bf-2682-5f72-91b0-ac473983670e.local at=bd1ee740-1248-5911-93c8-15119fd85bc6] Exercise 53.22
 > Let $F$ be a field and let $\zeta$ be a primitive $n$th root of unity in $\bar{F}$, where the characteristic of $F$ is either 0 or does not divide $n$.
 >
 > a. Show that $F(\zeta)$ is a normal extension of $F$.
 >
 > b. Show that $G(F(\zeta) / F)$ is abelian. [Hint: Every $\sigma \in G(F(\zeta) / F)$ maps $\zeta$ onto some $\zeta^{r}$ and is completely determined by this value $r$.]
 
-> [!exercise] Exercise 53.23
+> [!exercise|bcaaf50b-e979-5cf2-bf5f-1265446772f8.local at=cf80ab45-c781-5fa6-875e-5087b5302485] Exercise 53.23
 > A finite normal extension $K$ of a field $F$ is cyclic over $F$ if $G(K / F)$ is a cyclic group.
 >
 > a. Show that if $K$ is cyclic over $F$ and $E$ is a normal extension of $F$, where $F \leq E \leq K$, then $E$ is cyclic over $F$ and $K$ is cyclic over $E$.
 >
 > b. Show that if $K$ is cyclic over $F$, then there exists exactly one field $E, F \leq E \leq K$, of degree $d$ over $F$ for each divisor $d$ of $[K: F]$.
 
-> [!exercise] Exercise 53.24
+> [!exercise|c981a566-3f31-581d-92bc-0e1b73b5b736.local at=09f7c57a-cd12-59a0-882b-3a1300043709] Exercise 53.24
 > Let $K$ be a finite normal extension of $F$.
 >
 > a. For $\alpha \in K$, show that
@@ -422,10 +422,10 @@ The field $K=\mathbb{Q}(\sqrt{2}, \sqrt{3}, \sqrt{5})$ is a finite normal extens
 >
 > b. Referring to part (a), show that $f(x)$ is a power of $\operatorname{irr}(\alpha, F)$, and $f(x)=\operatorname{irr}(\alpha, F)$ if and only if $K=F(\alpha)$.
 
-> [!exercise] Exercise 53.25
+> [!exercise|1c65dd54-7a4e-5822-8df4-ecce56f38c5f.local at=2b44627b-456e-52f4-a889-c5197e5f9852] Exercise 53.25
 > The join $E \vee L$ of two extension fields $E$ and $L$ of $F$ in $\bar{F}$ is the smallest subfield of $\bar{F}$ containing both $E$ and $L$. That is, $E \vee L$ is the intersection of all subfields of $\bar{F}$ containing both $E$ and $L$. Let $K$ be a finite normal extension of a field $F$, and let $E$ and $L$ be extensions of $F$ contained in $K$, as shown in Fig. 53.10. Describe $G(K /(E \vee L))$ in terms of $G(K / E)$ and $G(K / L)$.
 
-> [!exercise] Exercise 53.26
+> [!exercise|42376b6f-858a-50d5-9d7f-007b32ab3107.local at=e5cf85f1-ee21-5b3f-951b-cc31162ee0b9] Exercise 53.26
 > With reference to the situation in Exercise 25, describe $G\{K /(E \cap L)\}$ in terms of $G(K / E)$ and $G(K / L)$.
 
 ```scientific-figure

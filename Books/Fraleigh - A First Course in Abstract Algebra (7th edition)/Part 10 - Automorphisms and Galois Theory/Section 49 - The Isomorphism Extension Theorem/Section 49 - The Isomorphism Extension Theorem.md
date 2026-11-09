@@ -49,13 +49,13 @@ $$
 Here $q(x) \in F^{\prime}[x]$. Since $\sigma$ is an isomorphism, we know that $q(x)$ is irreducible in $F^{\prime}[x]$. It seems reasonable that $F(\alpha)$ can be mapped isomorphically onto $F^{\prime}(\beta)$ by a map extending $\sigma$ and mapping $\alpha$ onto $\beta$. (This is not quite Theorem 48.3, but it is close to it; a few elements have been renamed by the isomorphism $\sigma$.) If $F(\alpha)=E$, we are done. If $F(\alpha) \neq E$, we have to find another element in $E$ not in $F(\alpha)$ and continue the process. It is a situation very much like that in the construction of an algebraic closure $\bar{F}$ of a field $F$. Again the trouble is that, in general, where $E$ is not a finite extension, the process may have to be repeated a (possibly large) infinite number of times, so we need Zorn's lemma to handle it. For this reason, we postpone the general proof of Theorem 49.3 to the end of this section.
 Theorem 49.3
 
-> [!theorem] Isomorphism Extension Theorem
+> [!theorem|65f423e9-0f60-552c-8b30-390a25930f8c.library at=0647d02d-c346-578f-bd5e-84a8ab94b092] Isomorphism Extension Theorem
 > Let $E$ be an algebraic extension of a field $F$. Let $\sigma$ be an isomorphism of $F$ onto a field $F^{\prime}$. Let $\overline{F^{\prime}}$ be an algebraic closure of $F^{\prime}$. Then $\sigma$ can be extended to an isomorphism $\tau$ of $E$ onto a subfield of $\overline{F^{\prime}}$ such that $\tau(a)=\sigma(a)$ for all $a \in F$.
 
 We give as a corollary the existence of an extension of one of our conjugation isomorphisms $\psi_{\alpha, \beta}$, as discussed at the start of this section.
 Corollary 49.4
 
-> [!corollary] Extension of Conjugation Isomorphisms
+> [!corollary|4d64f196-a138-58cd-99ed-5e461889ffbc.library at=9c4cb257-03f1-53e5-a6f9-f7e9502ed760] Extension of Conjugation Isomorphisms
 > Let $\bar F$ be an algebraic closure of $F$. If $E \leq \bar{F}$ is an algebraic extension of $F$ and $\alpha, \beta \in E$ are conjugate over $F$, then the conjugation isomorphism $\psi_{\alpha, \beta}: F(\alpha) \rightarrow F(\beta)$, leaving $F$ fixed and mapping $\alpha$ onto $\beta$, can be extended to an isomorphism of $E$ onto a subfield of $\bar{F}$.
 
 ##### proof
@@ -64,7 +64,7 @@ Proof of this corollary is immediate from Theorem 49.3 if in the statement of th
 As another corollary, we can show, as we promised earlier, that an algebraic closure of $F$ is unique, up to an isomorphism leaving $F$ fixed.
 Corollary 49.5
 
-> [!corollary] Uniqueness of Algebraic Closures
+> [!corollary|fa146c04-6d4b-5d6c-be55-7a1db651187d.library at=919d1a58-f38a-5d77-9fef-5976de19c13e] Uniqueness of Algebraic Closures
 > Let $\bar{F}$ and $\overline{F^{\prime}}$ be two algebraic closures of $F$. Then $\bar{F}$ is isomorphic to $\overline{F^{\prime}}$ under an isomorphism leaving each element of $F$ fixed.
 
 ##### proof
@@ -88,7 +88,7 @@ panels:
 Having discussed the question of existence, we turn now to the question of how many. For a finite extension $E$ of a field $F$, we would like to count how many isomorphisms there are of $E$ onto a subfield of $\bar{F}$ that leave $F$ fixed. We shall show that there are only a finite number of isomorphisms. Since every automorphism in $G(E / F)$ is such an isomorphism, a count of these isomorphisms will include all these automorphisms. Example 48.17 showed that $G(\mathbb{Q}(\sqrt{2}, \sqrt{3}) / \mathbb{Q})$ has four elements, and that $4=[\mathbb{Q}(\sqrt{2}, \sqrt{3}): \mathbb{Q}]$. While such an equality is not always true, it is true in a very important case. The next theorem takes the first big step in proving this. We state the theorem in more general terms than we shall need, but it does not make the proof any harder.
 Theorem 49.7
 
-> [!theorem] Number of Extensions of a Field Isomorphism
+> [!theorem|4bb5c747-d7b7-543a-8632-522c751c898c.library at=fe516f8e-afd3-5605-9316-cffdbc8943c3] Number of Extensions of a Field Isomorphism
 > Let $E$ be a finite extension of a field $F$. Let $\sigma$ be an isomorphism of $F$ onto a field $F^{\prime}$, and let $\overline{F^{\prime}}$ be an algebraic closure of $F^{\prime}$. Then the number of extensions of $\sigma$ to an isomorphism $\tau$ of $E$ onto a subfield of $\overline{F^{\prime}}$ is finite, and independent of $F^{\prime}, \overline{F^{\prime}}$, and $\sigma$. That is, the number of extensions is completely determined by the two fields $E$ and $F$; it is intrinsic to them.
 
 ##### proof
@@ -149,12 +149,12 @@ $\square$
 
 Definition 49.9
 
-> [!definition] Index of a Finite Field Extension
+> [!definition|5c4ca03d-6fe8-526f-9871-43c7fcf581e0.library at=86b0ebc5-b568-519f-955b-e974fd37eb07] Index of a Finite Field Extension
 > Let $E$ be a finite extension of a field $F$. Let $\bar F$ be an algebraic closure of $F$. The number of isomorphisms of $E$ onto a subfield of $\bar{F}$ leaving $F$ fixed is the index $\{E: F\}$ of $E$ over $F$. $\square$
 
 Corollary 49.10
 
-> [!corollary] Multiplicativity of the Index of Field Extensions
+> [!corollary|cb0ce84e-47cb-510e-a111-16a26a8693a8.library at=2dcde064-0479-59aa-af84-e9607cf93f39] Multiplicativity of the Index of Field Extensions
 > If $F \leq E \leq K$, where $K$ is a finite extension field of the field $F$, then $\{K:F\}=\{K:E\}\{E:F\}$. Here $\{L:M\}$ is the number of isomorphisms of $L$ onto a subfield of an algebraic closure of $M$ leaving $M$ fixed.
 
 ##### proof
@@ -164,7 +164,7 @@ It follows from Theorem 49.7 that each of the $\{E: F\}$ isomorphisms $\tau_{i}$
 The preceding corollary was really the main thing we were after. Note that it counts something. Never underestimate a result that counts something, even if it is only called a "corollary."
 
 We shall show in Section 51 that unless $F$ is an infinite field of characteristic $p \neq 0$, we always have $[E: F]=\{E: F\}$ for every finite extension field $E$ of $F$. For the case $E=F(\alpha)$, the $\{F(\alpha): F\}$ extensions of the identity map $\iota: F \rightarrow F$ to maps of $F(\alpha)$ onto a subfield of $\bar{F}$ are given by the conjugation isomorphisms $\psi_{\alpha, \beta}$ for each conjugate $\beta$ in $\bar{F}$ of $\alpha$ over $F$. Thus if $\operatorname{irr}(\alpha, F)$ has $n$ distinct zeros in $\bar{F}$, we have $\{E: F\}=n$. We shall show later that unless $F$ is infinite and of characteristic $p \neq 0$, the number of distinct zeros of $\operatorname{irr}(\alpha, F)$ is $\operatorname{deg}(\alpha, F)=[F(\alpha): F]$.
-> [!example] Example 49.11
+> [!example|6524e262-1631-5463-b649-783d2c39a4d8.local at=c1032209-d3a3-5ac4-9aee-ecb28a8507b2] Example 49.11
 > For $E=\mathbb Q(\sqrt2,\sqrt3)$, calculate $\{E:\mathbb Q\}$, $\{E:\mathbb Q(\sqrt2)\}$, and $\{\mathbb Q(\sqrt2):\mathbb Q\}$, and verify multiplicativity of the index.
 
 ##### solution
@@ -267,13 +267,13 @@ is an isomorphism of $K(\alpha)$ onto a subfield of $\overline{F^{\prime}}$. Cle
 ### Computations
 Let $E=\mathbb{Q}(\sqrt{2}, \sqrt{3}, \sqrt{5})$. It can be shown that $[E: \mathbb{Q}]=8$. In Exercises 1 through 3, for the given isomorphic mapping of a subfield of $E$, give all extensions of the mapping to an isomorphic mapping of $E$ onto a subfield of $\overline{\mathbb{Q}}$. Describe the extensions by giving values on the generating set $\{\sqrt{2}, \sqrt{3}, \sqrt{5}\}$ for $E$ over $\mathbb{Q}$.
 
-> [!exercise] Exercise 49.1
+> [!exercise|be1a0093-6022-5d8b-9505-91d0d60adeba.local at=05f25706-c0fd-5b91-8761-83419b8bb2ea] Exercise 49.1
 > $\iota: \mathbb{Q}(\sqrt{2}, \sqrt{15}) \rightarrow \mathbb{Q}(\sqrt{2}, \sqrt{15})$, where $\iota$ is the identity map
 
-> [!exercise] Exercise 49.2
+> [!exercise|42a53f69-14cb-51a6-9d9d-e7f51e5a2287.local at=65e04aa5-df43-5f53-9513-b93efa67b6ff] Exercise 49.2
 > $\sigma: \mathbb{Q}(\sqrt{2}, \sqrt{15}) \rightarrow \mathbb{Q}(\sqrt{2}, \sqrt{15})$ where $\sigma(\sqrt{2})=\sqrt{2}$ and $\sigma(\sqrt{15})=-\sqrt{15}$
 
-> [!exercise] Exercise 49.3
+> [!exercise|a26ed198-55b1-51f2-b9c1-d754207dbf8f.local at=e6922da1-e930-5802-9b3e-8c925411db54] Exercise 49.3
 > $\psi_{\sqrt{30},-\sqrt{30}}: \mathbb{Q}(\sqrt{30}) \rightarrow \mathbb{Q}(\sqrt{30})$
 
 It is a fact, which we can verify by cubing, that the zeros of $x^3-2$ in $\overline{\mathbb Q}$ are
@@ -284,16 +284,16 @@ $$
 
 where $\sqrt[3]{2}$, as usual, is the real cube root of 2. Use this information in Exercises 4 through 6.
 
-> [!exercise] Exercise 49.4
+> [!exercise|2fedfc10-4184-523c-bce8-1e70c8886937.local at=cac00687-4a19-5f4b-807c-6e0eef6649af] Exercise 49.4
 > Describe all extensions of the identity map of $\mathbb{Q}$ to an isomorphism mapping $\mathbb{Q}(\sqrt[3]{2})$ onto a subfield of $\overline{\mathbb{Q}}$.
 
-> [!exercise] Exercise 49.5
+> [!exercise|058317f4-9d08-5803-86c4-d1d4fb72fa98.local at=132404b4-8dc0-5f4a-9707-d1e697f02b30] Exercise 49.5
 > Describe all extensions of the identity map of $\mathbb{Q}$ to an isomorphism mapping $\mathbb{Q}(\sqrt[3]{2}, \sqrt{3})$ onto a subfield of $\overline{\mathbb{Q}}$.
 
-> [!exercise] Exercise 49.6
+> [!exercise|6657aa1f-3dd1-531f-994e-7f9d4c4eba04.local at=d9b4a9ae-59e5-5922-a6e8-9563ca5fd798] Exercise 49.6
 > Describe all extensions of the automorphism $\psi_{\sqrt{3},-\sqrt{3}}$ of $\mathbb{Q}(\sqrt{3})$ to an isomorphism mapping $\mathbb{Q}(i, \sqrt{3}, \sqrt[3]{2})$ onto a subfield of $\overline{\mathbb{Q}}$.
 
-> [!exercise] Exercise 49.7
+> [!exercise|78a45bb0-4381-59d3-885c-9659e89d4d02.local at=6d3dea47-ce30-53df-b254-bd7b41b4f0e7] Exercise 49.7
 > Let $\sigma$ be the automorphism of $\mathbb{Q}(\pi)$ that maps $\pi$ onto $-\pi$.
 >
 > a. Describe the fixed field of $\sigma$.
@@ -302,7 +302,7 @@ where $\sqrt[3]{2}$, as usual, is the real cube root of 2. Use this information 
 
 ### Concepts
 
-> [!exercise] Exercise 49.8
+> [!exercise|188f68a7-5919-5542-999b-9bdbe723f68f.local at=fe0a9a2f-dc8e-5511-8b1f-6485f2fd04f5] Exercise 49.8
 > Mark each of the following true or false.
 >
 > a. Let $F(\alpha)$ be any simple extension of a field $F$. Then every isomorphism of $F$ onto a subfield of $\bar{F}$ has an extension to an isomorphism of $F(\alpha)$ onto a subfield of $\bar{F}$.
@@ -327,18 +327,18 @@ where $\sqrt[3]{2}$, as usual, is the real cube root of 2. Use this information 
 
 ### Theory
 
-> [!exercise] Exercise 49.9
+> [!exercise|50262b6b-1435-50b6-beb1-fc1d7e3abd11.local at=812e488b-e0a2-5238-be7a-088d9e28e980] Exercise 49.9
 > Let $K$ be an algebraically closed field. Show that every isomorphism $\sigma$ of $K$ onto a subfield of itself such that $K$ is algebraic over $\sigma[K]$ is an automorphism of $K$, that is, is an onto map. [Hint: Apply Theorem 49.3 to $\sigma^{-1}$.]
 
-> [!exercise] Exercise 49.10
+> [!exercise|5ebd26a5-691f-550a-b36f-51e565c44b8c.local at=1f35af58-a9a5-5452-9bee-5956270514f7] Exercise 49.10
 > Let $E$ be an algebraic extension of a field $F$. Show that every isomorphism of $E$ onto a subfield of $\bar{F}$ leaving $F$ fixed can be extended to an automorphism of $\bar{F}$.
 
-> [!exercise] Exercise 49.11
+> [!exercise|98816033-fcec-5f5c-ab4f-8f11dabab948.local at=1103345d-b14d-586f-98be-aaaf5d324e60] Exercise 49.11
 > Prove that if $E$ is an algebraic extension of a field $F$, then two algebraic closures $\bar{F}$ and $\bar{E}$ of $F$ and $E$, respectively, are isomorphic.
 
-> [!exercise] Exercise 49.12
+> [!exercise|f18b346e-a1f1-53c9-8947-dfdee3af8255.local at=ef39968a-bda3-5aca-8d3e-64bb3ed34237] Exercise 49.12
 > Prove that the algebraic closure of $\mathbb{Q}(\sqrt{\pi})$ in $\mathbb{C}$ is isomorphic to any algebraic closure of $\overline{\mathbb{Q}}(x)$, where $\overline{\mathbb{Q}}$ is the field of algebraic numbers and $x$ is an indeterminate.
 
-> [!exercise] Exercise 49.13
+> [!exercise|47ad88f5-675c-5e23-bcd7-5b19d8b4bbb2.local at=6d74fa7f-aa91-532a-a132-2b795a38618e] Exercise 49.13
 > Prove that if $E$ is a finite extension of a field $F$, then $\{E: F\} \leq[E: F]$. [Hint: The remarks preceding Example 49.11 essentially showed this for a simple algebraic extension $F(\alpha)$ of $F$. Use the fact that a finite extension is a tower of simple extensions, together with the multiplicative properties of the index and degree.]
 
