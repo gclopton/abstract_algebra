@@ -6,13 +6,13 @@ We are interested in what types of figures can be constructed with a compass and
 
 ## Constructible Numbers
 
-> [!definition] Constructible Real Number
+> [!definition|1eaffbfc-6646-533d-93fa-1119d72d8235.local at=aa2c4566-24d3-5dc1-b6b3-a38c608651a2] Constructible Real Number
 > Let us imagine that we are given only a single line segment that we shall define to be one unit in length. A real number $\alpha$ is constructible if we can construct a line segment of length $|\alpha|$ in a finite number of steps from this given segment of unit length by using a straightedge and a compass.
 
 The rules of the game are pretty strict. We suppose that we are given just two points at the moment, the endpoints of our unit line segment, let us suppose that they correspond to the points $(0,0)$ and $(1,0)$ in the Euclidean plane. We are allowed to draw a line only with our straightedge through two points that we have already located. Thus we can start by using the straightedge and drawing the line through $(0,0)$ and $(1,0)$. We are allowed to open our compass only to a distance between points we have already found. Let us open our compass to the distance between $(0,0)$ and $(1,0)$. We can then place the point of the compass at $(1,0)$ and draw a circle of radius 1 , which passes through the point $(2,0)$. Thus we now have located a third point, $(2,0)$. Continuing in this way, we can locate points $(3,0)$, $(4,0)$, $(-1,0)$, $(-2,0)$, and so on. Now open the compass the distance from $(0,0)$ to $(2,0)$, put the point at $(1,0)$, and draw a circle of radius 2. Do the same with the point at $(-1,0)$. We have now found two new points, where these circles intersect, and we can put our straightedge on them to draw what we think of as the $y$-axis. Then opening our compass to the distance from $(0,0)$ to $(1,0)$, we draw a circle with center at $(0,0)$ and locate the point $(0,1)$ where the circle intersects the $y$-axis. Continuing in this fashion, we can locate all points $(x, y)$ with integer coordinates in any rectangle containing the point $(0,0)$. Without going into more detail, it can be shown that it is possible, among other things, to erect a perpendicular to a given line at a known point on the line, and find a line passing through a known point and parallel to a given line. Our first result is the following theorem.
 Theorem 32.1
 
-> [!theorem] Field Operations on Constructible Real Numbers
+> [!theorem|50c9a43e-4c3b-5117-87dd-641a1373cf59.local at=715a73f4-bede-5594-93ea-a85ae788031d] Field Operations on Constructible Real Numbers
 > If $\alpha$ and $\beta$ are constructible real numbers, then so are $\alpha+\beta, \alpha-\beta, \alpha \beta$, and $\alpha / \beta$, if $\beta \neq 0$.
 
 ##### proof
@@ -70,7 +70,7 @@ panels:
 
 Corollary 32.5
 
-> [!corollary] Constructible Real Numbers Form a Field
+> [!corollary|22296eaf-b2c1-5ff5-8ce0-8ef022b65f3b.local at=9e9c84d4-9de1-5eed-bed5-6ceeaca00620] Constructible Real Numbers Form a Field
 > The set of all constructible real numbers forms a subfield $F$ of the field of real numbers.
 
 ##### proof
@@ -132,7 +132,7 @@ we see that Case 3 can be reduced to Case 2. For Case 1, a simultaneous solution
 In the preceding argument, nothing was really used involving $\mathbb{Q}$ except field axioms. If $H$ is the smallest field containing those real numbers constructed so far, the argument shows that the "next new number" constructed lies in a field $H(\sqrt{\alpha})$ for some $\alpha \in H$, where $\alpha>0$. We have proved half of our next theorem.
 Theorem 32.6
 
-> [!theorem] Constructible Numbers and Successive Square Roots
+> [!theorem|7cd0810d-7d20-5fcc-95c0-d094aee3f37e.local at=d4ffa909-9632-5112-b966-9ea4be7ce41a] Constructible Numbers and Successive Square Roots
 > The field $F$ of constructible real numbers consists precisely of all real numbers that we can obtain from $\mathbb{Q}$ by taking square roots of positive numbers a finite number of times and applying a finite number of field operations.
 
 ##### proof
@@ -162,7 +162,7 @@ panels:
 
 Corollary 32.8
 
-> [!corollary] Degrees of Constructible Real Numbers
+> [!corollary|cc50476c-df4e-52da-8c7a-ad20779fa27f.local at=ec21b902-ffb1-5339-8289-4eb7bfd144cd] Degrees of Constructible Real Numbers
 > If $\gamma$ is constructible and $\gamma \notin \mathbb{Q}$, then there is a finite sequence of real numbers $\alpha_{1}, \cdots, \alpha_{n}=\gamma$ such that $\mathbb{Q}\left(\alpha_{1}, \cdots, \alpha_{i}\right)$ is an extension of $\mathbb{Q}\left(\alpha_{1}, \cdots, \alpha_{i-1}\right)$ of degree 2. In particular, $[\mathbb{Q}(\gamma): \mathbb{Q}]=2^{r}$ for some integer $r \geq 0$.
 
 ##### proof
@@ -183,7 +183,7 @@ by Theorem 31.4, which completes the proof. $\square$
 We can now show the impossibility of certain geometric constructions.
 Theorem 32.9
 
-> [!theorem] Impossibility of Doubling the Cube
+> [!theorem|621b9add-afce-5522-b217-4641dc86f35e.local at=81bddcdf-1e77-5c61-96a4-3f55119cb7b9] Impossibility of Doubling the Cube
 > Doubling the cube is impossible, that is, given a side of a cube, it is not always possible to construct with a straightedge and a compass the side of a cube that has double the volume of the original cube.
 
 ##### proof
@@ -197,7 +197,7 @@ $$
 Corollary 32.8 shows that to double this cube of volume 1, we would need to have $3=2^{r}$ for some integer $r$, but no such $r$ exists. $\square$
 Theorem 32.10
 
-> [!theorem] Impossibility of Squaring the Circle
+> [!theorem|98d1cd60-1957-5abd-b1da-d607ef6f5822.local at=5844209e-9230-5006-a62b-bf1f2a9db052] Impossibility of Squaring the Circle
 > Squaring the circle is impossible; that is, given a circle, it is not always possible to construct with a straightedge and a compass a square having area equal to the area of the given circle.
 
 ##### proof
@@ -205,7 +205,7 @@ Theorem 32.10
 Let the given circle have a radius of 1, and hence an area of $\pi$. We would need to construct a square of side $\sqrt{\pi}$. But $\pi$ is transcendental over $\mathbb{Q}$, so $\sqrt{\pi}$ is transcendental over $\mathbb{Q}$ also. $\square$
 Theorem 32.11
 
-> [!theorem] Impossibility of General Angle Trisection
+> [!theorem|cab00fdc-df94-5f4e-a0de-2aacad5874be.local at=17298ee0-39ba-5ee2-87ae-0bb587cb15c2] Impossibility of General Angle Trisection
 > Trisecting the angle is impossible; that is, there exists an angle that cannot be trisected with a straightedge and a compass.
 
 ##### proof
@@ -251,7 +251,7 @@ $$
 
 so by Corollary 32.8, $\alpha$ is not constructible. Hence 60° cannot be trisected. $\square$
 
-> [!aside] Historical Note
+> [!aside|78d9edde-9b54-5449-84bd-da8889e9e596.local at=e87d50fa-3c8a-5f8f-a110-0052de3e376f] Historical Note
 > Greek mathematicians as far back as the fourth century B.C. had tried without success to find geometric constructions using straightedge and compass to trisect the angle, double the cube, and square the circle. Although they were never able to prove that such constructions were impossible, they did manage to construct the solutions to these problems using other tools, including the conic sections.
 >
 > It was Carl Gauss in the early nineteenth century who made a detailed study of constructibility in connection with his solution of cyclotomic equations, the equations of the form $x^{p}-1=0$ with $p$ prime whose roots form the vertices of a regular $p$-gon. He showed that although all such equations are solvable using radicals, if $p-1$ is not a power of 2, then the solutions must involve roots higher than the second. In fact, Gauss asserted that anyone who attempted to find a geometric construction for a $p$-gon where $p-1$ is not a power of 2 would "spend his time uselessly." Interestingly, Gauss did not prove the assertion that such constructions were impossible. That was accomplished in 1837 by Pierre Wantzel (1814-1848), who in fact proved Corollary 32.8 and also demonstrated Theorems 32.9 and 32.11. The proof of Theorem 32.10, on the other hand, requires a proof that $\pi$ is transcendental, a result finally achieved in 1882 by Ferdinand Lindemann (1852-1939).
@@ -262,12 +262,12 @@ Note that the regular $n$-gon is constructible for $n \geq 3$ if and only if the
 
 ### Computations
 
-> [!exercise] Exercise 32.1
+> [!exercise|2a45f9f2-eb4c-5c61-a691-02528f20f3ba.local at=94a2d440-a0e5-5b63-8555-f9bf511f28f1] Exercise 32.1
 > Prove the trigonometric identity $\cos 3 \theta=4 \cos ^{3} \theta-3 \cos \theta$ from the Euler formula, $e^{i \theta}=\cos \theta+i \sin \theta$.
 
 ### Concepts
 
-> [!exercise] Exercise 32.2
+> [!exercise|b95fa698-f8d6-5728-b44a-8c5712068c8e.local at=c1ba249d-4941-5182-83d6-12b1a99a088e] Exercise 32.2
 > Mark each of the following true or false.
 >
 > a. \_\_\_\_ It is impossible to double any cube of constructible edge by compass and straightedge constructions.
@@ -292,13 +292,13 @@ Note that the regular $n$-gon is constructible for $n \geq 3$ if and only if the
 
 ### Theory
 
-> [!exercise] Exercise 32.3
+> [!exercise|186cb829-b73f-5e38-b93f-b95f2132af01.local at=e97df147-cea4-5664-9f4b-56c434647d8b] Exercise 32.3
 > Using the proof of Theorem 32.11, show that the regular 9-gon is not constructible.
 
-> [!exercise] Exercise 32.4
+> [!exercise|4d20c9c2-c1bc-576a-8ad7-b1e37f94a905.local at=b0a604c5-ed77-5300-910b-65f0116312d2] Exercise 32.4
 > Show algebraically that it is possible to construct an angle of 30°.
 
-> [!exercise] Exercise 32.5
+> [!exercise|b6c18cc4-2a73-5064-8bad-681571e8a404.local at=b0ca76bb-87f5-50ad-b819-306e950731df] Exercise 32.5
 > Referring to Fig. 32.13, where $\overline{A Q}$ bisects angle $O A P$, show that the regular 10-gon is constructible (and therefore that the regular pentagon is also). [Hint: Triangle $O A P$ is similar to triangle $A P Q$. Show algebraically that $r$ is constructible.]
 >
 > ```scientific-figure
@@ -316,19 +316,19 @@ Note that the regular $n$-gon is constructible for $n \geq 3$ if and only if the
 
 In Exercises 6 through 9 use the results of Exercise 5 where needed to show that the statement is true.
 
-> [!exercise] Exercise 32.6
+> [!exercise|69ea2cbd-cc80-5aa2-8f41-2e0128a45fb9.local at=8eaf9448-5210-5590-8f6a-17456f1320cd] Exercise 32.6
 > The regular 20-gon is constructible.
 
-> [!exercise] Exercise 32.7
+> [!exercise|958e999c-0e9f-57f1-a58f-9f974443e738.local at=f7bb2d2a-e37b-5596-bffd-b6f4fe2c15c0] Exercise 32.7
 > The regular 30-gon is constructible.
 
-> [!exercise] Exercise 32.8
+> [!exercise|954c33c9-8439-5ae8-8d68-3d48a958f1a8.local at=0fbe5e75-7dd1-5e5e-9eab-6009c8f8b7e1] Exercise 32.8
 > The angle 72° can be trisected.
 
-> [!exercise] Exercise 32.9
+> [!exercise|2eef88f4-9c61-5e3c-a72f-78c0fc3228c1.local at=1331e3c8-9095-5421-82ca-c733e21c36ba] Exercise 32.9
 > The regular 15-gon can be constructed.
 
-> [!exercise] Exercise 32.10
+> [!exercise|c4236f59-538a-5a3d-9e71-53c27bdb66a2.local at=d1cef6cf-46cf-5ffa-9ca8-c5c179a0caee] Exercise 32.10
 > Suppose you wanted to explain roughly in just three or four sentences, for a high school plane geometry teacher who never had a course in abstract algebra, how it can be shown that it is impossible to trisect an angle of 60°. Write down what you would say.
 
 [^32-section]: This chapter is not used in the remainder of the text.

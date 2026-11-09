@@ -215,7 +215,7 @@ Definition 24.5
 >
 > The ring $R G$ with the addition and multiplication specified here is the group ring of $G$ over $R$. If $F$ is a field, then $F G$ is the group algebra of $G$ over $F$.
 
-> [!example] Example 24.6
+> [!example|1e1eb5a3-34f4-5e94-be22-e3c3993acdf8.local at=008db035-b22a-581b-a779-9f0679a99b06] Example 24.6
 > Let us give the addition and multiplication tables for the group algebra $\mathbb{Z}_{2} G$, where $G=\{e, a\}$ is cyclic of order 2.
 
 ##### solution
