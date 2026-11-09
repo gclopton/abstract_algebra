@@ -456,12 +456,11 @@ style: scientific
 
 ## Isotropy Subgroups
 
-> [!convention] Fixed-Point and Isotropy Subgroup Notation
-> Let $X$ be a $G$-set. Let $x \in X$ and $g \in G$. It will be important to know when $g x=x$. We let
->
-> $$
-> X_{g}=\{x \in X \mid g x=x\} \quad \text { and } \quad G_{x}=\{g \in G \mid g x=x\} .
-> $$
+Let $X$ be a $G$-set. Let $x \in X$ and $g \in G$. It will be important to know when $g x=x$. We let
+
+$$
+X_{g}=\{x \in X \mid g x=x\} \quad \text { and } \quad G_{x}=\{g \in G \mid g x=x\} .
+$$
 
 > [!example] Example 16.11
 > For the $D_4$-set $X$ in Example 16.8, with $G=D_4$, find $X_{\rho_0}$, $X_{\rho_1}$, $X_{\mu_1}$, $G_1$, $G_{s_3}$ and $G_{d_1}$.

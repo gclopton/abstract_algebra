@@ -767,7 +767,7 @@ Let $F$ be the set of all real-valued functions having as domain the set $\mathb
 > $$
 
 > [!exercise|9a719caf-eb25-50d1-99cf-3be47c0fb0fa.local at=2203d3ba-99ca-592b-adc2-edd5cded840a] Exercise 2.36
-> Suppose that $*$ is an associative binary operation on a set $S$. Let $H=\{a \in S \mid a * x=x * a$ for all $x \in S\}$. Show that $H$ is closed under $*$. (We think of $H$ as consisting of all elements of $S$ that commute with every element in $S$.)
+> Suppose that $*$ is an associative binary operation on a set $S$. Let $H=\{a\in S\mid a*x=x*a\text{ for all }x\in S\}$. Show that $H$ is closed under $*$. (We think of $H$ as consisting of all elements of $S$ that commute with every element in $S$.)
 
 > [!exercise|7a0857aa-7bb5-5fdd-a066-c5d8e7ee58c8.local at=e5be99f6-c88d-567c-a1f3-758d3f8b342e] Exercise 2.37
 > Suppose that $*$ is an associative and commutative binary operation on a set $S$. Show that $H=\{a \in S \mid a * a=a\}$ is closed under $*$. (The elements of $H$ are idempotents of the binary operation $*$.)

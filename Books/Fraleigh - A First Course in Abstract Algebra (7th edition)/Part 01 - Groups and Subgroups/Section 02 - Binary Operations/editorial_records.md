@@ -1099,3 +1099,11 @@ Source line 770: `*` → `$*$`. Context: `et $H=\{a \in S \mid a * x=x * a$ for 
 Source line 773: `*` → `$*$`. Context: `inary operation on a set $S$. Show that $H=\{a \in S \mid a * a=a\}$ is closed under *. (The elements of $H$ are idempotents of the binary operation *.)`
 
 Source line 773: `*` → `$*$`. Context: `a\}$ is closed under *. (The elements of $H$ are idempotents of the binary operation *.)`
+
+## Final TeX delimiter check
+
+Before: `$H=\{a \in S \mid a * x=x * a$ for all $x \in S\}$`
+
+After: `$H=\{a\in S\mid a*x=x*a\text{ for all }x\in S\}$`
+
+Reason: join split set-builder math using text inside the expression; words and mathematical content unchanged.

@@ -6,7 +6,7 @@ In the real numbers, $a<b$ if and only if $b-a$ is positive, so the order relati
 
 Definition 25.1
 
-> [!definition] Ordered Ring
+> [!definition|66f7472e-208b-5231-b00c-c76274bd1a1e.local at=884b4ca0-7fda-5ce6-8095-622ff923f1a0] Ordered Ring
 > An ordered ring is a ring $R$ with nonzero unity $1$ together with a nonempty subset $P$ of $R$ satisfying these two properties.
 >
 > Closure For all $a, b \in P$, both $a+b$ and $a b$ are in $P$.
@@ -21,7 +21,7 @@ Definition 25.1
 It is easy to see that if $R$ is an ordered ring with set $P$ of positive elements and $S$ is a subring of $R$, then $P \cap S$ satisfies the requirements for a set of positive elements in the ring $S$, and thus gives an ordering of $S$. (See Exercise 26.) This is the induced ordering from the given ordering of $R$.
 
 We observe at once that for each of the rings $\mathbb{Z}, \mathbb{Q}$ and $\mathbb{R}$ the set of elements that we have always considered to be positive satisfies the conditions of closure and trichotomy. We will refer to the familiar ordering of these rings and the induced ordering on their subrings as the natural ordering. We now give an unfamiliar illustration.
-> [!example] Example 25.2
+> [!example|262b6fb1-eb70-5704-9566-debb56dbe736.local at=ef4ad69e-1e79-5a6a-94ad-475ce57b855f] Example 25.2
 > Let $R$ be an ordered ring with set $P$ of positive elements. Describe two orderings of $R[x]$ using the nonzero coefficients of lowest and highest degree.
 
 ##### solution
@@ -43,13 +43,13 @@ If $a$ and $b$ are nonzero elements of $R$ then either $-a$ or $a$ is in $P$ and
 We summarize these observations in a theorem and corollary.
 Theorem 25.3
 
-> [!theorem] Squares, Characteristic, and Zero Divisors in Ordered Rings
+> [!theorem|223ff67b-b8ba-580f-9635-671750b98758.local at=efef99d1-b39c-5ede-a783-d1738be82d5e] Squares, Characteristic, and Zero Divisors in Ordered Rings
 > The ordered rings have nonzero unity.
 >
 > Let $R$ be an ordered ring. All squares of nonzero elements of $R$ are positive, $R$ has characteristic 0, and there are no zero divisors.
 Corollary 25.4
 
-> [!corollary] Orderings of the Integers and Real Numbers
+> [!corollary|5861b3fc-6990-5d93-b44b-560bc682fefe.local at=0cc0d52f-f4d7-53ac-afbc-4b99d3398fab] Orderings of the Integers and Real Numbers
 > The ordered rings have nonzero unity.
 >
 > We can consider $\mathbb{Z}$ to be embedded in any ordered ring $R$, and the induced ordering of $\mathbb{Z}$ from $R$ is the natural ordering of $\mathbb{Z}$. The only possible ordering of $\mathbb{R}$ is the natural ordering.
@@ -59,7 +59,7 @@ Theorem 25.3 shows that the field $\mathbb{C}$ of complex numbers cannot be orde
 The theorem that follows defines a relation $<$ in an ordered ring, and gives properties of $<$. The definition of $<$ is motivated by the observation that, in the real numbers, $a<b$ if and only if $b-a$ is positive. The theorem also shows that ordering could have been defined in terms of a relation $<$ having the listed properties.
 Theorem 25.5; displayed relation (1)
 
-> [!theorem] Order Relation and Positive Cone of an Ordered Ring
+> [!theorem|6a3f1f6a-d94e-5624-bd0a-af29f02638a0.local at=628f5cb1-e6be-55e1-97da-7ab4ae9e1337] Order Relation and Positive Cone of an Ordered Ring
 > Let $R$ be an ordered ring with nonzero unity and set $P$ of positive elements. Let <, read "is less than," be the relation on $R$ defined by
 >
 > $$
@@ -117,7 +117,7 @@ b>a \text { means } a<b, & a \leq b \text { means either } a=b \text { or } a<b,
 \end{array}
 $$
 
-> [!example] Example 25.6
+> [!example|ce406920-d7fa-5498-a4af-5e353bf17f80.local at=6cab34c8-a94e-5fe6-8c9e-da5966382e88] Example 25.6
 > Let $R$ be an ordered ring. Describe the ordering of its positive elements and the monomials in $R[x]$ when a polynomial is positive if its nonzero coefficient of lowest degree is positive.
 
 ##### solution
@@ -137,7 +137,7 @@ We leave a similar discussion of < for the ordering of $R[x]$ given by $P_{\text
 The preceding example is of interest because it exhibits an ordering that is not Archimedian. We give a definition explaining this terminology. Remember that we can consider $\mathbb{Z}$ to be a subring of every ordered ring.
 Definition 25.7
 
-> [!definition] Archimedian Ordering
+> [!definition|541d7208-5c88-5be3-90c1-c17fd692313f.local at=aea5444e-7569-531c-abc9-42c5ea481645] Archimedian Ordering
 > An ordering of a ring $R$ with nonzero unity $1$ with this property:
 >
 > For each given positive $a$ and $b$ in $R$, there exists a positive integer $n$ such that $n a>b$.
@@ -146,7 +146,7 @@ Definition 25.7
 The natural ordering of $\mathbb{R}$ is Archimedian, but the ordering of $\mathbb{R}[x]$ given by $P_{\text {low }}$ discussed in Example 25.6 is not Archimedian because for every positive integer $n$ we have $(17-n x) \in P_{\text {low }}$, so $n x<17$ for all $n \in \mathbb{Z}^{+}$.
 
 We give two examples describing types of ordered rings and fields that are of interest in more advanced work.
-> [!example] Example 25.8: Formal Power Series Rings
+> [!example|74495d37-2b4f-53dd-b72f-1d875ad4e594.local at=4c129673-0719-5ed2-b010-9e6a18d9c0e6] Example 25.8: Formal Power Series Rings
 > Describe the formal power series ring $R[[x]]$ and, when $R$ is ordered, an extension of its ordering to $R[[x]]$.
 
 ##### solution
@@ -155,7 +155,7 @@ Let $R$ be a ring. In Section 22 we defined a polynomial in $R[x]$ to be a forma
 practice adding and multiplying series when we studied calculus. These series form a ring which we denote by $R[[x]]$, and which contains $R[x]$ as a subring.
 
 If $R$ is an ordered ring, we can extend the ordering to $R[[x]]$ exactly as we extended the ordering to $R[x]$ using the set $P_{\text {low }}$ of positive elements. (We cannot use $P_{\text {high }}$. Why not?) The monomials have the same ordering that we displayed in Example 25.6. $\square$
-> [!example] Example 25.9: Formal Laurent Series Fields
+> [!example|3125a5af-515c-54f7-b4a4-4cff63778479.local at=512e1bf4-17aa-5f98-af5b-e6a58e9ec6b6] Example 25.9: Formal Laurent Series Fields
 > Describe the formal Laurent series field $F((x))$. Compute three terms of $(x^{-1}-1+x-x^2+x^3+\cdots)/(x^3+2x^4+3x^5+\cdots)$ in $\mathbb R((x))$ and describe an ordering when $F$ is ordered.
 
 ##### solution
@@ -178,13 +178,13 @@ If $F$ is an ordered field, we can use the obvious analog of $P_{\text {low }}$ 
 Let $R$ be an ordered ring and let $\phi: R \rightarrow R^{\prime}$ be a ring isomorphism. It is intuitively clear that by identification (renaming), the map $\phi$ can be used to carry over the ordering of $R$ to provide an ordering of $R^{\prime}$. We state as a theorem what would have to be proved for a skeptic, and leave the proof as Exercise 25.
 Theorem 25.10
 
-> [!theorem] Transport of Ring Orderings by Isomorphisms
+> [!theorem|8b2c4554-5bff-5679-a9cc-19a732c4e863.local at=69693eb5-81c9-5f1f-9de4-b404735e6a82] Transport of Ring Orderings by Isomorphisms
 > The ordered rings have nonzero unity.
 >
 > Let $R$ be an ordered ring with set $P$ of positive elements and let $\phi: R \rightarrow R^{\prime}$ be a ring isomorphism. The subset $P^{\prime}=\phi[P]$ satisfies the requirements of closure under addition and multiplication and trichotomy for a set of positive elements of $R^{\prime}$. Furthermore, in the ordering of $R^{\prime}$ given by $P^{\prime}$, we have $\phi(a)<^{\prime} \phi(b)$ in $R^{\prime}$ if and only if $a<b$ in $R$.
 
 We call the ordering of $R^{\prime}$ described in the preceding theorem the "ordering induced by" $\phi$ from the ordering of $R$.
-> [!example] Example 25.11
+> [!example|b60ba7a3-5adf-5ef3-a8a7-c15a6b20e62b.local at=5467b41d-bbf5-5e09-bf5c-cb0ed7220537] Example 25.11
 > Use the evaluation isomorphism $\phi_\pi:\mathbb Q[x]\to\mathbb Q[\pi]$ to describe an ordering of $\mathbb Q[\pi]$ different from its ordering induced by $\mathbb R$.
 
 ##### solution
@@ -198,8 +198,11 @@ $$
 is one to one. Thus it provides an isomorphism of $\mathbb{Q}[x]$ with $\phi[\mathbb{Q}[x]]$. We denote this
 image ring by $\mathbb{Q}[\pi]$. If we provide $\mathbb{Q}[x]$ with the ordering using the set $P_{\text {low }}$ of Examples 25.2 and 25.6, the ordering on $\mathbb{Q}[\pi]$ induced by $\phi_{\pi}$ is very different from that induced by the natural (and only) ordering of $\mathbb{R}$. In the $P_{\text {low }}$ ordering, $\pi$ is less than any positive element of $\mathbb{Q}$! $\square$
 
-> [!definition] Ring Automorphism
-> An isomorphism of a ring $R$ onto itself is called an automorphism of $R$. Theorem 25.10 can be used to exhibit different orderings of an ordered ring $R$ if there exist automorphisms of $R$ that do not carry the set $P$ of positive elements onto itself. We give an example.
+> [!definition|899fc531-8f33-5d35-b49c-54bc9e62203b.local at=1645186c-8c7c-5a01-a007-940bce53fa19] Ring Automorphism
+> An isomorphism of a ring $R$ onto itself is called an automorphism of $R$.
+
+Theorem 25.10 can be used to exhibit different orderings of an ordered ring $R$ if there exist automorphisms of $R$ that do not carry the set $P$ of positive elements onto itself. We give an example.
+
 > [!example] Example 25.12
 > Use $\phi(m+n\sqrt2)=m-n\sqrt2$ to describe an ordering of $\mathbb Z[\sqrt2]$ in which $-\sqrt2$ is positive.
 
@@ -210,7 +213,7 @@ Exercise 11 of Section 18 shows that $\{m+n \sqrt{2} \mid m, n \in \mathbb{Z}\}$
 In view of Examples 25.11 and 25.12, which exhibit orderings on subrings of $\mathbb{R}$ that are not the induced orderings, we wonder whether $\mathbb{Q}$ can have an ordering other than the natural one. Our final theorem shows that this is not possible.
 Theorem 25.13
 
-> [!theorem] Unique Extension of an Ordering to the Field of Quotients
+> [!theorem|0142b260-75ea-5cd1-82ae-02cdc99f856c.local at=7d88abf8-33d5-52d7-8ab1-5094945a75b5] Unique Extension of an Ordering to the Field of Quotients
 > Let $D$ be an ordered integral domain with nonzero unity and $P$ as set of positive elements, and let $F$ be a field of quotients of $D$. The set
 >
 > $$
@@ -240,13 +243,13 @@ Finally, suppose that $P^{\prime \prime}$ is a set of positive elements of $F$ s
 
 ### Computations
 
-> [!exercise] Exercise 25.1
+> [!exercise|57e5398c-4120-510a-ac94-5761286c8db7.local at=972bd920-3a06-5d5d-8e30-b0d7b8543ff0] Exercise 25.1
 > Let $R$ be an ordered ring. Describe the ordering of a positive element $a$ of $R$ and the monomials $x, x^{2}, x^{3}, \cdots, x^{n}, \cdots$ in $R[x]$ as we did in Example 25.6, but using the set $P_{\text {high }}$ of Example 25.6 as set of positive elements of $R[x]$.
 
-> [!exercise] Exercise 25.2
+> [!exercise|df38f182-b29b-5f66-8ce2-ba2ef4e244c8.local at=a1a5c03d-bc08-5d24-957a-2c3214071cdf] Exercise 25.2
 > Let $F$ be an ordered field and let $F((x))$ be the field of formal Laurent series with coefficients in $F$, discussed in Example 25.9. Describe the ordering of the monomials $\cdots x^{-3}, x^{-2}, x^{-1}, x^{0}=1, x, x^{2}, x^{3}, \cdots$ in the ordering of $F((x))$ described in that example.
 
-> [!exercise] Exercise 25.3
+> [!exercise|71e85aa1-09a7-5ec6-a79f-06e6b1c521a9.local at=be226d71-74c3-5464-b421-ae92bb9a176a] Exercise 25.3
 > Example 25.12 described an ordering of $\mathbb{Z}[\sqrt{2}]=\{m+n \sqrt{2} \mid m, n \in \mathbb{Z}\}$ in which $-\sqrt{2}$ is positive. Describe, in terms of $m$ and $n$, all positive elements of $\mathbb{Z}[\sqrt{2}]$ in that ordering.
 
 In Exercises 4 through 9, let $\mathbb{R}[x]$ have the ordering given by
@@ -254,7 +257,7 @@ i. $P_{\text {low }}$
 ii. $P_{\text {high }}$
 as described in Example 25.2. In each case (i) and (ii), list the labels $a, b, c, d, e$ of the given polynomials in an order corresponding to increasing order of the polynomials as described by the relation $<$ of Theorem 25.5.
 
-> [!exercise] Exercise 25.4
+> [!exercise|3020f2cb-ab26-5ea8-b465-a771ab0f93ec.local at=2d2c7da9-5072-5dc7-8e44-9b6783f66ff6] Exercise 25.4
 > a. $-5+3x$
 >
 > b. $5-3x$
@@ -265,7 +268,7 @@ as described in Example 25.2. In each case (i) and (ii), list the labels $a, b, 
 >
 > e. $2+4x^2$
 
-> [!exercise] Exercise 25.5
+> [!exercise|d70e4fce-5d64-51cf-9b98-e466d4c970a6.local at=bce04452-7eca-50a7-9fa9-215836607023] Exercise 25.5
 > a. $-1$
 >
 > b. $3x-8x^3$
@@ -276,7 +279,7 @@ as described in Example 25.2. In each case (i) and (ii), list the labels $a, b, 
 >
 > e. $-3x^3-4x^5$
 
-> [!exercise] Exercise 25.6
+> [!exercise|3885f242-fd7c-53a5-b5e0-ce3f4245209e.local at=150e51c6-8a6f-5e0d-897f-a89bcca07ee1] Exercise 25.6
 > a. $-3+5x^2$
 >
 > b. $-2x+5x^2+x^3$
@@ -287,7 +290,7 @@ as described in Example 25.2. In each case (i) and (ii), list the labels $a, b, 
 >
 > e. $8x^4-5x^5$
 
-> [!exercise] Exercise 25.7
+> [!exercise|abe65f7a-299c-5159-a25f-4d473b25f624.local at=36d6c0a0-f036-5069-98fa-ecbe15686365] Exercise 25.7
 > a. $-2x^2+5x^3$
 >
 > b. $x^3+4x^4$
@@ -298,7 +301,7 @@ as described in Example 25.2. In each case (i) and (ii), list the labels $a, b, 
 >
 > e. $2x-2x^2$
 
-> [!exercise] Exercise 25.8
+> [!exercise|3512d1ec-730e-54f1-bb3b-2c37e4b8cc6e.local at=4ecdf5c1-2289-5781-888e-811d6929c000] Exercise 25.8
 > a. $4x-3x^2$
 >
 > b. $4x+2x^2$
@@ -309,7 +312,7 @@ as described in Example 25.2. In each case (i) and (ii), list the labels $a, b, 
 >
 > e. $3x-2x^2$
 
-> [!exercise] Exercise 25.9
+> [!exercise|348b5aeb-c8e5-5d7c-ad14-554bf36b72b5.local at=b8d23179-4854-5963-8d96-c6bbd3d7dcc5] Exercise 25.9
 > a. $x-3x^2+5x^3$
 >
 > b. $2-3x^2+5x^3$
@@ -322,7 +325,7 @@ as described in Example 25.2. In each case (i) and (ii), list the labels $a, b, 
 
 In Exercises 10 through 13, let $\mathbb{Q}((x))$ have the ordering described in Example 25.9. List the labels $a, b, c, d, e$ of the given elements in an order corresponding to increasing order of the elements as described by the relation $<$ of Theorem 25.5.
 
-> [!exercise] Exercise 25.10
+> [!exercise|228b13a2-95bb-5f1d-812d-000bf36d7076.local at=d7cd78f3-bb19-5267-bffe-fe48a35ebfbc] Exercise 25.10
 > a. $\frac{1}{x}$
 >
 > b. $\frac{-5}{x^{2}}$
@@ -333,7 +336,7 @@ In Exercises 10 through 13, let $\mathbb{Q}((x))$ have the ordering described in
 >
 > e. $4 x$
 
-> [!exercise] Exercise 25.11
+> [!exercise|c332d307-48b9-55f3-b713-d79bacdb435a.local at=c51220ba-451b-5238-ad23-2718aaf8441b] Exercise 25.11
 > a. $\frac{1}{1-x}$
 >
 > b. $\frac{x^{2}}{1+x}$
@@ -344,7 +347,7 @@ In Exercises 10 through 13, let $\mathbb{Q}((x))$ have the ordering described in
 >
 > e. $\frac{3-2 x}{x^{3}+4 x}$
 
-> [!exercise] Exercise 25.12
+> [!exercise|4b9c43cd-7bf6-5f70-85a3-0ff09db6bfdd.local at=ea1ef525-2437-5ca1-b927-3d442c0bb0ec] Exercise 25.12
 > a. $\frac{5-7 x}{x^{2}+3 x^{3}}$
 >
 > b. $\frac{-2+4 x}{4-3 x}$
@@ -355,7 +358,7 @@ In Exercises 10 through 13, let $\mathbb{Q}((x))$ have the ordering described in
 >
 > e. $\frac{3-5 x}{-6+2 x}$
 
-> [!exercise] Exercise 25.13
+> [!exercise|b17ce125-c76f-55ec-a190-da814d2093f2.local at=c02e9944-e8a8-5b7f-99a6-d44d01c01002] Exercise 25.13
 > a. $\frac{1-x}{1+x}$
 >
 > b. $\frac{3-5 x}{3+5 x}$
@@ -368,10 +371,10 @@ In Exercises 10 through 13, let $\mathbb{Q}((x))$ have the ordering described in
 
 ## Concepts
 
-> [!exercise] Exercise 25.14
+> [!exercise|30caaf87-5c44-581a-aeea-1653c6d0be10.local at=b7d5a25b-c5a9-595f-a1bd-b1d416c877bc] Exercise 25.14
 > It can be shown that the smallest subfield of $\mathbb{R}$ containing $\sqrt[3]{2}$ is isomorphic to the smallest subfield of $\mathbb{C}$ containing $\sqrt[3]{2}\left(\frac{-1+i \sqrt{3}}{2}\right)$. Explain why this shows that, although there is no ordering for $\mathbb{C}$, there may be an ordering of a subfield of $\mathbb{C}$ that contains some elements that are not real numbers.
 
-> [!exercise] Exercise 25.15
+> [!exercise|243c2c5d-e625-5a0f-8047-66a9f543fb76.local at=b321cc6d-eb2c-5471-afb1-0d463a29bec0] Exercise 25.15
 > Mark each of the following true or false.
 >
 >
@@ -404,52 +407,52 @@ In Exercises 10 through 13, let $\mathbb{Q}((x))$ have the ordering described in
 >
 > j. \_\_\_\_ Every ordered ring has an infinite number of elements.
 
-> [!exercise] Exercise 25.16
+> [!exercise|497b61f5-bfe6-5dbe-b9b6-923b67a82824.local at=c821ad01-d638-5aca-8937-36fec7112406] Exercise 25.16
 > Describe an ordering of the ring $\mathbb{Q}[\pi]$, discussed in Example 25.11, in which $\pi$ is greater than any rational number.
 
 ## Theory
 
-> [!exercise] Exercise 25.17
+> [!exercise|354b7295-5e0e-51e1-804f-99e733dad6d9.local at=42fe5be5-2acd-5d21-a4d2-761abd5a6219] Exercise 25.17
 > Referring to Example 25.12, show that the map $\phi: \mathbb{Z}[\sqrt{2}] \rightarrow \mathbb{R}$ where $\phi(m+n \sqrt{2})=m-n \sqrt{2}$ is a homomorphism.
 
 In Exercises 18 through 24, let $R$ be an ordered ring with set $P$ of positive elements, and let < be the relation on $R$ defined in Theorem 25.5. Prove the given statement. (All the proofs have to be in terms of Definition 25.1 and Theorem 25.5. For example, you must not say, "We know that negative times positive is negative, so if $a<0$ and $0<b$ then $a b<0$.")
 
-> [!exercise] Exercise 25.18
+> [!exercise|d66b9dd2-551e-5247-ac52-4d94d20e916e.local at=0f8eef5e-1340-5209-ba7b-e0c7c9ecc9f0] Exercise 25.18
 > If $a \in P$, then $0<a$.
 
-> [!exercise] Exercise 25.19
+> [!exercise|e2494ae8-a07b-5008-aff5-84ac15f07aae.local at=93c0aae9-e701-5009-ab6b-73d14765a8e4] Exercise 25.19
 > If $a, b \in P$ and $a c=b d$, then either $c=d=0$ or $c d \in P$.
 
-> [!exercise] Exercise 25.20
+> [!exercise|e6b37b47-4d30-57b0-babc-804af03efdc5.local at=8f7d68eb-019c-5ea0-942c-946be7b1855c] Exercise 25.20
 > If $a<b$, then $-b<-a$.
 
-> [!exercise] Exercise 25.21
+> [!exercise|22b382e8-7c9b-55b7-b86b-9cda505f6cc6.local at=15238528-ab38-5089-aff3-cd18def81686] Exercise 25.21
 > If $a<0$ and $0<b$, then $a b<0$.
 
-> [!exercise] Exercise 25.22
+> [!exercise|606bb1c5-5ed9-5c06-9fcc-9334ede09112.local at=8b303fca-fd67-59a4-9a5d-0c2e905ae043] Exercise 25.22
 > If $R$ is a field and $a$ and $b$ are positive, then $a / b$ is positive.
 
-> [!exercise] Exercise 25.23
+> [!exercise|2d623692-e9a5-59d2-b19c-b253cddfbead.local at=deb1f8e2-310e-52b0-a5e6-723982429bc9] Exercise 25.23
 > If $R$ is a field and $0<a<1$, then $1<1 / a$.
 
-> [!exercise] Exercise 25.24
+> [!exercise|6f641077-4f8c-5bb5-ad23-21349c5ca8a2.local at=62272484-7938-5419-ac98-0e34e1fe4a48] Exercise 25.24
 > If $R$ is a field and $-1<a<0$, then $1 / a<-1$.
 
-> [!exercise] Exercise 25.25
+> [!exercise|ed3088ae-0107-5a1a-8da5-9d291ad99c65.local at=e6d08a42-1b4e-5521-bd25-2297e8f3dea4] Exercise 25.25
 > Prove Theorem 25.10 of the text.
 
-> [!exercise] Exercise 25.26
+> [!exercise|61a005a5-5c2b-5208-b18a-03a7d6dee56a.local at=a8bfd3b3-44d1-547d-9ace-6ce977f32b41] Exercise 25.26
 > Show that if $R$ is an ordered ring with set $P$ of positive elements and $S$ is a subring of $R$, then $P \cap S$ satisfies the requirements for a set of positive elements in the ring $S$, and thus gives an ordering of $S$.
 
-> [!exercise] Exercise 25.27
+> [!exercise|3d676dcd-0d20-55e4-975c-81ac7febc2d2.local at=678698a2-042e-571f-867c-40fe3b9d51fb] Exercise 25.27
 > Show that if < is a relation on a ring $R$ satisfying the properties of trichotomy, transitivity, and isotonicity stated in Theorem 25.5, then there exists a subset $P$ of $R$ satisfying the conditions for a set of positive elements
 >
 > in Definition 25.1, and such that the relation $<_{P}$ defined by $a<_{P} b$ if and only if $(b-a) \in P$ is the same as the relation $<$.
 
-> [!exercise] Exercise 25.28
+> [!exercise|4e49eb21-738d-5291-8dc9-feea1b0bb617.local at=16fb7e42-6fe7-5f63-a133-71ce9f508609] Exercise 25.28
 > Let $R$ be an ordered integral domain. Show that if $a^{2 n+1}=b^{2 n+1}$ where $a, b \in R$ and $n$ is a positive integer, then $a=b$.
 
-> [!exercise] Exercise 25.29
+> [!exercise|b4d04dee-10ce-58c3-996b-0fed6130af24.local at=a253042e-8856-566a-888a-5a629f178d4f] Exercise 25.29
 > Let $R$ be an ordered ring and consider the ring $R[x, y]$ of polynomials in two variables with coefficients in $R$. Example 25.2 describes two ways in which we can order $R[x]$, and for each of these, we can continue on and order $(R[x])[y]$ in the analogous two ways, giving four ways of arriving at an ordering of $R[x, y]$. There are another four ways of arriving at an ordering of $R[x, y]$ if we first order $R[y]$ and then $(R[y])[x]$. Show that all eight of these orderings of $R[x, y]$ are different. [Hint: You might start by considering whether $x<y$ or $y<x$ in each of these orderings, and continue in this fashion.]
 
 [^25-section]: This section is not used in the remainder of the text.

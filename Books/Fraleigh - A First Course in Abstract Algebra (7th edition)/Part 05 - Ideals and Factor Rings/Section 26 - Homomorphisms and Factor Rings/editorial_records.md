@@ -783,3 +783,7 @@ panels:
     caption: ""
 ```
 ```
+
+## Final callout-boundary check
+
+Inserted an unquoted blank line before 2 adjacent callout headers. Author text and IDs unchanged. Before: quoted final line immediately followed by another callout header. After: same lines separated by a blank line.

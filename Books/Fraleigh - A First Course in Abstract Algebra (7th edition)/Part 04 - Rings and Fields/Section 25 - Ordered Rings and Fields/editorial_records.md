@@ -795,3 +795,11 @@ Section heading separated and normalized to level one; body wording unchanged. O
 ## Long division renderer compatibility
 
 Formatting only: MathJax enclose(longdiv), underlines and invisible spacing replace unsupported cline. All source rows retained.
+
+## Final callout-boundary check
+
+Inserted an unquoted blank line before 1 adjacent callout headers. Author text and IDs unchanged. Before: quoted final line immediately followed by another callout header. After: same lines separated by a blank line.
+
+## Definition boundary
+
+Before: Ring Automorphism callout also included the following sentence beginning Theorem25.10 and introducing the next example. After: definition ends after automorphism of R; subsequent author explanation is ordinary prose. Words unchanged; book-specific reference remains outside the reusable statement.

@@ -954,3 +954,24 @@ style: scientific
 ```
 
 ```
+
+## Final classification check
+
+Before:
+```text
+> [!convention] Fixed-Point and Isotropy Subgroup Notation
+> Let $X$ be a $G$-set. Let $x \in X$ and $g \in G$. It will be important to know when $g x=x$. We let
+>
+> $$
+> X_{g}=\{x \in X \mid g x=x\} \quad \text { and } \quad G_{x}=\{g \in G \mid g x=x\} .
+> $$
+```
+After:
+```text
+Let $X$ be a $G$-set. Let $x \in X$ and $g \in G$. It will be important to know when $g x=x$. We let
+
+$$
+X_{g}=\{x \in X \mid g x=x\} \quad \text { and } \quad G_{x}=\{g \in G \mid g x=x\} .
+$$
+```
+Reason: this is notation, not a convention. Preserve all author text as ordinary prose; exclude from Index review.

@@ -773,3 +773,41 @@ After:
 ```text
 $\{(1, 2), (2, 6), (2, 4)\}$
 ```
+
+## Final TeX delimiter check
+
+Before: `$A \times B=\{(a, b) \mid a \in A$ and $b \in B\}$`
+
+After: `$A\times B=\{(a,b)\mid a\in A\text{ and }b\in B\}$`
+
+Reason: join split set-builder math using text inside the expression; words and mathematical content unchanged.
+
+Before: `$\{m \in \mathbb{Z} \mid m n=60$ for some $n \in \mathbb{Z}\}$`
+
+After: `$\{m\in\mathbb Z\mid mn=60\text{ for some }n\in\mathbb Z\}$`
+
+Reason: join split set-builder math using text inside the expression; words and mathematical content unchanged.
+
+Before: `$\left\{n \in \mathbb{Z}^{+} \mid n\right.$ is a large number $\}$`
+
+After: `$\{n\in\mathbb Z^+\mid n\text{ is a large number}\}$`
+
+Reason: join split set-builder math using text inside the expression; words and mathematical content unchanged.
+
+Before: `$\{x \in \mathbb{Q} \mid x$ is almost an integer $\}$`
+
+After: `$\{x\in\mathbb Q\mid x\text{ is almost an integer}\}$`
+
+Reason: join split set-builder math using text inside the expression; words and mathematical content unchanged.
+
+Before: `$\{x \in \mathbb{Q} \mid x$ may be written with denominator greater than 100$\}$`
+
+After: `$\{x\in\mathbb Q\mid x\text{ may be written with denominator greater than }100\}$`
+
+Reason: join split set-builder math using text inside the expression; words and mathematical content unchanged.
+
+Before: `$\{x \in \mathbb{Q} \mid x$ may be written with positive denominator less than 4$\}$`
+
+After: `$\{x\in\mathbb Q\mid x\text{ may be written with positive denominator less than }4\}$`
+
+Reason: join split set-builder math using text inside the expression; words and mathematical content unchanged.

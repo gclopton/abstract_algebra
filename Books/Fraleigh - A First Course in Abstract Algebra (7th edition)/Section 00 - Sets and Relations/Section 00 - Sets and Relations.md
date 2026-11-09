@@ -58,7 +58,7 @@ Let $S=\{1,2,3\}$. This set $S$ has a total of eight subsets, namely $\emptyset,
 Definition 0.4
 
 > [!definition] Cartesian Product
-> Let $A$ and $B$ be sets. The set $A \times B=\{(a, b) \mid a \in A$ and $b \in B\}$ is the Cartesian product of $A$ and $B$.
+> Let $A$ and $B$ be sets. The set $A\times B=\{(a,b)\mid a\in A\text{ and }b\in B\}$ is the Cartesian product of $A$ and $B$.
 
 > [!example] Example 0.5: Cartesian Product of Two Finite Sets
 > Find $A\times B$ for $A=\{1,2,3\}$ and $B=\{3,4\}$.
@@ -352,7 +352,7 @@ In Exercises 1 through 4, describe the set by listing its elements.
 > $\left\{m \in \mathbb{Z} \mid m^{2}=3\right\}$
 
 > [!exercise] Exercise 0.3
-> $\{m \in \mathbb{Z} \mid m n=60$ for some $n \in \mathbb{Z}\}$
+> $\{m\in\mathbb Z\mid mn=60\text{ for some }n\in\mathbb Z\}$
 
 > [!exercise] Exercise 0.4
 > $\left\{m \in \mathbb{Z} \mid m^{2}-m<115\right\}$
@@ -360,7 +360,7 @@ In Exercises 1 through 4, describe the set by listing its elements.
 In Exercises 5 through 10, decide whether the object described is indeed a set (is well defined). Give an alternate description of each set.
 
 > [!exercise] Exercise 0.5
-> $\left\{n \in \mathbb{Z}^{+} \mid n\right.$ is a large number $\}$
+> $\{n\in\mathbb Z^+\mid n\text{ is a large number}\}$
 
 > [!exercise] Exercise 0.6
 > $\left\{n \in \mathbb{Z} \mid n^{2}<0\right\}$
@@ -369,13 +369,13 @@ In Exercises 5 through 10, decide whether the object described is indeed a set (
 > $\left\{n \in \mathbb{Z} \mid 39<n^{3}<57\right\}$
 
 > [!exercise] Exercise 0.8
-> $\{x \in \mathbb{Q} \mid x$ is almost an integer $\}$
+> $\{x\in\mathbb Q\mid x\text{ is almost an integer}\}$
 
 > [!exercise] Exercise 0.9
-> $\{x \in \mathbb{Q} \mid x$ may be written with denominator greater than 100$\}$
+> $\{x\in\mathbb Q\mid x\text{ may be written with denominator greater than }100\}$
 
 > [!exercise] Exercise 0.10
-> $\{x \in \mathbb{Q} \mid x$ may be written with positive denominator less than 4$\}$
+> $\{x\in\mathbb Q\mid x\text{ may be written with positive denominator less than }4\}$
 
 > [!exercise] Exercise 0.11
 > List the elements in $\{a, b, c\} \times\{1,2, c\}$.

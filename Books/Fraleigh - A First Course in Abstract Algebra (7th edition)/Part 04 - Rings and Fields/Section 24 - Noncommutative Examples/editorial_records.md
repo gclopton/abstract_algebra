@@ -633,3 +633,7 @@ style: scientific
 ## Table header rendering
 
 Before: bare `+` in Table24.7 header. After: `$+$`. The Markdown renderer interpreted the bare operation as a list bullet. Mathematical delimiter restored; component ID and values unchanged.
+
+## Final callout-boundary check
+
+Inserted an unquoted blank line before 1 adjacent callout headers. Author text and IDs unchanged. Before: quoted final line immediately followed by another callout header. After: same lines separated by a blank line.
