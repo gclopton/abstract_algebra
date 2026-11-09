@@ -203,7 +203,7 @@ image ring by $\mathbb{Q}[\pi]$. If we provide $\mathbb{Q}[x]$ with the ordering
 
 Theorem 25.10 can be used to exhibit different orderings of an ordered ring $R$ if there exist automorphisms of $R$ that do not carry the set $P$ of positive elements onto itself. We give an example.
 
-> [!example] Example 25.12
+> [!example|6e26c1ca-9261-535d-862b-8597571e56c9.local at=d3c408d2-baef-53ff-a625-f2ee0b4affa1] Example 25.12
 > Use $\phi(m+n\sqrt2)=m-n\sqrt2$ to describe an ordering of $\mathbb Z[\sqrt2]$ in which $-\sqrt2$ is positive.
 
 ##### solution

@@ -181,7 +181,7 @@ Definition 26.10
 >
 > is an ideal.
 
-> [!example] Example 26.11
+> [!example|739a0a31-6ac9-59e1-8766-5b5e598d0214.local at=1c9c34c2-da12-5b3b-ba9b-71484f275515] Example 26.11
 > Show that $n\mathbb Z$ is an ideal in the ring $\mathbb Z$.
 
 ##### solution
@@ -199,7 +199,7 @@ It is not true that the product of a constant function with every function is ag
 >
 > It turned out that an "ideal number," which was in general not a "number" at all, was uniquely determined by the set of integers it "divided." Richard Dedekind took advantage of this fact to identify the ideal factor with this set; he therefore called the set itself an ideal, and proceeded to show that it satisfied the definition given in the text. Dedekind was then able to define the notions of prime ideal and product of two ideals and show that any ideal in the ring of integers of any algebraic number field could be written uniquely as a product of prime ideals.
 
-> [!example] Example 26.13
+> [!example|d289b9b9-37cc-5037-990f-60fde0dba31d.local at=72b236fd-de01-59d3-a5ce-aeb9e5c71f62] Example 26.13
 > Let $F$ be as in the preceding example, and let $N$ be the subring of all functions $f$ such that $f(2)=0$. Is $N$ an ideal in $F$ ? Why or why not?
 
 ##### solution
