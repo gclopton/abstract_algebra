@@ -22,7 +22,7 @@ We shall continue to use the symbol $\times$ for direct product of groups rather
 Notice that $\{(1,0),(0,1)\}$ is a generating set for the group $\mathbb{Z} \times \mathbb{Z}$ since $(n, m)=n(1,0)+m(0,1)$ for any $(n, m)$ in $\mathbb{Z} \times \mathbb{Z}$. This generating set has the property that each element of $\mathbb{Z} \times \mathbb{Z}$ can be uniquely expressed in the form $n(1,0)+m(0,1)$. That is, the coefficients $n$ and $m$ in $\mathbb{Z}$ are unique.
 Theorem 38.1
 
-> [!theorem] Equivalent Conditions for a Basis of an Abelian Group
+> [!theorem|60f132c9-0cdd-5cc7-b545-b8bcad2a185d.library at=8cde86d4-c258-5feb-85df-eff425debd61] Equivalent Conditions for a Basis of an Abelian Group
 > Let $X$ be a subset of a nonzero abelian group $G$. The following conditions on $X$ are equivalent.
 >
 > 1. Each nonzero element $a$ in $G$ can be expressed uniquely (up to order of summands) in the form $a=n_{1} x_{1}+n_{2} x_{2}+\cdots+n_{r} x_{r}$ for $n_{i} \neq 0$ in $\mathbb{Z}$ and distinct $x_{i}$ in $X$.
@@ -59,19 +59,19 @@ $$
 so $n_{i}-m_{i}=0$ by Condition 2, and $n_{i}=m_{i}$ for $i=1,2, \cdots, r$. Thus the coefficients are unique. $\square$
 Definition 38.2
 
-> [!definition] Free Abelian Group and Basis
+> [!definition|b348f8d1-ae8b-5f90-82fa-85e1fb914bda.library at=ee8f1061-12a3-5316-86bd-65e9d4136c0d] Free Abelian Group and Basis
 > An abelian group $G$ having a generating set $X$ satisfying the following condition is a free abelian group, and $X$ is a basis for the group.
 >
 > $X$ generates $G$, and $n_1x_1+n_2x_2+\cdots+n_rx_r=0$ for $n_i\in\mathbb Z$ and distinct $x_i\in X$ if and only if $n_1=n_2=\cdots=n_r=0$.
 
-> [!example] Example 38.3
+> [!example|d27221b4-55b2-59b5-a79e-b624703142ec.local at=25e7f9ec-48a2-5fba-b922-6ba5f2181732] Example 38.3
 > Find bases for $\mathbb Z\times\mathbb Z$ and $\mathbb Z\times\mathbb Z\times\mathbb Z$.
 
 ##### solution
 
 The group $\mathbb{Z} \times \mathbb{Z}$ is free abelian and $\{(1,0),(0,1)\}$ is a basis. Similarly, a basis for the free abelian group $\mathbb{Z} \times \mathbb{Z} \times \mathbb{Z}$ is $\{(1,0,0),(0,1,0),(0,0,1)\}$, and so on. Thus finite direct products of the group $\mathbb{Z}$ with itself are free abelian groups. $\square$
 
-> [!example] Example 38.4
+> [!example|92223c03-42a6-507e-97ad-b74710dde8c7.local at=a9fb83dc-2a1d-57c9-863a-dfe0805c54d7] Example 38.4
 > Determine whether $\mathbb Z_n$ is free abelian.
 
 ##### solution
@@ -94,13 +94,13 @@ $$
 by $\phi(a)=\left(n_{1}, n_{2}, \cdots, n_{r}\right)$ and $\phi(0)=(0,0, \cdots, 0)$. It is straightforward to check that $\phi$ is an isomorphism. We leave the details to the exercises (see Exercise 9) and state the result as a theorem.
 Theorem 38.5
 
-> [!theorem] Finite-Rank Free Abelian Groups as Products of Integers
+> [!theorem|90c34c54-0612-591e-a43c-16a44e84b548.library at=b692a675-1974-5d53-9a58-9e25969837ca] Finite-Rank Free Abelian Groups as Products of Integers
 > If $G$ is a nonzero free abelian group with a basis of $r$ elements, then $G$ is isomorphic to $\mathbb{Z} \times \mathbb{Z} \times \cdots \times \mathbb{Z}$ for $r$ factors.
 
 It is a fact that any two bases of a free abelian group $G$ contain the same number of elements. We shall prove this only if $G$ has a finite basis, although it is also true if every basis of $G$ is infinite. The proof is really lovely; it gives an easy characterization of the number of elements in a basis in terms of the size of a factor group.
 Theorem 38.6
 
-> [!theorem] Invariance of Rank for a Free Abelian Group with a Finite Basis
+> [!theorem|89e7ab04-49a2-51e5-8cf7-6e575a75dda4.library at=338c2641-f3e1-534f-a58c-113848a9cb30] Invariance of Rank for a Free Abelian Group with a Finite Basis
 > Let $G \neq\{0\}$ be a free abelian group with a finite basis. Then every basis of $G$ is finite, and all bases of $G$ have the same number of elements.
 
 ##### proof
@@ -125,7 +125,7 @@ $$
 Since $|H / 2 H|=2^{s}$, we see $|G / 2 G| \geq 2^{s}$. Since we have $|G / 2 G|=2^{r}$, we see that $s \leq r$. Then $Y$ cannot be an infinite set, for we could take $s>r$. $\square$
 Definition 38.7
 
-> [!definition] Rank of a Free Abelian Group
+> [!definition|e8a19284-0247-5874-b897-d902feabb31a.library at=b5e2c046-1ac1-50b3-89b0-85e94cc57edf] Rank of a Free Abelian Group
 > If $G$ is a free abelian group, the rank of $G$ is the number of elements in a basis for $G$. (All bases have the same number of elements.) $\square$
 
 ## Proof of the Fundamental Theorem
@@ -141,7 +141,7 @@ where both "numerator" and "denominator" have $n$ factors, and $d_{1}$ divides $
 To show that $G$ is isomorphic to such a factor group, we will show that there is a homomorphism of $\mathbb{Z} \times \mathbb{Z} \times \cdots \times \mathbb{Z}$ onto $G$ with kernel of the form $d_{1} \mathbb{Z} \times d_{2} \mathbb{Z} \times \cdots \times d_s \mathbb{Z} \times\{0\} \times \cdots \times\{0\}$. The result will then follow by Theorem 14.11. The theorems that follow give the details of the argument. Our purpose in these introductory paragraphs is to let us see where we are going as we read what follows.
 Theorem 38.8
 
-> [!theorem] Finitely Generated Abelian Groups as Homomorphic Images of Free Abelian Groups
+> [!theorem|bc4bc903-9dbe-5929-be13-806272333a01.library at=012eebfd-1a8a-5ee0-a1dc-ddde953d8615] Finitely Generated Abelian Groups as Homomorphic Images of Free Abelian Groups
 > Let $G$ be a finitely generated abelian group with generating set $\left\{a_{1}, a_{2}, \cdots, a_{n}\right\}$. Let
 >
 > $$
@@ -169,7 +169,7 @@ Since $\left\{a_{1}, \cdots, a_{n}\right\}$ generates $G$, clearly the homomorph
 We now prove a "replacement property" that makes it possible for us to adjust a basis.
 Theorem 38.9
 
-> [!theorem] Replacement of a Basis Element in a Free Abelian Group
+> [!theorem|e31470b1-3a9d-5949-b7c1-b803e7850e24.library at=55661fc5-b0e1-55d8-ab15-adb60be8a43d] Replacement of a Basis Element in a Free Abelian Group
 > If $X=\left\{x_{1}, \cdots, x_{r}\right\}$ is a basis for a free abelian group $G$ and $t \in \mathbb{Z}$, then for $i \neq j$, the set
 >
 > $$
@@ -194,7 +194,7 @@ $$
 
 and since $X$ is a basis, $n_{1}=\cdots=n_{i}+n_{j} t=\cdots=n_{j}=\cdots=n_{r}=0$. From $n_{j}=0$ and $n_{i}+n_{j} t=0$, it follows that $n_{i}=0$ also, so $n_{1}=\cdots=n_{i}=\cdots=n_{j}=\cdots=n_{r}=0$, and Condition 2 of Theorem 38.1 is satisfied. Thus $Y$ is a basis. $\square$
 
-> [!example] Example 38.10
+> [!example|b26d9762-90df-5452-8c21-c3cbee83b1c3.local at=4dfd74c3-fcd7-5fbd-aca7-3af69481357c] Example 38.10
 > Determine which of $\{(1,0),(0,1)\}$, $\{(1,0),(4,1)\}$, and $\{(3,0),(0,1)\}$ are bases for $\mathbb Z\times\mathbb Z$.
 
 ##### solution
@@ -204,7 +204,7 @@ A basis for $\mathbb{Z} \times \mathbb{Z}$ is $\{(1,0),(0,1)\}$. Another basis i
 A free abelian group $G$ of finite rank may have many bases. We show that if $K \leq G$, then $K$ is also free abelian with rank not exceeding that of $G$. Equally important, there exist bases of $G$ and $K$ nicely related to each other.
 Theorem 38.11
 
-> [!theorem] Subgroups of Free Abelian Groups of Finite Rank
+> [!theorem|ee279dd2-d3d3-5e51-85f6-f228ca7d6598.library at=fe748785-de11-502c-bd79-50f1870c68b6] Subgroups of Free Abelian Groups of Finite Rank
 > Let $G$ be a nonzero free abelian group of finite rank $n$, and let $K$ be a nonzero subgroup of $G$. Then $K$ is free abelian of rank $s \leq n$. Furthermore, there exists a basis $\left\{x_{1}, x_{2}, \cdots, x_{n}\right\}$ for $G$ and positive integers, $d_{1}, d_{2}, \cdots, d_{s}$ where $d_{i}$ divides $d_{i+1}$ for $i=1, \cdots, s-1$, such that $\left\{d_{1} x_{1}, d_{2} x_{2}, \cdots, d_{s} x_{s}\right\}$ is a basis for $K$.
 
 ##### proof
@@ -248,7 +248,7 @@ where $d_2>0$ and $d_{2}$ is minimal as just described. Exactly as in the preced
 We now consider all bases of the form $\left\{x_{1}, x_{2}, y_{3}, \cdots, y_{n}\right\}$ for $G$ and examine elements of $K$ of the form $k_{3} y_{3}+\cdots+k_{n} y_{n}$. The pattern is clear. The process continues until we obtain a basis $\left\{x_{1}, x_{2}, \cdots, x_{s}, y_{s+1}, \cdots, y_{n}\right\}$ where the only element of $K$ of the form $k_{s+1} y_{s+1}+\cdots+k_{n} y_{n}$ is zero, that is, all $k_{i}$ are zero. We then let $x_{s+1}=y_{s+1}, \cdots, x_{n}=y_{n}$ and obtain a basis for $G$ of the form described in the statement of Theorem 38.11. $\square$
 Theorem 38.12
 
-> [!theorem] Torsion-Coefficient Decomposition of Finitely Generated Abelian Groups
+> [!theorem|d511ac98-d95f-5348-8223-c231a3bd0d1e.library at=36e64e08-74ed-5759-b52b-d9c47b7e42b8] Torsion-Coefficient Decomposition of Finitely Generated Abelian Groups
 > Every finitely generated abelian group is isomorphic to a group of the form
 >
 > $$
@@ -276,36 +276,36 @@ We have demonstrated the toughest part of the Fundamental Theorem (Theorem 11.12
 
 ### Computations
 
-> [!exercise] Exercise 38.1
+> [!exercise|ea668c05-a919-521d-905d-4fff929348cc.local at=826215fc-ff48-5022-ba6d-c690aca2da6c] Exercise 38.1
 > Find a basis $\left\{\left(a_{1}, a_{2}, a_{3}\right),\left(b_{1}, b_{2}, b_{3}\right),\left(c_{1}, c_{2}, c_{3}\right)\right\}$ for $\mathbb{Z} \times \mathbb{Z} \times \mathbb{Z}$ with all $a_{i} \neq 0$, all $b_{i} \neq 0$, and all $c_{i} \neq 0$. (Many answers are possible.)
 
-> [!exercise] Exercise 38.2
+> [!exercise|4d1a5525-06f7-5d35-b3a5-50d111de3a37.local at=96733325-88b7-5fc1-a6e0-7095dabd0629] Exercise 38.2
 > Is $\{(2,1),(3,1)\}$ a basis for $\mathbb{Z} \times \mathbb{Z}$ ? Prove your assertion.
 
-> [!exercise] Exercise 38.3
+> [!exercise|311714e7-5590-59ba-ae49-b242713622de.local at=980a38f7-521a-589a-80a5-a6ef90baa91f] Exercise 38.3
 > Is $\{(2,1),(4,1)\}$ a basis for $\mathbb{Z} \times \mathbb{Z}$ ? Prove your assertion.
 
-> [!exercise] Exercise 38.4
+> [!exercise|30009a10-788f-58fa-8447-56d35e030004.local at=b146fc59-c99a-5214-ab52-1e6aa1ca56b3] Exercise 38.4
 > Find conditions on $a, b, c, d \in \mathbb{Z}$ for $\{(\mathrm{a}, \mathrm{b}),(\mathrm{c}, \mathrm{d})\}$ to be a basis for $\mathbb{Z} \times \mathbb{Z}$. [Hint: Solve $x(a,b)+y(c,d)=(e,f)$ in $\mathbb{R}$, and see when the $x$ and $y$ lie in $\mathbb{Z}$.]
 
 ### Concepts
 
 In Exercises 5 and 6, correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
 
-> [!exercise] Exercise 38.5
+> [!exercise|fa3abd6b-c9a1-50ba-ad2b-3d6b2b564d53.local at=32ec3b42-3bed-56d6-816c-cf51efadee77] Exercise 38.5
 > Correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
 >
 > The *rank* of a free abelian group $G$ is the number of elements in a generating set for $G$.
 
-> [!exercise] Exercise 38.6
+> [!exercise|33165527-0374-593b-872b-d0b195356fa9.local at=3ce96ee1-9313-55fe-8450-3e591accb0ab] Exercise 38.6
 > Correct the definition of the italicized term without reference to the text, if correction is needed, so that it is in a form acceptable for publication.
 >
 > A *basis* for a nonzero abelian group $G$ is a generating set $X \subseteq G$ such that $n_{1} x_{1}+n_{2} x_{2}+\cdots+n_{m} x_{m}=0$ for distinct $x_{i} \in X$ and $n_{i} \in \mathbb{Z}$ only if $n_{1}=n_{2}=\cdots=n_{m}=0$.
 
-> [!exercise] Exercise 38.7
+> [!exercise|fdfc63d4-c729-5a35-8984-df1386804910.local at=7b6df998-cd93-5a41-a13e-8dbc24bea3cc] Exercise 38.7
 > Show by example that it is possible for a proper subgroup of a free abelian group of finite rank $r$ also to have rank $r$.
 
-> [!exercise] Exercise 38.8
+> [!exercise|c971ada2-efe3-570f-89cc-bd521210c20e.local at=39bfe59b-75c5-5fda-b284-c19c8328445f] Exercise 38.8
 > Mark each of the following true or false.
 >
 > a. Every free abelian group is torsion free.
@@ -330,36 +330,36 @@ In Exercises 5 and 6, correct the definition of the italicized term without refe
 
 ### Theory
 
-> [!exercise] Exercise 38.9
+> [!exercise|1fe92b81-4367-5da9-979d-0b898b7652b4.local at=2265046d-82e8-58ad-9e41-bdc229db36c6] Exercise 38.9
 > Complete the proof of Theorem 38.5 (See the two sentences preceding the theorem).
 
-> [!exercise] Exercise 38.10
+> [!exercise|46646544-f224-55f8-a45a-fe87ccbe38c0.local at=31e429a0-d883-5867-be74-ac5c8df11a4d] Exercise 38.10
 > Show that a free abelian group contains no nonzero elements of finite order.
 
-> [!exercise] Exercise 38.11
+> [!exercise|004bde5c-6934-510c-883d-868e34b94ce6.local at=8b40b452-a40a-531a-a5a1-ed77eed103b6] Exercise 38.11
 > Show that if $G$ and $G^{\prime}$ are free abelian groups, then $G \times G^{\prime}$ is free abelian.
 
-> [!exercise] Exercise 38.12
+> [!exercise|cf17209d-6324-5cef-9010-0c902393ad69.local at=a0b577fa-0b04-52b0-8dae-4618fab40d57] Exercise 38.12
 > Show that free abelian groups of finite rank are precisely the finitely generated abelian groups containing no nonzero elements of finite order.
 
-> [!exercise] Exercise 38.13
+> [!exercise|16094dae-6380-5661-b874-af611fe5bb45.local at=70003f55-de2f-54bd-bedf-cfeeb8fae8f3] Exercise 38.13
 > Show that $\mathbb{Q}$ under addition is not a free abelian group. [Hint: Show that no two distinct rational numbers $n / m$ and $r / s$ could be contained in a set satisfying Condition 2 of Theorem 38.1.]
 
 Exercises 14 through 19 deal with showing the uniqueness of the prime powers appearing in the prime-power decomposition of the torsion subgroup $T$ of a finitely generated abelian group.
 
-> [!exercise] Exercise 38.14
+> [!exercise|d4c9d21b-9086-5149-a946-b2f3803d31d6.local at=5f7bfbfc-cc04-50a5-a1e7-e6e9faa3babf] Exercise 38.14
 > Let $p$ be a fixed prime. Show that the elements of $T$ having as order some power of $p$, together with zero, form a subgroup $T_{p}$ of $T$.
 
-> [!exercise] Exercise 38.15
+> [!exercise|47aa307e-8045-5acf-a96e-d800c3137af0.local at=dac37ec5-8c82-5927-baae-0ab460d1e66a] Exercise 38.15
 > Show that in any prime-power decomposition of $T$, the subgroup $T_{p}$ in the preceding exercise is isomorphic to the direct product of those cyclic factors of order some power of the prime $p$. [This reduces our problem to showing that the group $T_{p}$ cannot have essentially different decompositions into products of cyclic groups.]
 
-> [!exercise] Exercise 38.16
+> [!exercise|a223064d-0f72-544b-9a2c-58e7635188f2.local at=814892be-7129-5abb-bb30-314c8adf7d2a] Exercise 38.16
 > Let $G$ be any abelian group and let $n$ be any positive integer. Show that $G[n]=\{x \in G \mid n x=0\}$ is a subgroup of $G$. (In multiplicative notation, $G[n]=\left\{x \in G \mid x^{n}=e\right\}$.)
 
-> [!exercise] Exercise 38.17
+> [!exercise|dc789098-2a87-5557-9785-a7b0dc435e04.local at=80e4dadf-01ce-54f6-aed0-9926a0a2d67a] Exercise 38.17
 > Referring to Exercise 16, show that $\mathbb{Z}_{p^{r}}[p] \simeq \mathbb{Z}_{p}$ for any $r \geq 1$ and prime $p$.
 
-> [!exercise] Exercise 38.18
+> [!exercise|1e46e0ff-81ef-5c11-b294-6b5b10cfb38d.local at=ae12871d-2af3-54db-b155-258bcbe87173] Exercise 38.18
 > Using Exercise 17, show that
 >
 > $$
@@ -369,7 +369,7 @@ Exercises 14 through 19 deal with showing the uniqueness of the prime powers app
 >
 > provided each $r_{i} \geq 1$.
 
-> [!exercise] Exercise 38.19
+> [!exercise|a432d4bc-848e-5b45-9011-7075aeabe318.local at=632c85af-2290-5a26-ae5c-56953d3580ee] Exercise 38.19
 > Let $G$ be a finitely generated abelian group and $T_{p}$ the subgroup defined in Exercise 14. Suppose $T_{p} \simeq \mathbb{Z}_{p^{r_1}} \times\mathbb{Z}_{p^{r_{2}}} \times \cdots \times \mathbb{Z}_{p^{r_{m}}} \simeq \mathbb{Z}_{p^{s_{1}}}\times\mathbb{Z}_{p^{s_{2}}} \times \cdots \times \mathbb{Z}_{p^{s_{n}}}$, where $1 \leq r_{1} \leq r_{2} \leq \cdots \leq r_{m}$ and $1 \leq s_{1} \leq s_{2} \leq \cdots \leq s_{n}$. We need to show that $m=n$ and $r_{i}=s_{i}$ for $i=1, \cdots, n$ to complete the demonstration of uniqueness of the prime-power decomposition.
 >
 > a. Use Exercise 18 to show that $n=m$.
@@ -378,12 +378,12 @@ Exercises 14 through 19 deal with showing the uniqueness of the prime powers app
 
 Let $T$ be the torsion subgroup of a finitely generated abelian group. Suppose $T \simeq \mathbb{Z}_{m_{1}} \times \mathbb{Z}_{m_{2}} \times \cdots \times \mathbb{Z}_{m_{r}} \simeq\mathbb{Z}_{n_{1}} \times \mathbb{Z}_{n_{2}} \times \cdots \times \mathbb{Z}_{n_{s}}$, where $m_{i}$ divides $m_{i+1}$ for $i=1, \cdots, r-1$, and $n_{j}$ divides $n_{j+1}$ for $j=1,\cdots,s-1$, and $m_{1}>1$ and $n_{1}>1$. We wish to show that $r=s$ and $m_{k}=n_{k}$ for $k=1, \cdots, r$, demonstrating the uniqueness of the torsion coefficients. This is done in Exercises 20 through 22.
 
-> [!exercise] Exercise 38.20
+> [!exercise|d5c65f53-c37a-52c7-bc32-90d8a6cfc237.local at=35e22c99-af24-5684-a27f-7b0cbc2ba4c4] Exercise 38.20
 > Indicate how a prime-power decomposition can be obtained from a torsion-coefficient decomposition. (Observe that the preceding exercises show the prime powers obtained are unique.)
 
-> [!exercise] Exercise 38.21
+> [!exercise|e163fc7a-bc50-5a38-80ca-7083ea3d9aab.local at=1f2c478b-4358-5d06-bbe0-02b88fb031aa] Exercise 38.21
 > Argue from Exercise 20 that $m_{r}$ and $n_{s}$ can both be characterized as follows. Let $p_{1}, \cdots, p_{t}$ be the distinct primes dividing $|T|$, and let $p_{1}^{h_{1}}, \cdots, p_t^{h_t}$ be the highest powers of these primes appearing in the (unique) prime-power decomposition. Then $m_{r}=n_{s}=p_{1}^{h_{1}} p_{2}^{h_{2}} \cdots p_{t}{ }^{h_{t}}$.
 
-> [!exercise] Exercise 38.22
+> [!exercise|17b76bc0-1d29-522a-9c95-eb162c04b6a1.local at=ef881a59-5dfa-590e-ae08-af0479317aaf] Exercise 38.22
 > Characterize $m_{r-1}$ and $n_{s-1}$, showing that they are equal, and continue to show $m_{r-i}=n_{s-i}$ for $i=1,\cdots,r-1$, and then $r=s$.
 

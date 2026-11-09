@@ -9,7 +9,7 @@ The topic of vector spaces is the cornerstone of linear algebra. Since linear al
 The terms vector and scalar are probably familiar from calculus. Here we allow scalars to be elements of any field, not just the real numbers, and develop the theory by axioms just as for the other algebraic structures we have studied.
 Definition 30.1
 
-> [!definition|9b4a424a-cfdb-5858-acb0-ddd45dbce243.local at=74f0e94b-56cd-5e61-b51b-c9a0b6d8b342] Vector Space over a Field
+> [!definition|9b4a424a-cfdb-5858-acb0-ddd45dbce243.library at=74f0e94b-56cd-5e61-b51b-c9a0b6d8b342] Vector Space over a Field
 > Let $F$ be a field. A vector space over $F$ (or $F$-vector space) consists of an abelian group $V$ under addition together with an operation of scalar multiplication of each element of $V$ by each element of $F$ on the left, such that for all $a, b \in F$ and $\alpha, \beta \in V$ the following conditions are satisfied:
 >
 > $$
@@ -58,7 +58,7 @@ Let $E$ be an extension field of a field $F$. Then $E$ can be regarded as a vect
 We are assuming nothing about vector spaces from previous work and shall prove everything we need from the definition, even though the results may be familiar from calculus.
 Theorem 30.5
 
-> [!theorem|ae67f30b-ed4f-5acc-9383-33e9fdbaeb6d.local at=63d63fbb-6046-5ee1-adc7-b8a8e36b0579] Scalar Multiplication by Zero and Negatives
+> [!theorem|ae67f30b-ed4f-5acc-9383-33e9fdbaeb6d.library at=63d63fbb-6046-5ee1-adc7-b8a8e36b0579] Scalar Multiplication by Zero and Negatives
 > If $V$ is a vector space over $F$, then $0 \alpha=0, a 0=0$ and $(-a) \alpha=a(-\alpha)=-(a \alpha)$ for all $a \in F$ and $\alpha \in V$.
 ##### proof
 
@@ -92,7 +92,7 @@ we conclude that $a(-\alpha)=-(a \alpha)$ also. $\square$
 
 Definition 30.6
 
-> [!definition|10c342ba-e59f-50b8-a712-133bb3a4f68a.local at=477144d3-3472-55f1-9ac7-a814eb3c32e7] Spanning Sets and Linear Combinations
+> [!definition|10c342ba-e59f-50b8-a712-133bb3a4f68a.library at=477144d3-3472-55f1-9ac7-a814eb3c32e7] Spanning Sets and Linear Combinations
 > Let $V$ be a vector space over $F$. The vectors in a subset $S=\left\{\alpha_{i} \mid i \in I\right\}$ of $V$ **span** (or generate) $V$ if for every $\beta \in V$, we have
 >
 > $$
@@ -123,7 +123,7 @@ Also, the monomials $x^{m}$ for $m \geq 0$ span $F[x]$ over $F$, the vector spac
 Let $F$ be a field and $E$ an extension field of $F$. Let $\alpha \in E$ be algebraic over $F$. Then $F(\alpha)$ is a vector space over $F$ and by Theorem 29.18, it is spanned by the vectors in $\left\{1, \alpha, \cdots, \alpha^{n-1}\right\}$, where $n=\operatorname{deg}(\alpha, F)$. This is the important example for us. $\square$
 Definition 30.9
 
-> [!definition|c5e2f8dd-1595-5342-bd78-74368a930026.local at=2ef27637-3e5e-54f5-a37d-87b443b028e5] Finite-Dimensional Vector Space
+> [!definition|c5e2f8dd-1595-5342-bd78-74368a930026.library at=2ef27637-3e5e-54f5-a37d-87b443b028e5] Finite-Dimensional Vector Space
 > A vector space $V$ over a field $F$ is finite dimensional if there is a finite subset of $V$ whose vectors span $V$.
 
 > [!example|5e7efd9f-f7d1-586a-a1b5-8ed96ca330cc.local at=e014c696-195a-5d79-8fba-9f2fb9a17c34] Example 30.10
@@ -141,7 +141,7 @@ If $F \leq E$ and $\alpha \in E$ is algebraic over the field $F$, Example 30.8 s
 The next definition contains the most important idea in this section.
 Definition 30.12
 
-> [!definition|b3710ae2-c459-5f73-add9-c55583f6666f.local at=9189148c-3afb-58dd-87ac-36350cb1b436] Linear Independence and Linear Dependence
+> [!definition|b3710ae2-c459-5f73-add9-c55583f6666f.library at=9189148c-3afb-58dd-87ac-36350cb1b436] Linear Independence and Linear Dependence
 > The vectors in a subset $S=\left\{\alpha_{i} \mid i \in I\right\}$ of a vector space $V$ over a field $F$ are linearly independent over $F$ if, for any distinct vectors $\alpha_{i_{j}} \in S$, coefficients $a_{j} \in F$ and $n \in \mathbb{Z}^{+}$, we have $\sum_{j=1}^{n} a_{j} \alpha_{i_j}=0$ in $V$ only if $a_{j}=0$ for $j=1, \cdots, n$. If the vectors are not linearly independent over $F$, they are linearly dependent over $F$.
 Thus the vectors in $\left\{\alpha_{i} \mid i \in I\right\}$ are linearly independent over $F$ if the only way the 0 -vector can be expressed as a linear combination of the vectors $\alpha_{i}$ is to have all scalar coefficients equal to 0 . If the vectors are linearly dependent over $F$, then there exist $a_{j} \in F$ for $j=1, \cdots, n$ such that $\sum_{j=1}^{n} a_{j} \alpha_{i_j}=0$, where not all $a_{j}=0$.
 > [!example] Example 30.13
@@ -167,14 +167,14 @@ $$
 for $b_{i} \in F$. In particular, $0=0+0 \alpha+\cdots+0 \alpha^{n-1}$ must be a unique such expression for 0 . Thus the elements $1, \alpha, \cdots, \alpha^{n-1}$ are linearly independent vectors in $F(\alpha)$ over the field $F$. They also span $F(\alpha)$, so by the next definition, $1, \alpha, \cdots, \alpha^{n-1}$ form a basis for $F(\alpha)$ over $F$. This is the important example for us. In fact, this is the reason we are doing this material on vector spaces. $\square$
 Definition 30.15
 
-> [!definition|0c55aec8-e522-5688-ae72-7ed607f03d2a.local at=b74c0a24-c7de-59ab-b899-17c5264479bc] Basis of a Vector Space
+> [!definition|0c55aec8-e522-5688-ae72-7ed607f03d2a.library at=b74c0a24-c7de-59ab-b899-17c5264479bc] Basis of a Vector Space
 > If $V$ is a vector space over a field $F$, the vectors in a subset $B=\left\{\beta_{i} \mid i \in I\right\}$ of $V$ form a basis for $V$ over $F$ if they span $V$ and are linearly independent.
 
 ## Dimension
 The only other results we wish to prove about vector spaces are that every finite-dimensional vector space has a basis, and that any two bases of a finite-dimensional vector space have the same number of elements. Both these facts are true without the assumption that the vector space is finite dimensional, but the proofs require more knowledge of set theory than we are assuming, and the finite-dimensional case is all we need. First we give an easy lemma.
 Lemma 30.16
 
-> [!lemma|a88b25ee-9129-505f-af2a-55291b8a5705.local at=8c5ccd51-c7c4-5779-9b7a-d2decb5967ac] Linear Combinations of Linear Combinations
+> [!lemma|a88b25ee-9129-505f-af2a-55291b8a5705.library at=8c5ccd51-c7c4-5779-9b7a-d2decb5967ac] Linear Combinations of Linear Combinations
 > Let $V$ be a vector space over a field $F$, and let $\alpha \in V$. If $\alpha$ is a linear combination of vectors $\beta_{i}$ in $V$ for $i=1, \cdots, m$ and each $\beta_{i}$ is a linear combination of vectors $\gamma_{j}$ in $V$ for $j=1, \cdots, n$, then $\alpha$ is a linear combination of the $\gamma_{j}$.
 ##### proof
 
@@ -187,7 +187,7 @@ $$
 and $\left(\sum_{i=1}^{m} a_{i} b_{i j}\right) \in F$. $\square$
 Theorem 30.17
 
-> [!theorem|f7ddba54-9210-5fd3-afc2-fb78d84a9a6e.local at=051ac119-7ffe-5c10-8618-e36be87795b8] A Finite Spanning Set Contains a Basis
+> [!theorem|f7ddba54-9210-5fd3-afc2-fb78d84a9a6e.library at=051ac119-7ffe-5c10-8618-e36be87795b8] A Finite Spanning Set Contains a Basis
 > In a finite-dimensional vector space, every finite set of vectors spanning the space contains a subset that is a basis.
 ##### proof
 
@@ -208,7 +208,7 @@ $$
 which shows that $\alpha_{i_{r}}$ is a linear combination of its predecessors, contradicting our construction. Thus the vectors $\alpha_{i}$ in the reduced set both span $V$ and are linearly independent, so they form a basis for $V$ over $F$. $\square$
 Corollary 30.18
 
-> [!corollary|4fdf3eb9-1998-5a4e-83ff-ff2a4152fabd.local at=9d03acb7-6ec0-5c1f-87cc-fd982f722b04] Existence of a Finite Basis
+> [!corollary|4fdf3eb9-1998-5a4e-83ff-ff2a4152fabd.library at=9d03acb7-6ec0-5c1f-87cc-fd982f722b04] Existence of a Finite Basis
 > A finite-dimensional vector space has a finite basis.
 ##### proof
 
@@ -217,7 +217,7 @@ By definition, a finite-dimensional vector space has a finite set of vectors tha
 The next theorem is the culmination of our work on vector spaces.
 Theorem 30.19
 
-> [!theorem|2184c1d9-d46c-562a-a220-362216b40025.local at=c6363319-81d1-5071-8dd0-264ec9113a3d] Extending a Linearly Independent Set to a Basis
+> [!theorem|2184c1d9-d46c-562a-a220-362216b40025.library at=c6363319-81d1-5071-8dd0-264ec9113a3d] Extending a Linearly Independent Set to a Basis
 > Let $S=\left\{\alpha_{1}, \cdots, \alpha_{r}\right\}$ be a finite set of linearly independent vectors of a finite-dimensional vector space $V$ over a field $F$. Then $S$ can be enlarged to a basis for $V$ over $F$. Furthermore, if $B=\left\{\beta_{1}, \cdots, \beta_{n}\right\}$ is any basis for $V$ over $F$, then $r \leq n$.
 ##### proof
 
@@ -274,14 +274,14 @@ $$
 where $0 \leq t \leq n-r$. Thus $r \leq n$. $\square$
 Corollary 30.20
 
-> [!corollary|bf9e6317-3cca-5a80-b490-84500ffdc0f0.local at=f1adad16-5178-5412-a22c-6713547da17a] All Bases of a Finite-Dimensional Vector Space Have Equal Size
+> [!corollary|bf9e6317-3cca-5a80-b490-84500ffdc0f0.library at=f1adad16-5178-5412-a22c-6713547da17a] All Bases of a Finite-Dimensional Vector Space Have Equal Size
 > Any two bases of a finite-dimensional vector space $V$ over $F$ have the same number of elements.
 ##### proof
 
 Let $B=\left\{\beta_{1}, \cdots, \beta_{n}\right\}$ and $B^{\prime}=\left\{\beta_{1}^{\prime}, \cdots, \beta_{m}^{\prime}\right\}$ be two bases. Then by Theorem 30.19, regarding $B$ as an independent set of vectors and $B^{\prime}$ as a basis, we see that $n \leq m$. A symmetric argument gives $m \leq n$, so $m=n$. $\square$
 Definition 30.21
 
-> [!definition|a431f316-12c7-540b-95fd-a147ae8e3c0b.local at=156ba203-13e4-5f31-b0a5-5292c1741816] Dimension of a Vector Space
+> [!definition|a431f316-12c7-540b-95fd-a147ae8e3c0b.library at=156ba203-13e4-5f31-b0a5-5292c1741816] Dimension of a Vector Space
 > If $V$ is a finite-dimensional vector space over a field $F$, the number of elements in a basis (independent of the choice of basis) is the dimension of $V$ over $F$.
 
 > [!example|d0f62ef7-d782-55b0-8018-ae9ec92d51e4.local at=bc661459-ee13-532d-af12-9e760b21571a] Example 30.22
@@ -296,7 +296,7 @@ Let $E$ be an extension field of a field $F$, and let $\alpha \in E$. Example 30
 We collect the results of field theory contained in Examples 30.4, 30.8, 30.11, 30.14, and 30.22, and incorporate them into one theorem. The last sentence of this theorem gives an additional nice application of these vector space ideas to field theory.
 Theorem 30.23
 
-> [!theorem|207c4170-fbd6-5fd6-bf48-d53e657d575e.local at=65abd254-d0dc-53d1-8a6f-3b674c00582f] Power Basis and Degree Bounds in a Simple Algebraic Extension
+> [!theorem|207c4170-fbd6-5fd6-bf48-d53e657d575e.library at=65abd254-d0dc-53d1-8a6f-3b674c00582f] Power Basis and Degree Bounds in a Simple Algebraic Extension
 > Let $E$ be an extension field of $F$, and let $\alpha \in E$ be algebraic over $F$. If $\operatorname{deg}(\alpha, F)=n$, then $F(\alpha)$ is an $n$-dimensional vector space over $F$ with basis $\left\{1, \alpha, \cdots, \alpha^{n-1}\right\}$. Furthermore, every element $\beta$ of $F(\alpha)$ is algebraic over $F$, and $\operatorname{deg}(\beta, F) \leq \operatorname{deg}(\alpha, F)$. Here $F(\alpha)$ is the smallest subfield of $E$ containing $F$ and $\alpha$, and $\operatorname{deg}(\alpha,F)$ is the degree of the irreducible polynomial for $\alpha$ over $F$.
 ##### proof
 

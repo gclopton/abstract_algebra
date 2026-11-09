@@ -6,13 +6,13 @@ We are interested in what types of figures can be constructed with a compass and
 
 ## Constructible Numbers
 
-> [!definition|1eaffbfc-6646-533d-93fa-1119d72d8235.local at=aa2c4566-24d3-5dc1-b6b3-a38c608651a2] Constructible Real Number
+> [!definition|1eaffbfc-6646-533d-93fa-1119d72d8235.library at=aa2c4566-24d3-5dc1-b6b3-a38c608651a2] Constructible Real Number
 > Let us imagine that we are given only a single line segment that we shall define to be one unit in length. A real number $\alpha$ is constructible if we can construct a line segment of length $|\alpha|$ in a finite number of steps from this given segment of unit length by using a straightedge and a compass.
 
 The rules of the game are pretty strict. We suppose that we are given just two points at the moment, the endpoints of our unit line segment, let us suppose that they correspond to the points $(0,0)$ and $(1,0)$ in the Euclidean plane. We are allowed to draw a line only with our straightedge through two points that we have already located. Thus we can start by using the straightedge and drawing the line through $(0,0)$ and $(1,0)$. We are allowed to open our compass only to a distance between points we have already found. Let us open our compass to the distance between $(0,0)$ and $(1,0)$. We can then place the point of the compass at $(1,0)$ and draw a circle of radius 1 , which passes through the point $(2,0)$. Thus we now have located a third point, $(2,0)$. Continuing in this way, we can locate points $(3,0)$, $(4,0)$, $(-1,0)$, $(-2,0)$, and so on. Now open the compass the distance from $(0,0)$ to $(2,0)$, put the point at $(1,0)$, and draw a circle of radius 2. Do the same with the point at $(-1,0)$. We have now found two new points, where these circles intersect, and we can put our straightedge on them to draw what we think of as the $y$-axis. Then opening our compass to the distance from $(0,0)$ to $(1,0)$, we draw a circle with center at $(0,0)$ and locate the point $(0,1)$ where the circle intersects the $y$-axis. Continuing in this fashion, we can locate all points $(x, y)$ with integer coordinates in any rectangle containing the point $(0,0)$. Without going into more detail, it can be shown that it is possible, among other things, to erect a perpendicular to a given line at a known point on the line, and find a line passing through a known point and parallel to a given line. Our first result is the following theorem.
 Theorem 32.1
 
-> [!theorem|50c9a43e-4c3b-5117-87dd-641a1373cf59.local at=715a73f4-bede-5594-93ea-a85ae788031d] Field Operations on Constructible Real Numbers
+> [!theorem|50c9a43e-4c3b-5117-87dd-641a1373cf59.library at=715a73f4-bede-5594-93ea-a85ae788031d] Field Operations on Constructible Real Numbers
 > If $\alpha$ and $\beta$ are constructible real numbers, then so are $\alpha+\beta, \alpha-\beta, \alpha \beta$, and $\alpha / \beta$, if $\beta \neq 0$.
 
 ##### proof
@@ -70,7 +70,7 @@ panels:
 
 Corollary 32.5
 
-> [!corollary|22296eaf-b2c1-5ff5-8ce0-8ef022b65f3b.local at=9e9c84d4-9de1-5eed-bed5-6ceeaca00620] Constructible Real Numbers Form a Field
+> [!corollary|22296eaf-b2c1-5ff5-8ce0-8ef022b65f3b.library at=9e9c84d4-9de1-5eed-bed5-6ceeaca00620] Constructible Real Numbers Form a Field
 > The set of all constructible real numbers forms a subfield $F$ of the field of real numbers.
 
 ##### proof
@@ -132,7 +132,7 @@ we see that Case 3 can be reduced to Case 2. For Case 1, a simultaneous solution
 In the preceding argument, nothing was really used involving $\mathbb{Q}$ except field axioms. If $H$ is the smallest field containing those real numbers constructed so far, the argument shows that the "next new number" constructed lies in a field $H(\sqrt{\alpha})$ for some $\alpha \in H$, where $\alpha>0$. We have proved half of our next theorem.
 Theorem 32.6
 
-> [!theorem|7cd0810d-7d20-5fcc-95c0-d094aee3f37e.local at=d4ffa909-9632-5112-b966-9ea4be7ce41a] Constructible Numbers and Successive Square Roots
+> [!theorem|7cd0810d-7d20-5fcc-95c0-d094aee3f37e.library at=d4ffa909-9632-5112-b966-9ea4be7ce41a] Constructible Numbers and Successive Square Roots
 > The field $F$ of constructible real numbers consists precisely of all real numbers that we can obtain from $\mathbb{Q}$ by taking square roots of positive numbers a finite number of times and applying a finite number of field operations.
 
 ##### proof
@@ -162,7 +162,7 @@ panels:
 
 Corollary 32.8
 
-> [!corollary|cc50476c-df4e-52da-8c7a-ad20779fa27f.local at=ec21b902-ffb1-5339-8289-4eb7bfd144cd] Degrees of Constructible Real Numbers
+> [!corollary|cc50476c-df4e-52da-8c7a-ad20779fa27f.library at=ec21b902-ffb1-5339-8289-4eb7bfd144cd] Degrees of Constructible Real Numbers
 > If $\gamma$ is constructible and $\gamma \notin \mathbb{Q}$, then there is a finite sequence of real numbers $\alpha_{1}, \cdots, \alpha_{n}=\gamma$ such that $\mathbb{Q}\left(\alpha_{1}, \cdots, \alpha_{i}\right)$ is an extension of $\mathbb{Q}\left(\alpha_{1}, \cdots, \alpha_{i-1}\right)$ of degree 2. In particular, $[\mathbb{Q}(\gamma): \mathbb{Q}]=2^{r}$ for some integer $r \geq 0$.
 
 ##### proof
@@ -183,7 +183,7 @@ by Theorem 31.4, which completes the proof. $\square$
 We can now show the impossibility of certain geometric constructions.
 Theorem 32.9
 
-> [!theorem|621b9add-afce-5522-b217-4641dc86f35e.local at=81bddcdf-1e77-5c61-96a4-3f55119cb7b9] Impossibility of Doubling the Cube
+> [!theorem|621b9add-afce-5522-b217-4641dc86f35e.library at=81bddcdf-1e77-5c61-96a4-3f55119cb7b9] Impossibility of Doubling the Cube
 > Doubling the cube is impossible, that is, given a side of a cube, it is not always possible to construct with a straightedge and a compass the side of a cube that has double the volume of the original cube.
 
 ##### proof
@@ -197,7 +197,7 @@ $$
 Corollary 32.8 shows that to double this cube of volume 1, we would need to have $3=2^{r}$ for some integer $r$, but no such $r$ exists. $\square$
 Theorem 32.10
 
-> [!theorem|98d1cd60-1957-5abd-b1da-d607ef6f5822.local at=5844209e-9230-5006-a62b-bf1f2a9db052] Impossibility of Squaring the Circle
+> [!theorem|98d1cd60-1957-5abd-b1da-d607ef6f5822.library at=5844209e-9230-5006-a62b-bf1f2a9db052] Impossibility of Squaring the Circle
 > Squaring the circle is impossible; that is, given a circle, it is not always possible to construct with a straightedge and a compass a square having area equal to the area of the given circle.
 
 ##### proof
@@ -205,7 +205,7 @@ Theorem 32.10
 Let the given circle have a radius of 1, and hence an area of $\pi$. We would need to construct a square of side $\sqrt{\pi}$. But $\pi$ is transcendental over $\mathbb{Q}$, so $\sqrt{\pi}$ is transcendental over $\mathbb{Q}$ also. $\square$
 Theorem 32.11
 
-> [!theorem|cab00fdc-df94-5f4e-a0de-2aacad5874be.local at=17298ee0-39ba-5ee2-87ae-0bb587cb15c2] Impossibility of General Angle Trisection
+> [!theorem|cab00fdc-df94-5f4e-a0de-2aacad5874be.library at=17298ee0-39ba-5ee2-87ae-0bb587cb15c2] Impossibility of General Angle Trisection
 > Trisecting the angle is impossible; that is, there exists an angle that cannot be trisected with a straightedge and a compass.
 
 ##### proof

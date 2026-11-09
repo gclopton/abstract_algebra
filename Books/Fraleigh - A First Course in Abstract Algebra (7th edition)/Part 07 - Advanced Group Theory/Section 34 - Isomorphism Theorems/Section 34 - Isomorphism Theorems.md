@@ -17,13 +17,13 @@ panels:
 
 Theorem 34.2
 
-> [!theorem] First Isomorphism Theorem
+> [!theorem|cb9bd01a-09ff-5b4b-894d-c809b31c2fe6.library at=71b9cdeb-65ea-5fc6-b36d-18b9cb524439] First Isomorphism Theorem
 > Let $\phi: G \rightarrow G^{\prime}$ be a homomorphism with kernel $K$, and let $\gamma_{K}: G \rightarrow G / K$ be the canonical homomorphism. There is a unique isomorphism $\mu: G / K \rightarrow \phi[G]$ such that $\phi(x)=\mu\left(\gamma_{K}(x)\right)$ for each $x \in G$.
 
 The lemma that follows will be of great aid in our proof and intuitive understanding of the other two isomorphism theorems.
 Lemma 34.3
 
-> [!lemma] Normal-Subgroup Correspondence under a Quotient Map
+> [!lemma|8130aeb9-9ec9-5896-bfc6-56c81420fae7.library at=47d5a5a8-c2c1-5c53-a07c-1e604c036eae] Normal-Subgroup Correspondence under a Quotient Map
 > Let $N$ be a normal subgroup of a group $G$ and let $\gamma: G \rightarrow G / N$ be the canonical homomorphism. Then the map $\phi$ from the set of normal subgroups of $G$ containing $N$ to the set of normal subgroups of $G / N$ given by $\phi(L)=\gamma[L]$ is one to one and onto.
 
 ##### proof
@@ -32,7 +32,7 @@ Theorem 15.16 shows that if $L$ is a normal subgroup of $G$ containing $N$, then
 
 If $H$ is a normal subgroup of $G / N$, then $\gamma^{-1}[H]$ is a normal subgroup of $G$ by Theorem 15.16. Because $N \in H$ and $\gamma^{-1}[\{N\}]=N$, we see that $N \subseteq \gamma^{-1}[H]$. Then $\phi\left(\gamma^{-1}[H]\right)=\gamma\left[\gamma^{-1}[H]\right]=H$. This shows that $\phi$ is onto the set of normal subgroups of $G / N$. $\square$
 
-> [!definition] Join of Subgroups
+> [!definition|b1b7c34c-a228-56a7-bb7c-b7493da987a2.library at=27211528-b2e9-5652-8d76-e692545cebf0] Join of Subgroups
 > If $H$ and $N$ are subgroups of a group $G$, then we let
 >
 > $$
@@ -44,7 +44,7 @@ If $H$ is a normal subgroup of $G / N$, then $\gamma^{-1}[H]$ is a normal subgro
  In general, $H N$ need not be a subgroup of $G$. However, we have the following lemma.
 Lemma 34.4
 
-> [!lemma] Product and Join of Subgroups with a Normal Factor
+> [!lemma|7eee0ad6-d4db-5a01-a5f0-fec763a034a8.library at=e786d7bd-eedd-5b19-8ad2-98068a3f3426] Product and Join of Subgroups with a Normal Factor
 > If $N$ is a normal subgroup of $G$, and if $H$ is any subgroup of $G$, then $H \vee N=H N=N H$. Furthermore, if $H$ is also normal in $G$, then $H N$ is normal in $G$.
 >
 > Here $HN=\{hn\mid h\in H,n\in N\}$, $NH=\{nh\mid n\in N,h\in H\}$, and $H\vee N$ is the smallest subgroup of $G$ containing both $H$ and $N$.
@@ -58,7 +58,7 @@ Now suppose that $H$ is also normal in $G$, and let $h \in H, n \in N$, and $g \
 We are now ready for the second isomorphism theorem.
 Theorem 34.5
 
-> [!theorem] Second Isomorphism Theorem
+> [!theorem|050c7ad1-3fd2-5df9-91af-41c4e2239bab.library at=9ab428a5-7117-590c-9353-38f746654a50] Second Isomorphism Theorem
 > Let $H$ be a subgroup of $G$ and let $N$ be a normal subgroup of $G$. Then $(H N) / N \simeq H /(H \cap N)$.
 
 ##### proof
@@ -75,7 +75,7 @@ $$
 
 $\square$
 
-> [!example] Example 34.6
+> [!example|f59152b0-c93b-5c16-831b-cf44689b27f0.local at=db5fc3db-cf10-55a6-bc3b-d5269a89b9f0] Example 34.6
 > Let $G=\mathbb Z\times\mathbb Z\times\mathbb Z$, $H=\mathbb Z\times\mathbb Z\times\{0\}$, and $N=\{0\}\times\mathbb Z\times\mathbb Z$. Find $HN$, $H\cap N$, and the isomorphism types of $(HN)/N$ and $H/(H\cap N)$.
 
 ##### solution
@@ -85,7 +85,7 @@ Let $G=\mathbb{Z} \times \mathbb{Z} \times \mathbb{Z}, H=\mathbb{Z} \times \math
 If $H$ and $K$ are two normal subgroups of $G$ and $K \leq H$, then $H / K$ is a normal subgroup of $G / K$. The third isomorphism theorem concerns these groups.
 Theorem 34.7
 
-> [!theorem] Third Isomorphism Theorem
+> [!theorem|ac8b6c37-1298-5f4e-a24a-6a22f7e217e1.library at=82e33b35-4c51-580b-b41c-638c12571c01] Third Isomorphism Theorem
 > Let $H$ and $K$ be normal subgroups of a group $G$ with $K \leq H$. Then $G / H \simeq(G / K) /(H / K)$.
 
 ##### proof
@@ -136,7 +136,7 @@ panels:
     caption: ""
 ```
 
-> [!example] Example 34.10
+> [!example|16e289c5-5f7c-59d9-81bc-a4ecb798a7f3.local at=b3c7cbdc-faa1-52d9-89b4-dc41b300b2a2] Example 34.10
 > Consider $K=6\mathbb Z<H=2\mathbb Z<G=\mathbb Z$. Compare $G/H$ and $(G/K)/(H/K)$.
 
 ##### solution
@@ -155,7 +155,7 @@ Of these six cosets, $6 \mathbb{Z}, 2+6 \mathbb{Z}$, and $4+6 \mathbb{Z}$ lie in
 
 In using the three isomorphism theorems, it is often necessary to know the actual correspondence given by the isomorphism and not just the fact that the groups are isomorphic. The first six exercises give us training for this.
 
-> [!exercise] Exercise 34.1
+> [!exercise|f013b10e-8b24-57dd-a0fb-2e9698f5436d.local at=e1cf568e-9315-5b59-b5c6-eb536349a581] Exercise 34.1
 > Let $\phi: \mathbb{Z}_{12} \rightarrow \mathbb{Z}_{3}$ be the homomorphism such that $\phi(1)=2$.
 >
 > a. Find the kernel $K$ of $\phi$.
@@ -164,7 +164,7 @@ In using the three isomorphism theorems, it is often necessary to know the actua
 >
 > c. Give the correspondence between $\mathbb{Z}_{12} / K$ and $\mathbb{Z}_{3}$ given by the map $\mu$ described in Theorem 34.2.
 
-> [!exercise] Exercise 34.2
+> [!exercise|d93f39a4-fe1d-5dd1-9084-1b04ec4a6c54.local at=7775e043-3c39-5a73-97a7-f2700016bbd3] Exercise 34.2
 > Let $\phi: \mathbb{Z}_{18} \rightarrow \mathbb{Z}_{12}$ be the homomorphism where $\phi(1)=10$.
 >
 > a. Find the kernel $K$ of $\phi$.
@@ -175,7 +175,7 @@ In using the three isomorphism theorems, it is often necessary to know the actua
 >
 > d. Give the correspondence between $\mathbb{Z}_{18} / K$ and $\phi\left[\mathbb{Z}_{18}\right]$ given by the map $\mu$ described in Theorem 34.2.
 
-> [!exercise] Exercise 34.3
+> [!exercise|20753176-6dbb-5aab-84be-8ada8d8a498f.local at=8b0bfcad-5ae0-5862-926a-a4edff7aafe4] Exercise 34.3
 > In the group $\mathbb{Z}_{24}$, let $H=\langle 4\rangle$ and $N=\langle 6\rangle$.
 >
 > a. List the elements in $H N$ (which we might write $H+N$ for these additive groups) and in $H \cap N$.
@@ -186,10 +186,10 @@ In using the three isomorphism theorems, it is often necessary to know the actua
 >
 > d. Give the correspondence between $H N / N$ and $H /(H \cap N)$ described in the proof of Theorem 34.5.
 
-> [!exercise] Exercise 34.4
+> [!exercise|1819fc56-aefb-58b6-8a18-336569923c7a.local at=087c8b85-a4b3-509b-a111-da81b8993eba] Exercise 34.4
 > Repeat Exercise 3 for the group $\mathbb{Z}_{36}$ with $H=\langle 6\rangle$ and $N=\langle 9\rangle$.
 
-> [!exercise] Exercise 34.5
+> [!exercise|3577b538-7c41-5c77-b18a-146a83cebf11.local at=26aa26e8-fe5e-5ad7-a45a-20d791e108ab] Exercise 34.5
 > In the group $G=\mathbb{Z}_{24}$, let $H=\langle 4\rangle$ and $K=\langle 8\rangle$.
 >
 > a. List the cosets in $G / H$, showing the elements in each coset.
@@ -202,21 +202,21 @@ In using the three isomorphism theorems, it is often necessary to know the actua
 >
 > e. Give the correspondence between $G / H$ and $(G / K) /(H / K)$ described in the proof of Theorem 34.7.
 
-> [!exercise] Exercise 34.6
+> [!exercise|e04ae5d0-8dd4-5af2-9aa4-ad87a22c23af.local at=00408eaf-7cee-53c6-bf40-d4c2958805af] Exercise 34.6
 > Repeat Exercise 5 for the group $G=\mathbb{Z}_{36}$ with $H=\langle 9\rangle$ and $K=\langle 18\rangle$.
 
 ### Theory
 
-> [!exercise] Exercise 34.7
+> [!exercise|0835dfa8-36dc-54b2-882a-71c77fce86c7.local at=88142081-4448-5729-bf47-a270da803463] Exercise 34.7
 > Show directly from the definition of a normal subgroup that if $H$ and $N$ are subgroups of a group $G$, and $N$ is normal in $G$, then $H \cap N$ is normal in $H$.
 
-> [!exercise] Exercise 34.8
+> [!exercise|b0ff6d4d-997a-5709-bf57-12af348dfd2c.local at=5c40537b-a1a6-59f5-a16e-ad7c2ee167a6] Exercise 34.8
 > Let $H, K$, and $L$ be normal subgroups of $G$ with $H<K<L$. Let $A=G / H, B=K / H$, and $C=L / H$.
 >
 > a. Show that $B$ and $C$ are normal subgroups of $A$, and $B<C$.
 >
 > b. To what factor group of $G$ is $(A / B) /(C / B)$ isomorphic?
 
-> [!exercise] Exercise 34.9
+> [!exercise|e57fa968-d023-5064-86fd-bb8a8441ff83.local at=cd76e6df-499c-5af4-9ff5-a337b0a5cec0] Exercise 34.9
 > Let $K$ and $L$ be normal subgroups of $G$ with $K \vee L=G$, and $K \cap L=\{e\}$. Show that $G / K \simeq L$ and $G / L \simeq K$.
 

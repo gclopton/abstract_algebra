@@ -6,7 +6,7 @@ In this section we give several applications of the Sylow theorems. It is intrig
 
 Theorem 37.1
 
-> [!theorem] Finite p-Groups Are Solvable
+> [!theorem|5fa2b9c8-8e91-5317-bc4b-9235c0834b2f.library at=f47f12b0-7e61-5cbf-b91f-82cff2e82f56] Finite p-Groups Are Solvable
 > Every group of prime-power order (that is, every finite $p$-group) is solvable.
 
 ##### proof
@@ -49,7 +49,7 @@ $$
 where $n_{i}$ is the number of elements in the $i$ th orbit of $G$ under conjugation by itself. Note that $n_{i}$ divides $|G|$ for $c+1 \leq i \leq r$ since in Eq. (1) we know $\left|G x_{i}\right|=\left(G: G_{x_{i}}\right)$, which is a divisor of $|G|$.
 Definition 37.2
 
-> [!definition] Class Equation and Conjugate Classes
+> [!definition|dc655e5a-e4c7-5013-b988-817674595cdf.library at=d2daf221-65ec-5283-a7a3-2be8e938fc9f] Class Equation and Conjugate Classes
 > Let $G$ be a finite group. Each orbit in $G$ under conjugation by $G$ is a conjugate class in $G$.
 >
 > The equation
@@ -60,7 +60,7 @@ Definition 37.2
 >
 > is the class equation of $G$, where $c=|Z(G)|$, $r$ is the number of conjugate classes, and $n_i$ is the number of elements in the $i$th orbit of $G$ under conjugation by itself, with the $c$ one-element orbits listed first.
 
-> [!example] Example 37.3
+> [!example|dbc6c954-3ff9-5b7d-93e5-0b17b8bc682f.local at=7665e31d-4c47-54a3-ac03-4434822cf1f5] Example 37.3
 > Find the conjugate classes and class equation of $S_3$ in Example 8.7.
 
 ##### solution
@@ -82,7 +82,7 @@ $\square$
 For illustration of the use of the class equation, we prove a theorem that Exercise 20(b) in Section 36 asked us to prove.
 Theorem 37.4
 
-> [!theorem] The Center of a Finite Nontrivial p-Group Is Nontrivial
+> [!theorem|fc50000b-0726-58cb-86be-e90f15a77fc4.library at=f6a37747-2d13-5da4-b53f-4ef390de3598] The Center of a Finite Nontrivial p-Group Is Nontrivial
 > Let $p$ be a prime. The center of a finite nontrivial $p$-group $G$ is nontrivial.
 
 ##### proof
@@ -92,7 +92,7 @@ In Eq. (2) for $G$, each $n_{i}$ divides $|G|$ for $c+1 \leq i \leq r$, so $p$ d
 We turn now to a lemma on direct products that will be used in some of the theorems that follow.
 Lemma 37.5
 
-> [!lemma] Direct Product from Normal Subgroups with Trivial Intersection
+> [!lemma|17ed9e50-47b6-5fc4-a6bc-e64c0bf14751.library at=3268244e-35c9-510d-a01e-dcdf2098f452] Direct Product from Normal Subgroups with Trivial Intersection
 > Let $G$ be a group containing normal subgroups $H$ and $K$ such that $H \cap K=\{e\}$ and $H \vee K=G$. Then $G$ is isomorphic to $H \times K$.
 >
 > Here $H\vee K$ is the smallest subgroup of $G$ containing both $H$ and $K$.
@@ -116,7 +116,7 @@ If $\phi(h, k)=e$, then $h k=e$, so $h=k^{-1}$, and both $h$ and $k$ are in $H \
 By Lemma 34.4, we know that $H K=H \vee K$, and $H \vee K=G$ by hypothesis. Thus $\phi$ is onto $G$, and $H \times K \simeq G$. $\square$
 Theorem 37.6
 
-> [!theorem] Groups of Order p² Are Abelian
+> [!theorem|4b07771e-674c-5d0e-a0d5-a411b0d2db4e.library at=dcad757c-f756-5137-a7e7-ae823976edd5] Groups of Order p² Are Abelian
 > For a prime number $p$, every group $G$ of order $p^{2}$ is abelian.
 
 ##### proof
@@ -128,7 +128,7 @@ If $G$ is not cyclic, then every element except $e$ must be of order $p$. Let $a
 We turn now to a discussion of whether there exist simple groups of certain orders. We have seen that every group of prime order is simple. We also asserted that $A_{n}$ is simple for $n \geq 5$ and that $A_{5}$ is the smallest simple group that is not of prime order. There was a famous conjecture of Burnside that every finite simple group of nonprime order must be of even order. It was a triumph when this was proved by Thompson and Feit [21].
 Theorem 37.7
 
-> [!theorem] Groups of Order pq for Distinct Primes
+> [!theorem|361b1fb3-c5cd-504c-9a1e-f5ed520924f3.library at=e15cf748-6040-52ca-955d-6772509151f9] Groups of Order pq for Distinct Primes
 > If $p$ and $q$ are distinct primes with $p<q$, then every group $G$ of order $p q$ has a single subgroup of order $q$ and this subgroup is normal in $G$. Hence $G$ is not simple. If $q$ is not congruent to 1 modulo $p$, then $G$ is abelian and cyclic.
 
 ##### proof
@@ -140,7 +140,7 @@ Likewise, there is a Sylow $p$-subgroup $P$ of $G$, and the number of these divi
 We need another lemma for some of the counting arguments that follow.
 Lemma 37.8
 
-> [!lemma] Cardinality of a Product of Finite Subgroups
+> [!lemma|ff7290ff-a78b-5a1d-9e63-881fe24c48f5.library at=a7152912-a41d-5069-88cb-83640226a98d] Cardinality of a Product of Finite Subgroups
 > If $H$ and $K$ are finite subgroups of a group $G$, then
 >
 > $$
@@ -169,42 +169,42 @@ Lemma 37.8 is another result that counts something, so do not underestimate it. 
 
 The remainder of this section consists of several examples illustrating techniques of proving that all groups of certain orders are abelian or that they have nontrivial proper normal subgroups, that is, that they are not simple. We will use one fact we mentioned before only in the exercises. 
 
-> [!property] Subgroups of Index Two Are Normal
+> [!property|83bbb837-24de-59a9-9619-e8cbcdcf8064.library at=3932bdbc-7362-5329-8ec8-c0b8cd809ca2] Subgroups of Index Two Are Normal
 > A subgroup $H$ of index 2 in a finite group $G$ is always normal.
 
 ##### proof
 
 For by counting, we see that there are only the left cosets $H$ itself and the coset consisting of all elements in $G$ not in $H$. The right cosets are the same. Thus every right coset is a left coset, and $H$ is normal in $G$.
 
-> [!example] Example 37.9
+> [!example|7e7f7a2e-e501-510f-b4ac-2f2b2c81aabb.local at=7a779c07-24c3-5523-aa04-b678efc72818] Example 37.9
 > Show that no group of order $p^r$ for $r>1$ is simple, where $p$ is a prime.
 
 ##### solution
 
 No group of order $p^{r}$ for $r>1$ is simple, where $p$ is a prime. For by Theorem 36.8 such a group $G$ contains a subgroup of order $p^{r-1}$ normal in a subgroup of order $p^{r}$, which must be all of $G$. Thus a group of order 16 is not simple; it has a normal subgroup of order 8. $\square$
 
-> [!example] Example 37.10
+> [!example|6786f4b6-c792-5661-ab94-ef675c851852.local at=f4d017d1-c9a2-5cff-bd93-a571993ac194] Example 37.10
 > Show that every group of order 15 is cyclic.
 
 ##### solution
 
 Every group of order 15 is cyclic (hence abelian and not simple, since 15 is not a prime). This is because $15=(5)(3)$, and 5 is not congruent to 1 modulo 3. By Theorem 37.7 we are done. $\square$
 
-> [!example] Example 37.11
+> [!example|5ba33313-bb1d-5b38-9661-79cbf0153b24.local at=7a443886-7880-55e6-a5ca-d9ddb5abae8c] Example 37.11
 > Show that no group of order 20 is simple.
 
 ##### solution
 
 No group of order 20 is simple, for such a group $G$ contains Sylow 5-subgroups in number congruent to 1 modulo 5 and a divisor of 20, hence only 1. This Sylow 5-subgroup is then normal, since all conjugates of it must be itself. $\square$
 
-> [!example] Example 37.12
+> [!example|8fb5c54d-2d9a-5e1d-953b-d338123a1046.local at=bb0cc25d-85d1-59d2-8a5c-20399cc8c865] Example 37.12
 > Show that no group of order 30 is simple.
 
 ##### solution
 
 No group of order 30 is simple. We have seen that if there is only one Sylow $p$-subgroup for some prime $p$ dividing 30, we are done. By Theorem 36.11 the possibilities for the number of Sylow 5-subgroups are 1 or 6, and those for Sylow 3-subgroups are 1 or 10. But if $G$ has six Sylow 5-subgroups, then the intersection of any two is a subgroup of each of order dividing 5, and hence just $\{e\}$. Thus each contains 4 elements of order 5 that are in none of the others. Hence $G$ must contain 24 elements of order 5. Similarly, if $G$ has 10 Sylow 3-subgroups, it has at least 20 elements of order 3. The two types of Sylow subgroups together would require at least 44 elements in $G$. Thus there is a normal subgroup either of order 5 or of order 3. $\square$
 
-> [!example] Example 37.13
+> [!example|63552a5d-d8f1-570f-b405-4144cfc60be2.local at=0a0f738d-d1d1-556c-9f19-95a9fdc8c08d] Example 37.13
 > Show that a group of order 48 has a normal subgroup of order 16 or 8.
 
 ##### solution
@@ -213,14 +213,14 @@ No group of order 48 is simple. Indeed, we shall show that a group $G$ of order 
 
 Suppose that there are three subgroups of order 16, and let $H$ and $K$ be two of them. Then $H \cap K$ must be of order 8, for if $H \cap K$ were of order $\leq 4$, then by Lemma 37.8 $H K$ would have at least $(16)(16) / 4=64$ elements, contradicting the fact that $G$ has only 48 elements. Therefore, $H \cap K$ is normal in both $H$ and $K$ (being of index 2, or by Theorem 36.8). Hence the normalizer of $H \cap K$ contains both $H$ and $K$ and must have order a multiple $>1$ of 16 and a divisor of 48, therefore 48. Thus $H \cap K$ must be normal in $G$. $\square$
 
-> [!example] Example 37.14
+> [!example|8ac4724d-f577-5b96-8e55-dd739317c22e.local at=ee988016-4d8b-5cea-a7ad-a2ca68a52dea] Example 37.14
 > Show that no group of order 36 is simple.
 
 ##### solution
 
 No group of order 36 is simple. Such a group $G$ has either one or four subgroups of order 9. If there is only one such subgroup, it is normal in $G$. If there are four such subgroups, let $H$ and $K$ be two of them. As in Example 37.13, $H \cap K$ must have at least 3 elements, or $H K$ would have to have 81 elements, which is impossible. Thus the normalizer of $H \cap K$ has as order a multiple $>1$ of 9 and a divisor of 36; hence the order must be either 18 or 36 . If the order is 18 , the normalizer is then of index 2 and therefore is normal in $G$. If the order is 36, then $H \cap K$ is normal in $G$. $\square$
 
-> [!example] Example 37.15
+> [!example|3c57aa87-90be-5fbe-804b-5e0f2712b1ec.local at=eabd1be7-a1b1-5a39-bd28-e70987fc988a] Example 37.15
 > Show that every group of order $255=(3)(5)(17)$ is abelian and cyclic.
 
 ##### solution
@@ -231,19 +231,19 @@ Every group of order $255=(3)(5)(17)$ is abelian (hence cyclic by the Fundamenta
 
 ### Computations
 
-> [!exercise] Exercise 37.1
+> [!exercise|7cdd3b0b-a42f-5c1c-a890-9885751ae067.local at=7e5d3d29-c68d-5048-8c37-245eec4e618d] Exercise 37.1
 > Let $D_{4}$ be the group of symmetries of the square in Example 8.10.
 >
 > a. Find the decomposition of $D_{4}$ into conjugate classes.
 >
 > b. Write the class equation for $D_{4}$.
 
-> [!exercise] Exercise 37.2
+> [!exercise|c85b4897-6c64-52ea-b9f6-2027937194d2.local at=ee889e54-e26a-5bd8-8405-588a1b33b958] Exercise 37.2
 > By arguments similar to those used in the examples of this section, convince yourself that every nontrivial group of order not a prime and less than 60 contains a nontrivial proper normal subgroup and hence is not simple. You need not write out the details. (The hardest cases were discussed in the examples.)
 
 ### Concepts
 
-> [!exercise] Exercise 37.3
+> [!exercise|54751cf6-4c4c-592c-82ec-ebed10b4c2b1.local at=58f197c4-8244-5d86-a374-0ca297a33cde] Exercise 37.3
 > Mark each of the following true or false.
 >
 > a. Every group of order 159 is cyclic.
@@ -268,19 +268,19 @@ Every group of order $255=(3)(5)(17)$ is abelian (hence cyclic by the Fundamenta
 
 ### Theory
 
-> [!exercise] Exercise 37.4
+> [!exercise|6abbe14e-26d2-5ff1-8f01-45aa4bc4dc60.local at=68022c90-7508-5776-a81c-12f7c261af1a] Exercise 37.4
 > Prove that every group of order (5)(7)(47) is abelian and cyclic.
 
-> [!exercise] Exercise 37.5
+> [!exercise|3d4895c2-22dd-561c-b371-bb2a86c7849f.local at=5a63374a-6ef2-57b5-ac7b-b77e195087c2] Exercise 37.5
 > Prove that no group of order 96 is simple.
 
-> [!exercise] Exercise 37.6
+> [!exercise|37495540-e85a-5786-89fc-2383c99ceb15.local at=dc385f5d-f325-576a-b679-d72937c1a3dc] Exercise 37.6
 > Prove that no group of order 160 is simple.
 
-> [!exercise] Exercise 37.7
+> [!exercise|05ccfdfd-a6fb-5e92-a77c-190c6c265a63.local at=dd4fd514-fada-5a0d-bf3f-ad2187d367d4] Exercise 37.7
 > Show that every group of order 30 contains a subgroup of order 15. [Hint: Use the last sentence in Example 37.12, and go to the factor group.]
 
-> [!exercise] Exercise 37.8
+> [!exercise|fef30130-36ac-5f03-9c9d-b4ff89679adc.local at=f6d35d99-4fdb-5594-b3fc-37f9ed4a93f5] Exercise 37.8
 > This exercise determines the conjugate classes of $S_{n}$ for every integer $n \geq 1$.
 >
 > a. Show that if $\sigma=\left(a_{1}, a_{2}, \cdots, a_{m}\right)$ is a cycle in $S_{n}$ and $\tau$ is any element of $S_{n}$ then $\tau \sigma \tau^{-1}=\left(\tau a_{1}, \tau a_{2}, \cdots, \tau a_{m}\right)$.
@@ -293,15 +293,15 @@ Every group of order $255=(3)(5)(17)$ is abelian (hence cyclic by the Fundamenta
 >
 > e. Compute $p(n)$ for $n=1,2,3,4,5,6,7$.
 
-> [!exercise] Exercise 37.9
+> [!exercise|b5c3726a-1f7a-5c4f-8609-acff54f64bc4.local at=3f06ba4a-9881-525a-9cde-1e53cb94350d] Exercise 37.9
 > Find the conjugate classes and the class equation for $S_{4}$. [Hint: Use Exercise 8.]
 
-> [!exercise] Exercise 37.10
+> [!exercise|e5e0972b-3019-518f-a0f0-b30e0a1c3e98.local at=59852766-369d-5209-9546-4af292d135f2] Exercise 37.10
 > Find the class equation for $S_{5}$ and $S_{6}$. [Hint: Use Exercise 8.]
 
-> [!exercise] Exercise 37.11
+> [!exercise|e3eef30b-797c-56a4-bbb1-e6a4fcb6b4e2.local at=f29ac881-c4f8-5269-aa34-86df81f05887] Exercise 37.11
 > Show that the number of conjugate classes in $S_{n}$ is also the number of different abelian groups (up to isomorphism) of order $p^{n}$, where $p$ is a prime number. [Hint: Use Exercise 8.]
 
-> [!exercise] Exercise 37.12
+> [!exercise|e7277035-47b1-5b83-b33a-ff2cba92f83f.local at=7b587f61-9c04-5e64-820b-5ae649dffdca] Exercise 37.12
 > Show that if $n>2$, the center of $S_{n}$ is the subgroup consisting of the identity permutation only. [Hint: Use Exercise 8.]
 

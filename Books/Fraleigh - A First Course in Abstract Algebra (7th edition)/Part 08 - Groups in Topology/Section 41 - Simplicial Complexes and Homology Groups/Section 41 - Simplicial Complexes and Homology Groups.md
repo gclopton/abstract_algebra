@@ -4,7 +4,7 @@
 Part VIII: Groups in Topology[^part-viii]
 ## Motivation
 
-> [!definition] Homeomorphic Topological Spaces
+> [!definition|bf32d0d2-cee2-51a5-b2f7-64909a9cb210.library at=96af50b5-34e1-5305-8b40-b45874627e17] Homeomorphic Topological Spaces
 > Topology concerns sets for which we have enough of an idea of when two points are close together to be able to define a continuous function. Two such sets, or topological spaces, are structurally the same if there is a one-to-one function mapping one onto the other such that both this function and its inverse are continuous. Naively, this means that one space can be stretched, twisted, and otherwise deformed, without being torn or cut, to look just like the other. Thus a big sphere is topologically the same structure as a small sphere, the boundary of a circle the same structure as the boundary of a square, and so on. Two spaces that are structurally the same in this sense are homeomorphic.
 
 Hopefully the student recognizes that the concept of homeomorphism is to topology as the concept of isomorphism (where sets have the same algebraic structure) is to algebra.
@@ -17,15 +17,15 @@ If the student could make neither head nor tail out of the preceding paragraphs,
 
 First we introduce the idea of an oriented $n$-simplex in Euclidean 3-space $\mathbb{R}^{3}$ for $n=0,1,2,$ and $3$. 
 
-> [!definition] Oriented 0-Simplex
+> [!definition|7df6a5de-b03f-5f57-9022-b8b8afc292b0.library at=89f28883-62a4-5697-aed9-cef37b0857e4] Oriented 0-Simplex
 > An oriented 0-simplex is just a point $P$.
 
-> [!definition] Oriented 1-Simplex
+> [!definition|fbe1d978-c83f-5acb-b004-c754d2a6686b.library at=4d85f20c-df44-55b0-bbb0-a22ef874382f] Oriented 1-Simplex
 > An oriented 1-simplex is a directed line segment $P_{1} P_{2}$ joining the points $P_{1}$ and $P_{2}$ and viewed as traveled in the direction from $P_{1}$ to $P_{2}$.
 
 Thus $P_{1} P_{2} \neq P_{2} P_{1}$. We will agree, however, that $P_{1} P_{2}=-P_{2} P_{1}$. 
 
-> [!definition] Oriented 2-Simplex
+> [!definition|52e2fb4e-b2d7-53ab-a965-1801fb4ed6c5.library at=1cedf2d3-be58-51ac-b052-04103193a830] Oriented 2-Simplex
 > An oriented 2-simplex is a triangular region $P_{1} P_{2} P_{3}$, together with a prescribed order of movement around the triangle.
 
 Figure 41.1 indicates the order $P_1P_2P_3$.
@@ -49,7 +49,7 @@ is an even permutation, and is equal to $-P_{1} P_{2} P_{3}$ if the permutation 
 
 The definition of an oriented 3-simplex should now be clear: 
 
-> [!definition] Oriented 3-Simplex
+> [!definition|3ac2df1d-c7ba-5754-8843-e067256f3833.library at=5f6878a3-5ed0-54a8-8b4f-cdf3490d14c7] Oriented 3-Simplex
 > An oriented 3-simplex is given by an ordered sequence $P_{1} P_{2} P_{3} P_{4}$ of four vertices of a solid tetrahedron.
 
 We agree that $P_{1} P_{2} P_{3} P_{4}= \pm P_{i} P_{j} P_{r} P_{s}$, depending on whether the permutation
@@ -91,14 +91,14 @@ panels:
 
 We are now going to define the boundary of an $n$-simplex for $n=0,1,2,3$. The term boundary is intuitive. 
 
-> [!definition] Boundary of a 0-Simplex
+> [!definition|46599272-2e90-5725-a4e5-0e07f2742dfe.library at=42d01c6b-08bf-5c25-b969-1e7aedb6820a] Boundary of a 0-Simplex
 > We define the boundary of a $\mathbf{0}$-simplex $P$ to be the empty simplex, which we denote this time by "0." The notation is
 >
 > $$
 > " \partial_{0}(P)=0 . "
 > $$
 
-> [!definition] Boundary of a 1-Simplex
+> [!definition|96966114-5d42-5d40-b7cb-f5d80eaa7ee8.library at=14ef0d93-aada-5103-88fd-4bfff57c339e] Boundary of a 1-Simplex
 > The boundary of a 1 -simplex $P_{1} P_{2}$ is defined by
 >
 > $$
@@ -107,7 +107,7 @@ We are now going to define the boundary of an $n$-simplex for $n=0,1,2,3$. The t
 >
 > that is, the formal difference of the end point and the beginning point.
 
-> [!definition] Boundary of a 2-Simplex
+> [!definition|587c581c-9bd5-5b85-b9e7-e088fc2f8455.library at=17d37217-3984-5fd3-a464-c08e32f796b1] Boundary of a 2-Simplex
 > The boundary of a $\mathbf{2}$-simplex is defined by
 >
 > $$
@@ -116,7 +116,7 @@ We are now going to define the boundary of an $n$-simplex for $n=0,1,2,3$. The t
 
 which we can remember by saying that it is the formal sum of terms that we obtain by dropping each $P_{i}$ in succession from the 2-simplex $P_{1} P_{2} P_{3}$ and taking the sign to be + if the first term is omitted, - if the second is omitted, and + if the third is omitted. Referring to Fig. 41.1, we see that this corresponds to going around what we naturally would call the boundary in the direction indicated by the orientation arrow. Note also that the equation $\partial_{1}\left(P_{1} P_{2}\right)=P_{2}-P_{1}$ can be remembered in the same way. 
 
-> [!definition] Boundary of a 3-Simplex
+> [!definition|ac93b24a-8af1-5236-b2a5-d2e9fcc04971.library at=45ff20c9-b068-5e13-acb3-eccb694f41b2] Boundary of a 3-Simplex
 > The boundary of a 3-simplex is defined by:
 >
 > $$
@@ -125,14 +125,14 @@ which we can remember by saying that it is the formal sum of terms that we obtai
 
 Similar definitions hold for the definition of $\partial_{n}$ for $n>3$. 
 
-> [!definition] Face of an Oriented Simplex
+> [!definition|653dd0dd-f8e5-5605-a833-2206a3d9352c.library at=e3e25372-f9c4-5ce9-a341-3ffdcfca1f9e] Face of an Oriented Simplex
 > Each individual summand of the boundary of a simplex is a face of the simplex.
 
 Thus, $P_{2} P_{3} P_{4}$ is a face of $P_{1} P_{2} P_{3} P_{4}$, but $P_{1} P_{3} P_{4}$ is not a face. However, $P_{1} P_{4} P_{3}=-P_{1} P_{3} P_{4}$ is a face of $P_{1} P_{2} P_{3} P_{4}$.
 
 Suppose that you have a subset of $\mathbb{R}^{3}$ that is divided up "nicely" into simplexes, as, for example, the surface $S$ of the tetrahedron in Fig. 41.2, which is split up into four 2 -simplexes nicely fitted together. Thus on the surface of the tetrahedron, we have some 0 -simplexes, or the vertices, of the tetrahedron; some 1 -simplexes, or the edges of the tetrahedron; and some 2-simplexes, or the triangles of the tetrahedron.
 
-> [!definition] Simplicial Complex
+> [!definition|0af9af2f-a2a2-52a0-a2a4-1b023f3effdb.library at=c3997266-0464-5fd5-9792-ed5ab6153ab7] Simplicial Complex
 > In general, for a space to be divided up "nicely" into simplexes, we require that the following be true:
 >
 > 1. Each point of the space belongs to at least one simplex.
@@ -161,10 +161,10 @@ panels:
 
 Let us now describe some groups associated with a simplicial complex $X$. We shall illustrate each definition with the case of the surface $S$ of our tetrahedron in Fig. 41.2. 
 
-> [!definition] Group of Oriented n-Chains
+> [!definition|7cd09951-e32d-50fb-a82a-f2f28630099c.library at=2cae3c89-4ec1-5d5c-87d0-70392a3e8cbc] Group of Oriented n-Chains
 > Let $X$ be a simplicial complex. The group $C_{n}(X)$ of (oriented) $\boldsymbol{n}$-chains of $\boldsymbol{X}$ is the free abelian group generated by the (oriented) $n$-simplexes of $X$. Thus every element of $C_{n}(X)$ is a finite sum of the form $\sum_{i} m_{i} \sigma_{i}$, where the $\sigma_{i}$ are $n$-simplexes of $X$ and $m_i\in\mathbb Z$. We accomplish addition of chains by taking the algebraic sum of the coefficients of each occurrence in the chains of a fixed simplex.
 
-> [!example] Example 41.4
+> [!example|5fea3066-c0f8-5e96-bd59-522d73b69233.local at=3357fec5-1c92-5537-a7d7-1ffd7e9dd10b] Example 41.4
 > Describe $C_2(S)$, $C_1(S)$, and $C_0(S)$ for the surface $S$ of the tetrahedron in Fig. 41.2, and illustrate addition of chains.
 
 ##### solution
@@ -198,10 +198,10 @@ $$
 
 $\square$
 
-> [!definition] Boundary Homomorphism on Simplicial Chains
+> [!definition|3662af7f-32ec-5f69-9ad4-df22e1daa87f.library at=f3b4f885-c897-5bd2-9334-e93f4c7adbe7] Boundary Homomorphism on Simplicial Chains
 > Let $X$ be a simplicial complex. If $\sigma$ is an $n$-simplex, $\partial_{n}(\sigma) \in C_{n-1}(X)$ for $n=1,2,3$. Let us define $C_{-1}(X)=\{0\}$, the trivial group of one element, and then we will also have $\partial_{0}(\sigma) \in C_{-1}(X)$. Since $C_n(X)$ is free abelian, and since we can specify a homomorphism of such a group by giving its values on generators, we see that $\partial_{n}$ gives a unique boundary homomorphism, which we denote again by " $\partial_{n}$ " mapping $C_{n}(X)$ into $C_{n-1}(X)$ for $n=0,1,2,3$.
 
-> [!example] Example 41.5
+> [!example|c15fb524-58a0-589f-9377-a369f3befe26.local at=a4b85821-a47f-5b64-9bcb-a12be9c2e90c] Example 41.5
 > Compute $\partial_1(3P_1P_2-4P_1P_3+5P_2P_4)$.
 
 ##### solution
@@ -226,10 +226,10 @@ $\square$
 
 The student is reminded again that any time you have a homomorphism, two things are of great interest, the kernel and the image. 
 
-> [!definition] Simplicial n-Cycles and Cycle Group
+> [!definition|9526657a-b4c5-5e76-b35a-976b82854ba8.library at=524924e4-9ff9-5cc3-9315-a730da82d609] Simplicial n-Cycles and Cycle Group
 > Let $X$ be a simplicial complex and let $\partial_n:C_n(X)\to C_{n-1}(X)$ be the boundary homomorphism. The kernel of $\partial_{n}$ consists of those $n$-chains with boundary 0. The elements of the kernel are $\boldsymbol{n}$-cycles. The usual notation for the kernel of $\partial_{n}$, that is, the group of $\boldsymbol{n}$-cycles, is " $Z_{n}(X)$."
 
-> [!example] Example 41.6
+> [!example|50d83e56-0ed3-521d-a98a-10b73f5eecc4.local at=39a47b3f-b6e2-5c93-ac9c-7c8d6ce3fec7] Example 41.6
 > Determine whether $z=P_1P_2+P_2P_3+P_3P_1$ and $c=P_1P_2+2P_2P_3+P_3P_1$ are 1-cycles.
 
 ##### solution
@@ -250,10 +250,10 @@ Thus $c \notin Z_{1}(X)$. $\square$
 
 Note that $z=P_{1} P_{2}+P_{2} P_{3}+P_{3} P_{1}$ of Example 41.6 corresponds to one circuit, or cycle, around a triangle with vertices $P_{1}, P_{2}$, and $P_{3}$.
 
-> [!definition] Simplicial Boundaries and Boundary Group
+> [!definition|c4d0027e-0a6c-5818-8c08-f18042302aa6.library at=502afa56-4b04-5bc7-94d8-98d13561d1a7] Simplicial Boundaries and Boundary Group
 > Let $X$ be a simplicial complex and let $\partial_n:C_n(X)\to C_{n-1}(X)$ be the boundary homomorphism. The image under $\partial_{n}$, the group of $(\boldsymbol{n}-\mathbf{1})$-boundaries, consists exactly of those $(n-1)$-chains that are boundaries of $n$-chains. This group is denoted by " $B_{n-1}(X)$."
 
-> [!example] Example 41.7
+> [!example|f1288db3-d716-56e3-9153-177010eb4970.local at=18c4913c-47e3-5ec6-a245-ef631609465e] Example 41.7
 > Find a 0-boundary arising from the 1-chain $P_1P_2+2P_2P_3+P_3P_1$.
 
 ##### solution
@@ -268,7 +268,7 @@ is a 1 -chain in $C_{1}(X)$, then $P_{3}-P_{2}$ is a 0 -boundary. Note that $P_{
 
 Let us now compute $Z_{n}(X)$ and $B_{n}(X)$ for a more complicated example. In topology, if a group is the trivial group consisting just of the identity 0 , one usually denotes it by "0" rather than "\{0\}." We shall follow this convention.
 
-> [!example] Example 41.8
+> [!example|c50d03a4-6cae-57e7-ac11-a5f9cfeaee9a.local at=65bc1a4a-3770-5549-b52d-c17586d52758] Example 41.8
 > Compute $Z_n(S)$ and $B_n(S)$ for $n=0,1,2$, where $S$ is the surface of the tetrahedron in Fig. 41.2.
 
 ##### solution
@@ -339,7 +339,7 @@ that is, $Z_{2}(S)$ is infinite cyclic. Again, the student should interpret this
 We now come to one of the most important equations in all of mathematics. We shall state it only for $n=1,2$, and 3, but it holds for all $n>0$.
 Theorem 41.9
 
-> [!theorem] The Boundary of a Boundary Is Zero
+> [!theorem|e257f809-5a90-5b01-a25a-ae697f491764.library at=76c94caa-54f8-5a12-9f5d-7a9b0948fbb3] The Boundary of a Boundary Is Zero
 > Let $X$ be a simplicial complex, and let $C_{n}(X)$ be the $n$-chains of $X$ for $n=0,1,2,3$. Then the composite homomorphism $\partial_{n-1} \partial_{n}$ mapping $C_{n}(X)$ into $C_{n-2}(X)$ maps everything into 0 for $n=1,2,3$. That is, for each $c \in C_{n}(X)$ we have $\partial_{n-1}\left(\partial_{n}(c)\right)=0$. We use the notation " $\partial_{n-1} \partial_{n}=0$," or, more briefly, " $\partial^{2}=0$."
 >
 > Here $\partial_n$ is the boundary homomorphism and $C_{-1}(X)=\{0\}$.
@@ -359,7 +359,7 @@ $$
 The case $n=3$ will make an excellent exercise for the student in the definition of the boundary operator (see Exercise 2). $\square$
 Corollary 41.10
 
-> [!corollary] Simplicial Boundaries Are Cycles
+> [!corollary|857441cf-866f-5e13-bf07-0becd0c5e4ef.library at=80198254-ddb8-5106-a38b-2f687caf38ba] Simplicial Boundaries Are Cycles
 > Let $X$ be a simplicial complex, let $Z_n(X)$ be its group of $n$-cycles, and let $B_n(X)$ be its group of $n$-boundaries. For $n=0,1,2$, and 3, $B_{n}(X)$ is a subgroup of $Z_{n}(X)$.
 
 ##### proof
@@ -374,10 +374,10 @@ so $b \in Z_{n}(X)$.
 For $n=3$, since we are not concerned with simplexes of dimension greater than 3, $B_3(X)=0$. $\square$
 Definition 41.11
 
-> [!definition] Simplicial Homology Group
+> [!definition|9ea6292c-37dd-5e70-9b07-89b2560b575f.library at=ee3ca939-16a2-5a80-9e67-abc93243f097] Simplicial Homology Group
 > Let $X$ be a simplicial complex, let $Z_n(X)$ be its group of $n$-cycles, and let $B_n(X)$ be its group of $n$-boundaries. The factor group $H_{n}(X)=Z_{n}(X) / B_{n}(X)$ is the $\boldsymbol{n}$-dimensional homology group of $\boldsymbol{X}$.
 
-> [!example] Example 41.12
+> [!example|3ce762d5-02b0-5bb0-88f9-65dc6f49ddfd.local at=813d3be8-9c9c-5b1e-b256-4ffc3ba32887] Example 41.12
 > Calculate $H_n(S)$ for $n=0,1,2,3$, where $S$ is the surface of the tetrahedron in Fig. 41.2.
 
 ##### solution
@@ -421,7 +421,7 @@ These definitions and computations probably seem very complicated to the student
 
 ### Suggested Exercises
 
-> [!exercise] Exercise 41.1
+> [!exercise|1edf66bf-7231-5e79-a808-6114d66d1029.local at=580461e6-9960-5880-9260-0623cec37ee5] Exercise 41.1
 > Assume that $c=2 P_{1} P_{3} P_{4}-4 P_{3} P_{4} P_{6}+3 P_{3} P_{2} P_{4}+P_{1} P_{6} P_{4}$ is a 2 -chain of a certain simplicial complex $X$.
 >
 > a. Compute $\partial_{2}(c)$.
@@ -430,19 +430,19 @@ These definitions and computations probably seem very complicated to the student
 >
 > c. Is $\partial_{2}(c)$ a 1-cycle?
 
-> [!exercise] Exercise 41.2
+> [!exercise|03a26548-13fb-560f-8da1-a69231530cce.local at=1e4203d3-8cb6-5f12-b3e7-88b17f2d137c] Exercise 41.2
 > Compute $\partial_{2}\left(\partial_{3}\left(P_{1} P_{2} P_{3} P_{4}\right)\right)$ and show that it is 0 , completing the proof of Theorem 41.9.
 
-> [!exercise] Exercise 41.3
+> [!exercise|edb02270-ac7f-552a-a5a3-e03a8b2f1c69.local at=9bf1deaa-46b0-5d19-a56e-4b73e796f553] Exercise 41.3
 > Describe $C_{i}(P), Z_{i}(P), B_{i}(P)$, and $H_{i}(P)$ for the space consisting of just the 0 -simplex $P$. (This is really a trivial problem.)
 
-> [!exercise] Exercise 41.4
+> [!exercise|c6a27a22-1b5b-590f-998e-0f45373503aa.local at=8155d4cd-bba2-50e2-9f84-ecc73bd67621] Exercise 41.4
 > Describe $C_{i}(X), Z_{i}(X), B_{i}(X)$, and $H_{i}(X)$ for the space $X$ consisting of two distinct 0 -simplexes, $P$ and $P^{\prime}$. (Note: The line segment joining the two points is not part of the space.)
 
-> [!exercise] Exercise 41.5
+> [!exercise|2bb6dae5-3f1e-512d-9369-47ac490946d7.local at=b63cb7ff-3ad5-5500-ae9f-793ac09d01ba] Exercise 41.5
 > Describe $C_{i}(X), Z_{i}(X), B_{i}(X)$, and $H_{i}(X)$ for the space $X$ consisting of the 1 -simplex $P_{1} P_{2}$.
 
-> [!exercise] Exercise 41.6
+> [!exercise|e7f40d57-1a57-5014-a7be-2b69041d54b1.local at=9491797d-610b-50f0-b787-bd60e75d91c2] Exercise 41.6
 > Mark each of the following true or false.
 >
 > a. Every boundary is a cycle.
@@ -467,7 +467,7 @@ These definitions and computations probably seem very complicated to the student
 
 ### More Exercises
 
-> [!exercise] Exercise 41.7
+> [!exercise|80b67027-280f-531d-9f5a-1e446816b1b0.local at=9a955f1b-7f1d-5fc3-846c-3a365425e231] Exercise 41.7
 > Define the following concepts so as to generalize naturally the definitions in the text given for dimensions 0 , 1, 2, and 3.
 >
 > a. An oriented $n$-simplex
@@ -476,13 +476,13 @@ These definitions and computations probably seem very complicated to the student
 >
 > c. A face of an oriented $n$-simplex
 
-> [!exercise] Exercise 41.8
+> [!exercise|468b2b72-c676-5f1d-b79c-8038c1a0478e.local at=b78f15b7-8ba6-5b29-9940-df095e4d2848] Exercise 41.8
 > Continuing the idea of Exercise 7, what would be an easy way to answer a question asking you to define $C_{n}(X), \partial_{n}: C_{n}(X) \rightarrow C_{n-1}(X), Z_{n}(X)$, and $B_{n}(X)$ for a simplicial complex $X$ perhaps containing some simplexes of dimension greater than 3?
 
-> [!exercise] Exercise 41.9
+> [!exercise|02f7b65f-2020-546d-9433-b0c4323e2499.local at=46dabdd6-256a-5db4-afa0-089fb29ea156] Exercise 41.9
 > Following the ideas of Exercises 7 and 8, prove that $\partial^{2}=0$ in general, i.e., that $\partial_{n-1}\left(\partial_{n}(c)\right)=0$ for every $c \in C_{n}(X)$, where $n$ may be greater than 3.
 
-> [!exercise] Exercise 41.10
+> [!exercise|ba57374b-1697-5797-b44b-edee88fdd65d.local at=44088d84-923c-5507-abb2-ad19644d621a] Exercise 41.10
 > Let $X$ be a simplicial complex. For an (oriented) $n$-simplex $\sigma$ of $X$, the coboundary $\delta^{(n)}(\sigma)$ of $\sigma$ is the $(n+1)$ -chain $\sum \tau$, where the sum is taken over all $(n+1)$-simplexes $\tau$ that have $\sigma$ as a face. That is, the simplexes $\tau$ appearing in the sum are precisely those that have $\sigma$ as a summand of $\partial_{n+1}(\tau)$. Orientation is important here. Thus $P_{2}$ is a face of $P_{1} P_{2}$, but $P_{1}$ is not. However, $P_{1}$ is a face of $P_{2} P_{1}$. Let $X$ be the simplicial complex consisting of the solid tetrahedron of Fig. 41.2.
 >
 > a. Compute $\delta^{(0)}\left(P_{1}\right)$ and $\delta^{(0)}\left(P_{4}\right)$.
@@ -491,17 +491,17 @@ These definitions and computations probably seem very complicated to the student
 >
 > c. Compute $\delta^{(2)}\left(P_{3} P_{2} P_{4}\right)$.
 
-> [!exercise] Exercise 41.11
+> [!exercise|7f4724ab-1d07-5d46-a187-ed086054a905.local at=ca93e054-e6bc-5e6d-b149-1bafff682f4c] Exercise 41.11
 > Following the idea of Exercise 10, let $X$ be a simplicial complex, and let the group $C^{(n)}(X)$ of $\boldsymbol{n}$-cochains be the same as the group $C_{n}(X)$.
 >
 > a. Define $\delta^{(n)}: C^{(n)}(X) \rightarrow C^{(n+1)}(X)$ in a way analogous to the way we defined $\partial_{n}: C_{n}(X) \rightarrow C_{n-1}(X)$.
 >
 > b. Show that $\delta^{2}=0$, that is, that $\delta^{(n+1)}\left(\delta^{(n)}(c)\right)=0$ for each $c \in C^{(n)}(X)$.
 
-> [!exercise] Exercise 41.12
+> [!exercise|57e859d3-18c3-5886-a0fe-e19fd1e66dfc.local at=97a2691b-56ad-5b01-a427-243fada2bce7] Exercise 41.12
 > Following the ideas of Exercises 10 and 11, define the group $Z^{(n)}(X)$ of $n$-cocycles of $X$, the group $B^{(n)}(X)$ of $n$-coboundaries of $X$, and show that $B^{(n)}(X) \leq Z^{(n)}(X)$.
 
-> [!exercise] Exercise 41.13
+> [!exercise|932a8714-509a-5c4a-b525-2ba499361f41.local at=4b8b8296-8860-5801-a654-241a8eed4c09] Exercise 41.13
 > Following the ideas of Exercises 10, 11, and 12, define the $n$-dimensional cohomology group $H^{(n)}(X)$ of $X$. Compute $H^{(n)}(S)$ for the surface $S$ of the tetrahedron of Fig. 41.2.
 
 [^part-viii]: Part VIII is not required for the remainder of the text.

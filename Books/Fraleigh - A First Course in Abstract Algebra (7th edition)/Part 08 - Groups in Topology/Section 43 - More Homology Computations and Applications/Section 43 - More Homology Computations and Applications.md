@@ -4,7 +4,7 @@
 
 Thus far all the homology groups we have found have been free abelian, so that there were no nonzero elements of finite order. This can be shown always to be the case for the homology groups of a closed surface (i.e., a surface like $S^{2}$, which has no boundary) that has two sides. Our next example is of a one-sided closed surface, the Klein bottle. Here the 1-dimensional homology group will have a nontrivial torsion subgroup reflecting the twist in the surface.
 
-> [!example] Example 43.1
+> [!example|29693578-742b-58e6-a334-5009b904e336.local at=d96130d5-fbd1-548e-97f1-d8439d236a3f] Example 43.1
 > Calculate the homology groups of the Klein bottle $X$.
 
 ##### solution
@@ -65,7 +65,7 @@ $\square$
 
 A torsion coefficient does not have to be present in some homology group of a onesided surface with boundary. Mostly for the sake of completeness, we give this standard example of the Möbius strip.
 
-> [!example] Example 43.5
+> [!example|8ae87afb-6f63-5398-9eb0-53248245951f.local at=73e1dbbf-886b-569d-9e3f-e3746b6da597] Example 43.5
 > Calculate the homology groups of the Möbius strip $X$.
 
 ##### solution
@@ -109,7 +109,7 @@ panels:
 
 Let us turn from the computation of homology groups to a few interesting facts and applications. 
 
-> [!definition] Euler Characteristic
+> [!definition|499e6038-f133-5898-86b5-dc096e15c428.local at=30fb1341-a350-5a80-93f2-c5361a2a8aab] Euler Characteristic
 > Let $X$ be a finite simplicial complex (or triangulated space) consisting of simplexes of dimension 3 and less. Let $n_{0}$ be the total number of vertices in the triangulation, $n_{1}$ the number of edges, $n_{2}$ the number of 2-simplexes, and $n_{3}$ the number of 3-simplexes. The number
 >
 > $$
@@ -121,7 +121,7 @@ Let us turn from the computation of homology groups to a few interesting facts a
 We just state the following fascinating theorem.
 Theorem 43.7
 
-> [!theorem] Euler Characteristic and Betti Numbers
+> [!theorem|ab275e05-533f-59aa-8262-490e8834dcd1.local at=94b50f01-4870-5428-84fc-19d7f6b9875d] Euler Characteristic and Betti Numbers
 > Let $X$ be a finite simplicial complex (or triangulated space) of dimension $\leq 3$. Let $\chi(X)$ be the Euler characteristic of the space $X$, and let $\beta_{j}$ be the Betti number of $H_{j}(X)$. Then
 >
 > $$
@@ -129,7 +129,7 @@ Theorem 43.7
 > $$
 
  also for $X$ of dimension greater than 3, with the obvious extension of the definition of the Euler characteristic to dimension greater than 3.
-> [!example] Example 43.8
+> [!example|b114f289-4918-5031-a79e-0a143ee23580.local at=defbd478-efca-5538-ae14-025110c85e68] Example 43.8
 > Compute the Euler characteristics of a solid tetrahedron, its surface, and a circle, and compare them with the alternating sums of their Betti numbers.
 
 ##### solution
@@ -174,7 +174,7 @@ $\square$
 
 ## Mappings of Spaces
 
-> [!property] Homology Homomorphisms Induced by Continuous Maps
+> [!property|b8c6cdc0-5f49-5d62-9786-ada6276682a1.local at=f11cc1b6-37cd-5e6c-a4c3-2490fb184ac8] Homology Homomorphisms Induced by Continuous Maps
 > A continuous function $f$ mapping a space $X$ into a space $Y$ gives rise to a homomorphism $f_{* n}$ mapping $H_{n}(X)$ into $H_{n}(Y)$ for $n \geq 0$.
 
 The demonstration of the existence of this homomorphism takes more machinery than we wish to develop here, but let us attempt to describe how these homomorphisms can be computed in certain cases. The following is true:
@@ -188,7 +188,7 @@ $$
 That is, if $z$ represents a homology class in $H_{n}(X)$ and $f(z)$ is an $n$-cycle in $Y$, then $f(z)$ represents the image homology class under $f_{* n}$ of the homology class containing $z$.
 
 Let us illustrate this and attempt to show just what we mean here by $f(z)$.
-> [!example] Example 43.9
+> [!example|f2755386-c4dc-5ca6-a4ed-b50e08cbecbf.local at=7d6390df-87f6-5658-8530-30a277a75f5d] Example 43.9
 > Find the homomorphism induced on $H_1(S^1)$ by $f((\cos\theta,\sin\theta))=(\cos3\theta,\sin3\theta)$.
 
 ##### solution
@@ -261,7 +261,7 @@ panels:
 The proof we outline is good for any $n>1$. For $n=1$, looking at the graph of a function $f: E^{1} \rightarrow E^{1}$, we find that the theorem simply states that any continuous path joining the left and right sides of a square must cross the diagonal somewhere, as indicated in Fig. 43.11. The student should visualize the construction of our proof with $E^{3}$ having boundary $S^{2}$ and $E^{2}$ having boundary $S^{1}$. The proof contains a figure illustrating the construction for the case of $E^{2}$.
 Theorem 43.12
 
-> [!theorem] Brouwer Fixed-Point Theorem
+> [!theorem|3ff5aeec-4e99-5e85-947d-a574e4b50c99.local at=3ef6675e-6fc8-5791-a72e-5d8cf0fe8dd4] Brouwer Fixed-Point Theorem
 > A continuous map $f$ of $E^{n}$ into itself has a fixed point for $n \geq 1$. Here $E^n=\{x\in\mathbb R^n:\|x\|\leq1\}$, and a fixed point is an $x$ with $f(x)=x$.
 
 ##### proof
@@ -301,10 +301,10 @@ We find the preceding proof very satisfying aesthetically, and hope you agree.
 
 ### Suggested Exercises
 
-> [!exercise] Exercise 43.1
+> [!exercise|888de5ce-66a4-526a-9f35-04db5eb98a06.local at=68ac7791-2317-5944-81aa-f7d2a50c05d1] Exercise 43.1
 > Verify by direct calculation that both triangulations of the square region $X$ in Fig. 42.1 give the same value for the Euler characteristic $\chi(X)$.
 
-> [!exercise] Exercise 43.2
+> [!exercise|4b12aac5-820b-54c3-86dd-d433a0634dcd.local at=bebbac09-aae7-5d24-8535-14b85009f81a] Exercise 43.2
 > Illustrate Theorem 43.7, as we did in Example 43.8, for each of the following spaces.
 >
 > a. The annular region of Example 42.10
@@ -313,16 +313,16 @@ We find the preceding proof very satisfying aesthetically, and hope you agree.
 >
 > c. The Klein bottle of Example 43.1
 
-> [!exercise] Exercise 43.3
+> [!exercise|65901422-dda5-5b9a-a30d-67c100534ea9.local at=f03cf526-61f1-57b1-8ffe-46f2b11fd056] Exercise 43.3
 > Will every continuous map of a square region into itself have a fixed point? Why or why not? Will every continuous map of a space consisting of two disjoint 2-cells into itself have a fixed point? Why or why not?
 
-> [!exercise] Exercise 43.4
+> [!exercise|d1c913c4-c60c-5a60-8540-d5eb2f5d1223.local at=0a7b12a5-f9bd-59d3-89b7-a5c380d1520a] Exercise 43.4
 > Compute the homology groups of the space consisting of a 2-sphere touching a Klein bottle at one point.
 
-> [!exercise] Exercise 43.5
+> [!exercise|e5bb5e36-1b00-5661-a010-06b6616c42cb.local at=c7cfc1ac-21f9-5a47-8207-21f2c4135043] Exercise 43.5
 > Compute the homology groups of the space consisting of two Klein bottles with no points in common.
 
-> [!exercise] Exercise 43.6
+> [!exercise|d0e0c460-3d90-56da-91cb-9ed07dd0c65a.local at=66ccb05a-b0a6-5ca4-9280-701da0dddb46] Exercise 43.6
 > Mark each of the following true or false.
 >
 > a. Every homology group of a contractible space is the trivial group of one element.
@@ -347,13 +347,13 @@ We find the preceding proof very satisfying aesthetically, and hope you agree.
 
 ### More Exercises
 
-> [!exercise] Exercise 43.7
+> [!exercise|ef1aa10a-d861-56c8-9acd-3d8997dc6826.local at=310ee909-766b-52e5-b6aa-81ccb2325471] Exercise 43.7
 > Find the Euler characteristic of a 2-sphere with $n$ handles (see Section 42, Exercise 12).
 
-> [!exercise] Exercise 43.8
+> [!exercise|5120d817-3f80-58a6-87b9-09be49f7b65b.local at=8366634d-d914-586c-abdf-64309cb2c362] Exercise 43.8
 > We can form the topological real projective plane $X$, using Fig. 43.14, by joining the semicircles $a$ so that diametrically opposite points come together and the directions of the arrows match up. This cannot be done in Euclidean 3-space $\mathbb{R}^{3}$. One must go to $\mathbb{R}^{4}$. Triangulate this space $X$, starting with the form exhibited in Fig. 43.14, and compute its homology groups.
 
-> [!exercise] Exercise 43.9
+> [!exercise|19f441e0-5e11-5c67-ae87-e8ac89be7234.local at=a86b8af2-05ae-569e-b69f-7fbfd19eb0d7] Exercise 43.9
 > The circular disk shown in Fig. 43.14 can be deformed topologically to appear as a 2-sphere with a hole in it, as shown in Fig. 43.15. We form the real projective plane from this configuration by sewing up the hole in such a way that only diametrically opposite points on the rim of the hole are sewn together. This cannot be done in $\mathbb{R}^{3}$.
 > Extending this idea, a 2-sphere with $q$ holes in it, which are then sewn up by bringing together diametrically opposite points on the rims of the holes, gives a $\mathbf{2}$-sphere with $q$ cross caps. Find the homology groups of a 2-sphere with $q$ cross caps. (To see a triangulation, view the space as the disk in Fig. 43.14 but with $q-1$ holes in it to be sewn up as described above. Then triangulate this disk with these holes.)
 
@@ -396,10 +396,10 @@ panels:
     caption: ""
 ```
 
-> [!definition] Genus of a Closed Surface
+> [!definition|a0616aef-9f75-5439-82c6-9491be32f14f.local at=25c95d29-51aa-5da5-8534-21d3e185bdd0] Genus of a Closed Surface
 > It can be shown that every sufficiently nice closed surface, namely a closed 2-manifold, is homeomorphic to a 2-sphere with some number $h \geq 0$ of handles if the surface is two sided, and is homeomorphic to a 2-sphere with $q>0$ cross caps if it is one sided. The number $h$ or $q$, as the case may be, is the genus of the surface.
 
-> [!exercise] Exercise 43.10
+> [!exercise|dfc3925c-58cc-5cfb-81bc-e23ef2768069.local at=94909166-b018-5db5-b79c-da3c34049bff] Exercise 43.10
 > Every point $P$ on a regular torus $X$ can be described by means of two angles $\theta$ and $\phi$, as shown in Fig. 43.16. That is, we can associate coordinates $(\theta, \phi)$ with $P$. For each of the mappings $f$ of the torus $X$ onto itself given below, describe the induced map $f_{* n}$ of $H_{n}(X)$ into $H_{n}(X)$ for $n=0,1$, and 2, by finding the images of the generators for $H_{n}(X)$ described in Example 42.12. Interpret these group homomorphisms geometrically as we did in Example 43.9.
 >
 > a. $f: X \rightarrow X \quad$ given by $\quad f((\theta, \phi))=(2 \theta, \phi)$
@@ -408,16 +408,16 @@ panels:
 >
 > c. $f: X \rightarrow X \quad$ given by $\quad f((\theta, \phi))=(2 \theta, 2 \phi)$
 
-> [!exercise] Exercise 43.11
+> [!exercise|afc92f1f-6681-587b-b609-92f5715d40fc.local at=926cf0ec-6a0e-53cb-be02-7587e7e2d6c0] Exercise 43.11
 > With reference to Exercise 10, the torus $X$ can be mapped onto its circle $b$ (which is homeomorphic to $S^{1}$ ) by a variety of maps. For each such map $f: X \rightarrow b$ given below, describe the homomorphism $f_{*n}:H_n(X)\rightarrow H_n(b)$ for $n=0,1$, and 2, by describing the image of generators of $H_{n}(X)$ as in Exercise 10.
 >
 > a. $f: X \rightarrow b$ given by $f((\theta, \phi))=(\theta, 0)$
 >
 > b. $f: X \rightarrow b$ given by $f((\theta, \phi))=(2 \theta, 0)$
 
-> [!exercise] Exercise 43.12
+> [!exercise|00ff0e68-e6a5-57ae-81a5-28e19bd5ef14.local at=bef60004-e98f-5242-9dab-880a0be44c55] Exercise 43.12
 > Repeat Exercise 11 , but view the map $f$ as a map of the torus $X$ into itself, inducing maps $f_{* n}: H_{n}(X) \rightarrow H_{n}(X)$.
 
-> [!exercise] Exercise 43.13
+> [!exercise|91705138-640d-5752-b4c4-c87f5942bc02.local at=efd4de50-559f-53d3-9bce-bf19f496b2f2] Exercise 43.13
 > Consider the map $f$ of the Klein bottle in Fig. 43.2 given by mapping a point $Q$ of the rectangle in Fig. 43.2 onto the point of $b$ directly opposite (closest to) it. Note that $b$ is topologically a 1 -sphere. Compute the induced maps $f_{* n}: H_{n}(X) \rightarrow H_{n}(b)$ for $n=0,1$, and 2, by describing images of generators of $H_{n}(X)$.
 
